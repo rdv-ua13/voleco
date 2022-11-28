@@ -1,0 +1,19 @@
+// базовые подключения
+@import "vars";
+@import "fonts";
+@import "./helpers/grid-bootstrap";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/footer";
+
+.main {
+	z-index: 1;
+	position: relative;
+	flex: 1;
+	min-width: 375px;
+	/*min-height: 900px;*/
+}
+@media (min-width: 992px) {}
+@media (max-width: 991.98px) {}

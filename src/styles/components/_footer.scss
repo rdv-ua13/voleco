@@ -1,0 +1,105 @@
+.footer {
+	position: relative;
+	flex: 0 0 auto;
+	min-width: 375px;
+	background-color: var(--footer-bg-color);
+
+	&__head {
+		padding-top: 50px;
+		padding-bottom: 60px;
+		background-color: var(--footer-background-color);
+	}
+	&__head-list li:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	&__head-list a {
+		color: var(--white-color);
+	}
+	&__head-contacts-item:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	&__head-contacts-link {
+		display: flex;
+		align-items: center;
+	}
+	&__head-contacts-link .icon:not(:last-child),
+	&__head-contacts-link span:not(:last-child) {
+		margin-right: 8px;
+	}
+	&__head-title {
+		color: var(--white-color);
+	}
+	&__head-title:not(:last-child) {
+		margin-bottom: 8px;
+	}
+	&__bottom {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		background-color: var(--text1-color);
+	}
+	&__bottom-authreg {
+		background-color: var(--white-color);
+	}
+	&__bottom-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__bottom-authreg &__bottom-list {
+		justify-content: flex-start;
+	}
+	&__bottom-list li {
+		color: var(--text4-color);
+		font-size: 13px;
+		line-height: 20px;
+	}
+	&__bottom-authreg &__bottom-list li {
+		color: var(--text6-color);
+	}
+	&__bottom-authreg &__bottom-list li:not(:first-child):not(:last-child) {
+		margin-right: 32px;
+	}
+	&__bottom-authreg &__bottom-list li:first-child {
+		margin-right: auto;
+	}
+	&__bottom-list a {
+		color: var(--text6-color);
+	}
+}
+.form-subscribe {
+	&__field {
+		display: flex;
+		align-items: center;
+	}
+	&__field:not(:last-child) {
+		margin-bottom: 12px;
+	}
+	&__input {
+		flex: 1;
+		padding: 13px 20px;
+		border-radius: 8px;
+		background-color: var(--text3-color);
+		color: var(--white-color);
+		line-height: 24px;
+	}
+	&__input::placeholder {
+		color: var(--text6-color);
+	}
+	&__input:not(:last-child) {
+		margin-right: 12px;
+	}
+}
+@media (min-width: 992px) {
+	.footer {
+		&__container {
+
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.footer {
+		&__container {
+
+		}
+	}
+}
