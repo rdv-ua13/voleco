@@ -1,4 +1,4 @@
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/header.php'); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/' . 'components/header.php'); ?>
 
 <div class="block-mb">
     <div class="container">
@@ -6,4 +6,4 @@
     </div>
 </div>
 
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/footer.php'); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/' . 'components/footer.php'); ?>

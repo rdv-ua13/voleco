@@ -1,7 +1,7 @@
     </main>
 
     <footer class="footer">
-		<? if(!strpos($_SERVER["REQUEST_URI"], "registration.php")) : ?>
+		<? if(!strpos($_SERVER["REQUEST_URI"], "registration.php") && !strpos($_SERVER["REQUEST_URI"], "auth.php")) : ?>
             <div class="footer__head">
                 <div class="container">
                     <div class="row">
@@ -103,11 +103,11 @@
                 </div>
             </div>
         <? endif; ?>
-        <div class="footer__bottom <? if(strpos($_SERVER["REQUEST_URI"], "registration.php")) : ?>footer__bottom-authreg<? endif; ?>">
+        <div class="footer__bottom <? if(strpos($_SERVER["REQUEST_URI"], "registration.php") || strpos($_SERVER["REQUEST_URI"], "auth.php")) : ?>footer__bottom-authreg<? endif; ?>">
             <div class="container">
                 <ul class="list-reset footer__bottom-list">
                     <li><?= date('Y'); ?> &#169; <a href="javascript:;">VOLECO.RU</a></li>
-					<? if(strpos($_SERVER["REQUEST_URI"], "registration.php")) : ?>
+					<? if(strpos($_SERVER["REQUEST_URI"], "registration.php") || strpos($_SERVER["REQUEST_URI"], "auth.php")) : ?>
                         <li><a href="javascript:;">Обработка персональных данных</a></li>
                         <li><a href="javascript:;">Правила использования сайта</a></li>
 					<? else : ?>
@@ -120,7 +120,5 @@
             </div>
         </div>
     </footer>
-
-	<?/* php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/modals.php'); */?>
 </body>
 </html>
