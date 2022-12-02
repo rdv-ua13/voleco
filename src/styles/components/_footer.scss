@@ -4,10 +4,12 @@
 	min-width: 375px;
 	background-color: var(--footer-bg-color);
 
+	overflow: hidden;
+
 	&__head {
 		padding-top: 50px;
 		padding-bottom: 60px;
-		background-color: var(--footer-background-color);
+		background-color: var(--text2-color);
 	}
 	&__head-list li:not(:last-child) {
 		margin-bottom: 20px;

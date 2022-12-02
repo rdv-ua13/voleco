@@ -92,7 +92,7 @@
 	overflow: auto;
 	user-select: auto;
 	background-color: var(--white-color);
-	transition: 0.15s ease-in-out;
+	transition: 0.16s ease-out;
 
 	&::-webkit-scrollbar {
 		width: 0;
@@ -110,8 +110,9 @@
 		min-height: 32px;
 		height: 32px;
 		opacity: 0;
+		pointer-events: none;
 		user-select: none;
-		cursor: pointer;
+		cursor: default;
 
 		&::before,
 		&::after {
@@ -125,7 +126,7 @@
 			height: 2px;
 			border-radius: 2px;
 			background-color: var(--text6-color);
-			transition: 0.15s ease-in-out;
+			transition: 0.16s ease-out;
 		}
 		&::before {
 			transform: translate(-50%, -50%) rotate(45deg);
@@ -141,7 +142,9 @@
 	&--active &__close {
 		position: fixed;
 		opacity: 1;
+		pointer-events: auto;
 		user-select: auto;
+		cursor: pointer;
 	}
 	&__list {
 		flex: 1;

@@ -56,14 +56,15 @@
     <body>
     <div style="display: flex; align-items:center; margin: 0 0 15px 20px;">
         <div class="logo">
-            <img width="64" height="64" src="/build/img/logo.png" alt="">
+            <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">00</span>
+            <span style="color: forestgreen; font-weight: 600;">10 + ui</span>
             &nbsp;/&nbsp;
-            <span style="font-size: 24px;">00 (всего страниц в макете)</span>
+            <span style="font-size: 24px;">62 + ui (всего страниц в макете)</span>
         </span>
     </div>
+    <div style="font-size: 24px;">Ниже готовые разделы будут отмечены "<span style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</span>"</div>
 
     <div>
         <ul>
@@ -73,8 +74,11 @@
             <li><a href="/build/organizer.php" target="_blank">Организаторам</a></li>
             <li><a href="/build/registration.php" target="_blank">Регистрация</a></li>
             <li><a href="/build/auth.php" target="_blank">Авторизация</a></li>
+            <br>
+            <li><a href="/build/main-section.php" target="_blank">Основные разделы (страницы макета в табах)</a></li>
 
             <br>
+            <li><a href="/build/ui.php" target="_blank">ui</a></li>
         </ul>
     </div>
     </body>
