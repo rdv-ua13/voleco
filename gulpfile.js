@@ -20,7 +20,6 @@ const uglify = require("gulp-uglify"); // модуль для минимизац
 const group_media = require("gulp-group-css-media-queries"); // модуль для группирования медиазапросов
 const cache = require("gulp-cache"); // модуль для кэширования
 const concat = require("gulp-concat"); // модуль для конкатенации библиотек
-const typograf = require("gulp-typograf"); // модуль для исправления типографических ошибок
 const webp = require("gulp-webp"); // модуль для преобразования изображений в webp
 const webpackStream = require("webpack-stream"); // модуль для webpack-stream
 
@@ -37,7 +36,6 @@ const path = {
     },
     src: {
         php:                "src/pages/**/*.php",
-        libsJs:             "src/js/libs.js",
         mainJs:             "src/js/main.js",
         styles:             "src/styles/main.scss",
         stylesVendor:       "src/styles/vendor/**/*.*",
@@ -112,8 +110,7 @@ const cssBuild = () => {
 
 // Сбор подключаемых библиотек js
 const libsJsBuild = () => {
-    return src(path.src.libsJs)
-    /*return src(
+    return src(
         [
             "node_modules/jquery/dist/jquery.js",
             "node_modules/@popperjs/core/dist/umd/popper.js",
@@ -122,42 +119,12 @@ const libsJsBuild = () => {
             "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
             "node_modules/jquery-validation/dist/jquery.validate.js",
             'node_modules/jquery-validation/dist/localization/messages_ru.js',
+            'node_modules/bs-stepper/dist/js/bs-stepper.js',
+            'node_modules/graph-tabs/dist/graph-tabs.min.js',
         ]
-    )*/
-        .pipe(plumber(
-            notify.onError({
-                title: "LIBSJS",
-                message: "Error: <%= error.message %>"
-            })
-        ))
-        .pipe(webpackStream({
-            mode: "production",
-            output: {
-                filename: "libs.min.js",
-            },
-            module: {
-                rules: [{
-                    test: /\.m?js$/,
-                    exclude: /node_modules/,
-                    use: {
-                        loader: "babel-loader",
-                        options: {
-                            presets: [
-                                ["@babel/preset-env", {
-                                    targets: "defaults"
-                                }]
-                            ]
-                        }
-                    }
-                }]
-            },
-            devtool: false
-        }))
-        .on("error", function (err) {
-            console.error("WEBPACK ERROR", err);
-            this.emit("end");
-        })
-        .pipe(uglify())
+    )
+        .pipe(concat("libs.min.js"))
+        .pipe(uglify().on("error", notify.onError()))
         .pipe(dest(path.build.js))
         .pipe(browserSync.stream());
 };
@@ -300,4 +267,4 @@ const watchFiles = () => {
     watch(`${path.src.img}/**/**.{jpg,jpeg,png}`, webpImages);
 };
 
-exports.default = series(clean, cacheBuild, phpBuild, cssVendorBuild, cssBuild, /*libsJsBuild,*/ mainJsBuild, resources, images, webpImages, svgSprites, watchFiles);
+exports.default = series(clean, cacheBuild, phpBuild, cssVendorBuild, cssBuild, libsJsBuild, mainJsBuild, resources, images, webpImages, svgSprites, watchFiles);

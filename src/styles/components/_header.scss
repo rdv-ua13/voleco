@@ -83,7 +83,7 @@
 	z-index: 1000;
 	position: fixed;
 	top: 0;
-	left: -100vw;
+	left: -670px;
 	display: flex;
 	flex-direction: column;
 	width: 670px;
@@ -207,5 +207,7 @@
 
 }
 @media (max-width: 991.98px) {
-
+	.header-nav {
+		display: none;
+	}
 }

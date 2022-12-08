@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/vendor.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 	<?/*<script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>*/?>
-    <?/*<script defer src="js/libs.min.js"></script>*/?>
+    <script defer src="js/libs.min.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 <? if(!strpos($_SERVER["REQUEST_URI"], "registration.php") && !strpos($_SERVER["REQUEST_URI"], "auth.php")) : ?>

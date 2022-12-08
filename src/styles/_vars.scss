@@ -36,6 +36,7 @@
 	--warning4-color: #D97706;
 	--warning5-color: #F59E0B;
 	--warning6-color: #FBBF24;
+	--warning7-color: #FCD34D;
 	--warning8-color: #FDE68A;
 	--warning9-color: #FEF3C7;
 
@@ -68,4 +69,9 @@
 	--accent-ceruleanblue6-color: #96E7FD;
 	--accent-ceruleanblue8-color: #AFEDFD;
 	--accent-ceruleanblue9-color: #DCF7FE;
+}
+@media (max-width: 991.98px) {
+	:root {
+		--container-offset: 16px;
+	}
 }

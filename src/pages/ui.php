@@ -363,6 +363,129 @@
                 </div>
                 &#8212; button class="btn-reset btn btn--fill btn--gray"
             </div>
+            <div class="row-ui">--------------------------------------------------</div>
+            <div class="row-ui">
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--fill btn--midi">
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--fill btn--midi">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#comment"></use>
+                        </svg>
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                &#8212; button class="btn-reset btn btn--fill btn--midi"
+            </div>
+            <div class="row-ui">
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--midi">
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--midi">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#comment"></use>
+                        </svg>
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                &#8212; button class="btn-reset btn btn--midi"
+            </div>
+            <div class="row-ui">
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--fill btn--midi btn--gray">
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--fill btn--midi btn--gray">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#comment"></use>
+                        </svg>
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                &#8212; button class="btn-reset btn btn--fill btn--midi btn--gray"
+            </div>
+            <div class="row-ui">--------------------------------------------------</div>
+            <div class="row-ui">
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--fill btn--mini">
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--fill btn--mini">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#comment"></use>
+                        </svg>
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                &#8212; button class="btn-reset btn btn--fill btn--mini"
+            </div>
+            <div class="row-ui">
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--mini">
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--mini">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#comment"></use>
+                        </svg>
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                &#8212; button class="btn-reset btn"
+            </div>
+            <div class="row-ui">
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--fill btn--mini btn--gray">
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                <div>
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--fill btn--mini btn--gray">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#comment"></use>
+                        </svg>
+                        <span class="btn__text">Кнопка</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+                &#8212; button class="btn-reset btn btn--fill btn--mini btn--gray"
+            </div>
+            <div class="row-ui">--------------------------------------------------</div>
             <div class="row-ui">
                 <div class="flex-v-center" style="width: 125px;">
                     <!--start ui content-->
