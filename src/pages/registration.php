@@ -34,7 +34,7 @@
                         </ul>
                         <div class="tabs__content">
                             <div class="tabs__panel active" data-id="0">
-                                <form id="" class="form authreg-form" method="" action="javascript:;">
+                                <form id="" class="form authreg-form" method="POST" action="">
                                     <div class="form__field">
                                         <label for="regFormVolunteerEmail" class="form__label-for">
                                             Электронная почта <span class="required-star">*</span>
@@ -103,6 +103,7 @@
                                         </button>
                                     </div>
                                 </form>
+                                <div id="newid"></div>
                             </div>
                             <div class="tabs__panel" data-id="1">
                                 <form id="" class="form authreg-form" method="" action="javascript:;">
@@ -417,5 +418,6 @@
         </div>
     </div>
 </div>
+
 
 <?php include($_SERVER["DOCUMENT_ROOT"] . '/build/' . 'components/footer.php'); ?>

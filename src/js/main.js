@@ -38,27 +38,7 @@ application.prototype.initTabs = function () {
         });
     }
 };
-// Initialization registration stepper
-application.prototype.initRegStepper = function () {
-    if($(".bs-stepper").length) {
-        let stepper = new Stepper($('.bs-stepper')[0]);
 
-        $(".js-stepper-trigger").on("click", function () {
-            let nextStep = $(this).data("index-next");
-
-            switch(nextStep) {
-                case 2:
-                    stepper.to(2);
-                    break;
-                case 3:
-                    stepper.to(3);
-                    break;
-                default:
-                    stepper.to(1);
-            }
-        });
-    }
-};
 // Initialization validation num code
 application.prototype.initValidationNumCode = function () {
     if($(".authreg--recovery").length) {
@@ -176,6 +156,28 @@ application.prototype.initProgressBar = function () {
         });
     }
 };
+
+// Initialization registration stepper
+application.prototype.initRegStepper = function () {
+    if($(".bs-stepper").length) {
+        let stepper = new Stepper($('.bs-stepper')[0]);
+
+        /*$(".js-stepper-trigger").on("click", function () {
+            let nextStep = $(this).data("index-next");
+
+            switch(nextStep) {
+                case 2:
+                    stepper.to(2);
+                    break;
+                case 3:
+                    stepper.to(3);
+                    break;
+                default:
+                    stepper.to(1);
+            }
+        });*/
+    }
+};
 // Initialization form processing
 application.prototype.initFormProcessing = function () {
     if ($(".form").length) {
@@ -189,9 +191,23 @@ application.prototype.initFormProcessing = function () {
 
             return indexed_array;
         }
+
         $(document).on("submit", ".form", function () {
-            console.log(getFormData($(this)));
-            getFormData($(this));
+            let currentForm = $(this);
+            getFormData(currentForm);
+
+            $.ajax({
+                type: "POST",
+                url: "forms.php",
+                dataType: "json",
+                data: getFormData(currentForm),
+                success: function (currentForm) {
+                    console.log("success");
+                },
+                error: function () {
+                    console.log("error");
+                }
+            });
         });
     }
 };
