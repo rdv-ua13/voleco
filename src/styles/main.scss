@@ -63,6 +63,10 @@
 		font-size: 15px;
 		line-height: 18px;
 		transition: 0.16s ease-out;
+
+		&:hover {
+			color: var(--text1-color);
+		}
 	}
 	&__link.selected {
 		box-shadow: 0 6px 10px -1px rgba(40, 41, 41, 0.07);

@@ -19,6 +19,9 @@ application.prototype.init = function () {
     this.initNavTabs();
     this.initTooltips();
     this.initProgressBar();
+    this.initFormProcessing();
+    this.initCardFavorite();
+    this.initTagbarSlider();
 };
 
 // Init tabs
@@ -27,7 +30,7 @@ application.prototype.initTabs = function () {
         let currentSelected = 1;
         $(".tabs__nav-item").on("click", function () {
             $(".tabs__nav-item").not(this).find(".tabs__nav-btn").removeClass("selected");
-            $(this).find(".tabs__nav-btn").addClass("selected");
+            $(this).find(".tabs__nav-btn").removeClass("notice").addClass("selected");
 
             currentSelected = $(this).find(".tabs__nav-btn").data("target");
             $(this).closest(".tabs").find(".tabs__panel").removeClass("active");
@@ -135,12 +138,8 @@ application.prototype.initValidationNumCode = function () {
 application.prototype.initNavTabs = function () {
     if ($(".js-main-section-tabs").length) {
         const swiperNavTabs = new Swiper(".js-main-section-tabs", {
-          slidesPerView: "auto",
-          spaceBetween: 0,
-          /*navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          }*/
+            slidesPerView: "auto",
+            spaceBetween: 0,
         });
     }
 };
@@ -158,11 +157,11 @@ application.prototype.initTooltips = function () {
 // Initialization cards progress bar
 application.prototype.initProgressBar = function () {
     if ($(".js-progress").length) {
-        $(".js-progress").each(function (i, el) {
-            let curValue = $(el).find(".progress-bar-data__value").data("value");
-            let curMaxValue = $(el).find(".progress-bar-data__max").data("max");
-            let curIndicator = $(el).find(".progress-bar__indicator");
-            let curProgressLine = $(el).find(".progress-bar__line");
+        $(".js-progress").each(function (i, e) {
+            let curValue = $(e).find(".progress-bar-data__value").data("value");
+            let curMaxValue = $(e).find(".progress-bar-data__max").data("max");
+            let curIndicator = $(e).find(".progress-bar__indicator");
+            let curProgressLine = $(e).find(".progress-bar__line");
 
             function result(curValue, curMaxValue) {
                 let res = ((curValue / curMaxValue) * 100).toFixed(2);
@@ -177,4 +176,46 @@ application.prototype.initProgressBar = function () {
         });
     }
 };
+// Initialization form processing
+application.prototype.initFormProcessing = function () {
+    if ($(".form").length) {
+        function getFormData($form){
+            let unindexed_array = $form.serializeArray();
+            let indexed_array = {};
 
+            $.map(unindexed_array, function(n, i){
+                indexed_array[n["name"]] = n["value"];
+            });
+
+            return indexed_array;
+        }
+        $(document).on("submit", ".form", function () {
+            console.log(getFormData($(this)));
+            getFormData($(this));
+        });
+    }
+};
+// Initialization cards button "favorite"
+application.prototype.initCardFavorite = function () {
+    $(document).on("click", ".card", function (e) {
+        let $buttonFav = $(this).find('.js-card-favorite');
+        if ($buttonFav.is(e.target)) {
+            e.stopPropagation();
+            e.preventDefault();
+
+            $buttonFav.toggleClass("selected");
+            // todo: ajax проверить success or wrong, добавить класс selected
+        }
+    });
+};
+// Initialization tag-bar slider
+application.prototype.initTagbarSlider = function () {
+    if ($(".js-tag-bar-slider").length) {
+        const swiperTagbarSlider = new Swiper(".js-tag-bar-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 8,
+            direction: "horizontal",
+            mousewheel: true,
+        });
+    }
+};

@@ -5,21 +5,21 @@
             <div class="footer__head">
                 <div class="container">
                     <div class="row">
-                        <div class="col col-2">
+                        <div class="col col-6 col-md-4 col-lg-2">
                             <ul class="list-reset footer__head-list">
                                 <li><a href="javascript:;">Экодела</a></li>
                                 <li><a href="javascript:;">Организаторы</a></li>
                                 <li><a href="javascript:;">Аналитика</a></li>
                             </ul>
                         </div>
-                        <div class="col col-2">
+                        <div class="col col-6 col-md-4 col-lg-2">
                             <ul class="list-reset footer__head-list">
                                 <li><a href="javascript:;">О Фонде</a></li>
                                 <li><a href="javascript:;">Контакты</a></li>
                                 <li><a href="javascript:;">Реквизиты</a></li>
                             </ul>
                         </div>
-                        <div class="col col-3">
+                        <div class="col col-12 col-md-4 col-lg-3">
                             <div class="footer__head-contacts">
                                 <div class="footer__head-contacts-item">
                                     <div class="footer__head-title">Мы в социальных сетях</div>
@@ -32,7 +32,7 @@
                                                     aria-label="Наша страничка во Вконтакте"
                                             >
                                                 <svg class="icon social__icon">
-                                                    <use href="img/sprite.svg#vk"></use>
+                                                    <use href="img/sprite.svg#soc-logo-dark-vk"></use>
                                                 </svg>
                                             </a>
                                         </li>
@@ -44,7 +44,7 @@
                                                     aria-label="Наша страничка в Одноклассниках"
                                             >
                                                 <svg class="icon social__icon">
-                                                    <use href="img/sprite.svg#ok"></use>
+                                                    <use href="img/sprite.svg#soc-logo-dark-ok"></use>
                                                 </svg>
                                             </a>
                                         </li>
@@ -56,7 +56,7 @@
                                                     aria-label="Наша страничка в Фэйсбук"
                                             >
                                                 <svg class="icon social__icon">
-                                                    <use href="img/sprite.svg#fb"></use>
+                                                    <use href="img/sprite.svg#soc-logo-dark-fb"></use>
                                                 </svg>
                                             </a>
                                         </li>
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-5">
+                        <div class="col col-12 col-lg-5">
                             <div class="footer__head-subscribe">
                                 <div class="footer__head-title">Почта для связи с командой</div>
                                 <form id="" class="form-subscribe" method="" action="javascript:;">
@@ -82,11 +82,8 @@
                                                 class="input-reset form-subscribe__input"
                                                 type="text"
                                                 name="Подписаться"
-                                                placeholder="Введите электронную почту"
+                                                placeholder="Введите электронную почту..."
                                         >
-                                        <button class="btn-reset btn btn--fill">
-                                            <span class="btn__text">Подписаться</span>
-                                        </button>
                                     </div>
                                     <div class="form-subscribe__field">
                                         <div class="custom-checkbox">
@@ -95,6 +92,11 @@
                                                 <span>Соглашаюсь на <a class="link link--underline" href="javascript:;">обработку моих персональных данных</a>, с <a class="link link--underline" href="javascript:;">правилами пользования сайтом</a> и принимаю <a class="link link--underline" href="javascript:;">Пользовательское соглашение</a></span>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="form-subscribe__field">
+                                        <button class="btn-reset btn btn--fill">
+                                            <span class="btn__text">Подписаться</span>
+                                        </button>
                                     </div>
                                 </form>
                             </div>

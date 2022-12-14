@@ -43,7 +43,7 @@
                                                 id="regFormVolunteerEmail"
                                                 class="input-reset form__input"
                                                 type="email"
-                                                name="regFormVolunteerEmail"
+                                                name="email"
                                                 placeholder=""
                                                 required
                                         >
@@ -61,7 +61,7 @@
                                                 id="regFormVolunteerPassword"
                                                 class="input-reset form__input"
                                                 type="password"
-                                                name="regFormVolunteerPassword"
+                                                name="password"
                                                 placeholder=""
                                                 required
                                         >
@@ -79,7 +79,7 @@
                                                 id="regFormVolunteerRepeatPassword"
                                                 class="input-reset form__input"
                                                 type="password"
-                                                name="regFormVolunteerRepeatPassword"
+                                                name="repeatPassword"
                                                 placeholder=""
                                                 required
                                         >
@@ -98,7 +98,7 @@
                                         </div>
                                     </div>
                                     <div class="form__field form__field-btn form__field-btn--fullwidth">
-                                        <button class="btn-reset btn btn--fill stepper-trigger js-stepper-trigger" data-index-next="2">
+                                        <button class="btn-reset btn btn--fill stepper-trigger js-stepper-trigger" type="submit" data-index-next="2">
                                             <span class="btn__text">Зарегистрироваться</span>
                                         </button>
                                     </div>
@@ -114,7 +114,7 @@
                                                 id="regFormOrganizerCompany"
                                                 class="input-reset form__input"
                                                 type="text"
-                                                name="regFormOrganizerCompany"
+                                                name="company"
                                                 placeholder=""
                                                 required
                                         >
@@ -127,7 +127,7 @@
                                                 id="regFormOrganizerEmail"
                                                 class="input-reset form__input"
                                                 type="email"
-                                                name="regFormOrganizerEmail"
+                                                name="email"
                                                 placeholder=""
                                                 required
                                         >
@@ -145,7 +145,7 @@
                                                 id="regFormOrganizerPassword"
                                                 class="input-reset form__input"
                                                 type="password"
-                                                name="regFormOrganizerPassword"
+                                                name="password"
                                                 placeholder=""
                                                 required
                                         >
@@ -163,7 +163,7 @@
                                                 id="regFormOrganizerRepeatPassword"
                                                 class="input-reset form__input"
                                                 type="password"
-                                                name="regFormOrganizerRepeatPassword"
+                                                name="repeatPassword"
                                                 placeholder=""
                                                 required
                                         >
@@ -261,7 +261,7 @@
                                     id="regFormDataVolunteerName"
                                     class="input-reset form__input"
                                     type="text"
-                                    name="regFormDataVolunteerName"
+                                    name="name"
                                     placeholder=""
                                     required
                             >
@@ -274,7 +274,7 @@
                                     id="regFormDataVolunteerSurname"
                                     class="input-reset form__input"
                                     type="text"
-                                    name="regFormDataVolunteerSurname"
+                                    name="surname"
                                     placeholder=""
                                     required
                             >
@@ -287,7 +287,7 @@
                                     id="regFormDataVolunteerPhone"
                                     class="input-reset form__input isPhone"
                                     type="tel"
-                                    name="regFormDataVolunteerPhone"
+                                    name="phone"
                                     placeholder=""
                                     required
                             >
@@ -298,7 +298,7 @@
                                     id="regFormDataVolunteerAbout"
                                     class="input-reset form__input"
                                     type="text"
-                                    name="regFormDataVolunteerAbout"
+                                    name="about"
                                     placeholder="VOLECO ID"
                             >
                         </div>
@@ -334,7 +334,7 @@
                                     id="regFormDataOrganizerName"
                                     class="input-reset form__input"
                                     type="text"
-                                    name="regFormDataOrganizerName"
+                                    name="name"
                                     placeholder=""
                                     required
                             >
@@ -347,7 +347,7 @@
                                     id="regFormDataOrganizerSurname"
                                     class="input-reset form__input"
                                     type="text"
-                                    name="regFormDataOrganizerSurname"
+                                    name="surname"
                                     placeholder=""
                                     required
                             >
@@ -360,7 +360,7 @@
                                     id="regFormDataOrganizerPhone"
                                     class="input-reset form__input isPhone"
                                     type="tel"
-                                    name="regFormDataOrganizerPhone"
+                                    name="phone"
                                     placeholder=""
                                     required
                             >
@@ -369,22 +369,22 @@
                             <label for="regFormDataOrganizerLocality" class="form__label-for">
                                 Населенный пункт <span class="required-star">*</span>
                                 <span class="tooltip">
-                        <button class="btn-reset tooltip__btn" aria-describedby="id1">
-                            <svg class="icon">
-                                <use href="img/sprite.svg#tooltip"></use>
-                            </svg>
-                        </button>
-                        <span class="tooltip__txt" role="tooltip" id="id1">
-                            <span class="visually-hidden">Тултип: </span>
-                            Текст
-                        </span>
-                    </span>
+                                    <button class="btn-reset tooltip__btn" aria-describedby="id1">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#tooltip"></use>
+                                        </svg>
+                                    </button>
+                                    <span class="tooltip__txt" role="tooltip" id="id1">
+                                        <span class="visually-hidden">Тултип: </span>
+                                        Текст
+                                    </span>
+                                </span>
                             </label>
                             <input
                                     id="regFormDataOrganizerLocality"
                                     class="input-reset form__input"
                                     type="text"
-                                    name="regFormDataOrganizerLocality"
+                                    name="locality"
                                     placeholder=""
                             >
                         </div>

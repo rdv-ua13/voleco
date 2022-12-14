@@ -51,8 +51,7 @@
                     <div class="tags">tags</div>
                 </div>
             </div>-->
-            <div class="slider">
-
+            <div class="slider" style="display: none;">
                 <div class="card">
                     <div class="card__view">
                         <picture>
