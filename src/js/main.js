@@ -17,11 +17,13 @@ application.prototype.init = function () {
     this.initRegStepper();
     this.initValidationNumCode();
     this.initNavTabs();
+    this.initPageContentTabs();
     this.initTooltips();
     this.initProgressBar();
     this.initFormProcessing();
     this.initCardFavorite();
     this.initTagbarSlider();
+    this.initHandlerCurrentUser();
 };
 
 // Init tabs
@@ -38,7 +40,6 @@ application.prototype.initTabs = function () {
         });
     }
 };
-
 // Initialization validation num code
 application.prototype.initValidationNumCode = function () {
     if($(".authreg--recovery").length) {
@@ -123,7 +124,16 @@ application.prototype.initNavTabs = function () {
         });
     }
 };
-// Initialization navigation pages tabs
+// Initialization page-content tabs
+application.prototype.initPageContentTabs = function () {
+    if ($(".js-page-content-tabs").length) {
+        const swiperPageContentTabs = new Swiper(".js-page-content-tabs", {
+            slidesPerView: "auto",
+            spaceBetween: 32,
+        });
+    }
+};
+// Initialization tooltips
 application.prototype.initTooltips = function () {
     if ($(".tooltip").length) {
         const button = $(".tooltip__btn");
@@ -162,7 +172,7 @@ application.prototype.initRegStepper = function () {
     if($(".bs-stepper").length) {
         let stepper = new Stepper($('.bs-stepper')[0]);
 
-        /*$(".js-stepper-trigger").on("click", function () {
+        $(".js-stepper-trigger").on("click", function () {
             let nextStep = $(this).data("index-next");
 
             switch(nextStep) {
@@ -175,7 +185,7 @@ application.prototype.initRegStepper = function () {
                 default:
                     stepper.to(1);
             }
-        });*/
+        });
     }
 };
 // Initialization form processing
@@ -232,6 +242,26 @@ application.prototype.initTagbarSlider = function () {
             spaceBetween: 8,
             direction: "horizontal",
             mousewheel: true,
+        });
+    }
+};
+// Initialization handler for current user dropdown menu
+// todo: finish this
+application.prototype.initHandlerCurrentUser = function () {
+    if ($(".js-current-user-menu").length) {
+        $(".js-current-user-menu").on("click", function () {
+            if($(this).hasClass("open")) {
+                $(this).removeClass("open");
+            } else {
+                $(this).addClass("open");
+            }
+        });
+
+        $(document).on("click", function (e) {
+            if (!$(".js-current-user-menu").is(e.target) && !$(".current-user__dropdown-menu").is(e.target)) {
+                $(".js-current-user-menu").removeClass("open");
+                console.log("success");
+            }
         });
     }
 };

@@ -71,10 +71,12 @@
             <?/*<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>*/?>
             <li><a href="/build/index.php" target="_blank">Главная</a></li>
             <li><a href="/build/organizer.php" target="_blank">Организаторам</a></li>
+
             <br>
             <li><a href="/build/registration.php" target="_blank">Регистрация</a></li>
             <li><a href="/build/auth.php" target="_blank">Авторизация</a></li>
             <li><a href="/build/password-recovery.php" target="_blank">Восстановление пароля</a></li>
+
             <br>
             <li><a href="/build/ms-ecodela.php" target="_blank">Экодела</a></li>
             <li><a href="/build/ms-petitions.php" target="_blank">Петиции</a></li>
@@ -82,6 +84,9 @@
             <li><a href="/build/ms-projects.php" target="_blank">Проекты</a></li>
             <li><a href="/build/ms-volunteer.php" target="_blank">Эковолонтеры</a></li>
             <li><a href="/build/ms-organizer.php" target="_blank">Организаторы</a></li>
+
+            <br>
+            <li><a href="/build/lk-org-profile.php" target="_blank">ЛК Орг - профиль</a></li>
 
             <br>
             <li><a href="/build/ui.php" target="_blank">ui</a></li>

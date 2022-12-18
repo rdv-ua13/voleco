@@ -103,7 +103,6 @@
                                         </button>
                                     </div>
                                 </form>
-                                <div id="newid"></div>
                             </div>
                             <div class="tabs__panel" data-id="1">
                                 <form id="" class="form authreg-form" method="" action="javascript:;">

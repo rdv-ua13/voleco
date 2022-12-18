@@ -118,6 +118,7 @@
                             <button class="btn-reset btn btn--fill stepper-trigger js-stepper-trigger" data-index-next="3">
                                 <span class="btn__text">Продолжить</span>
                             </button>
+                            <a href="javascript:;" class="link">Отправить код ещё раз</a>
                         </div>
                     </form>
                 </div>

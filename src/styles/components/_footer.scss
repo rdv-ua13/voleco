@@ -74,9 +74,6 @@
 		& .footer__bottom-list li {
 			color: var(--text6-color);
 		}
-		& .footer__bottom-list li:not(:first-child):not(:last-child) {
-			margin-right: 32px;
-		}
 		& .footer__bottom-list li:first-child {
 			margin-right: auto;
 		}
@@ -171,6 +168,11 @@
 		}
 		&__bottom-list {
 			gap: 20px;
+		}
+		&__bottom-authreg {
+			& .footer__bottom-list li:first-child {
+				flex: 1 0 100%;
+			}
 		}
 	}
 }

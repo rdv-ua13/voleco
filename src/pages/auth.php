@@ -46,7 +46,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="form__field form__field-btn flex-all-sb">
+            <div class="form__field form__field-btn">
                 <button class="btn-reset btn btn--fill">
                     <span class="btn__text">Войти</span>
                 </button>

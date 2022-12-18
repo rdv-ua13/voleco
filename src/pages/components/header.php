@@ -177,7 +177,7 @@
                         </div>
                     <? endif; ?>
                 </div>
-                <div class="header-actions">
+                <div class="header-actions header-actions--current-user">
                     <div class="header-actions__item">
                         <button class="btn-reset btn btn--noframe">
                             <svg class="icon btn__icon">
@@ -185,6 +185,91 @@
                             </svg>
                             <span class="btn__text">Войти</span>
                         </button>
+						<? //todo: для просмотра разметки авторизованного пользователья убрать display:none для .current-user и добавить для .header-actions__item>.btn ?>
+                        <div class="current-user" style="display: none;">
+                            <span class="current-user__menu js-current-user-menu">
+                                <picture class="current-user__pic">
+                                    <source srcset="img/card-photo-volunteer.webp" type="image/webp">
+                                    <img
+                                        loading="lazy"
+                                        src="img/card-photo-volunteer.png"
+                                        class="image"
+                                        width="42"
+                                        height="42"
+                                        alt="User"
+                                    >
+                                </picture>
+                                <span class="current-user__dropdown">
+                                    <span class="current-user__dropdown-header">
+                                        <span class="current-user__dropdown-header-title">Ассоциация волонтерских центров</span>
+                                    </span>
+                                </span>
+                                <span class="current-user__dropdown-menu">
+                                    <span class="current-user__dropdown-menu-item">
+                                        <span class="current-user__dropdown-menu-user">
+                                            <picture class="current-user__pic">
+                                                <source srcset="img/card-photo-volunteer.webp" type="image/webp">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/card-photo-volunteer.png"
+                                                        class="image"
+                                                        width="42"
+                                                        height="42"
+                                                        alt="User"
+                                                >
+                                            </picture>
+                                            <span class="current-user__dropdown-menu-user-header">
+                                                <span class="current-user__dropdown-menu-user-title">
+                                                    Алексеев Дмитрий Олегович
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="current-user__dropdown-menu-user">
+                                            <picture class="current-user__pic">
+                                                <source srcset="img/card-projects-org.webp" type="image/webp">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/card-projects-org.png"
+                                                        class="image"
+                                                        width="42"
+                                                        height="42"
+                                                        alt="User"
+                                                >
+                                            </picture>
+                                            <span class="current-user__dropdown-menu-user-header">
+                                                <span class="current-user__dropdown-menu-user-title">
+                                                    Ассоциация волонтерских центров
+                                                </span>
+                                                <span class="current-user__dropdown-menu-user-subtitle">
+                                                    Организация
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="current-user__dropdown-menu-item">
+                                        <ul class="list-reset">
+                                            <li><a href="javascript:;" class="link">Стать организатором</a></li>
+                                            <li><a href="javascript:;" class="link">Настройки профиля</a></li>
+                                            <li><a href="javascript:;" class="link">Выйти</a></li>
+                                        </ul>
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="current-user__notice">
+                                <button class="btn-reset current-user__notice-btn notice">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#messages"></use>
+                                    </svg>
+                                    <span class="current-user__notice-btn-num">3</span>
+                                </button>
+                                <button class="btn-reset current-user__notice-btn notice">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#bell"></use>
+                                    </svg>
+                                    <span class="current-user__notice-btn-num">24</span>
+                                </button>
+                            </span>
+                        </div>
                     </div>
                     <div class="header-actions__item">
                         <button class="btn-reset btn">

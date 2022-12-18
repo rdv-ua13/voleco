@@ -466,7 +466,7 @@
                     </button>
                     <!--end ui content-->
                 </div>
-                &#8212; button class="btn-reset btn"
+                &#8212; button class="btn-reset btn btn--mini"
             </div>
             <div class="row-ui">
                 <div>
@@ -885,6 +885,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--end ui content-->
                 </div>
             </div>
             <br>
@@ -1074,7 +1075,7 @@
                 </div>
             </div>
             <br>
-            class="tabs tabs--profile"
+            class="tabs tabs--profile" !?!
             <div class="row-ui ">
                 <div class="flex-v-center" style="width: 100%;">
                     <!--start ui content-->
@@ -1093,6 +1094,40 @@
                                 </button>
                             </li>
                         </ul>
+                        <div class="tabs__content">
+                            <div class="tabs__panel active" data-id="0">
+                                Tabs 1 content
+                            </div>
+                            <div class="tabs__panel" data-id="1">
+                                Tabs 2 content
+                            </div>
+                        </div>
+                    </div>
+                    <!--end ui content-->
+                </div>
+            </div>
+            <br>
+            class="tabs tabs--profile js-tabs-profile" !?!
+            <div class="row-ui ">
+                <div class="flex-v-center" style="width: 100%;">
+                    <!--start ui content-->
+                    <div class="tabs tabs--profile">
+                        <div class="swiper js-tabs-profile">
+                            <ul class="list-reset tabs__nav swiper-wrapper">
+                                <li class="tabs__nav-item swiper-slide">
+                                    <button class="btn-reset tabs__nav-btn selected" type="button" data-target="0">
+                                        <span class="tabs__nav-btn-content">Tab one</span>
+                                        <span class="tabs__nav-btn-num">69</span>
+                                    </button>
+                                </li>
+                                <li class="tabs__nav-item swiper-slide">
+                                    <button class="btn-reset tabs__nav-btn notice" type="button" data-target="1">
+                                        <span class="tabs__nav-btn-content">Tab two</span>
+                                        <span class="tabs__nav-btn-num">96</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="tabs__content">
                             <div class="tabs__panel active" data-id="0">
                                 Tabs 1 content
