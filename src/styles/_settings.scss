@@ -23,13 +23,13 @@ body {
 	background-color: var(--background-color);
 	color: var(--text1-color);
 }
-@media (min-width: 576px) {
+@media (min-width: 644px) {
 	html,
 	body {
 		font-size: 16px;
 	}
 }
-@media (max-width: 575.98px) {
+@media (max-width: 643.98px) {
 	html,
 	body {
 		font-size: 14px;
@@ -1085,6 +1085,7 @@ input.disabled {
 	gap: 18px;
 	margin: -1px;
 	padding: 16px 16px 20px;
+	overflow: hidden;
 	border: 1px solid var(--text8-color);
 	border-radius: 16px;
 	background: var(--white-color);
@@ -1342,7 +1343,6 @@ input.disabled {
 	&--volunteer {
 		flex-direction: row;
 		min-width: 100%;
-		gap: 24px;
 		padding: 20px;
 
 		& .card__descr {
@@ -1451,24 +1451,49 @@ input.disabled {
 		}
 	}
 
-	&--petition {
+	&--pa-default {
 		min-width: 100%;
-		gap: 24px;
 		padding: 20px;
 
-		& .card__title {
-			display: block;
-			-webkit-line-clamp: unset;
-			-webkit-box-orient: unset;
-			min-height: unset;
-			line-height: 1.4;
+		&:hover {
+			& .card__action-data {
+				opacity: 1;
+			}
 		}
 		& .card__action {
 			flex: unset;
+
+			&-progress-bar {
+				&:not(:last-child) {
+					margin-bottom: 0;
+				}
+			}
+			&-progress-data {
+				display: block;
+				gap: unset;
+			}
+			&-progress-data-value {
+				font-weight: 600;
+			}
+			&-progress-data-value,
+			&-progress-current,
+			&-progress-need {
+				display: inline;
+			}
 		}
-		& .progress-bar__value {
+		& .card-contact-btn-more {
+			display: flex;
+			align-items: center;
+			overflow: hidden;
+		}
+	}
+
+	&--pa-project {
+		& .card__title {
 			display: block;
-			gap: unset;
+			-webkit-line-clamp: unset;
+			min-height: unset;
+			line-height: 1.4;
 		}
 	}
 }
@@ -1496,48 +1521,58 @@ input.disabled {
 				}
 			}
 		}
-
-		&--petition {
-			& .card__title {
-				margin-bottom: 20px;
-				font-size: 20px;
-			}
-		}
 	}
 }
 @media (min-width: 644px) {
 	.card {
-		&--petition {
+		&--pa-default {
 			flex-direction: row;
 
+			& .card__title {
+				-webkit-line-clamp: 1;
+				min-height: 28px;
+				margin-bottom: 20px;
+				font-size: 20px;
+				line-height: 28px;
+			}
 			& .card__action {
 				&:not(:last-child) {
 					margin-bottom: 24px;
 				}
+				&-progress {
+					display: flex;
+
+					&:not(:last-child) {
+						margin-bottom: 8px;
+					}
+					&-bar {
+						display: inline-flex;
+						flex-direction: row;
+						align-items: center;
+						flex: 1 0 25%;
+						padding-right: 8px;
+
+					}
+					&-data {
+						flex: 1 0 75%;
+						font-size: 14px;
+					}
+					& .progress-bar__bg {
+						width: 100%;
+					}
+				}
 			}
-			& .card__action-progress {
-				display: flex;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.card {
+		&--pa-default {
+			& .card-contact-btn-more {
 				gap: 8px;
 
-				&:not(:last-child) {
-					margin-bottom: 8px;
-				}
-				&-bar {
-					flex-direction: row;
-					align-items: center;
-					width: 100%;
-				}
-				& .progress-bar__value {
-					order: 2;
-					font-size: 14px;
-				}
-				& .progress-bar__bg {
-					order: 1;
-				}
-				& .progress-bar__value,
-				& .progress-bar__bg {
-					min-width: calc(50% - 4px);
-					width: calc(50% - 4px);
+				&__menu {
+					display: none;
 				}
 			}
 		}
@@ -1555,9 +1590,44 @@ input.disabled {
 		}
 	}
 }
+@media (min-width: 1200px) {
+	.card {
+		&--organizer,
+		&--volunteer,
+		&--pa-default {
+			gap: 24px;
+		}
+		&--pa-default {
+			& .card__view {
+				&,
+				& picture,
+				& img {
+					min-width: 260px;
+					width: 260px;
+					min-height: 180px;
+					height: 180px;
+				}
+			}
+		}
+	}
+}
 @media (max-width: 991.98px) {
 	.card-list {
 		gap: 16px;
+	}
+}
+@media (max-width: 767.98px) {
+	.card {
+		&--pa-default {
+			& .card-contact-btn-more {
+				& .btn:not(.card-contact-btn-more__menu) {
+					display: none;
+				}
+				&__menu {
+					// todo
+				}
+			}
+		}
 	}
 }
 @media (max-width: 643.98px) {
@@ -1581,18 +1651,44 @@ input.disabled {
 			&:not(:last-child) {
 				margin-bottom: 16px;
 			}
-		}
-		& .card__action-progress {
-			&:not(:last-child) {
-				margin-bottom: 12px;
-			}
-			& .progress-bar__value {
-				font-size: 12px;
+			&-progress {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+
+				&:not(:last-child) {
+					margin-bottom: 12px;
+				}
+				&-bar {
+					order: 2;
+				}
+				&-data {
+					order: 1;
+					font-size: 12px;
+				}
 			}
 		}
 		& .card__contact-btn {
 			& .btn:first-child {
 				flex: 1;
+			}
+		}
+
+		&--pa-default {
+			& .card__title {
+				-webkit-line-clamp: 2;
+				min-height: 40px;
+				margin-bottom: 12px;
+				line-height: 20px;
+			}
+			& .card__action {
+				margin-bottom: 16px;
+			}
+		}
+
+		&--pa-project {
+			& .card__title {
+				margin-bottom: 16px;
 			}
 		}
 	}
@@ -1710,22 +1806,16 @@ input.disabled {
 				order: 4;
 			}
 		}
-
-		&--petition {
-			& .card__action {
-				margin-bottom:16px;
-			}
-		}
 	}
 }
 @media (min-width: 644px) and (max-width: 991.98px) {
 	.card-list {
-		& .card:not(.card--volunteer):not(.card--organizer):not(.card--petition) {
+		& .card:not(.card--volunteer):not(.card--organizer):not(.card--pa-default) {
 			width: calc((100% - 16px) / 2);
 		}
 	}
 	.card {
-		&--petition {
+		&--pa-default {
 			& .card__view {
 				&,
 				& picture,
@@ -1735,28 +1825,41 @@ input.disabled {
 					min-height: 95px;
 					height: 95px;
 				}
+			}
+			& .card__descr {
+				max-width: calc(100% - 130px - 16px);
+			}
+		}
+	}
+}
+@media (min-width: 644px) and (max-width: 1199.98px) {
+	.card {
+		gap: 16px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.card {
+		&--pa-default {
+			& .card__view {
+				&,
+				& picture,
+				& img {
+					min-width: 120px;
+					width: 120px;
+					min-height: 85px;
+					height: 85px;
+				}
+			}
+			& .card__descr {
+				max-width: calc(100% - 120px - 16px);
 			}
 		}
 	}
 }
 @media (min-width: 992px) and (max-width: 1290.98px) {
 	.card-list {
-		& .card:not(.card--volunteer):not(.card--organizer):not(.card--petition) {
+		& .card:not(.card--volunteer):not(.card--organizer):not(.card--pa-default) {
 			width: calc((100% - 24px) / 2);
-		}
-	}
-	.card {
-		&--petition {
-			& .card__view {
-				&,
-				& picture,
-				& img {
-					min-width: 130px;
-					width: 130px;
-					min-height: 95px;
-					height: 95px;
-				}
-			}
 		}
 	}
 }

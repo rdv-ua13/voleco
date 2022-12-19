@@ -59,7 +59,7 @@
             <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">10 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">19 + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">62 + ui (всего страниц в макете)</span>
         </span>
@@ -69,27 +69,31 @@
     <div>
         <ul>
             <?/*<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>*/?>
-            <li><a href="/build/index.php" target="_blank">Главная</a></li>
-            <li><a href="/build/organizer.php" target="_blank">Организаторам</a></li>
+            <li><a href="index.php" target="_blank">Главная</a></li>
+            <li><a href="organizer.php" target="_blank">Организаторам</a></li>
 
             <br>
-            <li><a href="/build/registration.php" target="_blank">Регистрация</a></li>
-            <li><a href="/build/auth.php" target="_blank">Авторизация</a></li>
-            <li><a href="/build/password-recovery.php" target="_blank">Восстановление пароля</a></li>
+            <li><a href="registration.php" target="_blank">Регистрация</a></li>
+            <li><a href="auth.php" target="_blank">Авторизация</a></li>
+            <li><a href="password-recovery.php" target="_blank">Восстановление пароля</a></li>
 
             <br>
-            <li><a href="/build/ms-ecodela.php" target="_blank">Экодела</a></li>
-            <li><a href="/build/ms-petitions.php" target="_blank">Петиции</a></li>
-            <li><a href="/build/ms-fundraising.php" target="_blank">Сбор средств</a></li>
-            <li><a href="/build/ms-projects.php" target="_blank">Проекты</a></li>
-            <li><a href="/build/ms-volunteer.php" target="_blank">Эковолонтеры</a></li>
-            <li><a href="/build/ms-organizer.php" target="_blank">Организаторы</a></li>
+            <li><a href="ms-ecodela.php" target="_blank">Экодела</a></li>
+            <li><a href="ms-petitions.php" target="_blank">Петиции</a></li>
+            <li><a href="ms-fundraising.php" target="_blank">Сбор средств</a></li>
+            <li><a href="ms-projects.php" target="_blank">Проекты</a></li>
+            <li><a href="ms-volunteer.php" target="_blank">Эковолонтеры</a></li>
+            <li><a href="ms-organizer.php" target="_blank">Организаторы</a></li>
 
             <br>
-            <li><a href="/build/lk-org-profile.php" target="_blank">ЛК Орг - профиль</a></li>
+            <li><a href="lk-org-profile.php" target="_blank">ЛК Орг - профиль</a></li>
+            <li><a href="lk-org-events.php" target="_blank">ЛК Орг - мероприятия</a></li>
+            <li><a href="lk-org-events-past.php" target="_blank">ЛК Орг - мероприятия (прошедшие)</a></li>
+            <li><a href="lk-org-petition.php" target="_blank">ЛК Орг - петиции</a></li>
+            <li><a href="lk-org-project.php" target="_blank">ЛК Орг - проекты</a></li> <!-- №19 -->
 
             <br>
-            <li><a href="/build/ui.php" target="_blank">ui</a></li>
+            <li><a href="ui.php" target="_blank">ui</a></li>
         </ul>
     </div>
     </body>

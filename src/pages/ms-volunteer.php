@@ -13,7 +13,7 @@
 				<div class="main-section__sidebar">
 					<div class="sidebar">sidebar</div>
 				</div>
-				<div class="main-section__page-content page-content">
+				<div class="main-section__page-content">
 					<div class="card-list">
                         <a href="javascript:;" class="card card--volunteer">
 							<span class="card__view">

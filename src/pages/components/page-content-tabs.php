@@ -3,12 +3,13 @@
         <div class="page-content-tabs swiper js-page-content-tabs">
             <div class="page-content-tabs__nav swiper-wrapper">
                 <? $arMenu = array (
-                    "test1.php" => "Профиль",
+                    "lk-org-profile.php" => "Профиль",
                     "test2.php" => "Заявки",
                     "test3.php" => "Учет времени",
-                    "test4.php" => "Экодела",
-                    "test5.php" => "Петиции",
-                    "test6.php" => "Проекты",
+                    "lk-org-events.php" => "Экодела",
+                    /*"lk-org-events-past.php" => "Экодела",*/
+                    "lk-org-petition.php" => "Петиции",
+                    "lk-org-project.php" => "Проекты",
                     "test7.php" => "Избранное",
                     "test8.php" => "Рейтинг и отзывы",
                     "test9.php" => "Права доступа",

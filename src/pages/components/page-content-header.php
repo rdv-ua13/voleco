@@ -1,6 +1,6 @@
 <div class="page-content__header">
 	<div class="page-content__cover">
-		<div class="page-content__cover-container">
+		<div class="container page-content__cover-container">
 			<picture>
 				<source srcset="img/lk-org-profile-cover.webp" type="image/webp">
 				<img

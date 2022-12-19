@@ -1,0 +1,121 @@
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
+
+<div class="block-mb">
+	<div class="page-content">
+		<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/page-content-header.php"); ?>
+
+		<div id="pageContentBody" class="page-content__body">
+			<div class="block-mb-md">
+				<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/page-content-tabs.php"); ?>
+			</div>
+
+			<div class="container">
+				<div class="page-content__container">
+					<div class="page-content__content-type">
+						<div class="tab-links-slider swiper js-main-section-tabs">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="lk-org-events.php#pageContentBody" class="tab-links-slider__link">Предстоящие экодела</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="lk-org-events-past.php#pageContentBody" class="tab-links-slider__link selected">Прошедшие экодела</a>
+								</div>
+							</div>
+						</div>
+						<div class="page-content__content-type-create">
+							<button class="btn-reset btn">
+								<svg class="icon btn__icon">
+									<use href="img/sprite.svg#plus"></use>
+								</svg>
+								<span class="btn__text">Создать экодело</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="page-content__main">
+						<div class="card-list card-list-column">
+                            <a href="javascript:;" class="card card--pa-default">
+                                <span class="card__view">
+                                    <picture>
+                                        <source srcset="img/card-photo-events.webp" type="image/webp">
+                                        <img loading="lazy" src="img/card-photo-events.png" class="image" width="260" height="190" alt="Фото карточки">
+                                    </picture>
+                                </span>
+                                <span class="card__descr">
+                                    <span class="card__tag-bar tag-bar">
+                                        <span class="tag">
+                                            <span class="tag__content-bg" style="
+                                                    border-color: var(--accent-purple4-color);
+                                                    background-color: var(--accent-purple8-color);"></span>
+                                            <span class="tag__content">
+                                                <svg class="icon tag__content-icon" style="fill: var(--accent-purple2-color);">
+                                                    <use href="img/sprite.svg#tag-sport"></use>
+                                                </svg>
+                                                <span class="tag__content-text" style="color: var(--accent-purple2-color);">спорт</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО </span>
+                                    <span class="card__action">
+                                        <span class="card__action-data">
+                                            <span class="card__action-item">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                </svg>
+                                                <span class="card__action-item-text">г. Москва</span>
+                                            </span>
+                                            <span class="card__action-item">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#calendar"></use>
+                                                </svg>
+                                                <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="card__contact-btn">
+                                        <button class="btn-reset btn btn--fill btn--mini">
+                                            <svg class="icon btn__icon">
+                                                <use href="img/sprite.svg#edit"></use>
+                                            </svg>
+                                            <span class="btn__text">Редактировать</span>
+                                        </button>
+                                        <?/* todo: заглушка, блок доработаю */?>
+                                        <span class="card__contact-btn-more card-contact-btn-more">
+                                            <button class="btn-reset btn btn--fill btn--mini btn--gray card-contact-btn-more__menu js-card-contact-btn-more-menu">
+                                                <svg class="icon btn__icon">
+                                                    <use href="img/sprite.svg#menu-more"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="btn-reset btn btn--fill btn--mini btn--gray">
+                                                <svg class="icon btn__icon">
+                                                    <use href="img/sprite.svg#download"></use>
+                                                </svg>
+                                                <span class="btn__text">Участники</span>
+                                            </button>
+                                            <button class="btn-reset btn btn--fill btn--mini btn--gray">
+                                                <svg class="icon btn__icon">
+                                                    <use href="img/sprite.svg#copy"></use>
+                                                </svg>
+                                                <span class="btn__text">Дублировать</span>
+                                            </button>
+                                            <button class="btn-reset btn btn--fill btn--mini btn--gray">
+                                                <svg class="icon btn__icon">
+                                                    <use href="img/sprite.svg#trash"></use>
+                                                </svg>
+                                                <span class="btn__text">Удалить</span>
+                                            </button>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+
+						</div>
+					</div>
+					<div class="page-content__sidebar">sidebar</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/footer.php"); ?>
