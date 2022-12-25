@@ -1,4 +1,4 @@
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/' . 'components/header.php'); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . '/markup/' . 'components/header.php'); ?>
 
 <div class="block-mb">
     <div class="container">
@@ -21,36 +21,6 @@
 <div class="block-mb">
     <div class="container">
         <div class="basic-slider-wrapper">
-            <!--<div class="block-header block-header-control">
-                <div class="block-header-title block-header__title">
-                    <div class="h2 block-header-title__content">Экодела рядом с вами</div>
-                    <div class="block-header-title__addition">
-                        <button class="btn-reset btn btn--noframe btn--tdu-dashed">
-                            <svg class="icon">
-                                <use href="img/sprite.svg#location"></use>
-                            </svg>
-                            <span class="btn__text">Санкт-Петербург</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="block-header__action">
-                    <div class="block-header__action-slider-nav swiper-navigation">
-                        <div class="swiper-button-prev">
-                            <svg class="icon">
-                                <use href="/build/img/sprite.svg#arrow-down"></use>
-                            </svg>
-                        </div>
-                        <div class="swiper-button-next">
-                            <svg class="icon">
-                                <use href="/build/img/sprite.svg#arrow-down"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="block-header__functional-bar">
-                    <div class="tags">tags</div>
-                </div>
-            </div>-->
             <div class="slider" style="display: none;">
                 <div class="card">
                     <div class="card__view">
@@ -104,4 +74,4 @@
     </div>
 </div>
 
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/' . 'components/footer.php'); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . '/markup/' . 'components/footer.php'); ?>

@@ -25,7 +25,8 @@ application.prototype.init = function () {
     this.initTagbarSlider();
     this.initHandlerCurrentUser();
     this.initSelect2();
-    this.initDropfiles();
+    /*this.initDropfiles();*/
+    this.initTagSelected();
 };
 
 // Init tabs
@@ -262,7 +263,6 @@ application.prototype.initHandlerCurrentUser = function () {
         $(document).on("click", function (e) {
             if (!$(".js-current-user-menu").is(e.target) && !$(".current-user__dropdown-menu").is(e.target)) {
                 $(".js-current-user-menu").removeClass("open");
-                console.log("success");
             }
         });
     }
@@ -344,4 +344,17 @@ application.prototype.initDropfiles = function () {
     dropzone.addEventListener("dragover", dragoverHandler, false);
     dropzone.addEventListener("dragleave", dragleaveHandler, false);
     dropzone.addEventListener("drop", dropHandler, false)
+};
+// Initialization tag selected
+application.prototype.initTagSelected = function () {
+    if ($("label.tag").length) {
+        $("label.tag").on("click", function () {
+            let elemInput = $(this).find("input[type='checkbox']");
+            if(!elemInput.is(":checked")) {
+                $(this).removeClass("selected");
+            } else if(elemInput.is(":checked")) {
+                $(this).addClass("selected");
+            }
+        });
+    }
 };

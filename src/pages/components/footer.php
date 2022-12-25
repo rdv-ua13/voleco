@@ -122,5 +122,26 @@
             </div>
         </div>
     </footer>
+
+	<? if(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")) : ?>
+        <div class="page-content-settings-bar">
+            <div class="container page-content-settings-bar__container">
+                <div class="page-content-settings-bar__action">
+                    <button class="btn-reset btn btn--fill">
+                        <span class="btn__text">Сохранить</span>
+                    </button>
+                </div>
+                <div class="page-content-settings-bar__cancel">
+                    <button class="btn-reset btn btn--noframe">
+                        <span class="btn__text">Отменить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+	<? endif; ?>
+
+	<?/*<script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>*/?>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

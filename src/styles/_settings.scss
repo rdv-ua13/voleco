@@ -2022,9 +2022,10 @@ input.disabled {
 	cursor: pointer;
 	transition: 0.16s ease-out;
 
-	&:hover {
+	&:hover,
+	&.selected {
 		& .tag__content-bg {
-			opacity: 0.6;
+			opacity: 1;
 		}
 	}
 	&__content-bg {
@@ -2036,6 +2037,7 @@ input.disabled {
 		left: 0;
 		border: 1px solid transparent;
 		border-radius: 6px;
+		opacity: 0.6;
 		transition: 0.16s ease-out;
 	}
 	&__content {

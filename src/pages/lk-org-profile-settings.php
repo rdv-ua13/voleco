@@ -26,16 +26,16 @@
                                     <div class="page-content__section-item-title">
                                         Обложка
                                         <span class="tooltip">
-                                                <span class="btn-reset tooltip__btn" aria-describedby="id1">
-                                                    <svg class="icon">
-                                                        <use href="img/sprite.svg#tooltip"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="tooltip__txt" role="tooltip" id="id1">
-                                                    <span class="visually-hidden">Тултип: </span>
-                                                    Текст
-                                                </span>
+                                            <span class="btn-reset tooltip__btn" aria-describedby="id1">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                </svg>
                                             </span>
+                                            <span class="tooltip__txt" role="tooltip" id="id1">
+                                                <span class="visually-hidden">Тултип: </span>
+                                                Текст
+                                            </span>
+                                        </span>
                                     </div>
                                     <div class="form__field">
                                         <div id="dropfile" class="dropfile">
@@ -66,16 +66,16 @@
                                     <div class="page-content__section-item-title">
                                         Аватар
                                         <span class="tooltip">
-                                                <span class="btn-reset tooltip__btn" aria-describedby="id1">
-                                                    <svg class="icon">
-                                                        <use href="img/sprite.svg#tooltip"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="tooltip__txt" role="tooltip" id="id1">
-                                                    <span class="visually-hidden">Тултип: </span>
-                                                    Текст
-                                                </span>
+                                            <span class="btn-reset tooltip__btn" aria-describedby="id1">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                </svg>
                                             </span>
+                                            <span class="tooltip__txt" role="tooltip" id="id1">
+                                                <span class="visually-hidden">Тултип: </span>
+                                                Текст
+                                            </span>
+                                        </span>
                                     </div>
                                     <div class="form__field">
                                         <div id="dropfile" class="dropfile dropfile--avatar">
@@ -108,16 +108,16 @@
                                     <div class="page-content__section-item-title">
                                         Видео-заставка
                                         <span class="tooltip">
-                                                <span class="btn-reset tooltip__btn" aria-describedby="id1">
-                                                    <svg class="icon">
-                                                        <use href="img/sprite.svg#tooltip"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="tooltip__txt" role="tooltip" id="id1">
-                                                    <span class="visually-hidden">Тултип: </span>
-                                                    Текст
-                                                </span>
+                                            <span class="btn-reset tooltip__btn" aria-describedby="id1">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                </svg>
                                             </span>
+                                            <span class="tooltip__txt" role="tooltip" id="id1">
+                                                <span class="visually-hidden">Тултип: </span>
+                                                Текст
+                                            </span>
+                                        </span>
                                     </div>
                                     <div class="form__field">
                                         <input id=""
@@ -125,7 +125,6 @@
                                                type="url"
                                                name=""
                                                placeholder="https://youtube.com/"
-                                               required
                                         >
                                         <div class="form__btn">
                                             <svg class="icon">
@@ -215,23 +214,24 @@
                                         <span>Описание <span class="required-star">*</span></span>
                                     </div>
                                     <div class="form__field">
-                                            <textarea
-                                                    id=""
-                                                    class="input-reset form__input form__input--textarea"
-                                                    name=""
-                                                    placeholder="Введите описание"
-                                            ></textarea>
+                                        <textarea
+                                                id=""
+                                                class="input-reset form__input form__input--textarea"
+                                                name=""
+                                                placeholder="Введите описание"
+                                                required
+                                        ></textarea>
                                     </div>
                                 </div>
                                 <div class="page-content__section-item">
                                     <div class="page-content__section-item-title">Код для встраивания Google Форм</div>
                                     <div class="form__field">
-                                            <textarea
-                                                    id=""
-                                                    class="input-reset form__input form__input--textarea"
-                                                    name=""
-                                                    placeholder="Вставьте код"
-                                            ></textarea>
+                                        <textarea
+                                                id=""
+                                                class="input-reset form__input form__input--textarea"
+                                                name=""
+                                                placeholder="Вставьте код"
+                                        ></textarea>
                                     </div>
                                 </div>
                                 <div class="page-content__section-item">
@@ -239,12 +239,13 @@
                                         <span>Результаты <span class="required-star">*</span></span>
                                     </div>
                                     <div class="form__field">
-                                            <textarea
-                                                    id=""
-                                                    class="input-reset form__input form__input--textarea"
-                                                    name=""
-                                                    placeholder="Укажите результаты деятельности организации"
-                                            ></textarea>
+                                        <textarea
+                                                id=""
+                                                class="input-reset form__input form__input--textarea"
+                                                name=""
+                                                placeholder="Укажите результаты деятельности организации"
+                                                required
+                                        ></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -256,119 +257,160 @@
                                     <div class="page-content__section-item-title">
                                         <span>Выберите интересующие направления волонтёрства <span class="required-star">*</span></span>
                                         <span class="tooltip">
-                                                <span class="btn-reset tooltip__btn" aria-describedby="id1">
-                                                    <svg class="icon">
-                                                        <use href="img/sprite.svg#tooltip"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="tooltip__txt" role="tooltip" id="id1">
-                                                    <span class="visually-hidden">Тултип: </span>
-                                                    Текст
-                                                </span>
+                                            <span class="btn-reset tooltip__btn" aria-describedby="id1">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                </svg>
                                             </span>
+                                            <span class="tooltip__txt" role="tooltip" id="id1">
+                                                <span class="visually-hidden">Тултип: </span>
+                                                Текст
+                                            </span>
+                                        </span>
                                     </div>
                                     <div class="form__field">
-                                        <input id="" class="visually-hidden" type="text">
                                         <span class="tag-bar">
-                                                <span class="tag">
-                                                    <span
-                                                            class="tag__content-bg"
-                                                            style="
-                                                            border-color: var(--text6-color);
-                                                            background-color: var(--text8-color);"
-                                                    ></span>
-                                                    <span class="tag__content">
-                                                        <svg class="icon tag__content-icon" style="fill: var(--text6-color);">
-                                                            <use href="img/sprite.svg#tag-all"></use>
-                                                        </svg>
-                                                        <span class="tag__content-text" style="color: var(--text6-color);">все</span>
-                                                    </span>
+                                            <label class="tag">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="checkbox"
+                                                        name="PROP[TAGS][all]"
+                                                        value="0"
+                                                >
+                                                <span
+                                                        class="tag__content-bg"
+                                                        style="
+                                                        border-color: var(--text6-color);
+                                                        background-color: var(--text8-color);"
+                                                ></span>
+                                                <span class="tag__content">
+                                                    <svg class="icon tag__content-icon" style="fill: var(--text6-color);">
+                                                        <use href="img/sprite.svg#tag-all"></use>
+                                                    </svg>
+                                                    <span class="tag__content-text" style="color: var(--text6-color);">все</span>
                                                 </span>
-                                                <span class="tag">
-                                                    <span
-                                                            class="tag__content-bg"
-                                                            style="
-                                                            border-color: var(--success6-color);
-                                                            background-color: var(--success8-color);"
-                                                    ></span>
-                                                    <span class="tag__content">
-                                                        <svg class="icon tag__content-icon" style="fill: var(--success4-color);">
-                                                            <use href="img/sprite.svg#tag-nature"></use>
-                                                        </svg>
-                                                        <span class="tag__content-text" style="color: var(--success4-color);">Природа</span>
-                                                    </span>
+                                            </label>
+                                            <label class="tag">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="checkbox"
+                                                        name="PROP[TAGS][nature]"
+                                                        value="0"
+                                                >
+                                                <span
+                                                        class="tag__content-bg"
+                                                        style="
+                                                        border-color: var(--success6-color);
+                                                        background-color: var(--success8-color);"
+                                                ></span>
+                                                <span class="tag__content">
+                                                    <svg class="icon tag__content-icon" style="fill: var(--success4-color);">
+                                                        <use href="img/sprite.svg#tag-nature"></use>
+                                                    </svg>
+                                                    <span class="tag__content-text" style="color: var(--success4-color);">Природа</span>
                                                 </span>
-                                                <span class="tag">
-                                                    <span
-                                                            class="tag__content-bg"
-                                                            style="
-                                                            border-color: var(--accent-purple4-color);
-                                                            background-color: var(--accent-purple8-color);"
-                                                    ></span>
-                                                    <span class="tag__content">
-                                                        <svg class="icon tag__content-icon" style="fill: var(--accent-purple2-color);">
-                                                            <use href="img/sprite.svg#tag-sport"></use>
-                                                        </svg>
-                                                        <span class="tag__content-text" style="color: var(--accent-purple2-color);">спорт</span>
-                                                    </span>
+                                            </label>
+                                            <label class="tag">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="checkbox"
+                                                        name="PROP[TAGS][sport]"
+                                                        value="0"
+                                                >
+                                                <span
+                                                        class="tag__content-bg"
+                                                        style="
+                                                        border-color: var(--accent-purple4-color);
+                                                        background-color: var(--accent-purple8-color);"
+                                                ></span>
+                                                <span class="tag__content">
+                                                    <svg class="icon tag__content-icon" style="fill: var(--accent-purple2-color);">
+                                                        <use href="img/sprite.svg#tag-sport"></use>
+                                                    </svg>
+                                                    <span class="tag__content-text" style="color: var(--accent-purple2-color);">спорт</span>
                                                 </span>
-                                                <span class="tag">
-                                                    <span
-                                                            class="tag__content-bg"
-                                                            style="
-                                                            border-color: var(--accent-ceruleanblue1-color);
-                                                            background-color: var(--accent-ceruleanblue8-color);"
-                                                    ></span>
-                                                    <span class="tag__content">
-                                                        <svg class="icon tag__content-icon" style="fill: var(--accent-ceruleanblue1-color);">
-                                                            <use href="img/sprite.svg#tag-building"></use>
-                                                        </svg>
-                                                        <span class="tag__content-text" style="color: var(--accent-ceruleanblue1-color);">Урбанизация</span>
-                                                    </span>
+                                            </label>
+                                            <label class="tag">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="checkbox"
+                                                        name="PROP[TAGS][urban]"
+                                                        value="0"
+                                                >
+                                                <span
+                                                        class="tag__content-bg"
+                                                        style="
+                                                        border-color: var(--accent-ceruleanblue1-color);
+                                                        background-color: var(--accent-ceruleanblue8-color);"
+                                                ></span>
+                                                <span class="tag__content">
+                                                    <svg class="icon tag__content-icon" style="fill: var(--accent-ceruleanblue1-color);">
+                                                        <use href="img/sprite.svg#tag-building"></use>
+                                                    </svg>
+                                                    <span class="tag__content-text" style="color: var(--accent-ceruleanblue1-color);">Урбанизация</span>
                                                 </span>
-                                                <span class="tag">
-                                                    <span
-                                                            class="tag__content-bg"
-                                                            style="
-                                                            border-color: var(--error4-color);
-                                                            background-color: var(--error9-color);"
-                                                    ></span>
-                                                    <span class="tag__content">
-                                                        <svg class="icon tag__content-icon" style="fill: var(--error4-color);">
-                                                            <use href="img/sprite.svg#tag-alarm"></use>
-                                                        </svg>
-                                                        <span class="tag__content-text" style="color: var(--error4-color);">ЧС</span>
-                                                    </span>
+                                            </label>
+                                            <label class="tag">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="checkbox"
+                                                        name="PROP[TAGS][alarm]"
+                                                        value="0"
+                                                >
+                                                <span
+                                                        class="tag__content-bg"
+                                                        style="
+                                                        border-color: var(--error4-color);
+                                                        background-color: var(--error9-color);"
+                                                ></span>
+                                                <span class="tag__content">
+                                                    <svg class="icon tag__content-icon" style="fill: var(--error4-color);">
+                                                        <use href="img/sprite.svg#tag-alarm"></use>
+                                                    </svg>
+                                                    <span class="tag__content-text" style="color: var(--error4-color);">ЧС</span>
                                                 </span>
-                                                <span class="tag">
-                                                    <span
-                                                            class="tag__content-bg"
-                                                            style="
-                                                            border-color: var(--warning5-color);
-                                                            background-color: var(--warning8-color);"
-                                                    ></span>
-                                                    <span class="tag__content">
-                                                        <svg class="icon tag__content-icon" style="fill: var(--warning3-color);">
-                                                            <use href="img/sprite.svg#tag-pets"></use>
-                                                        </svg>
-                                                        <span class="tag__content-text" style="color: var(--warning3-color);">Животные</span>
-                                                    </span>
+                                            </label>
+                                            <label class="tag">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="checkbox"
+                                                        name="PROP[TAGS][animal]"
+                                                        value="0"
+                                                >
+                                                <span
+                                                        class="tag__content-bg"
+                                                        style="
+                                                        border-color: var(--warning5-color);
+                                                        background-color: var(--warning8-color);"
+                                                ></span>
+                                                <span class="tag__content">
+                                                    <svg class="icon tag__content-icon" style="fill: var(--warning3-color);">
+                                                        <use href="img/sprite.svg#tag-pets"></use>
+                                                    </svg>
+                                                    <span class="tag__content-text" style="color: var(--warning3-color);">Животные</span>
                                                 </span>
-                                                <span class="tag">
-                                                    <span
-                                                            class="tag__content-bg"
-                                                            style="
-                                                            border-color: var(--info5-color);
-                                                            background-color: var(--info8-color);"
-                                                    ></span>
-                                                    <span class="tag__content">
-                                                        <svg class="icon tag__content-icon" style="fill: var(--info3-color);">
-                                                            <use href="img/sprite.svg#tag-science"></use>
-                                                        </svg>
-                                                        <span class="tag__content-text" style="color: var(--info3-color);">Наука</span>
-                                                    </span>
+                                            </label>
+                                            <label class="tag">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="checkbox"
+                                                        name="PROP[TAGS][science]"
+                                                        value="0"
+                                                >
+                                                <span
+                                                        class="tag__content-bg"
+                                                        style="
+                                                        border-color: var(--info5-color);
+                                                        background-color: var(--info8-color);"
+                                                ></span>
+                                                <span class="tag__content">
+                                                    <svg class="icon tag__content-icon" style="fill: var(--info3-color);">
+                                                        <use href="img/sprite.svg#tag-science"></use>
+                                                    </svg>
+                                                    <span class="tag__content-text" style="color: var(--info3-color);">Наука</span>
                                                 </span>
-                                            </span>
+                                            </label>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -454,7 +496,6 @@
                                                type="url"
                                                name=""
                                                placeholder="https://youtube.com/"
-                                               required
                                         >
                                         <div class="form__btn">
                                             <svg class="icon">
@@ -468,7 +509,6 @@
                                                type="url"
                                                name=""
                                                placeholder="https://youtube.com/"
-                                               required
                                         >
                                         <div class="form__btn">
                                             <svg class="icon">
