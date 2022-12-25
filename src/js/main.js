@@ -27,6 +27,8 @@ application.prototype.init = function () {
     this.initSelect2();
     /*this.initDropfiles();*/
     this.initTagSelected();
+    this.initMaskedInput();
+    this.initAddList();
 };
 
 // Init tabs
@@ -270,9 +272,7 @@ application.prototype.initHandlerCurrentUser = function () {
 // Initialization select2 plagin
 application.prototype.initSelect2 = function () {
     if ($(".js-select2").length) {
-        $(".js-select2").select2({
-            minimumResultsForSearch: -1
-        });
+        $(".js-select2").select2();
     }
 };
 // Initialization drop files
@@ -355,6 +355,20 @@ application.prototype.initTagSelected = function () {
             } else if(elemInput.is(":checked")) {
                 $(this).addClass("selected");
             }
+        });
+    }
+};
+// Mobile number mask
+application.prototype.initMaskedInput = function () {
+    $(".isPhone").mask("+7 (999) 999-99-99", { autoclear: false });
+};
+// Mobile number mask
+application.prototype.initAddList = function () {
+    if ($(".js-add-list").length) {
+        $(".js-add-list .add-list__item").each(function (e) {
+            $(this).find(".add-list__delete").on("click", function () {
+                $(this).closest(".add-list__item").remove();
+            });
         });
     }
 };

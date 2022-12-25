@@ -59,7 +59,7 @@
             <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">20 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">23 + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">62 + ui (всего страниц в макете)</span>
         </span>
@@ -93,7 +93,10 @@
             <li><a href="lk-org-project.php" target="_blank">ЛК Орг - проекты</a></li>
 
             <br>
-            <li><a href="lk-org-profile-settings.php" target="_blank">ЛК Орг - настройки профиля</a></li><!-- №20 -->
+            <li><a href="lk-org-profile-settings.php" target="_blank">ЛК Орг - настройки профиля</a></li>
+            <li><a href="lk-org-create-project-settings.php" target="_blank">ЛК Орг - создать проект</a></li>
+            <li><a href="lk-org-create-ecodelo-settings.php" target="_blank">ЛК Орг - создать экодело</a></li>
+            <li><a href="lk-org-create-ecodelo-task-settings.php" target="_blank">ЛК Орг - создать экодело-задачи</a></li><!-- №23 -->
 
             <br>
             <li><a href="ui.php" target="_blank">ui</a></li>

@@ -663,6 +663,20 @@
                 <div class="flex-v-center" style="max-width: 500px;">
                     <!--ui content-->
                     <span class="tag-bar">
+                        <span class="tag" style="cursor: not-allowed;">
+                            <span
+                                    class="tag__content-bg"
+                                    style="
+                                    border-color: var(--text8-color);
+                                    background-color: var(--text8-color);"
+                            ></span>
+                            <span class="tag__content">
+                                <svg class="icon tag__content-icon" style="fill: var(--text5-color);">
+                                    <use href="img/sprite.svg#tag-all"></use>
+                                </svg>
+                                <span class="tag__content-text" style="color: var(--text5-color);">disabled</span>
+                            </span>
+                        </span>
                         <span class="tag">
                             <span
                                     class="tag__content-bg"

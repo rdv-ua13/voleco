@@ -123,13 +123,23 @@
         </div>
     </footer>
 
-	<? if(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")) : ?>
+	<? if(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-project-settings.php")) : ?>
         <div class="page-content-settings-bar">
             <div class="container page-content-settings-bar__container">
                 <div class="page-content-settings-bar__action">
-                    <button class="btn-reset btn btn--fill">
-                        <span class="btn__text">Сохранить</span>
-                    </button>
+                    <? if(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")) : ?>
+                        <button class="btn-reset btn btn--fill">
+                            <span class="btn__text">Сохранить</span>
+                        </button>
+					<? elseif(strpos($_SERVER["REQUEST_URI"], "lk-org-create-project-settings.php")) : ?>
+                        <button class="btn-reset btn btn--fill">
+                            <span class="btn__text">Сохранить и создать экодело в проекте</span>
+                        </button>
+                        <button class="btn-reset btn btn--fill btn--gray">
+                            <span class="btn__text">Сохранить</span>
+                        </button>
+                    <? endif; ?>
                 </div>
                 <div class="page-content-settings-bar__cancel">
                     <button class="btn-reset btn btn--noframe">

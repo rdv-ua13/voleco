@@ -117,6 +117,7 @@
 
 .page-content-tabs-wrapper {
 	position: relative;
+	width: 100%;
 
 	&::before {
 		content: "";
@@ -311,6 +312,9 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+	&__heading {
+		flex: 1 0 100%;
+	}
 	&__main {
 		flex: 1;
 	}
@@ -322,8 +326,27 @@
 			&:not(:last-child) {
 				margin-bottom: 12px;
 			}
+			& > span {
+				display: flex;
+				align-items: center;
+			}
 			& .tooltip {
 				margin-left: 4px;
+			}
+		}
+		&-item-date {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 12px;
+
+			& .page-content__section-subitem {
+				min-width: 0;
+			}
+			& .page-content__section-subitem-option {
+				display: flex;
+				align-items: center;
+				flex: 1;
+				color: var(--text5-color);
 			}
 		}
 	}
@@ -411,14 +434,38 @@
 		&__preview {
 			border-radius: 16px;
 		}
-		&__section {
-			&-item {
-				margin-bottom: 36px;
-			}
-		}
 		&__heading {
+			&:not(:last-child) {
+				margin-bottom: 48px;
+			}
 			&-back {
 				display: none;
+			}
+		}
+		&__section {
+			&:not(:last-child) {
+				margin-bottom: 60px;
+			}
+			&-item {
+				&:not(:last-child) {
+					margin-bottom: 36px;
+				}
+			}
+			&-item-date {
+				align-items: center;
+
+				& .page-content__section-subitem--average {
+					min-width: calc(((100% - 36px) / 4) * 2 + 12px);
+					width: calc(((100% - 36px) / 4) * 2 + 12px);
+				}
+				& .page-content__section-subitem--small {
+					min-width: calc((100% - 36px) / 4);
+					width: calc((100% - 36px) / 4);
+				}
+				& .page-content__section-subitem-option {
+					justify-content: flex-end;
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -546,6 +593,8 @@
 }
 @media (max-width: 767.98px) {
 	.page-content {
+		padding-top: 16px;
+
 		&__header {
 			margin-bottom: 8px;
 		}
@@ -629,9 +678,30 @@
 		&__preview {
 			border-radius: 8px;
 		}
+		&__heading {
+			&:not(:last-child) {
+				margin-bottom: 32px;
+			}
+			&-back {
+				padding: 8px;
+			}
+		}
 		&__section {
 			&-item {
 				margin-bottom: 20px;
+			}
+			&-item-date {
+				& .page-content__section-subitem--average {
+					min-width: 100%;
+					width: 100%;
+				}
+				& .page-content__section-subitem--small {
+					min-width: calc((100% - 12px) / 2);
+					width: calc((100% - 12px) / 2);
+				}
+				& .page-content__section-subitem-option {
+					font-size: 13px;
+				}
 			}
 		}
 		&__heading {
@@ -815,6 +885,7 @@
 			padding: 16px 24px;
 		}
 		&-descr {
+			align-items: center;
 			gap: 24px;
 
 			&__title {

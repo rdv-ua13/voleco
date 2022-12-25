@@ -5,19 +5,17 @@
 		<div class="page-content__body">
 			<div class="container">
 				<div class="page-content__container page-content__container--settings">
-					<div class="page-content__main">
-                        <div class="block-mb-md-plus">
-                            <div class="page-content__heading">
-                                <div class="page-content__heading-back">
-                                    <button class="btn-reset btn btn--noframe">
-                                        <svg class="icon btn__icon">
-                                            <use href="img/sprite.svg#standart-arrow-left"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="h2">Настройки профиля организатора</div>
-                            </div>
+                    <div class="page-content__heading">
+                        <div class="page-content__heading-back">
+                            <button class="btn-reset btn btn--noframe">
+                                <svg class="icon btn__icon">
+                                    <use href="img/sprite.svg#standart-arrow-left"></use>
+                                </svg>
+                            </button>
                         </div>
+                        <div class="h2">Настройки профиля организатора</div>
+                    </div>
+					<div class="page-content__main">
                         <form class="form form--profile-settings" action="">
                             <div class="page-content__section">
                                 <div class="block-mb-md h4">Основная информация</div>
