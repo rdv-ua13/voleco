@@ -59,7 +59,7 @@
             <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">19 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">20 + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">62 + ui (всего страниц в макете)</span>
         </span>
@@ -90,7 +90,10 @@
             <li><a href="lk-org-events.php" target="_blank">ЛК Орг - мероприятия</a></li>
             <li><a href="lk-org-events-past.php" target="_blank">ЛК Орг - мероприятия (прошедшие)</a></li>
             <li><a href="lk-org-petition.php" target="_blank">ЛК Орг - петиции</a></li>
-            <li><a href="lk-org-project.php" target="_blank">ЛК Орг - проекты</a></li> <!-- №19 -->
+            <li><a href="lk-org-project.php" target="_blank">ЛК Орг - проекты</a></li>
+
+            <br>
+            <li><a href="lk-org-profile-settings.php" target="_blank">ЛК Орг - настройки профиля</a></li><!-- №20 -->
 
             <br>
             <li><a href="ui.php" target="_blank">ui</a></li>

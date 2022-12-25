@@ -121,6 +121,7 @@ const libsJsBuild = () => {
             'node_modules/jquery-validation/dist/localization/messages_ru.js',
             'node_modules/bs-stepper/dist/js/bs-stepper.js',
             'node_modules/graph-tabs/dist/graph-tabs.min.js',
+            'node_modules/select2/dist/js/select2.js',
         ]
     )
         .pipe(concat("libs.min.js"))

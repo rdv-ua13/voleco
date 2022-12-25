@@ -30,7 +30,7 @@
             </div>
             <div class="form__field">
                 <label for="authFormPassword" class="form__label-for">
-                    Пароль <span class="required-star">*</span>
+                    <span>Пароль <span class="required-star">*</span></span>
                 </label>
                 <input
                         id="authFormPassword"

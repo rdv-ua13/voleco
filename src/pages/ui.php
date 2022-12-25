@@ -1145,6 +1145,7 @@
 
     <br>
     <br>
+
     <h3 class="text-center">Cards</h3>
     <div class="container-ui">
         <div class="col-ui">
@@ -1462,6 +1463,46 @@
         </div>
     </div>
 
+    <br>
+    <br>
+
+    <h3 class="text-center">Select (select2)</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            select class="input-reset form__input form__input--select js-select2"
+            <div class="row-ui ">
+                <div class="flex-v-center" style="width: 100%;">
+                    <!--start ui content-->
+                    <form id="" class="form authreg-form" method="POST" action="">
+                        <div class="form__field">
+                            <label for="regFormVolunteerEmail" class="form__label-for">
+                                Селект <span class="required-star">*</span>
+                            </label>
+                            <select
+                                    name=""
+                                    id=""
+                                    class="input-reset form__input form__input--select js-select2"
+                            >
+                                <option value="0">option 1</option>
+                                <option value="1">option 2</option>
+                                <option value="2">option 3</option>
+                            </select>
+                            <div class="form__btn">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#arrow-dropdown"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </form>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
     <br>
     <br>
 

@@ -24,6 +24,8 @@ application.prototype.init = function () {
     this.initCardFavorite();
     this.initTagbarSlider();
     this.initHandlerCurrentUser();
+    this.initSelect2();
+    this.initDropfiles();
 };
 
 // Init tabs
@@ -264,4 +266,82 @@ application.prototype.initHandlerCurrentUser = function () {
             }
         });
     }
+};
+// Initialization select2 plagin
+application.prototype.initSelect2 = function () {
+    if ($(".js-select2").length) {
+        $(".js-select2").select2({
+            minimumResultsForSearch: -1
+        });
+    }
+};
+// Initialization drop files
+application.prototype.initDropfiles = function () {
+    const fileinput = document.getElementById("dropfile-input");
+    const dropzone = document.getElementById("dropfile-area");
+    const cleargallery = document.getElementById("dropfile-gallery-clear");
+    const gallery = document.getElementById("dropfile-gallery-list");
+
+    function stopPropagationAndPreventDefault(e) {
+        e.stopPropagation();
+        e.preventDefault();
+    }
+
+    function handleFileAndAppend(file) {
+        if (!file.type.startsWith("image/")) {
+            console.log("not an image");
+            return;
+        }
+
+        const imgElement = document.createElement("img");
+        imgElement.file = file;
+        console.log(imgElement);
+        if (gallery.firstChild) {
+            gallery.prepend(imgElement, gallery.firstChild);
+        } else {
+            gallery.appendChild(imgElement);
+        }
+
+        dropzone.classList.remove("dragging");
+
+        const fileReader = new FileReader();
+        fileReader.onload = ((img) => (e) => {img.src = e.target.result;})(imgElement);
+        fileReader.readAsDataURL(file);
+        console.log(fileReader);
+    }
+
+    function clearGalleryHandler(e) {
+        stopPropagationAndPreventDefault(e);
+        while (gallery.firstChild) {
+            gallery.removeChild(gallery.firstChild);
+        }
+    }
+
+    function dropHandler(e) {
+        stopPropagationAndPreventDefault(e);
+        const file = e.dataTransfer.files[0];
+        handleFileAndAppend(file);
+    }
+
+    function fileInputHandler(e) {
+        const file = this.files[0];
+        handleFileAndAppend(file);
+    }
+
+    function dragoverHandler(e) {
+        stopPropagationAndPreventDefault(e);
+        dropzone.classList.add("dragging");
+    }
+
+    function dragleaveHandler(e) {
+        stopPropagationAndPreventDefault(e);
+        dropzone.classList.remove("dragging");
+    }
+
+    cleargallery.addEventListener("click", clearGalleryHandler, false);
+    fileinput.addEventListener("change", fileInputHandler, false);
+    dropzone.addEventListener("dragenter", stopPropagationAndPreventDefault, false);
+    dropzone.addEventListener("dragover", dragoverHandler, false);
+    dropzone.addEventListener("dragleave", dragleaveHandler, false);
+    dropzone.addEventListener("drop", dropHandler, false)
 };

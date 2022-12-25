@@ -53,6 +53,7 @@
     "jquery.maskedinput": "^1.4.1",
     "just-validate": "^3.3.3",
     "rellax": "^1.12.1",
+    "select2": "^4.1.0-rc.0",
     "simplebar": "^5.3.6",
     "smartwizard": "^6.0.6",
     "smooth-scroll": "^16.1.3",

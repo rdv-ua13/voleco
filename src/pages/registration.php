@@ -37,7 +37,7 @@
                                 <form id="" class="form authreg-form" method="POST" action="">
                                     <div class="form__field">
                                         <label for="regFormVolunteerEmail" class="form__label-for">
-                                            Электронная почта <span class="required-star">*</span>
+                                            <span>Электронная почта <span class="required-star">*</span></span>
                                         </label>
                                         <input
                                                 id="regFormVolunteerEmail"
@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="form__field">
                                         <label for="regFormVolunteerPassword" class="form__label-for">
-                                            Пароль <span class="required-star">*</span>
+                                            <span>Пароль <span class="required-star">*</span></span>
                                         </label>
                                         <input
                                                 id="regFormVolunteerPassword"
@@ -73,7 +73,7 @@
                                     </div>
                                     <div class="form__field">
                                         <label for="regFormVolunteerRepeatPassword" class="form__label-for">
-                                            Повторите пароль <span class="required-star">*</span>
+                                            <span>Повторите пароль <span class="required-star">*</span></span>
                                         </label>
                                         <input
                                                 id="regFormVolunteerRepeatPassword"
@@ -108,7 +108,7 @@
                                 <form id="" class="form authreg-form" method="" action="javascript:;">
                                     <div class="form__field">
                                         <label for="regFormOrganizerCompany" class="form__label-for">
-                                            Название организации <span class="required-star">*</span>
+                                            <span>Название организации <span class="required-star">*</span></span>
                                         </label>
                                         <input
                                                 id="regFormOrganizerCompany"
@@ -121,7 +121,7 @@
                                     </div>
                                     <div class="form__field">
                                         <label for="regFormOrganizerEmail" class="form__label-for">
-                                            Электронная почта <span class="required-star">*</span>
+                                            <span>Электронная почта <span class="required-star">*</span></span>
                                         </label>
                                         <input
                                                 id="regFormOrganizerEmail"
@@ -139,7 +139,7 @@
                                     </div>
                                     <div class="form__field">
                                         <label for="regFormOrganizerPassword" class="form__label-for">
-                                            Пароль <span class="required-star">*</span>
+                                            <span>Пароль <span class="required-star">*</span></span>
                                         </label>
                                         <input
                                                 id="regFormOrganizerPassword"
@@ -157,7 +157,7 @@
                                     </div>
                                     <div class="form__field">
                                         <label for="regFormOrganizerRepeatPassword" class="form__label-for">
-                                            Повторите пароль <span class="required-star">*</span>
+                                            <span>Повторите пароль <span class="required-star">*</span></span>
                                         </label>
                                         <input
                                                 id="regFormOrganizerRepeatPassword"
@@ -255,7 +255,7 @@
                     <form id="" class="form authreg-form" method="" action="javascript:;">
                         <div class="form__field">
                             <label for="regFormDataVolunteerName" class="form__label-for">
-                                Ваше имя <span class="required-star">*</span>
+                                <span>Ваше имя <span class="required-star">*</span></span>
                             </label>
                             <input
                                     id="regFormDataVolunteerName"
@@ -268,7 +268,7 @@
                         </div>
                         <div class="form__field">
                             <label for="regFormDataVolunteerSurname" class="form__label-for">
-                                Фамилия <span class="required-star">*</span>
+                                <span>Фамилия <span class="required-star">*</span></span>
                             </label>
                             <input
                                     id="regFormDataVolunteerSurname"
@@ -281,7 +281,7 @@
                         </div>
                         <div class="form__field">
                             <label for="regFormDataVolunteerPhone" class="form__label-for">
-                                Номер телефона <span class="required-star">*</span>
+                                <span>Номер телефона <span class="required-star">*</span></span>
                             </label>
                             <input
                                     id="regFormDataVolunteerPhone"
@@ -328,7 +328,7 @@
                     <form id="" class="form authreg-form" method="" action="javascript:;">
                         <div class="form__field">
                             <label for="regFormDataOrganizerName" class="form__label-for">
-                                Ваше имя <span class="required-star">*</span>
+                                <span>Ваше имя <span class="required-star">*</span></span>
                             </label>
                             <input
                                     id="regFormDataOrganizerName"
@@ -341,7 +341,7 @@
                         </div>
                         <div class="form__field">
                             <label for="regFormDataOrganizerSurname" class="form__label-for">
-                                Фамилия <span class="required-star">*</span>
+                                <span>Фамилия <span class="required-star">*</span></span>
                             </label>
                             <input
                                     id="regFormDataOrganizerSurname"
@@ -354,7 +354,7 @@
                         </div>
                         <div class="form__field">
                             <label for="regFormDataOrganizerPhone" class="form__label-for">
-                                Номер телефона <span class="required-star">*</span>
+                                <span>Номер телефона <span class="required-star">*</span></span>
                             </label>
                             <input
                                     id="regFormDataOrganizerPhone"
@@ -367,13 +367,13 @@
                         </div>
                         <div class="form__field">
                             <label for="regFormDataOrganizerLocality" class="form__label-for">
-                                Населенный пункт <span class="required-star">*</span>
+                                <span>Населенный пункт <span class="required-star">*</span></span>
                                 <span class="tooltip">
-                                    <button class="btn-reset tooltip__btn" aria-describedby="id1">
+                                    <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                         <svg class="icon">
                                             <use href="img/sprite.svg#tooltip"></use>
                                         </svg>
-                                    </button>
+                                    </span>
                                     <span class="tooltip__txt" role="tooltip" id="id1">
                                         <span class="visually-hidden">Тултип: </span>
                                         Текст
