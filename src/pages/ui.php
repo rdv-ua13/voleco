@@ -803,99 +803,99 @@
                             </div>
                             <div class="swiper-slide">
                                 <span class="tag">
-                                <span
-                                        class="tag__content-bg"
-                                        style="
-                                        border-color: var(--success6-color);
-                                        background-color: var(--success8-color);"
-                                ></span>
-                                <span class="tag__content">
-                                    <svg class="icon tag__content-icon" style="fill: var(--success4-color);">
-                                        <use href="img/sprite.svg#tag-nature"></use>
-                                    </svg>
-                                    <span class="tag__content-text" style="color: var(--success4-color);">Природа</span>
+                                    <span
+                                            class="tag__content-bg"
+                                            style="
+                                            border-color: var(--success6-color);
+                                            background-color: var(--success8-color);"
+                                    ></span>
+                                    <span class="tag__content">
+                                        <svg class="icon tag__content-icon" style="fill: var(--success4-color);">
+                                            <use href="img/sprite.svg#tag-nature"></use>
+                                        </svg>
+                                        <span class="tag__content-text" style="color: var(--success4-color);">Природа</span>
+                                    </span>
                                 </span>
-                            </span>
                             </div>
                             <div class="swiper-slide">
                                 <span class="tag">
-                                <span
-                                        class="tag__content-bg"
-                                        style="
-                                        border-color: var(--accent-purple4-color);
-                                        background-color: var(--accent-purple8-color);"
-                                ></span>
-                                <span class="tag__content">
-                                    <svg class="icon tag__content-icon" style="fill: var(--accent-purple2-color);">
-                                        <use href="img/sprite.svg#tag-sport"></use>
-                                    </svg>
-                                    <span class="tag__content-text" style="color: var(--accent-purple2-color);">спорт</span>
+                                    <span
+                                            class="tag__content-bg"
+                                            style="
+                                            border-color: var(--accent-purple4-color);
+                                            background-color: var(--accent-purple8-color);"
+                                    ></span>
+                                    <span class="tag__content">
+                                        <svg class="icon tag__content-icon" style="fill: var(--accent-purple2-color);">
+                                            <use href="img/sprite.svg#tag-sport"></use>
+                                        </svg>
+                                        <span class="tag__content-text" style="color: var(--accent-purple2-color);">спорт</span>
+                                    </span>
                                 </span>
-                            </span>
                             </div>
                             <div class="swiper-slide">
                                 <span class="tag">
-                                <span
-                                        class="tag__content-bg"
-                                        style="
-                                        border-color: var(--accent-ceruleanblue1-color);
-                                        background-color: var(--accent-ceruleanblue8-color);"
-                                ></span>
-                                <span class="tag__content">
-                                    <svg class="icon tag__content-icon" style="fill: var(--accent-ceruleanblue1-color);">
-                                        <use href="img/sprite.svg#tag-building"></use>
-                                    </svg>
-                                    <span class="tag__content-text" style="color: var(--accent-ceruleanblue1-color);">Урбанизация</span>
+                                    <span
+                                            class="tag__content-bg"
+                                            style="
+                                            border-color: var(--accent-ceruleanblue1-color);
+                                            background-color: var(--accent-ceruleanblue8-color);"
+                                    ></span>
+                                    <span class="tag__content">
+                                        <svg class="icon tag__content-icon" style="fill: var(--accent-ceruleanblue1-color);">
+                                            <use href="img/sprite.svg#tag-building"></use>
+                                        </svg>
+                                        <span class="tag__content-text" style="color: var(--accent-ceruleanblue1-color);">Урбанизация</span>
+                                    </span>
                                 </span>
-                            </span>
                             </div>
                             <div class="swiper-slide">
                                 <span class="tag">
-                                <span
-                                        class="tag__content-bg"
-                                        style="
-                                        border-color: var(--error4-color);
-                                        background-color: var(--error9-color);"
-                                ></span>
-                                <span class="tag__content">
-                                    <svg class="icon tag__content-icon" style="fill: var(--error4-color);">
-                                        <use href="img/sprite.svg#tag-alarm"></use>
-                                    </svg>
-                                    <span class="tag__content-text" style="color: var(--error4-color);">ЧС</span>
+                                    <span
+                                            class="tag__content-bg"
+                                            style="
+                                            border-color: var(--error4-color);
+                                            background-color: var(--error9-color);"
+                                    ></span>
+                                    <span class="tag__content">
+                                        <svg class="icon tag__content-icon" style="fill: var(--error4-color);">
+                                            <use href="img/sprite.svg#tag-alarm"></use>
+                                        </svg>
+                                        <span class="tag__content-text" style="color: var(--error4-color);">ЧС</span>
+                                    </span>
                                 </span>
-                            </span>
                             </div>
                             <div class="swiper-slide">
                                 <span class="tag">
-                                <span
-                                        class="tag__content-bg"
-                                        style="
-                                        border-color: var(--warning5-color);
-                                        background-color: var(--warning8-color);"
-                                ></span>
-                                <span class="tag__content">
-                                    <svg class="icon tag__content-icon" style="fill: var(--warning3-color);">
-                                        <use href="img/sprite.svg#tag-pets"></use>
-                                    </svg>
-                                    <span class="tag__content-text" style="color: var(--warning3-color);">Животные</span>
+                                    <span
+                                            class="tag__content-bg"
+                                            style="
+                                            border-color: var(--warning5-color);
+                                            background-color: var(--warning8-color);"
+                                    ></span>
+                                    <span class="tag__content">
+                                        <svg class="icon tag__content-icon" style="fill: var(--warning3-color);">
+                                            <use href="img/sprite.svg#tag-pets"></use>
+                                        </svg>
+                                        <span class="tag__content-text" style="color: var(--warning3-color);">Животные</span>
+                                    </span>
                                 </span>
-                            </span>
                             </div>
                             <div class="swiper-slide">
                                 <span class="tag">
-                                <span
-                                        class="tag__content-bg"
-                                        style="
-                                        border-color: var(--info5-color);
-                                        background-color: var(--info8-color);"
-                                ></span>
-                                <span class="tag__content">
-                                    <svg class="icon tag__content-icon" style="fill: var(--info3-color);">
-                                        <use href="img/sprite.svg#tag-science"></use>
-                                    </svg>
-                                    <span class="tag__content-text" style="color: var(--info3-color);">Наука</span>
+                                    <span
+                                            class="tag__content-bg"
+                                            style="
+                                            border-color: var(--info5-color);
+                                            background-color: var(--info8-color);"
+                                    ></span>
+                                    <span class="tag__content">
+                                        <svg class="icon tag__content-icon" style="fill: var(--info3-color);">
+                                            <use href="img/sprite.svg#tag-science"></use>
+                                        </svg>
+                                        <span class="tag__content-text" style="color: var(--info3-color);">Наука</span>
+                                    </span>
                                 </span>
-                            </span>
                             </div>
                         </div>
                     </div>

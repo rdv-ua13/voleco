@@ -29,6 +29,7 @@ application.prototype.init = function () {
     this.initTagSelected();
     this.initMaskedInput();
     this.initAddList();
+    this.initReadmore();
 };
 
 // Init tabs
@@ -242,11 +243,15 @@ application.prototype.initCardFavorite = function () {
 // Initialization tag-bar slider
 application.prototype.initTagbarSlider = function () {
     if ($(".js-tag-bar-slider").length) {
-        const swiperTagbarSlider = new Swiper(".js-tag-bar-slider", {
-            slidesPerView: "auto",
-            spaceBetween: 8,
-            direction: "horizontal",
-            mousewheel: true,
+        $(".js-tag-bar-slider").each(function () {
+            let currentEl = $(this);
+            console.log(currentEl);
+            new Swiper(currentEl, {
+                slidesPerView: "auto",
+                spaceBetween: 8,
+                direction: "horizontal",
+                mousewheel: true,
+            });
         });
     }
 };
@@ -362,7 +367,7 @@ application.prototype.initTagSelected = function () {
 application.prototype.initMaskedInput = function () {
     $(".isPhone").mask("+7 (999) 999-99-99", { autoclear: false });
 };
-// Mobile number mask
+// Initialization add list
 application.prototype.initAddList = function () {
     if ($(".js-add-list").length) {
         $(".js-add-list .add-list__item").each(function (e) {
@@ -371,4 +376,20 @@ application.prototype.initAddList = function () {
             });
         });
     }
+};
+// Initialization readmore plugin
+application.prototype.initReadmore = function () {
+    $(".js-spoiler").each(function (el, i) {
+        let collapsedHeight = $(el).eq(i).data('collapsed-height');
+        console.log(collapsedHeight);
+        $("js-spoiler").readmore({
+            collapsedHeight: collapsedHeight,
+            moreLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--green">\n' +
+                '                                        <span class="btn__text">Показать полностью</span>\n' +
+                '                                    </a>',
+            lessLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--green">\n' +
+                '                                        <span class="btn__text">Скрыть</span>\n' +
+                '                                    </a>'
+        });
+    });
 };

@@ -688,6 +688,7 @@ input.disabled {
 }
 .required-star {
 	display: inline;
+	padding-left: 4px;
 	color: var(--error4-color);
 }
 @media (min-width: 768px) {

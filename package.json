@@ -35,6 +35,7 @@
     "gulp-typograf": "^4.0.3",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
+    "readmore-js": "^2.2.1",
     "sass": "^1.45.1",
     "typograf": "^6.14.1",
     "webpack": "^5.65.0",
