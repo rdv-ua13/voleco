@@ -1,8 +1,3 @@
-import vars from './_vars';
-import {createPopper} from "@popperjs/core";
-/*import './_functions';*/
-
-/* from main.js */
 document.addEventListener("DOMContentLoaded", () => {
     const app = new application();
     app.init();
@@ -243,10 +238,12 @@ application.prototype.initCardFavorite = function () {
 // Initialization tag-bar slider
 application.prototype.initTagbarSlider = function () {
     if ($(".js-tag-bar-slider").length) {
-        $(".js-tag-bar-slider").each(function () {
-            let currentEl = $(this);
-            console.log(currentEl);
-            new Swiper(currentEl, {
+        const currentSlider = $(".js-tag-bar-slider");
+
+        currentSlider.each(function (i) {
+            currentSlider.eq(i).addClass("js-tag-bar-slider-" + i);
+
+            let tagbarSlider = new Swiper(".js-tag-bar-slider-" + i, {
                 slidesPerView: "auto",
                 spaceBetween: 8,
                 direction: "horizontal",
@@ -379,17 +376,22 @@ application.prototype.initAddList = function () {
 };
 // Initialization readmore plugin
 application.prototype.initReadmore = function () {
-    $(".js-spoiler").each(function (el, i) {
-        let collapsedHeight = $(el).eq(i).data('collapsed-height');
-        console.log(collapsedHeight);
-        $("js-spoiler").readmore({
-            collapsedHeight: collapsedHeight,
-            moreLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--green">\n' +
-                '                                        <span class="btn__text">Показать полностью</span>\n' +
-                '                                    </a>',
-            lessLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--green">\n' +
-                '                                        <span class="btn__text">Скрыть</span>\n' +
-                '                                    </a>'
+    if ($(".js-spoiler").length) {
+        const spoiler = $(".js-spoiler");
+
+        spoiler.each(function (i) {
+            let currentElemHeight = spoiler.eq(i).data("collapsed-height");
+            spoiler.eq(i).addClass("js-spoiler-" + i);
+
+            $(".js-spoiler-" + i).readmore({
+                collapsedHeight: currentElemHeight,
+                moreLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--link btn--tdu-dashed btn--green">\n' +
+                    '                                        <span class="btn__text">Показать полностью</span>\n' +
+                    '                                    </a>',
+                lessLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--link btn--tdu-dashed btn--green">\n' +
+                    '                                        <span class="btn__text">Скрыть</span>\n' +
+                    '                                    </a>'
+            });
         });
-    });
+    }
 };

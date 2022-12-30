@@ -2059,6 +2059,7 @@ input.disabled {
 	&--slider {
 		display: block;
 		gap: unset;
+		width: 100%;
 
 		& .swiper-slide {
 			width: max-content;
@@ -2417,6 +2418,11 @@ input.disabled {
 			padding-top: 4px;
 		}
 	}
+}
+
+[data-readmore] {
+	overflow: hidden;
+	transition: height 0.16s;
 }
 
 /* todo: доделать

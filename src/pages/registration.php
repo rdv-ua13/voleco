@@ -1,4 +1,4 @@
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/' . 'components/header.php'); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
 <div class="authreg authreg--reg">
     <div class="bs-stepper">
@@ -419,4 +419,4 @@
 </div>
 
 
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/' . 'components/footer.php'); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/footer.php"); ?>

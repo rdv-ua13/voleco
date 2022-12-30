@@ -21,7 +21,6 @@ const group_media = require("gulp-group-css-media-queries"); // модуль д�
 const cache = require("gulp-cache"); // модуль для кэширования
 const concat = require("gulp-concat"); // модуль для конкатенации библиотек
 const webp = require("gulp-webp"); // модуль для преобразования изображений в webp
-const webpackStream = require("webpack-stream"); // модуль для webpack-stream
 
 // Прокси проекта
 const rootDir = "volecoloc";
@@ -118,10 +117,11 @@ const libsJsBuild = () => {
             "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
             "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
             "node_modules/jquery-validation/dist/jquery.validate.js",
-            'node_modules/jquery-validation/dist/localization/messages_ru.js',
-            'node_modules/bs-stepper/dist/js/bs-stepper.js',
-            'node_modules/graph-tabs/dist/graph-tabs.min.js',
-            'node_modules/select2/dist/js/select2.js',
+            "node_modules/jquery-validation/dist/localization/messages_ru.js",
+            "node_modules/bs-stepper/dist/js/bs-stepper.js",
+            "node_modules/graph-tabs/dist/graph-tabs.min.js",
+            "node_modules/select2/dist/js/select2.js",
+            "node_modules/readmore-js/readmore.js",
         ]
     )
         .pipe(concat("libs.min.js"))
@@ -139,33 +139,6 @@ const mainJsBuild = () => {
                 message: "Error: <%= error.message %>"
             })
         ))
-        .pipe(webpackStream({
-            mode: "development", //development production
-            output: {
-                filename: "main.js",
-            },
-            module: {
-                rules: [{
-                    test: /\.m?js$/,
-                    exclude: /node_modules/,
-                    use: {
-                        loader: "babel-loader",
-                        options: {
-                            presets: [
-                                ["@babel/preset-env", {
-                                    targets: "defaults"
-                                }]
-                            ]
-                        }
-                    }
-                }]
-            },
-            devtool: false
-        }))
-        .on("error", function (err) {
-            console.error("WEBPACK ERROR", err);
-            this.emit("end");
-        })
         .pipe(dest(path.build.js))
         .pipe(browserSync.stream());
 };

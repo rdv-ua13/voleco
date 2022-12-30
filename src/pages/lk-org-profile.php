@@ -86,9 +86,9 @@
                         </div>
                     </div>
                     <div class="page-content__main page-content__main--profile">
-                        <div class="page-content__main-descr">
-                            <div class="page-content__main-descr-item">
-                                <div class="page-content__main-descr-heading">
+                        <div class="page-content__descr">
+                            <div class="page-content__descr-item">
+                                <div class="page-content-descr-heading">
                                     <div class="h4">Описание</div>
                                     <button class="btn-reset btn btn--noframe">
                                         <svg class="icon btn__icon">
@@ -96,18 +96,46 @@
                                         </svg>
                                     </button>
                                 </div>
-                                <div class="page-content__main-descr-content">
-                                    <div class="page-content__spoiler js-spoiler" data-collapsed-height="70">
-                                        <div class="page-content__spoiler-text">Ассоциация волонтёрских центров (АВЦ) – крупнейшая добровольческая организация в России, созданная в 2014 году по инициативе Президента России Владимира Путина с целью сохранения наследия волонтёрской программы XXII Олимпийских игр в Сочи и развития добровольческого движения и гражданской активности в стране.</div>
-                                        <!--<button class="btn-reset btn btn--noframe btn--green">
-											<span class="btn__text"></span>
-										</button>-->
+                                <div class="page-content__descr-content">
+                                    <div class="page-content__spoiler js-spoiler" data-collapsed-height="88">
+                                        <div class="page-content__spoiler-text">Ассоциация волонтёрских центров (АВЦ) – крупнейшая добровольческая организация в России, созданная в 2014 году по инициативе Президента России Владимира Путина с целью сохранения наследия волонтёрской программы XXII Олимпийских игр в Сочи и развития добровольческого движения и гражданской активности в стране. Ассоциация волонтёрских центров (АВЦ) – крупнейшая добровольческая организация в России, созданная в 2014 году по инициативе Президента России Владимира Путина с целью сохранения наследия волонтёрской программы XXII Олимпийских игр в Сочи и развития добровольческого движения и гражданской активности в стране.</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="page-content__main-descr-item">
-                                <div class="page-content__main-descr-heading">
+                            <div class="page-content__descr-item">
+                                <div class="page-content__descr-title">Организационно-правовая форма</div>
+                                <div class="page-content__descr-content">НКО (негосударственная некоммерческая организация)</div>
+                            </div>
+                            <div class="page-content__descr-item">
+                                <div class="page-content__descr-title">Полное название организации</div>
+                                <div class="page-content__descr-content">Ассоциация волонтерских центров</div>
+                            </div>
+                            <div class="page-content__descr-item">
+                                <div class="page-content__descr-title">Руководитель</div>
+                                <div class="page-content__descr-content">
+                                    <div class="page-content__descr-position">
+                                        <div class="page-content__descr-position-view">
+                                            <picture>
+                                                <source srcset="img/card-photo-volunteer.webp" type="image/webp">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/card-photo-volunteer.png"
+                                                        class="image"
+                                                        width="32"
+                                                        height="32"
+                                                        alt="Photo"
+                                                >
+                                            </picture>
+                                        </div>
+                                        <div class="page-content__descr-position-name">Михайлова Светлана Васильевна</div>
+                                        <div class="page-content__descr-position-title">Руководитель</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-content__descr-item">
+                                <div class="page-content-descr-heading">
                                     <div class="h4">Направления деятельности</div>
                                     <button class="btn-reset btn btn--noframe">
                                         <svg class="icon btn__icon">
@@ -115,7 +143,7 @@
                                         </svg>
                                     </button>
                                 </div>
-                                <div class="page-content__main-descr-content">
+                                <div class="page-content__descr-content">
                                     <div class="tag-bar tag-bar--slider swiper js-tag-bar-slider">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
@@ -235,8 +263,8 @@
                                 </div>
                             </div>
 
-                            <div class="page-content__main-descr-item">
-                                <div class="page-content__main-descr-heading">
+                            <div class="page-content__descr-item">
+                                <div class="page-content-descr-heading">
                                     <div class="h4">Результаты</div>
                                     <button class="btn-reset btn btn--noframe">
                                         <svg class="icon btn__icon">
@@ -244,16 +272,166 @@
                                         </svg>
                                     </button>
                                 </div>
-                                <div class="page-content__main-descr-content">
-                                    <div class="page-content__spoiler js-spoiler" data-collapsed-height="70">
-                                        <div class="page-content__spoiler-text">Ассоциация стала российским think tank в области волонтерства. Эксперты АВЦ участвуют в разработке федерального законодательства о волонтерстве, формировании и реализации ключевых государственных программ, национальных проектов. В 2016 году по инициативе Ассоциации был создан Федеральный экспертный совет по развитию добровольчества, позже преобразованный в Координационный совет при Общественной палате РФ.</div>
+                                <div class="page-content__descr-content">
+                                    <div class="page-content__spoiler js-spoiler" data-collapsed-height="132">
+                                        <div class="page-content__spoiler-text">Ассоциация стала российским think tank в области волонтерства. Эксперты АВЦ участвуют в разработке федерального законодательства о волонтерстве, формировании и реализации ключевых государственных программ, национальных проектов. В 2016 году по инициативе Ассоциации был создан Федеральный экспертный совет по развитию добровольчества, позже преобразованный в Координационный совет при Общественной палате РФ. Ассоциация стала российским think tank в области волонтерства. Эксперты АВЦ участвуют в разработке федерального законодательства о волонтерстве, формировании и реализации ключевых государственных программ, национальных проектов. В 2016 году по инициативе Ассоциации был создан Федеральный экспертный совет по развитию добровольчества, позже преобразованный в Координационный совет при Общественной палате РФ.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-content__descr-item">
+                                <div class="page-content-descr-heading">
+                                    <div class="h4">Документы</div>
+                                    <button class="btn-reset btn btn--noframe">
+                                        <svg class="icon btn__icon">
+                                            <use href="img/sprite.svg#edit2"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="page-content__descr-content">
+                                    <div class="docs">
+                                        <a href="javascript:;" class="docs-card">
+                                            <span class="docs-card__title">План мероприятий 2021-2022</span>
+                                            <span class="docs-card__format">XLS, 22.4 МБ</span>
+                                        </a>
+                                        <a href="javascript:;" class="docs-card">
+                                            <span class="docs-card__title">Устав</span>
+                                            <span class="docs-card__format">PDF, 13.2 МБ</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="page-content__sidebar">sidebar</div>
+                    <div class="page-content__sidebar">
+                        <div class="page-content__sidebar-item">
+                            <div class="page-content-descr-heading">
+                                <div class="h4">Контакты</div>
+                                <button class="btn-reset btn btn--noframe">
+                                    <svg class="icon btn__icon">
+                                        <use href="img/sprite.svg#edit2"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="page-content__sidebar-contacts">
+                                <span class="page-content__sidebar-contacts-item">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#map-pin"></use>
+                                    </svg>
+                                    <span class="page-content__sidebar-contacts-text">Москва, пер. Тетеринский, 18, стр. 2</span>
+                                </span>
+                                <span class="page-content__sidebar-contacts-item">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#phone"></use>
+                                    </svg>
+                                    <span class="page-content__sidebar-contacts-text">+7 495 796-03-06</span>
+                                </span>
+                                <span class="page-content__sidebar-contacts-item">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#email"></use>
+                                    </svg>
+                                    <span class="page-content__sidebar-contacts-text">mih.konstantin@gmail.com</span>
+                                </span>
+                                <span class="page-content__sidebar-contacts-item">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="page-content__sidebar-contacts-text">http://avcrf.ru</span>
+                                </span>
+                            </div>
+                            <div class="page-content__sidebar-soc">
+                                <a href="javascript:;" class="page-content__sidebar-soc-item">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#media-vk"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:;" class="page-content__sidebar-soc-item">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#media-ok"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:;" class="page-content__sidebar-soc-item">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#media-insta"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:;" class="page-content__sidebar-soc-item">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#media-telegram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="page-content__sidebar-item">
+                            <div class="page-content-descr-heading">
+                                <div class="h4">Рейтинг и отзывы</div>
+                                <button class="btn-reset btn btn--noframe">
+                                    <svg class="icon btn__icon">
+                                        <use href="img/sprite.svg#edit2"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="page-content__sidebar-rate">
+                                <div class="page-content__intro-bottom">
+                                    <div class="page-content__intro-rate">
+                                        <div class="page-content__intro-rate-value">4.8</div>
+                                        <div class="page-content__intro-rate-stars">
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="page-content__intro-reviews">
+                                        <a href="javascript:;" class="btn-reset btn btn--noframe btn--link btn--tdu-dashed">
+                                            <span class="btn__text">193 отзыва</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content__sidebar-item">
+                            <div class="page-content-descr-heading">
+                                <div class="h4">Аналитика организатора</div>
+                                <button class="btn-reset btn btn--noframe">
+                                    <svg class="icon btn__icon">
+                                        <use href="img/sprite.svg#edit2"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="page-content__sidebar-stats">
+                                <div class="page-content__sidebar-stats-item">
+                                    <span class="page-content__sidebar-stats-text">Волонтеров помогает</span>
+                                    <span class="page-content__sidebar-stats-value">259 727</span>
+                                </div>
+                                <div class="page-content__sidebar-stats-item">
+                                    <span class="page-content__sidebar-stats-text">Экодел</span>
+                                    <span class="page-content__sidebar-stats-value">24 383</span>
+                                </div>
+                                <div class="page-content__sidebar-stats-item">
+                                    <span class="page-content__sidebar-stats-text">Часов</span>
+                                    <span class="page-content__sidebar-stats-value">4 734 337</span>
+                                </div>
+                            </div>
+                            <div class="page-content__sidebar-stats-btn">
+                                <button class="btn-reset btn">
+                                    <span class="btn__text">Вся аналитика</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
