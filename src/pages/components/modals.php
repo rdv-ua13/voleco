@@ -3,7 +3,7 @@
 	<div class="modal-wrapper modal-transition">
 		<span class="modal-close">
 			<svg class="icon">
-                <use href="/build/img/sprite.svg#close-cross"></use>
+                <use href="img/sprite.svg#cross"></use>
             </svg>
 		</span>
 		<div class="modal-body">
