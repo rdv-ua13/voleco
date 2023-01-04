@@ -2,8 +2,8 @@
 
 <div class="block-mb">
 	<div class="page-content">
-		<div class="page-content__body">
-			<div class="container">
+		<div id="pageContentBody" class="page-content__body">
+            <div class="container">
 				<div class="page-content__container page-content__container--settings">
                     <div class="page-content__heading">
                         <div class="page-content__heading-back">
@@ -13,16 +13,50 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="h2">Настройки профиля организатора</div>
+                        <div class="h2">Настройки профиля эковолонтера</div>
                     </div>
+
+                    <div class="page-content__content-type">
+                        <div class="page-content-tabs-wrapper">
+                            <div class="page-content-tabs swiper js-page-content-tabs">
+                                <div class="page-content-tabs__nav swiper-wrapper">
+                                    <div class="swiper-slide page-content-tabs__nav-item notice">
+                                        <a href="lk-vol-profile-settings.php#pageContentBody" class="page-content-tabs__link selected">
+                                            <span class="page-content-tabs__link-content">Основное</span>
+                                            <span class="page-content-tabs__link-num"></span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide page-content-tabs__nav-item notice">
+                                        <a href="lk-vol-profile-contact-settings.php#pageContentBody" class="page-content-tabs__link">
+                                            <span class="page-content-tabs__link-content">Контакты</span>
+                                            <span class="page-content-tabs__link-num"></span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide page-content-tabs__nav-item notice">
+                                        <a href="lk-vol-profile-about-settings.php#pageContentBody" class="page-content-tabs__link">
+                                            <span class="page-content-tabs__link-content">Образование и место работы</span>
+                                            <span class="page-content-tabs__link-num"></span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide page-content-tabs__nav-item notice">
+                                        <a href="lk-vol-profile-additional-settings.php#pageContentBody" class="page-content-tabs__link">
+                                            <span class="page-content-tabs__link-content">Дополнительная информация</span>
+                                            <span class="page-content-tabs__link-num"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 					<div class="page-content__main">
                         <form class="form form--profile-settings" action="">
                             <div class="page-content__section">
-                                <div class="block-mb-md h4">Основная информация</div>
+                                <div class="block-mb-md h4">Личная информация</div>
 
                                 <div class="page-content__section-item">
                                     <div class="page-content__section-item-title">
-                                        Обложка
+                                        <span>Обложка</span>
                                         <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
@@ -62,14 +96,14 @@
                                 </div>
                                 <div class="page-content__section-item">
                                     <div class="page-content__section-item-title">
-                                        Аватар
+                                        <span>Аватар</span>
                                         <span class="tooltip">
-                                            <span class="btn-reset tooltip__btn" aria-describedby="id1">
+                                            <span class="btn-reset tooltip__btn" aria-describedby="id2">
                                                 <svg class="icon">
                                                     <use href="img/sprite.svg#tooltip"></use>
                                                 </svg>
                                             </span>
-                                            <span class="tooltip__txt" role="tooltip" id="id1">
+                                            <span class="tooltip__txt" role="tooltip" id="id2">
                                                 <span class="visually-hidden">Тултип: </span>
                                                 Текст
                                             </span>
@@ -104,82 +138,8 @@
                                 </div>
                                 <div class="page-content__section-item">
                                     <div class="page-content__section-item-title">
-                                        Видео-заставка
-                                        <span class="tooltip">
-                                            <span class="btn-reset tooltip__btn" aria-describedby="id2">
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="tooltip__txt" role="tooltip" id="id2">
-                                                <span class="visually-hidden">Тултип: </span>
-                                                Текст
-                                            </span>
-                                        </span>
+                                        <span>Фамилия <span class="required-star">*</span></span>
                                     </div>
-                                    <div class="form__field">
-                                        <input id=""
-                                               class="input-reset form__input"
-                                               type="url"
-                                               name=""
-                                               placeholder="https://youtube.com/"
-                                        >
-                                        <div class="form__btn">
-                                            <svg class="icon">
-                                                <use href="img/sprite.svg#media-youtube"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="page-content__section-item">
-                                    <div class="page-content__section-item-title">
-                                        <span>Название организации <span class="required-star">*</span></span>
-                                    </div>
-                                    <div class="form__field">
-                                        <input
-                                                id=""
-                                                class="input-reset form__input"
-                                                type="text"
-                                                name=""
-                                                placeholder="Всероссийское общественное движение «Волонтеры Экологи»"
-                                                required
-                                        >
-                                    </div>
-                                </div>
-                                <div class="page-content__section-item">
-                                    <div class="page-content__section-item-title">
-                                        <span>Полное название организации <span class="required-star">*</span></span>
-                                    </div>
-                                    <div class="form__field">
-                                        <input
-                                                id=""
-                                                class="input-reset form__input"
-                                                type="text"
-                                                name=""
-                                                placeholder="Всероссийское общественное движение «Волонтеры Экологи»"
-                                                required
-                                        >
-                                    </div>
-                                </div>
-                                <div class="page-content__section-item">
-                                    <div class="page-content__section-item-title">
-                                        <span>Тип <span class="required-star">*</span></span>
-                                    </div>
-                                    <div class="form__field">
-                                        <select
-                                                id=""
-                                                name=""
-                                                class="input-reset form__input form__input--select2 js-select2"
-                                                required
-                                        >
-                                            <option value="0">Общественное объединение</option>
-                                            <option value="1">Общественное объединение 2</option>
-                                            <option value="2">Общественное объединение 3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="page-content__section-item">
-                                    <div class="page-content__section-item-title">ОГРН</div>
                                     <div class="form__field">
                                         <input
                                                 id=""
@@ -187,29 +147,78 @@
                                                 type="text"
                                                 name=""
                                                 placeholder=""
-                                        >
-                                    </div>
-                                </div>
-                                <div class="page-content__section-item">
-                                    <div class="page-content__section-item-title">
-                                        <span>Адрес <span class="required-star">*</span></span>
-                                    </div>
-                                    <div class="form__field">
-                                        <select
-                                                id=""
-                                                name=""
-                                                class="input-reset form__input form__input--select2 js-select2"
                                                 required
                                         >
-                                            <option value="0">Республика Ингушетия</option>
-                                            <option value="1">Республика Ингушетия 2</option>
-                                            <option value="2">Республика Ингушетия 3</option>
-                                        </select>
                                     </div>
                                 </div>
                                 <div class="page-content__section-item">
                                     <div class="page-content__section-item-title">
-                                        <span>Описание <span class="required-star">*</span></span>
+                                        <span>Имя <span class="required-star">*</span></span>
+                                    </div>
+                                    <div class="form__field">
+                                        <input
+                                                id=""
+                                                class="input-reset form__input"
+                                                type="text"
+                                                name=""
+                                                placeholder=""
+                                                required
+                                        >
+                                    </div>
+                                </div>
+                                <div class="page-content__section-item">
+                                    <div class="page-content__section-item-title">
+                                        <span>Отчество <span class="title-footnote">(если есть)</span></span>
+                                    </div>
+                                    <div class="form__field">
+                                        <input
+                                                id=""
+                                                class="input-reset form__input"
+                                                type="text"
+                                                name=""
+                                                placeholder=""
+                                                required
+                                        >
+                                    </div>
+                                </div>
+                                <div class="page-content__section-item">
+                                    <div class="page-content__section-item-title">
+                                        <span>День рождения <span class="required-star">*</span></span>
+                                    </div>
+                                    <div class="form__field">
+                                        <input
+                                                id=""
+                                                class="input-reset form__input"
+                                                type="date"
+                                                name=""
+                                                placeholder=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="page-content__section-item">
+                                    <div class="page-content__section-item-title">
+                                        <span>Пол <span class="required-star">*</span></span>
+                                    </div>
+                                    <div class="form__field">
+                                        <div class="custom-radio form__field-radio">
+                                            <div class="custom-radio__item">
+                                                <input id="radio1" class="custom-radio__input" type="radio" name="radio1" checked>
+                                                <label for="radio1" class="custom-checkbox__label-for">мужской</label>
+                                            </div>
+                                            <div class="custom-radio__item">
+                                                <input id="radio2" class="custom-radio__input" type="radio" name="radio1">
+                                                <label for="radio2" class="custom-checkbox__label-for">женский</label>
+                                            </div>
+                                            <div class="custom-radio__item">
+                                                <input id="radio3" class="custom-radio__input" type="radio" name="radio1">
+                                                <label for="radio3" class="custom-checkbox__label-for">другой</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-content__section-item">
+                                    <div class="page-content__section-item-title">
+                                        <span>Личная информация</span>
                                     </div>
                                     <div class="form__field">
                                         <textarea
@@ -221,30 +230,73 @@
                                         ></textarea>
                                     </div>
                                 </div>
-                                <div class="page-content__section-item">
-                                    <div class="page-content__section-item-title">Код для встраивания Google Форм</div>
-                                    <div class="form__field">
-                                        <textarea
-                                                id=""
-                                                class="input-reset form__input form__input--textarea"
-                                                name=""
-                                                placeholder="Вставьте код"
-                                        ></textarea>
-                                    </div>
-                                </div>
+                            </div>
+
+                            <div class="page-content__section">
+                                <div class="block-mb-md h4">Языки</div>
+
                                 <div class="page-content__section-item">
                                     <div class="page-content__section-item-title">
-                                        <span>Результаты <span class="required-star">*</span></span>
+                                        <span>Родной язык <span class="required-star">*</span></span>
                                     </div>
                                     <div class="form__field">
-                                        <textarea
+                                        <select
                                                 id=""
-                                                class="input-reset form__input form__input--textarea"
                                                 name=""
-                                                placeholder="Укажите результаты деятельности организации"
+                                                class="input-reset form__input form__input--select2 js-select2"
                                                 required
-                                        ></textarea>
+                                        >
+                                            <option value="0">Русский</option>
+                                            <option value="1">Русский 2</option>
+                                            <option value="2">Русский 3</option>
+                                        </select>
                                     </div>
+                                </div>
+                                <div class="page-content__section-item page-content__section-item-date">
+                                    <div class="page-content__section-subitem page-content__section-subitem--average">
+                                        <div class="page-content__section-item-title">
+                                            <span>Язык <span class="required-star">*</span></span>
+                                        </div>
+                                        <div class="form__field-wrapper">
+                                            <div class="form__field">
+                                                <select
+                                                        id=""
+                                                        name=""
+                                                        class="input-reset form__input form__input--select2 js-select2"
+                                                        required
+                                                >
+                                                    <option value="0">Английский</option>
+                                                    <option value="1">Английский 2</option>
+                                                    <option value="2">Английский 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-content__section-subitem page-content__section-subitem--average">
+                                        <div class="page-content__section-item-title">
+                                            <span>Уровень владения <span class="required-star">*</span></span>
+                                        </div>
+                                        <div class="form__field-wrapper">
+                                            <div class="form__field">
+                                                <select
+                                                        id=""
+                                                        name=""
+                                                        class="input-reset form__input form__input--select2 js-select2"
+                                                        required
+                                                >
+                                                    <option value="0">В1 — Средний</option>
+                                                    <option value="1">В1 — Средний 2</option>
+                                                    <option value="2">В1 — Средний 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn-reset btn btn--noframe btn--green">
+                                        <svg class="icon btn__icon">
+                                            <use href="img/sprite.svg#plus"></use>
+                                        </svg>
+                                        <span class="btn__text">Добавить язык</span>
+                                    </button>
                                 </div>
                             </div>
 
@@ -255,12 +307,12 @@
                                     <div class="page-content__section-item-title">
                                         <span>Выберите интересующие направления волонтёрства <span class="required-star">*</span></span>
                                         <span class="tooltip">
-                                            <span class="btn-reset tooltip__btn" aria-describedby="id3">
+                                            <span class="btn-reset tooltip__btn" aria-describedby="id4">
                                                 <svg class="icon">
                                                     <use href="img/sprite.svg#tooltip"></use>
                                                 </svg>
                                             </span>
-                                            <span class="tooltip__txt" role="tooltip" id="id3">
+                                            <span class="tooltip__txt" role="tooltip" id="id4">
                                                 <span class="visually-hidden">Тултип: </span>
                                                 Текст
                                             </span>
@@ -268,6 +320,26 @@
                                     </div>
                                     <div class="form__field">
                                         <span class="tag-bar">
+                                            <label class="tag">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="checkbox"
+                                                        name="PROP[TAGS][disabled]"
+                                                        value="0"
+                                                >
+                                                <span
+                                                        class="tag__content-bg"
+                                                        style="
+                                                        border-color: var(--text8-color);
+                                                        background-color: var(--text8-color);"
+                                                ></span>
+                                                <span class="tag__content">
+                                                    <svg class="icon tag__content-icon" style="fill: var(--text5-color);">
+                                                        <use href="img/sprite.svg#tag-all"></use>
+                                                    </svg>
+                                                    <span class="tag__content-text" style="color: var(--text5-color);">disabled</span>
+                                                </span>
+                                            </label>
                                             <label class="tag">
                                                 <input
                                                         class="visually-hidden"
@@ -409,155 +481,6 @@
                                                 </span>
                                             </label>
                                         </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="page-content__section">
-                                <div class="block-mb-md h4">Руководитель</div>
-
-                                <div class="page-content__section-item">
-                                    <div class="page-content__section-item-title">Руководитель организации</div>
-                                    <div class="form__field">
-                                        <input
-                                                id=""
-                                                class="input-reset form__input"
-                                                type="text"
-                                                name=""
-                                                placeholder="Калиматов Адам Магомедович"
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="page-content__section">
-                                <div class="block-mb-md h4">Материалы</div>
-
-                                <div class="page-content__section-item">
-                                    <div class="page-content__section-item-title">
-                                        Фотографии
-                                        <span class="tooltip">
-                                            <span class="btn-reset tooltip__btn" aria-describedby="id4">
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="tooltip__txt" role="tooltip" id="id4">
-                                                <span class="visually-hidden">Тултип: </span>
-                                                Текст
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="form__field">
-                                        <div id="dropfile" class="dropfile">
-                                            <label class="dropfile-field">
-                                                <input id="dropfile-input" class="visually-hidden dropfile-input" type="file" accept="image/*">
-                                                <div id="dropfile-area" class="dropfile-area">
-                                                    <div class="dropfile-descr">
-                                                        <div class="dropfile-descr__view">
-                                                            <svg class="icon">
-                                                                <use href="img/sprite.svg#add-image"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="dropfile-descr__text">
-                                                            <div class="dropfile-descr__title">
-                                                                Нажмите для загрузки
-                                                                <span>или перенесите изображение в эту область</span>
-                                                            </div>
-                                                            <div class="dropfile-descr__accept">SVG, PNG, JPG (рекомендуемый размер 1330 × 340px)</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                            <div class="dropfile-gallery"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="page-content__section-item">
-                                    <div class="page-content__section-item-title">
-                                        Видео
-                                        <span class="tooltip">
-                                                <span class="btn-reset tooltip__btn" aria-describedby="id5">
-                                                    <svg class="icon">
-                                                        <use href="img/sprite.svg#tooltip"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="tooltip__txt" role="tooltip" id="id5">
-                                                    <span class="visually-hidden">Тултип: </span>
-                                                    Текст
-                                                </span>
-                                            </span>
-                                    </div>
-                                    <div class="form__field">
-                                        <input id=""
-                                               class="input-reset form__input"
-                                               type="url"
-                                               name=""
-                                               placeholder="https://youtube.com/"
-                                        >
-                                        <div class="form__btn">
-                                            <svg class="icon">
-                                                <use href="img/sprite.svg#media-youtube"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="form__field">
-                                        <input id=""
-                                               class="input-reset form__input"
-                                               type="url"
-                                               name=""
-                                               placeholder="https://youtube.com/"
-                                        >
-                                        <div class="form__btn">
-                                            <svg class="icon">
-                                                <use href="img/sprite.svg#media-youtube"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <button class="btn-reset btn btn--noframe btn--green">
-                                        <svg class="icon btn__icon">
-                                            <use href="img/sprite.svg#plus"></use>
-                                        </svg>
-                                        <span class="btn__text">Добавить ещё видео</span>
-                                    </button>
-                                </div>
-                                <div class="page-content__section-item">
-                                    <div class="page-content__section-item-title">
-                                        Документы
-                                        <span class="tooltip">
-                                                <span class="btn-reset tooltip__btn" aria-describedby="id6">
-                                                    <svg class="icon">
-                                                        <use href="img/sprite.svg#tooltip"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="tooltip__txt" role="tooltip" id="id6">
-                                                    <span class="visually-hidden">Тултип: </span>
-                                                    Текст
-                                                </span>
-                                            </span>
-                                    </div>
-                                    <div class="form__field">
-                                        <div id="dropfile" class="dropfile">
-                                            <label class="dropfile-field">
-                                                <input id="dropfile-input" class="visually-hidden dropfile-input" type="file" accept="image/*">
-                                                <div id="dropfile-area" class="dropfile-area">
-                                                    <div class="dropfile-descr">
-                                                        <div class="dropfile-descr__view">
-                                                            <svg class="icon">
-                                                                <use href="img/sprite.svg#add-image"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="dropfile-descr__text">
-                                                            <div class="dropfile-descr__title">
-                                                                Нажмите для загрузки
-                                                                <span>или перенесите изображение в эту область</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                            <div class="dropfile-gallery"></div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -1516,6 +1516,33 @@
 
     <br>
     <br>
+
+    <h3 class="text-center">Modal</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            обязательный атрибут - data-toggle="modal" data-target="имя должно совпадать с id в modals.php"
+            <br>
+            modals.php подключен в footer.php
+            <div class="row-ui ">
+                <div class="flex-v-center" style="width: 100%;">
+                    <!--start ui content-->
+                    <button class="btn-reset btn" type="button" data-toggle="modal" data-target="modalAsk">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#edit"></use>
+                        </svg>
+                        <span class="btn__text">Вызов модалки</span>
+                    </button>
+
+                    <?/* Подключен в footer.php */?>
+					<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/modals.php"); ?>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
     <br>
     <br>
     <br>
