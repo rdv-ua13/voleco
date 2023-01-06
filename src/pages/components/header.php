@@ -26,10 +26,21 @@
     <link rel="stylesheet" href="css/vendor.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
-<? if(!strpos($_SERVER["REQUEST_URI"], "registration.php") && !strpos($_SERVER["REQUEST_URI"], "auth.php")) : ?>
-<body>
-<? else : ?>
+<? if(strpos($_SERVER["REQUEST_URI"], "registration.php") || strpos($_SERVER["REQUEST_URI"], "auth.php")) : ?>
 <body class="bgc-white">
+<? elseif(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-project-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-task-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-task-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-petition-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-contact-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-about-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-additional-settings.php")) : ?>
+<body class="has-settings-bar">
+<? else : ?>
+<body>
 <? endif; ?>
     <header class="header">
         <div class="container header__container">

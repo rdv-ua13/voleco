@@ -122,6 +122,7 @@ const libsJsBuild = () => {
             "node_modules/graph-tabs/dist/graph-tabs.min.js",
             "node_modules/select2/dist/js/select2.js",
             "node_modules/readmore-js/readmore.js",
+            "node_modules/sweetalert/dist/sweetalert.min.js",
         ]
     )
         .pipe(concat("libs.min.js"))

@@ -59,7 +59,7 @@
             <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">24 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">29 + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">62 + ui (всего страниц в макете)</span>
         </span>
@@ -97,9 +97,14 @@
             <li><a href="lk-org-create-project-settings.php" target="_blank">ЛК Орг - создать проект</a></li>
             <li><a href="lk-org-create-ecodelo-settings.php" target="_blank">ЛК Орг - создать экодело</a></li>
             <li><a href="lk-org-create-ecodelo-task-settings.php" target="_blank">ЛК Орг - создать экодело-задачи</a></li>
+            <li><a href="lk-org-create-task-settings.php" target="_blank">ЛК Орг - создать новую задачу</a></li>
+            <li><a href="lk-org-create-petition-settings.php" target="_blank">ЛК Орг - создать новую петицию</a></li><!-- №29 -->
 
             <br>
-            <li><a href="lk-vol-profile-settings.php" target="_blank">ЛК Вол - настройки профиля</a></li><!-- №24 -->
+            <li><a href="lk-vol-profile-settings.php" target="_blank">ЛК Вол - настройки профиля</a></li>
+            <li><a href="lk-vol-profile-contact-settings.php" target="_blank">ЛК Вол - настройки профиля (Контакты)</a></li>
+            <li><a href="lk-vol-profile-about-settings.php" target="_blank">ЛК Вол - настройки профиля (Образование и место работы)</a></li>
+            <li><a href="lk-vol-profile-additional-settings.php" target="_blank">ЛК Вол - настройки профиля (Дополнительная информация)</a></li>
 
             <br>
             <li><a href="ui.php" target="_blank">ui</a></li>

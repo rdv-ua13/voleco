@@ -1520,21 +1520,16 @@
     <h3 class="text-center">Modal</h3>
     <div class="container-ui">
         <div class="col-ui">
-            обязательный атрибут - data-toggle="modal" data-target="имя должно совпадать с id в modals.php"
-            <br>
-            modals.php подключен в footer.php
+            <a href="https://sweetalert.js.org/">Using plugin</a>
             <div class="row-ui ">
                 <div class="flex-v-center" style="width: 100%;">
                     <!--start ui content-->
-                    <button class="btn-reset btn" type="button" data-toggle="modal" data-target="modalAsk">
+                    <button class="btn-reset btn btn--fill swal" type="button">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#edit"></use>
                         </svg>
-                        <span class="btn__text">Вызов модалки</span>
+                        <span class="btn__text">Вызов модалки swal</span>
                     </button>
-
-                    <?/* Подключен в footer.php */?>
-					<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/modals.php"); ?>
                     <!--end ui content-->
                 </div>
             </div>

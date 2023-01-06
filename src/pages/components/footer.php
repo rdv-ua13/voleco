@@ -124,11 +124,26 @@
     </footer>
 
 	<? if(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-project-settings.php")) : ?>
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-project-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-task-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-task-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-petition-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-contact-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-about-settings.php")
+    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-additional-settings.php")) : ?>
         <div class="page-content-settings-bar">
             <div class="container page-content-settings-bar__container">
                 <div class="page-content-settings-bar__action">
-                    <? if(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")) : ?>
+                    <? if(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")
+                    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-settings.php")
+                    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-task-settings.php")
+                    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-petition-settings.php")
+                    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-settings.php")
+                    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-contact-settings.php")
+                    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-about-settings.php")
+                    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-additional-settings.php")) : ?>
                         <button class="btn-reset btn btn--fill">
                             <span class="btn__text">Сохранить</span>
                         </button>
@@ -138,6 +153,13 @@
                         </button>
                         <button class="btn-reset btn btn--fill btn--gray">
                             <span class="btn__text">Сохранить</span>
+                        </button>
+					<? elseif(strpos($_SERVER["REQUEST_URI"], "lk-org-create-task-settings.php")) : ?>
+                        <button class="btn-reset btn btn--fill">
+                            <span class="btn__text">Сохранить</span>
+                        </button>
+                        <button class="btn-reset btn btn--fill btn--gray">
+                            <span class="btn__text">Сохранить и создать новую задачу</span>
                         </button>
                     <? endif; ?>
                 </div>
@@ -149,8 +171,6 @@
             </div>
         </div>
 	<? endif; ?>
-
-	<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/modals.php"); ?>
 
 	<?/*<script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>*/?>
     <script src="js/libs.min.js"></script>

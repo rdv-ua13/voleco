@@ -707,7 +707,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="page-content__section-subitem-option">
+                                    <div class="page-content__section-subitem-option flex-h-end">
                                         <div class="custom-checkbox">
                                             <input id="checkboxui-2" class="custom-checkbox__input" type="checkbox">
                                             <label for="checkboxui-2" class="custom-checkbox__label-for">Указать время отдельно для каждого дня</label>
