@@ -59,7 +59,7 @@
             <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">29 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">42 + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">62 + ui (всего страниц в макете)</span>
         </span>
@@ -69,8 +69,8 @@
     <div>
         <ul>
             <?/*<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>*/?>
-            <li><a href="index.php" target="_blank">Главная</a></li>
-            <li><a href="organizer.php" target="_blank">Организаторам</a></li>
+            <li><a href="index.php" target="_blank">Главная (в процессе)</a></li>
+            <li><a href="organizer.php" target="_blank">Организаторам (в процессе)</a></li>
 
             <br>
             <li><a href="registration.php" target="_blank">Регистрация</a></li>
@@ -86,11 +86,27 @@
             <li><a href="ms-organizer.php" target="_blank">Организаторы</a></li>
 
             <br>
+            <li><a href="details-ecodela.php" target="_blank">детальная - Экодела (в процессе)</a></li>
+            <li><a href="details-petitions.php" target="_blank">детальная - Петиции (в процессе)</a></li>
+            <li><a href="details-fundraising.php" target="_blank">детальная - Сбор средств (в процессе)</a></li>
+            <li><a href="details-projects.php" target="_blank">детальная - Проекты (в процессе)</a></li>
+            <li><a href="details-volunteer.php" target="_blank">детальная - Эковолонтеры (в процессе)</a></li>
+            <li><a href="details-volunteer-exp.php" target="_blank">детальная - Эковолонтеры опыт (в процессе)</a></li>
+            <li><a href="details-volunteer-feedback.php" target="_blank">детальная - Эковолонтеры отзывы (в процессе)</a></li>
+
+            <br>
             <li><a href="lk-org-profile.php" target="_blank">ЛК Орг - профиль</a></li>
+            <li><a href="lk-org-request.php" target="_blank">ЛК Орг - заявки</a></li>
+            <li><a href="lk-org-tracking.php" target="_blank">ЛК Орг - Учет времени волонтера</a></li>
             <li><a href="lk-org-events.php" target="_blank">ЛК Орг - мероприятия</a></li>
             <li><a href="lk-org-events-past.php" target="_blank">ЛК Орг - мероприятия (прошедшие)</a></li>
             <li><a href="lk-org-petition.php" target="_blank">ЛК Орг - петиции</a></li>
             <li><a href="lk-org-project.php" target="_blank">ЛК Орг - проекты</a></li>
+            <li><a href="lk-org-reviews.php" target="_blank">ЛК Орг - рейтинг и отзывы - мои отзывы</a></li>
+            <li><a href="lk-org-reviews-vol.php" target="_blank">ЛК Орг - рейтинг и отзывы - отзывы волонтёров</a></li><!-- №42 -->
+            <li><a href="lk-org-favorites-vol.php" target="_blank">ЛК Орг - избранное волонтёры</a></li>
+            <li><a href="lk-org-favorites-org.php" target="_blank">ЛК Орг - избранное организаторы</a></li>
+            <li><a href="lk-org-rights.php" target="_blank">ЛК Орг - права доступа</a></li><!-- №43 -->
 
             <br>
             <li><a href="lk-org-profile-settings.php" target="_blank">ЛК Орг - настройки профиля</a></li>
@@ -98,7 +114,7 @@
             <li><a href="lk-org-create-ecodelo-settings.php" target="_blank">ЛК Орг - создать экодело</a></li>
             <li><a href="lk-org-create-ecodelo-task-settings.php" target="_blank">ЛК Орг - создать экодело-задачи</a></li>
             <li><a href="lk-org-create-task-settings.php" target="_blank">ЛК Орг - создать новую задачу</a></li>
-            <li><a href="lk-org-create-petition-settings.php" target="_blank">ЛК Орг - создать новую петицию</a></li><!-- №29 -->
+            <li><a href="lk-org-create-petition-settings.php" target="_blank">ЛК Орг - создать новую петицию</a></li>
 
             <br>
             <li><a href="lk-vol-profile-settings.php" target="_blank">ЛК Вол - настройки профиля</a></li>

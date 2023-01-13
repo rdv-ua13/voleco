@@ -114,7 +114,7 @@ const libsJsBuild = () => {
             "node_modules/jquery/dist/jquery.js",
             "node_modules/@popperjs/core/dist/umd/popper.js",
             "node_modules/swiper/swiper-bundle.js",
-            "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
+            "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
             "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
             "node_modules/jquery-validation/dist/jquery.validate.js",
             "node_modules/jquery-validation/dist/localization/messages_ru.js",

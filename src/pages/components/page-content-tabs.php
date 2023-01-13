@@ -4,15 +4,14 @@
             <div class="page-content-tabs__nav swiper-wrapper">
                 <? $arMenu = array (
                     "lk-org-profile.php" => "Профиль",
-                    "test2.php" => "Заявки",
-                    "test3.php" => "Учет времени",
+                    "lk-org-request.php" => "Заявки",
+                    "lk-org-tracking.php" => "Учет времени",
                     "lk-org-events.php" => "Экодела",
-                    /*"lk-org-events-past.php" => "Экодела",*/
                     "lk-org-petition.php" => "Петиции",
                     "lk-org-project.php" => "Проекты",
-                    "test7.php" => "Избранное",
-                    "test8.php" => "Рейтинг и отзывы",
-                    "test9.php" => "Права доступа",
+                    "lk-org-favorites-vol.php" => "Избранное",
+                    "lk-org-reviews.php" => "Рейтинг и отзывы",
+                    "lk-org-rights.php" => "Права доступа",
                 );
                 foreach ($arMenu as $arItem => $value) : ?>
                     <div class="swiper-slide page-content-tabs__nav-item notice">

@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "@fancyapps/ui": "^4.0.31",
     "@popperjs/core": "^2.11.2",
     "aos": "^2.3.4",
     "bs-stepper": "^1.7.0",

@@ -9,6 +9,7 @@ function application() {
 }
 application.prototype.init = function () {
     this.initTabs();
+    this.initNotice();
     this.initRegStepper();
     this.initValidationNumCode();
     this.initNavTabs();
@@ -25,10 +26,12 @@ application.prototype.init = function () {
     this.initMaskedInput();
     this.initAddList();
     this.initReadmore();
-    this.initSweetalert();
+    /*this.initReadmoreResponsive(); todo - Доделать*/
+    this.initAccordion();
+    this.initCheckall();
 };
 
-// Init tabs
+// Initialization tabs
 application.prototype.initTabs = function () {
     if ($(".tabs").length) {
         let currentSelected = 1;
@@ -41,6 +44,12 @@ application.prototype.initTabs = function () {
             $(this).closest(".tabs").find(".tabs__panel[data-id='" + currentSelected + "']").addClass("active");
         });
     }
+};
+// Initialization tabs
+application.prototype.initNotice = function () {
+    $(document).on("click", ".notice", function () {
+        $(this).find(".notice-elem").removeClass("active");
+    });
 };
 // Initialization validation num code
 application.prototype.initValidationNumCode = function () {
@@ -396,13 +405,215 @@ application.prototype.initReadmore = function () {
         });
     }
 };
-// Initialization modal popup
-application.prototype.initSweetalert = function () {
-    $(document).on("click", ".swal", function (e) {
-        swal({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success",
-        });
-    });
+// Initialization readmore plugin responsive
+application.prototype.initReadmoreResponsive = function () {
+    initReadmoreDesktopOnly();
+    initReadmoreMobileOnly();
+    $(window).on("resize", initReadmoreMobileOnly);
+    $(window).on("resize", initReadmoreDesktopOnly);
+
+    function initReadmoreMobileOnly() {
+        if (window.matchMedia("(max-width: 767.98px)").matches) {
+            $(".js-spoiler-mobile-only").addClass("js-spoiler");
+        }
+    }
+    function initReadmoreDesktopOnly() {
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            $(".js-spoiler-desktop-only").addClass("js-spoiler");
+        }
+    }
+};
+// Initialization accordion
+application.prototype.initAccordion = function () {
+    if ($(".accordion").length) {
+        /*initAccordionBtnException();*/
+        initAccordionResonsive();
+        $(window).on("resize", initAccordionResonsive, reloadAccordionResonsive);
+
+        /*function initAccordionBtnException() {
+            $(document).on("click", function (e) {
+                if ($(".js-accordion-btn-exception").is(e.target)) {
+
+                    $(e).closest(".accordion__item").find(".accordion__collapse").hide();
+                    $(e).closest(".accordion").find(".accordion__btn").removeClass("open");
+                    $(e).closest(".accordion").find(".accordion__item").removeClass("active");
+                }
+            });
+
+            $(".js-accordion-btn-exception").on("click", function () {
+                $(this)
+            });
+        }*/
+        function reloadAccordionResonsive() {
+            setTimeout(function () {
+                location.reload();
+            }, 300);
+        }
+        function initAccordionResonsive() {
+            $(".accordion__collapse").hide();
+
+            if (window.matchMedia("(max-width: 767.98px)").matches) {
+                $(".js-accordion-btn").on("click", function () {
+                    if (!$(this).hasClass("open")) {
+                        $(this).closest(".accordion").find(".accordion__btn").removeClass("open");
+                        $(this).closest(".accordion__item").siblings(".accordion__item").removeClass("active");
+                        $(this).closest(".accordion__item").siblings(".accordion__item").find(".accordion__collapse").slideUp(160);
+                        $(this).addClass("open");
+                        $(this).closest(".accordion__item").addClass("active");
+                        $(this).closest(".accordion__item").find(".accordion__collapse").removeClass("collapsed");
+                        $(this).closest(".accordion__item").find(".accordion__collapse").slideDown(160);
+                    } else if ($(this).hasClass("open")) {
+                        $(this).removeClass("open");
+                        $(this).closest(".accordion__item").removeClass("active");
+                        $(this).closest(".accordion__item").find(".accordion__collapse").slideUp(160);
+                        setTimeout(function () {
+                            $(this).closest(".accordion__item").find(".accordion__collapse").addClass("collapsed");
+                        }, 160);
+                    }
+                });
+            } else if (window.matchMedia("(min-width: 768px)").matches) {
+                $(".js-accordion-btn-icon").on("click", function () {
+                    if (!$(this).closest(".js-accordion-btn").hasClass("open")) {
+                        $(this).closest(".accordion").find(".accordion__btn").removeClass("open");
+                        $(this).closest(".accordion__item").siblings(".accordion__item").removeClass("active");
+                        $(this).closest(".accordion__item").siblings(".accordion__item").find(".accordion__collapse").slideUp(160);
+                        $(this).closest(".accordion__btn").addClass("open");
+                        $(this).closest(".accordion__item").addClass("active");
+                        $(this).closest(".accordion__item").find(".accordion__collapse").removeClass("collapsed");
+                        $(this).closest(".accordion__item").find(".accordion__collapse").slideDown(160);
+                    } else if ($(this).closest(".js-accordion-btn").hasClass("open")) {
+                        $(this).closest(".accordion").find(".accordion__btn").removeClass("open");
+                        $(this).closest(".accordion__item").removeClass("active");
+                        $(this).closest(".accordion__item").find(".accordion__collapse").slideUp(160);
+                        setTimeout(function () {
+                            $(this).closest(".accordion__item").find(".accordion__collapse").addClass("collapsed");
+                        }, 160);
+                    }
+                });
+            }
+        }
+    }
+};
+
+// Initialization check all group
+application.prototype.initCheckall = function () {
+    if ($(".checkall-for").length) {
+        initOnloadCheckall();
+        initOnclickCheckallFor();
+        initOnclickCheckallGroup();
+
+        function initOnloadCheckall() {
+            $(".checkall-for").each(function () {
+                const checkallFor = $(this);
+                const checkallForData = checkallFor.data("checkall-for");
+                let checkallForState = false;
+                let checkallGroupState = [];
+                let checkallGroupCheckedState = [];
+
+                checkallForHandling();
+                compareGroupState(checkallGroupState);
+
+                function checkallForHandling() {
+                    $(".checkall-group[data-checkall-group='" + checkallForData + "']").each(function (e) {
+                        let checkallGroupElem = $(this);
+
+                        if(checkallGroupElem.is(":checked")) {
+                            checkallForState = true;
+                            checkallGroupState.push(true);
+                        } else if(!checkallGroupElem.is(":checked")) {
+                            checkallGroupState.push(false);
+                        }
+                    });
+
+                    if(checkallForState === false) {
+                        checkallFor.prop("checked", false);
+                    } else if(checkallForState === true) {
+                        checkallFor.prop("checked", true);
+                    }
+                }
+
+                function compareGroupState(arr) {
+                    $.each(arr, function(i) {
+                        if(arr[i] === true) {
+                            checkallGroupCheckedState.push("checked");
+                        } else if(arr[i] === false) {
+                            checkallGroupCheckedState.push("notChecked");
+                        }
+                    });
+
+                    const allChecked = checkallGroupCheckedState.every(elem => elem === "checked");
+
+                    if(allChecked) checkallFor.removeClass("custom-checkbox__input--checkline");
+                }
+            });
+        }
+
+
+        function initOnclickCheckallFor() {
+            $(".checkall-for").on("click", function (e) {
+                const checkallFor = $(this);
+                const checkallForData = checkallFor.data("checkall-for");
+
+                if(checkallFor.is(":checked")) {
+                    checkallFor.prop("checked", true);
+                    checkallFor.removeClass("custom-checkbox__input--checkline");
+                    $(".checkall-group[data-checkall-group='" + checkallForData + "']").prop("checked", true);
+                } else if(!checkallFor.is(":checked")) {
+                    checkallFor.prop("checked", false);
+                    $(".checkall-group[data-checkall-group='" + checkallForData + "']").prop("checked", false);
+                }
+            });
+        }
+
+        function initOnclickCheckallGroup() {
+            $(".checkall-group").on("click", function (e) {
+                const checkallGroup = $(this);
+                const checkallGroupData = checkallGroup.data("checkall-group");
+
+                let checkallGroupState = [];
+                let checkallGroupCheckedState = [];
+
+                checkallGroupHandling();
+                compareGroupState(checkallGroupState);
+
+                function checkallGroupHandling() {
+                    $(".checkall-group[data-checkall-group='" + checkallGroupData + "']").each(function (e) {
+                        let checkallGroupElem = $(this);
+
+                        if(checkallGroupElem.is(":checked")) {
+                            checkallGroupState.push(true);
+                        } else if(!checkallGroupElem.is(":checked")) {
+                            checkallGroupState.push(false);
+                        }
+                    });
+                }
+
+                function compareGroupState(arr) {
+                    $.each(arr, function(i) {
+                        if(arr[i] === true) {
+                            checkallGroupCheckedState.push("checked");
+                        } else if(arr[i] === false) {
+                            checkallGroupCheckedState.push("notChecked");
+                        }
+                    });
+
+                    const allChecked = checkallGroupCheckedState.every(elem => elem === "checked");
+                    const allNotChecked = checkallGroupCheckedState.every(elem => elem === "notChecked");
+
+                    if(allChecked) {
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop("checked", true);
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").removeClass("custom-checkbox__input--checkline");
+                    } else if(allNotChecked) {
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop("checked", false);
+                    } else if(!allChecked && !allNotChecked) {
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop("checked", true);
+
+                        if(!$(".checkall-for[data-checkall-for='" + checkallGroupData + "']").hasClass("custom-checkbox__input--checkline")) {
+                            $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").addClass("custom-checkbox__input--checkline");
+                        }
+                    }
+                }
+            });
+        }
+    }
 };
