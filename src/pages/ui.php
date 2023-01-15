@@ -1518,23 +1518,23 @@
                 <div class="flex-v-center" style="width: 100%;">
                     <!--start ui content-->
                     <form id="" class="form authreg-form" method="POST" action="">
-                        <div class="form__field">
-                            <label for="regFormVolunteerEmail" class="form__label-for">
-                                Селект <span class="required-star">*</span>
-                            </label>
-                            <select
-                                    name=""
-                                    id=""
-                                    class="input-reset form__input form__input--select js-select2"
-                            >
-                                <option value="0">option 1</option>
-                                <option value="1">option 2</option>
-                                <option value="2">option 3</option>
-                            </select>
-                            <div class="form__btn">
-                                <svg class="icon">
-                                    <use href="img/sprite.svg#arrow-dropdown"></use>
-                                </svg>
+                        <div class="page-content__section">
+                            <div class="page-content__section-item">
+                                <div class="page-content__section-item-title">
+                                    <span>Селект <span class="required-star">*</span></span>
+                                </div>
+                                <div class="form__field">
+                                    <select
+                                            id=""
+                                            name=""
+                                            class="input-reset form__input form__input--select2 js-select2"
+                                            required
+                                    >
+                                        <option value="0">Селект 1</option>
+                                        <option value="1">Селект 2</option>
+                                        <option value="2">Селект 3</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </form>
