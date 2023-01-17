@@ -1253,6 +1253,21 @@ input.disabled {
 		margin-bottom: 24px;
 		line-height: 22px;
 	}
+	&__title-block {
+		&,
+		&-name,
+		&-subtitle {
+			display: block;
+		}
+		&-name {
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+		&-subtitle {
+			color: var(--text5-color);
+		}
+	}
 	&__favorite {
 		display: flex;
 	}
@@ -1433,7 +1448,8 @@ input.disabled {
 	}
 	&__contact-btn {
 		display: flex;
-		align-items: center;
+		flex: 1;
+		align-items: flex-end;
 		gap: 12px;
 	}
 
@@ -1494,7 +1510,7 @@ input.disabled {
 			}
 		}
 		& .card__contact-btn {
-			margin-left: auto;
+			justify-content: flex-end;
 		}
 	}
 
@@ -1515,6 +1531,7 @@ input.disabled {
 		}
 		& .card__header {
 			color: var(--text2-color);
+			text-align: center;
 			transition: 0.16s ease-out;
 		}
 		& .card__title {
@@ -1712,6 +1729,16 @@ input.disabled {
 				font-size: 20px;
 				line-height: 28px;
 			}
+			& .card__title-block {
+				margin-bottom: 20px;
+
+				&-name {
+					font-size: 20px;
+				}
+				&-subtitle {
+					font-size: 16px;
+				}
+			}
 			& .card__action {
 				&:not(:last-child) {
 					margin-bottom: 24px;
@@ -1745,7 +1772,8 @@ input.disabled {
 	.card {
 		&__contact-btn--vol {
 			display: flex;
-			align-items: center;
+			flex: 1;
+			align-items: flex-end;
 			gap: 20px;
 		}
 
@@ -1909,6 +1937,13 @@ input.disabled {
 				min-height: 40px;
 				margin-bottom: 12px;
 				line-height: 20px;
+			}
+			& .card__title-block {
+				margin-bottom: 12px;
+
+				&-subtitle {
+					font-size: 13px;
+				}
 			}
 			& .card__action {
 				margin-bottom: 16px;
@@ -2656,6 +2691,40 @@ input.disabled {
 		&__close {
 			top: 8px;
 			right: 8px;
+		}
+	}
+}
+
+.block-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	&__title {
+		display: flex;
+		flex: 1;
+		align-items: center;
+
+		&-num {
+			color: var(--text7-color);
+		}
+	}
+}
+@media (min-width: 768px) {
+	.block-header {
+		gap: 24px;
+
+		&__title {
+			gap: 16px;
+		}
+	}
+}
+@media (max-width: 767.98px) {
+	.block-header {
+		gap: 16px;
+
+		&__title {
+			gap: 8px;
 		}
 	}
 }

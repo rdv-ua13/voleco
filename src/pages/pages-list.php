@@ -59,7 +59,7 @@
             <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">47 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">54 + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">62 + ui (всего страниц в макете)</span>
         </span>
@@ -118,9 +118,16 @@
 
             <br>
             <li><a href="lk-vol-profile.php" target="_blank">ЛК Вол - профиль</a></li>
+            <li><a href="lk-vol-request.php" target="_blank">ЛК Вол - заявки</a></li><!-- #54 -->
             <li><a href="lk-vol-events.php" target="_blank">ЛК Вол - мероприятия</a></li>
             <li><a href="lk-vol-events-past.php" target="_blank">ЛК Вол - мероприятия (прошедшие)</a></li>
-            <li><a href="lk-vol-reviews-vol.php" target="_blank">ЛК Вол - рейтинг и отзывы - отзывы организаторов</a></li><!-- #47 -->
+            <li><a href="lk-vol-reviews-vol.php" target="_blank">ЛК Вол - рейтинг и отзывы - отзывы организаторов</a></li>
+            <li><a href="lk-vol-favorites-org.php" target="_blank">ЛК Вол - избранное организаторы</a></li>
+            <li><a href="lk-vol-favorites-event.php" target="_blank">ЛК Вол - избранное мероприятия</a></li>
+            <li><a href="lk-vol-favorites-project.php" target="_blank">ЛК Вол - избранное проекты</a></li>
+            <li><a href="lk-vol-favorites-vol.php" target="_blank">ЛК Вол - избранное волонтёры</a></li>
+            <li><a href="lk-vol-archive-task.php" target="_blank">ЛК Вол - архив - задачи</a></li>
+            <li><a href="lk-vol-archive-event.php" target="_blank">ЛК Вол - архив - экодела</a></li>
 
             <br>
             <li><a href="lk-vol-profile-settings.php" target="_blank">ЛК Вол - настройки профиля</a></li>

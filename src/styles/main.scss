@@ -747,6 +747,11 @@
 		&__main {
 			max-width: calc(100% - 280px - 45px);
 			margin-right: 45px;
+
+			&.page-content__main--full {
+				max-width: 100%;
+				margin-right: 0;
+			}
 		}
 		&__sidebar {
 			min-width: 280px;

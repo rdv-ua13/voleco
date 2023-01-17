@@ -144,6 +144,12 @@
 		}
 		&__bottom-list {
 			gap: 32px;
+
+			& li {
+				&:last-child {
+					margin-left: auto;
+				}
+			}
 		}
 	}
 }

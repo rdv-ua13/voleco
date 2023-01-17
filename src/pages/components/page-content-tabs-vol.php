@@ -7,8 +7,8 @@
 					"lk-vol-request.php" => "Заявки и приглашения",
 					"lk-vol-events.php" => "Экодела",
 					"lk-vol-reviews-vol.php" => "Рейтинг и отзывы",
-					"lk-vol-favorites.php" => "Избранное",
-					"lk-vol-archive.php" => "Архив",
+					"lk-vol-favorites-org.php" => "Избранное",
+					"lk-vol-archive-task.php" => "Архив",
 				);
 				foreach ($arMenu as $arItem => $value) : ?>
 					<div class="swiper-slide page-content-tabs__nav-item notice">

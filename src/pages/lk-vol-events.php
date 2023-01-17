@@ -2,7 +2,7 @@
 
 <div class="block-mb">
 	<div class="page-content">
-		<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/page-content-header.php"); ?>
+		<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/page-content-header-vol.php"); ?>
 
 		<div id="pageContentBody" class="page-content__body">
 			<div class="block-mb-md">
