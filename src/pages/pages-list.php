@@ -59,7 +59,7 @@
             <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">43 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">47 + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">62 + ui (всего страниц в макете)</span>
         </span>
@@ -106,7 +106,7 @@
             <li><a href="lk-org-reviews-vol.php" target="_blank">ЛК Орг - рейтинг и отзывы - отзывы волонтёров</a></li>
             <li><a href="lk-org-favorites-vol.php" target="_blank">ЛК Орг - избранное волонтёры</a></li>
             <li><a href="lk-org-favorites-org.php" target="_blank">ЛК Орг - избранное организаторы</a></li>
-            <li><a href="lk-org-rights.php" target="_blank">ЛК Орг - права доступа</a></li><!-- №43 -->
+            <li><a href="lk-org-rights.php" target="_blank">ЛК Орг - права доступа</a></li>
 
             <br>
             <li><a href="lk-org-profile-settings.php" target="_blank">ЛК Орг - настройки профиля</a></li>
@@ -115,6 +115,12 @@
             <li><a href="lk-org-create-ecodelo-task-settings.php" target="_blank">ЛК Орг - создать экодело-задачи</a></li>
             <li><a href="lk-org-create-task-settings.php" target="_blank">ЛК Орг - создать новую задачу</a></li>
             <li><a href="lk-org-create-petition-settings.php" target="_blank">ЛК Орг - создать новую петицию</a></li>
+
+            <br>
+            <li><a href="lk-vol-profile.php" target="_blank">ЛК Вол - профиль</a></li>
+            <li><a href="lk-vol-events.php" target="_blank">ЛК Вол - мероприятия</a></li>
+            <li><a href="lk-vol-events-past.php" target="_blank">ЛК Вол - мероприятия (прошедшие)</a></li>
+            <li><a href="lk-vol-reviews-vol.php" target="_blank">ЛК Вол - рейтинг и отзывы - отзывы организаторов</a></li><!-- #47 -->
 
             <br>
             <li><a href="lk-vol-profile-settings.php" target="_blank">ЛК Вол - настройки профиля</a></li>

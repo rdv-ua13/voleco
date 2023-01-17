@@ -395,10 +395,10 @@ application.prototype.initReadmore = function () {
 
             $(".js-spoiler-" + i).readmore({
                 collapsedHeight: currentElemHeight,
-                moreLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--link btn--tdu-dashed btn--green">\n' +
+                moreLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--link btn--tdu-dashed btn--green page-content__spoiler-trigger">\n' +
                     '                                        <span class="btn__text">Показать полностью</span>\n' +
                     '                                    </a>',
-                lessLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--link btn--tdu-dashed btn--green">\n' +
+                lessLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--link btn--tdu-dashed btn--green page-content__spoiler-trigger">\n' +
                     '                                        <span class="btn__text">Скрыть</span>\n' +
                     '                                    </a>'
             });

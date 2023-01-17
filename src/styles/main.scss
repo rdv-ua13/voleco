@@ -359,8 +359,22 @@
 		line-height: 22px;
 
 		&,
-		&__spoiler-text {
+		&-text {
 			display: block;
+
+			& p {
+				margin-top: 0;
+
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&-trigger {
+			padding-top: 12px;
 		}
 	}
 	&__descr {
@@ -442,10 +456,10 @@
 			&-value {
 				white-space: nowrap;
 			}
-		}
-		&-stats-btn {
-			& .btn {
-				width: 100%;
+			&-points {
+				color: var(--green-color);
+				font-weight: 500;
+				line-height: 1;
 			}
 		}
 	}
@@ -454,7 +468,7 @@
 			order: 1;
 			flex: 1;
 		}
-		& .page-content__sidebar {
+		& .page-content__preview + .page-content__main + .page-content__sidebar {
 			order: 5;
 		}
 		& .page-content__main {
@@ -468,12 +482,12 @@
 	&__main--profile {
 		& .page-content__descr {
 			&-title {
+				color: var(--text5-color);
+				line-height: 1.2;
+
 				&:not(:last-child) {
 					margin-bottom: 8px;
 				}
-
-				color: var(--text5-color);
-				line-height: 1.2;
 			}
 			&-position-title {
 				color: var(--text5-color);
@@ -630,6 +644,10 @@
 			}
 			&-stats {
 				gap: 16px;
+
+				&-points {
+					font-size: 42px;
+				}
 			}
 		}
 		&__container--profile {
@@ -649,7 +667,26 @@
 					margin-bottom: 36px;
 				}
 			}
+			& .page-content__preview + .page-content__main + .page-content__sidebar {
+				grid-row: 1/3;
+			}
+		}
+		&__container--profile-vol {
+			display: grid;
+			grid-template-columns: auto 280px;
+			grid-template-rows: auto auto;
+
+			& .page-content__content-type,
 			& .page-content__sidebar {
+				width: 100%;
+			}
+			& .page-content__main {
+				max-width: 100%;
+			}
+			& .page-content__content-type {
+				grid-row: 1/2;
+			}
+			& .page-content__content-type + .page-content__main + .page-content__sidebar {
 				grid-row: 1/3;
 			}
 		}
@@ -725,7 +762,7 @@
 				}
 			}
 			& .page-content__sidebar {
-				order: 5;
+				order: 20;
 				min-width: 410px;
 				width: 410px;
 			}
@@ -811,6 +848,9 @@
 			& .page-content__sidebar {
 				min-width: 100%;
 				width: 100%;
+			}
+			& .page-content__sidebar {
+				order: 5;
 			}
 		}
 	}
@@ -964,6 +1004,10 @@
 			}
 			&-stats {
 				gap: 12px;
+
+				&-points {
+					font-size: 36px;
+				}
 			}
 		}
 		&__container--profile {

@@ -330,6 +330,9 @@ svg {
 			fill: var(--green-color);
 		}
 	}
+	&--full {
+		width: 100%;
+	}
 }
 
 .link {
@@ -1110,128 +1113,6 @@ input.disabled {
 	&__panel.active {
 		display: block;
 	}
-	/* todo: потенциально лишний класс и стили */
-	&--profile {
-		width: 100%;
-
-		& .tabs__nav {
-			position: relative;
-			display: flex;
-			gap: 32px;
-			min-height: 0;
-			height: auto;
-			padding: 0;
-			border-radius: 0;
-			background: transparent;
-
-			&::before {
-				content: "";
-				z-index: 0;
-				position: absolute;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				min-height: 1px;
-				background-color: var(--text8-color);
-			}
-		}
-		& .tabs__nav-item {
-			flex: 0;
-		}
-		& .tabs__nav-btn {
-			min-height: 50px;
-			height: 50px;
-			padding: 14px 0 16px;
-			border-radius: 0;
-			color: var(--text5-color);
-
-			&::before {
-				content: "";
-				z-index: 1;
-				position: absolute;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				min-height: 1px;
-				background-color: transparent;
-				transition: 0.16s ease-out;
-			}
-			&.selected {
-				box-shadow: none;
-				background: transparent;
-				color: var(--text1-color);
-
-				&::before,
-				&:hover::before {
-					height: 2px;
-					background-color: var(--green-color);
-				}
-			}
-			&:hover {
-				color: var(--text1-color);
-
-				&::before {
-					height: 1px;
-					background-color: var(--text6-color);
-				}
-			}
-		}
-	}
-	&--profile-slider {
-		& .tabs__nav-slider {
-			position: relative;
-
-			&::before {
-				content: "";
-				z-index: 0;
-				position: absolute;
-				top: 48px;
-				left: 0;
-				min-width: 100vw;
-				min-height: 1px;
-				height: 1px;
-				background-color: var(--text8-color);
-			}
-		}
-		& .tabs__nav {
-			gap: unset;
-
-			&::before {
-				content: none;
-			}
-			& .tabs__nav-item {
-				&:not(:last-child) {
-					margin-right: 32px;
-				}
-			}
-			& .tabs__nav-btn::before {
-				bottom: 1px;
-			}
-		}
-	}
-	/* /end todo: потенциально лишний класс и стили */
-}
-@media (min-width: 768px) {
-	.tabs {
-		/* todo: потенциально лишний класс и стили */
-		&--profile {
-			& .tabs__content {
-				padding-top: 36px;
-			}
-		}
-		/* /end todo: потенциально лишний класс и стили */
-	}
-}
-@media (max-width: 767.98px) {
-	.tabs {
-		/* todo: потенциально лишний класс и стили */
-		&--profile {
-			& .tabs__content {
-				padding-top: 24px;
-			}
-		}
-		/* /end todo: потенциально лишний класс и стили */
-	}
 }
 
 .notice {
@@ -1459,15 +1340,15 @@ input.disabled {
 	}
 	&__organizer-logo {
 		position: relative;
-		min-width: 42px;
-		width: 42px;
-		min-height: 42px;
-		height: 42px;
+		margin: -1px;
 		border: 1px solid rgba(55, 65, 81, 0.1);
 
-		&,
 		& picture,
 		& img {
+			min-width: 42px;
+			width: 42px;
+			min-height: 42px;
+			height: 42px;
 			border-radius: 8px;
 		}
 	}
@@ -1768,13 +1649,15 @@ input.disabled {
 			gap: 8px;
 		}
 		& .card__rate {
-			gap: 2px;
-			height: auto;
-			margin: 0;
-			padding: 0;
-			border: 0;
-			border-radius: 0;
-			box-shadow: none;
+			&--noframe {
+				gap: 2px;
+				height: auto;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				border-radius: 0;
+				box-shadow: none;
+			}
 
 			&-title {
 				line-height: 1;
@@ -1860,6 +1743,12 @@ input.disabled {
 }
 @media (min-width: 768px) {
 	.card {
+		&__contact-btn--vol {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+		}
+
 		&--pa-default {
 			& .card-contact-btn-more {
 				gap: 8px;
@@ -1873,7 +1762,7 @@ input.disabled {
 		&--pa-reviews-org {
 			padding: 16px 24px;
 
-			& .card__header {
+			& .card__item:first-child {
 				padding-bottom: 16px;
 				border-bottom: 1px solid var(--text8-color);
 			}
@@ -1882,6 +1771,9 @@ input.disabled {
 			}
 			& .card__subtitle {
 				font-size: 13px;
+			}
+			& .card__organizer-title {
+				font-size: 15px;
 			}
 		}
 	}
@@ -1933,6 +1825,17 @@ input.disabled {
 }
 @media (max-width: 767.98px) {
 	.card {
+		&__contact-btn--vol {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 12px;
+
+			& .btn:last-child {
+				align-self: center;
+			}
+		}
+
 		&--pa-default {
 			& .card-contact-btn-more {
 				& .btn:not(.card-contact-btn-more__menu) {

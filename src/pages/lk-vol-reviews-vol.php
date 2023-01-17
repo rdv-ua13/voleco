@@ -6,19 +6,19 @@
 
 		<div id="pageContentBody" class="page-content__body">
 			<div class="block-mb-md">
-				<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/page-content-tabs.php"); ?>
+				<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/page-content-tabs-vol.php"); ?>
 			</div>
 
 			<div class="container">
-				<div class="page-content__container">
+				<div class="page-content__container page-content__container--profile-vol">
 					<div class="page-content__content-type">
 						<div class="tab-links-slider swiper js-main-section-tabs">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<a href="lk-org-reviews.php#pageContentBody" class="tab-links-slider__link">Мои отзывы</a>
+									<a href="lk-vol-reviews-vol.php#pageContentBody" class="tab-links-slider__link selected">Отзывы организаторов</a>
 								</div>
 								<div class="swiper-slide">
-									<a href="lk-org-reviews-vol.php#pageContentBody" class="tab-links-slider__link selected">Отзывы волонтеров</a>
+									<a href="javascript:;" class="tab-links-slider__link">Мои отзывы</a>
 								</div>
 							</div>
 						</div>
@@ -26,21 +26,9 @@
 
 					<div class="page-content__main">
 						<div class="card-list card-list-column">
-                            <a href="javascript:;" class="card card--pa-reviews-org">
-                                <span class="card__item card__header">
-                                    <span class="card__view">
-                                        <picture>
-                                            <source srcset="img/card-photo-volunteer.webp" type="image/webp">
-                                            <img loading="lazy" src="img/card-photo-volunteer.png" class="image" width="42" height="42" alt="Фото карточки">
-                                        </picture>
-                                    </span>
-                                    <span class="card__heading">
-                                        <span class="card__title">Третьяков Авраам Романович</span>
-                                        <span class="card__subtitle">Голосование за благоустройство общественных пространств</span>
-                                    </span>
-                                </span>
-
+							<a href="javascript:;" class="card card--pa-reviews-org">
                                 <span class="card__item card__descr">
+                                    <span class="card__descr-title">Голосование за благоустройство общественных пространств</span>
                                     <span class="card__rate-wrapper">
                                         <span class="card__rate-title">Оценка:</span>
                                         <span class="card__rate card__rate--noframe">
@@ -77,22 +65,38 @@
                                         </span>
                                     </span>
                                 </span>
-                            </a>
-                            <a href="javascript:;" class="card card--pa-reviews-org">
+
                                 <span class="card__item card__header">
-                                    <span class="card__view">
-                                        <picture>
-                                            <source srcset="img/card-photo-volunteer.webp" type="image/webp">
-                                            <img loading="lazy" src="img/card-photo-volunteer.png" class="image" width="42" height="42" alt="Фото карточки">
-                                        </picture>
-                                    </span>
-                                    <span class="card__heading">
-                                        <span class="card__title">Некрасов Лев Филатович</span>
-                                        <span class="card__subtitle">XI Международный форум «Арктика: настоящее и будущее»</span>
+                                    <span class="card__organizer">
+                                        <span class="card__organizer-logo">
+                                            <picture>
+                                                <source srcset="img/card-projects-org.webp" type="image/webp">
+                                                <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
+                                            </picture>
+                                            <span class="card__organizer-logo-check">
+                                                <span class="success-check success-check--mini">
+                                                    <svg class="icon">
+                                                        <use href="img/sprite.svg#success-check"></use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="card__organizer-descr">
+                                            <span class="card__organizer-title">Ассоциация волонтерских центров</span>
+                                            <span class="card__organizer-activity">12 мероприятий</span>
+                                        </span>
+                                        <span class="card__rate">
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <span class="card__rate-value">4.8</span>
+                                        </span>
                                     </span>
                                 </span>
-
+							</a>
+							<a href="javascript:;" class="card card--pa-reviews-org">
                                 <span class="card__item card__descr">
+                                    <span class="card__descr-title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
                                     <span class="card__rate-wrapper">
                                         <span class="card__rate-title">Оценка:</span>
                                         <span class="card__rate card__rate--noframe">
@@ -106,7 +110,7 @@
                                                 <use href="img/sprite.svg#star"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#star-gray"></use>
                                             </svg>
                                             <svg class="icon">
                                                 <use href="img/sprite.svg#star-gray"></use>
@@ -124,7 +128,35 @@
                                         </span>
                                     </span>
                                 </span>
-                            </a>
+
+                                <span class="card__item card__header">
+                                    <span class="card__organizer">
+                                        <span class="card__organizer-logo">
+                                            <picture>
+                                                <source srcset="img/card-projects-org.webp" type="image/webp">
+                                                <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
+                                            </picture>
+                                            <span class="card__organizer-logo-check">
+                                                <span class="success-check success-check--mini">
+                                                    <svg class="icon">
+                                                        <use href="img/sprite.svg#success-check"></use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="card__organizer-descr">
+                                            <span class="card__organizer-title">Ассоциация волонтерских центров</span>
+                                            <span class="card__organizer-activity">12 мероприятий</span>
+                                        </span>
+                                        <span class="card__rate">
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <span class="card__rate-value">4.8</span>
+                                        </span>
+                                    </span>
+                                </span>
+							</a>
 
 						</div>
 					</div>

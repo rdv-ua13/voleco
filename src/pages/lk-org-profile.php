@@ -426,7 +426,7 @@
                                 </div>
                             </div>
                             <div class="page-content__sidebar-stats-btn">
-                                <button class="btn-reset btn">
+                                <button class="btn-reset btn btn--midi btn--full">
                                     <span class="btn__text">Вся аналитика</span>
                                 </button>
                             </div>
