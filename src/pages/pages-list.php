@@ -70,14 +70,15 @@
         <ul>
             <?/*<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>*/?>
             <li><a href="index.php" target="_blank">Главная (в процессе)</a></li>
-            <li><a href="organizer.php" target="_blank">Организаторам (в процессе)</a></li>
 
             <br>
-            <li><a href="registration.php" target="_blank">Регистрация</a></li>
+			<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
+            <li><a href="registration.php" target="_blank">Регистрация (содержит 4 макетных страницы)</a></li>
             <li><a href="auth.php" target="_blank">Авторизация</a></li>
-            <li><a href="password-recovery.php" target="_blank">Восстановление пароля</a></li>
+            <li><a href="password-recovery.php" target="_blank">Восстановление пароля (содержит 3 макетных страницы)</a></li>
 
             <br>
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="ms-ecodela.php" target="_blank">Экодела</a></li>
             <li><a href="ms-petitions.php" target="_blank">Петиции</a></li>
             <li><a href="ms-fundraising.php" target="_blank">Сбор средств</a></li>
@@ -95,6 +96,7 @@
             <li><a href="details-volunteer-feedback.php" target="_blank">детальная - Эковолонтеры отзывы (в процессе)</a></li>
 
             <br>
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="lk-org-profile.php" target="_blank">ЛК Орг - профиль</a></li>
             <li><a href="lk-org-request.php" target="_blank">ЛК Орг - заявки</a></li>
             <li><a href="lk-org-tracking.php" target="_blank">ЛК Орг - Учет времени волонтера</a></li>
@@ -109,6 +111,7 @@
             <li><a href="lk-org-rights.php" target="_blank">ЛК Орг - права доступа</a></li>
 
             <br>
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="lk-org-profile-settings.php" target="_blank">ЛК Орг - настройки профиля</a></li>
             <li><a href="lk-org-create-project-settings.php" target="_blank">ЛК Орг - создать проект</a></li>
             <li><a href="lk-org-create-ecodelo-settings.php" target="_blank">ЛК Орг - создать экодело</a></li>
@@ -117,6 +120,7 @@
             <li><a href="lk-org-create-petition-settings.php" target="_blank">ЛК Орг - создать новую петицию</a></li>
 
             <br>
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="lk-vol-profile.php" target="_blank">ЛК Вол - профиль</a></li>
             <li><a href="lk-vol-request.php" target="_blank">ЛК Вол - заявки</a></li><!-- #54 -->
             <li><a href="lk-vol-events.php" target="_blank">ЛК Вол - мероприятия</a></li>
@@ -130,6 +134,7 @@
             <li><a href="lk-vol-archive-event.php" target="_blank">ЛК Вол - архив - экодела</a></li>
 
             <br>
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="lk-vol-profile-settings.php" target="_blank">ЛК Вол - настройки профиля</a></li>
             <li><a href="lk-vol-profile-contact-settings.php" target="_blank">ЛК Вол - настройки профиля (Контакты)</a></li>
             <li><a href="lk-vol-profile-about-settings.php" target="_blank">ЛК Вол - настройки профиля (Образование и место работы)</a></li>
@@ -137,6 +142,18 @@
 
             <br>
             <li><a href="ui.php" target="_blank">ui</a></li>
+
+            <br>
+            <br>
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Страницы в процессе</li>
+            <li><a href="organizer.php" target="_blank">Организаторам (в процессе)</a></li>
+            <li><a href="javascript:;" target="_blank">Организаторы - детальная</a></li>
+            <li><a href="javascript:;" target="_blank">Организаторы - детальная отзывы</a></li>
+            <li><a href="javascript:;" target="_blank">Организаторы - детальная фото</a></li>
+            <li><a href="javascript:;" target="_blank">Организаторы - детальная видео</a></li>
+            <li><a href="javascript:;" target="_blank">Аналитика</a></li>
+            <li><a href="javascript:;" target="_blank">Новости</a></li>
+            <li><a href="javascript:;" target="_blank">Новости - детальная</a></li>
         </ul>
     </div>
     </body>

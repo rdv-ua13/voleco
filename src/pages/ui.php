@@ -1689,6 +1689,23 @@
 
     <br>
     <br>
+
+    <h3 class="text-center">Pagination</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="width: 100%;">
+                    <!--start ui content-->
+					<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/pagination.php"); ?>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
     <br>
     <br>
     <br>

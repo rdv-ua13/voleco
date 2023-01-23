@@ -19,6 +19,7 @@ application.prototype.init = function () {
     this.initFormProcessing();
     this.initCardFavorite();
     this.initTagbarSlider();
+    this.initBasicSlider();
     this.initHandlerCurrentUser();
     this.initSelect2();
     /*this.initDropfiles();*/
@@ -259,6 +260,165 @@ application.prototype.initTagbarSlider = function () {
                 direction: "horizontal",
                 mousewheel: true,
             });
+        });
+    }
+};
+// Initialization basic slider
+application.prototype.initBasicSlider = function () {
+    if ($(".basic-slider-ecodelo").length) {
+        const ecodeloSlider = new Swiper(".basic-slider-ecodelo .js-basic-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 12,
+            slidesPerGroup: 1,
+            direction: "horizontal",
+            navigation: {
+                nextEl: ".basic-slider-ecodelo .swiper-button-next",
+                prevEl: ".basic-slider-ecodelo .swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 24,
+                },
+                1328: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 24,
+                }
+            }
+        });
+    }
+
+    if ($(".basic-slider-petition").length) {
+        const petitionSlider = new Swiper(".basic-slider-petition .js-basic-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 12,
+            slidesPerGroup: 1,
+            direction: "horizontal",
+            navigation: {
+                nextEl: ".basic-slider-petition .swiper-button-next",
+                prevEl: ".basic-slider-petition .swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 24,
+                },
+                1328: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 24,
+                }
+            }
+        });
+    }
+
+    if ($(".basic-slider-fundraising").length) {
+        const fundraisingSlider = new Swiper(".basic-slider-fundraising .js-basic-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 12,
+            slidesPerGroup: 1,
+            direction: "horizontal",
+            navigation: {
+                nextEl: ".basic-slider-fundraising .swiper-button-next",
+                prevEl: ".basic-slider-fundraising .swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 24,
+                },
+                1328: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 24,
+                }
+            }
+        });
+    }
+
+    if ($(".basic-slider-media").length) {
+        const basicSliderMediaSliderSettings = {
+            slidesPerView: "auto",
+            spaceBetween: 12,
+            slidesPerGroup: 1,
+            direction: "horizontal",
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 24,
+                },
+                1328: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 24,
+                }
+            }
+        };
+        let basicSliderMediaSlider = null;
+
+        reinitSlider();
+        $(window).on("resize", reinitSlider);
+
+        function reinitSlider() {
+            if (window.matchMedia("(max-width: 767.98px)").matches) {
+                basicSliderMediaSlider = null;
+                basicSliderMediaSlider = new Swiper(".basic-slider-media .js-basic-slider", basicSliderMediaSliderSettings);
+            }
+        }
+    }
+
+    if ($(".basic-slider-interests").length) {
+        const interestsSlider = new Swiper(".basic-slider-interests .js-basic-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 12,
+            slidesPerGroup: 1,
+            direction: "horizontal",
+            navigation: {
+                nextEl: ".basic-slider-interests .swiper-button-next",
+                prevEl: ".basic-slider-interests .swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 24,
+                },
+                1328: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 24,
+                }
+            }
         });
     }
 };

@@ -44,26 +44,26 @@
                                     <span class="card__action-data">
                                         <span class="card__action-progress js-progress">
                                             <span class="card__action-progress-bar progress-bar">
-                                                <progress id="" class="visually-hidden progress-bar__indicator" value="33" max="100"></progress>
+                                                <progress id="" class="visually-hidden progress-bar__indicator" value="" max="100"></progress>
                                                 <span class="progress-bar__bg">
                                                     <span class="progress-bar__line"></span>
                                                 </span>
                                             </span>
                                             <span class="card__action-progress-data progress-bar-data">
                                                 <span class="card__action-progress-current">
-                                                    <span class="card__action-progress-data-title">Подписали</span>
-                                                    <span class="card__action-progress-data-value progress-bar-data__value" data-value="1000">1 000 чел.</span>
+                                                    <span class="card__action-progress-data-title">Собрано средств</span>
+                                                    <span class="card__action-progress-data-value progress-bar-data__value" data-value="146548">146 548 руб.</span>
                                                 </span>
                                                 <span class="card__action-progress-need">
-                                                    <span class="card__action-progress-data-title">Нужно подписей</span>
-                                                    <span class="card__action-progress-data-value progress-bar-data__max" data-max="3000">3 000</span>
+                                                    <span class="card__action-progress-data-title">Цель проекта</span>
+                                                    <span class="card__action-progress-data-value progress-bar-data__max" data-max="200000">200 000 руб.</span>
                                                 </span>
                                             </span>
                                         </span>
                                     </span>
                                     <span class="card__action-btn">
                                         <button class="btn-reset btn btn--fill">
-                                            <span class="btn__text">Подписать</span>
+                                            <span class="btn__text">Поддержать</span>
                                         </button>
                                     </span>
                                 </span>
@@ -98,26 +98,26 @@
                                     <span class="card__action-data">
                                         <span class="card__action-progress js-progress">
                                             <span class="card__action-progress-bar progress-bar">
-                                                <progress id="" class="visually-hidden progress-bar__indicator" value="75" max="100"></progress>
+                                                <progress id="" class="visually-hidden progress-bar__indicator" value="" max="100"></progress>
                                                 <span class="progress-bar__bg">
                                                     <span class="progress-bar__line"></span>
                                                 </span>
                                             </span>
                                             <span class="card__action-progress-data progress-bar-data">
                                                 <span class="card__action-progress-current">
-                                                    <span class="card__action-progress-data-title">Подписали</span>
-                                                    <span class="card__action-progress-data-value progress-bar-data__value" data-value="110753">110 753 чел.</span>
+                                                    <span class="card__action-progress-data-title">Собрано средств</span>
+                                                    <span class="card__action-progress-data-value progress-bar-data__value" data-value="146548">146 548 руб.</span>
                                                 </span>
                                                 <span class="card__action-progress-need">
-                                                    <span class="card__action-progress-data-title">Нужно подписей</span>
-                                                    <span class="card__action-progress-data-value progress-bar-data__max" data-max="150000">150 000</span>
+                                                    <span class="card__action-progress-data-title">Цель проекта</span>
+                                                    <span class="card__action-progress-data-value progress-bar-data__max" data-max="200000">200 000 руб.</span>
                                                 </span>
                                             </span>
                                         </span>
                                     </span>
                                     <span class="card__action-btn">
                                         <button class="btn-reset btn btn--fill">
-                                            <span class="btn__text">Подписать</span>
+                                            <span class="btn__text">Поддержать</span>
                                         </button>
                                     </span>
                                 </span>
@@ -152,26 +152,26 @@
                                     <span class="card__action-data">
                                         <span class="card__action-progress js-progress">
                                             <span class="card__action-progress-bar progress-bar">
-                                                <progress id="" class="visually-hidden progress-bar__indicator" value="75" max="100"></progress>
+                                                <progress id="" class="visually-hidden progress-bar__indicator" value="" max="100"></progress>
                                                 <span class="progress-bar__bg">
                                                     <span class="progress-bar__line"></span>
                                                 </span>
                                             </span>
                                             <span class="card__action-progress-data progress-bar-data">
                                                 <span class="card__action-progress-current">
-                                                    <span class="card__action-progress-data-title">Подписали</span>
-                                                    <span class="card__action-progress-data-value progress-bar-data__value" data-value="110753">110 753 чел.</span>
+                                                    <span class="card__action-progress-data-title">Собрано средств</span>
+                                                    <span class="card__action-progress-data-value progress-bar-data__value" data-value="146548">146 548 руб.</span>
                                                 </span>
                                                 <span class="card__action-progress-need">
-                                                    <span class="card__action-progress-data-title">Нужно подписей</span>
-                                                    <span class="card__action-progress-data-value progress-bar-data__max" data-max="150000">150 000</span>
+                                                    <span class="card__action-progress-data-title">Цель проекта</span>
+                                                    <span class="card__action-progress-data-value progress-bar-data__max" data-max="200000">200 000 руб.</span>
                                                 </span>
                                             </span>
                                         </span>
                                     </span>
                                     <span class="card__action-btn">
                                         <button class="btn-reset btn btn--fill">
-                                            <span class="btn__text">Подписать</span>
+                                            <span class="btn__text">Поддержать</span>
                                         </button>
                                     </span>
                                 </span>
@@ -206,26 +206,26 @@
                                     <span class="card__action-data">
                                         <span class="card__action-progress js-progress">
                                             <span class="card__action-progress-bar progress-bar">
-                                                <progress id="" class="visually-hidden progress-bar__indicator" value="75" max="100"></progress>
+                                                <progress id="" class="visually-hidden progress-bar__indicator" value="" max="100"></progress>
                                                 <span class="progress-bar__bg">
                                                     <span class="progress-bar__line"></span>
                                                 </span>
                                             </span>
                                             <span class="card__action-progress-data progress-bar-data">
                                                 <span class="card__action-progress-current">
-                                                    <span class="card__action-progress-data-title">Подписали</span>
-                                                    <span class="card__action-progress-data-value progress-bar-data__value" data-value="110753">110 753 чел.</span>
+                                                    <span class="card__action-progress-data-title">Собрано средств</span>
+                                                    <span class="card__action-progress-data-value progress-bar-data__value" data-value="146548">146 548 руб.</span>
                                                 </span>
                                                 <span class="card__action-progress-need">
-                                                    <span class="card__action-progress-data-title">Нужно подписей</span>
-                                                    <span class="card__action-progress-data-value progress-bar-data__max" data-max="150000">150 000</span>
+                                                    <span class="card__action-progress-data-title">Цель проекта</span>
+                                                    <span class="card__action-progress-data-value progress-bar-data__max" data-max="200000">200 000 руб.</span>
                                                 </span>
                                             </span>
                                         </span>
                                     </span>
                                     <span class="card__action-btn">
                                         <button class="btn-reset btn btn--fill">
-                                            <span class="btn__text">Подписать</span>
+                                            <span class="btn__text">Поддержать</span>
                                         </button>
                                     </span>
                                 </span>
