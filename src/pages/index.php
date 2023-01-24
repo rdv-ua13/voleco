@@ -2425,6 +2425,108 @@
                     </div>
 
                     <div class="stats-main__grid">
+                        <div class="stats-main__item stats-main__item-type1">
+                            <div class="stats-main__view">
+                                <picture>
+                                    <source srcset="img/stats-main-img1.webp" type="image/webp">
+                                    <img
+                                        loading="lazy"
+                                        src="img/stats-main-img1.svg"
+                                        class="image"
+                                        width="340"
+                                        height="390"
+                                        alt="Изображение блока"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="stats-main__title">890</div>
+                            <div class="stats-main__subtitle">экодел на платформе</div>
+                        </div>
+                        <div class="stats-main__item stats-main__item-type2">
+                            <div class="stats-main__view">
+                                <picture>
+                                    <source srcset="img/stats-main-img2.webp" type="image/webp">
+                                    <img
+                                            loading="lazy"
+                                            src="img/stats-main-img2.svg"
+                                            class="image"
+                                            width="215"
+                                            height="155"
+                                            alt="Изображение блока"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="stats-main__title">114 820</div>
+                            <div class="stats-main__subtitle">эковолонтеров на платформе</div>
+                        </div>
+                        <div class="stats-main__item stats-main__item-type3">
+                            <div class="stats-main__view">
+                                <picture>
+                                    <source srcset="img/stats-main-img3.webp" type="image/webp">
+                                    <img
+                                            loading="lazy"
+                                            src="img/stats-main-img3.svg"
+                                            class="image"
+                                            width="220"
+                                            height="225"
+                                            alt="Изображение блока"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="stats-main__title">19 870 м3</div>
+                            <div class="stats-main__subtitle">леса очищено</div>
+                        </div>
+                        <div class="stats-main__item stats-main__item-type1">
+                            <div class="stats-main__view">
+                                <picture>
+                                    <source srcset="img/stats-main-img4-1.webp" type="image/webp">
+                                    <img
+                                            loading="lazy"
+                                            src="img/stats-main-img4-1.svg"
+                                            class="image"
+                                            width="165"
+                                            height="120"
+                                            alt="Изображение блока"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="stats-main__title">9 827 128 руб.</div>
+                            <div class="stats-main__subtitle">собрано средств</div>
+                        </div>
+                        <div class="stats-main__item stats-main__item-type3">
+                            <div class="stats-main__view">
+                                <picture>
+                                    <source srcset="img/stats-main-img5.webp" type="image/webp">
+                                    <img
+                                            loading="lazy"
+                                            src="img/stats-main-img5.svg"
+                                            class="image"
+                                            width="220"
+                                            height="140"
+                                            alt="Изображение блока"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="stats-main__title">19 870 га</div>
+                            <div class="stats-main__subtitle">земли спасено</div>
+                        </div>
+                        <div class="stats-main__item stats-main__item-type2">
+                            <div class="stats-main__view">
+                                <picture>
+                                    <source srcset="img/stats-main-img6.webp" type="image/webp">
+                                    <img
+                                            loading="lazy"
+                                            src="img/stats-main-img6.svg"
+                                            class="image"
+                                            width="185"
+                                            height="225"
+                                            alt="Изображение блока"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="stats-main__title">64</div>
+                            <div class="stats-main__subtitle">организатора</div>
+                        </div>
 
                     </div>
                 </div>
