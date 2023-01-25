@@ -2433,7 +2433,7 @@
                                         loading="lazy"
                                         src="img/stats-main-img1.svg"
                                         class="image"
-                                        width="340"
+                                        width="290"
                                         height="390"
                                         alt="Изображение блока"
                                     >

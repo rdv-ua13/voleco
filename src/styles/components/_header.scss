@@ -80,8 +80,8 @@
 		line-height: 24px;
 	}
 }
-.menu {
-	z-index: 1000;
+.burger-menu {
+	z-index: 2100;
 	position: fixed;
 	top: 0;
 	left: -670px;
@@ -187,9 +187,6 @@
 	&__contacts-title:not(:last-child) {
 		margin-bottom: 6px;
 	}
-	&__social {
-
-	}
 }
 
 .header-actions {
@@ -203,9 +200,6 @@
 	}
 	&__item {
 		display: flex;
-	}
-	&--current-user {
-
 	}
 }
 
@@ -372,9 +366,6 @@
 			pointer-events: none;
 		}
 	}
-}
-@media (min-width: 992px) {
-
 }
 @media (max-width: 1199.98px) {
 	.header-nav {

@@ -82,85 +82,6 @@
                                     </svg>
                                     <span class="burger__text">Меню</span>
                                 </button>
-                                <div class="menu" data-menu="" data-menu-overlay="">
-                                    <div class="menu__close"></div>
-                                    <ul class="list-reset menu__list">
-                                        <li data-menu-item="">
-                                            <a href="javascript:;" class="link">Экодела</a>
-                                        </li>
-                                        <li data-menu-item="">
-                                            <a href="javascript:;" class="link">Петиции</a>
-                                        </li>
-                                        <li data-menu-item="">
-                                            <a href="javascript:;" class="link">Сбор средств</a>
-                                        </li>
-                                        <li data-menu-item="">
-                                            <a href="javascript:;" class="link">Проекты</a>
-                                        </li>
-                                        <li data-menu-item="">
-                                            <a href="javascript:;" class="link">Эковолонтеры</a>
-                                        </li>
-                                        <li data-menu-item="">
-                                            <a href="javascript:;" class="link">Организаторы</a>
-                                        </li>
-                                        <li data-menu-item="">
-                                            <a href="javascript:;" class="link">Аналитика</a>
-                                        </li>
-                                        <li data-menu-item="">
-                                            <a href="javascript:;" class="link">Новости и медиа</a>
-                                        </li>
-                                    </ul>
-                                    <div class="menu__footer">
-                                        <div class="menu__contacts">
-                                            <div class="menu__contacts-item">
-                                                <div class="menu__contacts-title">Консультационный центр</div>
-                                                <a href="tel:+88007122811" class="link">8 (800) 712-28-11</a>
-                                            </div>
-                                            <div class="menu__contacts-item">
-                                                <div class="menu__contacts-title">Поддержка</div>
-                                                <a href="tel:+88007122811" class="link">8 (800) 712-28-11</a>
-                                            </div>
-                                        </div>
-                                        <ul class="list-reset social social--light menu__social">
-                                            <li class="social__item">
-                                                <a
-                                                        href="javascript:;"
-                                                        target="_blank"
-                                                        class="social__link social__link--vk"
-                                                        aria-label="Наша страничка во Вконтакте"
-                                                >
-                                                    <svg class="icon social__icon">
-                                                        <use href="img/sprite.svg#vk"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="social__item">
-                                                <a
-                                                        href="javascript:;"
-                                                        target="_blank"
-                                                        class="social__link social__link--ok"
-                                                        aria-label="Наша страничка в Одноклассниках"
-                                                >
-                                                    <svg class="icon social__icon">
-                                                        <use href="img/sprite.svg#ok"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="social__item">
-                                                <a
-                                                        href="javascript:;"
-                                                        target="_blank"
-                                                        class="social__link social__link--fb"
-                                                        aria-label="Наша страничка в Фэйсбук"
-                                                >
-                                                    <svg class="icon social__icon">
-                                                        <use href="img/sprite.svg#fb"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                             <div class="header-organizer">
                                 <a class="link link--green flex" href="javascript:;">Организаторам</a>
@@ -300,5 +221,85 @@
 			<? endif; ?>
         </div>
     </header>
+
+    <div class="burger-menu" data-menu="" data-menu-overlay="">
+        <div class="burger-menu__close"></div>
+        <ul class="list-reset burger-menu__list">
+            <li data-menu-item="">
+                <a href="javascript:;" class="link">Экодела</a>
+            </li>
+            <li data-menu-item="">
+                <a href="javascript:;" class="link">Петиции</a>
+            </li>
+            <li data-menu-item="">
+                <a href="javascript:;" class="link">Сбор средств</a>
+            </li>
+            <li data-menu-item="">
+                <a href="javascript:;" class="link">Проекты</a>
+            </li>
+            <li data-menu-item="">
+                <a href="javascript:;" class="link">Эковолонтеры</a>
+            </li>
+            <li data-menu-item="">
+                <a href="javascript:;" class="link">Организаторы</a>
+            </li>
+            <li data-menu-item="">
+                <a href="javascript:;" class="link">Аналитика</a>
+            </li>
+            <li data-menu-item="">
+                <a href="javascript:;" class="link">Новости и медиа</a>
+            </li>
+        </ul>
+        <div class="burger-menu__footer">
+            <div class="burger-menu__contacts">
+                <div class="burger-menu__contacts-item">
+                    <div class="burger-menu__contacts-title">Консультационный центр</div>
+                    <a href="tel:+88007122811" class="link">8 (800) 712-28-11</a>
+                </div>
+                <div class="burger-menu__contacts-item">
+                    <div class="burger-menu__contacts-title">Поддержка</div>
+                    <a href="tel:+88007122811" class="link">8 (800) 712-28-11</a>
+                </div>
+            </div>
+            <ul class="list-reset social social--light burger-menu__social">
+                <li class="social__item">
+                    <a
+                            href="javascript:;"
+                            target="_blank"
+                            class="social__link social__link--vk"
+                            aria-label="Наша страничка во Вконтакте"
+                    >
+                        <svg class="icon social__icon">
+                            <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a
+                            href="javascript:;"
+                            target="_blank"
+                            class="social__link social__link--ok"
+                            aria-label="Наша страничка в Одноклассниках"
+                    >
+                        <svg class="icon social__icon">
+                            <use href="img/sprite.svg#ok"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a
+                            href="javascript:;"
+                            target="_blank"
+                            class="social__link social__link--fb"
+                            aria-label="Наша страничка в Фэйсбук"
+                    >
+                        <svg class="icon social__icon">
+                            <use href="img/sprite.svg#fb"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <main class="main">

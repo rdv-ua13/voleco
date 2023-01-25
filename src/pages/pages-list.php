@@ -59,7 +59,7 @@
             <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">54 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">56 + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">62 + ui (всего страниц в макете)</span>
         </span>
@@ -69,7 +69,8 @@
     <div>
         <ul>
             <?/*<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>*/?>
-            <li><a href="index.php" target="_blank">Главная (в процессе)</a></li>
+            <li><a href="index.php" target="_blank">Главная (в процессе)</a></li><!-- #55 -->
+            <li><a href="organizer.php" target="_blank">Организаторам (в процессе)</a></li><!-- #56 -->
 
             <br>
 			<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
@@ -122,7 +123,7 @@
             <br>
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="lk-vol-profile.php" target="_blank">ЛК Вол - профиль</a></li>
-            <li><a href="lk-vol-request.php" target="_blank">ЛК Вол - заявки</a></li><!-- #54 -->
+            <li><a href="lk-vol-request.php" target="_blank">ЛК Вол - заявки</a></li>
             <li><a href="lk-vol-events.php" target="_blank">ЛК Вол - мероприятия</a></li>
             <li><a href="lk-vol-events-past.php" target="_blank">ЛК Вол - мероприятия (прошедшие)</a></li>
             <li><a href="lk-vol-reviews-vol.php" target="_blank">ЛК Вол - рейтинг и отзывы - отзывы организаторов</a></li>
@@ -146,7 +147,6 @@
             <br>
             <br>
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Страницы в процессе</li>
-            <li><a href="organizer.php" target="_blank">Организаторам (в процессе)</a></li>
             <li><a href="javascript:;" target="_blank">Организаторы - детальная</a></li>
             <li><a href="javascript:;" target="_blank">Организаторы - детальная отзывы</a></li>
             <li><a href="javascript:;" target="_blank">Организаторы - детальная фото</a></li>

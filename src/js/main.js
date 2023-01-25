@@ -8,6 +8,7 @@ function application() {
     //this.myMap;
 }
 application.prototype.init = function () {
+    this.initBurger();
     this.initTabs();
     this.initNotice();
     this.initRegStepper();
@@ -32,6 +33,79 @@ application.prototype.init = function () {
     this.initCheckall();
 };
 
+// Initialization burger-menu
+application.prototype.initBurger = function () {
+    const burger = document?.querySelector('[data-burger]');
+    const menu = document?.querySelector('[data-menu]');
+    const menuItems = document?.querySelectorAll('[data-menu-item]');
+    const overlay = document?.querySelector('[data-menu-overlay]');
+
+    burger?.addEventListener('click', (e) => {
+        burger?.classList.toggle('burger--active');
+        menu?.classList.toggle('burger-menu--active');
+
+        if (menu?.classList.contains('burger-menu--active')) {
+            burger?.setAttribute('aria-expanded', 'true');
+            burger?.setAttribute('aria-label', 'Закрыть меню');
+            disableScroll();
+        } else {
+            burger?.setAttribute('aria-expanded', 'false');
+            burger?.setAttribute('aria-label', 'Открыть меню');
+            enableScroll();
+        }
+    });
+
+    overlay?.addEventListener('click', () => {
+        burger?.setAttribute('aria-expanded', 'false');
+        burger?.setAttribute('aria-label', 'Открыть меню');
+        burger.classList.remove('burger--active');
+        menu.classList.remove('burger-menu--active');
+        enableScroll();
+    });
+
+    menuItems?.forEach(el => {
+        el.addEventListener('click', () => {
+            burger?.setAttribute('aria-expanded', 'false');
+            burger?.setAttribute('aria-label', 'Открыть меню');
+            burger.classList.remove('burger--active');
+            menu.classList.remove('burger-menu--active');
+            enableScroll();
+        });
+    });
+
+    function disableScroll() {
+        const body = document.body;
+        const fixBlocks = document?.querySelectorAll('.fixed-block');
+        const pagePosition = window.scrollY;
+        const paddingOffset = `${(window.innerWidth - body.offsetWidth)}px`;
+
+        document.documentElement.style.scrollBehavior = 'none';
+        fixBlocks.forEach(el => { el.style.paddingRight = paddingOffset; });
+        body.style.paddingRight = paddingOffset;
+        body.classList.add('dis-scroll');
+        body.classList.add('overlay');
+        body.dataset.position = pagePosition;
+        body.style.top = `-${pagePosition}px`;
+    }
+
+    function enableScroll() {
+        const body = document.body;
+        const fixBlocks = document?.querySelectorAll('.fixed-block');
+        const pagePosition = parseInt(body.dataset.position, 10);
+        fixBlocks.forEach(el => { el.style.paddingRight = '0px'; });
+        body.style.paddingRight = '0px';
+
+        body.style.top = 'auto';
+        body.classList.remove('dis-scroll');
+        body.classList.remove('overlay');
+        window.scroll({
+            top: pagePosition,
+            left: 0
+        });
+        body.removeAttribute('data-position');
+        document.documentElement.style.scrollBehavior = 'smooth';
+    }
+};
 // Initialization tabs
 application.prototype.initTabs = function () {
     if ($(".tabs").length) {
@@ -417,6 +491,35 @@ application.prototype.initBasicSlider = function () {
                     slidesPerView: 4,
                     slidesPerGroup: 4,
                     spaceBetween: 24,
+                }
+            }
+        });
+    }
+
+    if ($(".basic-slider-partners").length) {
+        const partnersSlider = new Swiper(".basic-slider-partners .js-basic-slider", {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            direction: "horizontal",
+            navigation: {
+                nextEl: ".basic-slider-partners .swiper-button-next",
+                prevEl: ".basic-slider-partners .swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 6,
+                    slidesPerGroup: 6,
+                    spaceBetween: 12,
+                },
+                992: {
+                    slidesPerView: 8,
+                    slidesPerGroup: 8,
+                    spaceBetween: 20,
+                },
+                1328: {
+                    slidesPerView: 10,
+                    slidesPerGroup: 10,
+                    spaceBetween: 20,
                 }
             }
         });
