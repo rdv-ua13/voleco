@@ -59,9 +59,9 @@
             <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">56 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">60 + ui</span>
             &nbsp;/&nbsp;
-            <span style="font-size: 24px;">62 + ui (всего страниц в макете)</span>
+            <span style="font-size: 24px;">63 + ui (всего страниц в макете)</span>
         </span>
     </div>
     <div style="font-size: 24px;">Ниже готовые разделы будут отмечены "<span style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</span>"</div>
@@ -80,21 +80,25 @@
 
             <br>
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
+            <li><a href="ms-volunteer.php" target="_blank">Эковолонтеры</a></li>
             <li><a href="ms-ecodela.php" target="_blank">Экодела</a></li>
+            <li><a href="ms-projects.php" target="_blank">Проекты</a></li>
+            <li><a href="ms-organizer.php" target="_blank">Организаторы</a></li>
             <li><a href="ms-petitions.php" target="_blank">Петиции</a></li>
             <li><a href="ms-fundraising.php" target="_blank">Сбор средств</a></li>
-            <li><a href="ms-projects.php" target="_blank">Проекты</a></li>
-            <li><a href="ms-volunteer.php" target="_blank">Эковолонтеры</a></li>
-            <li><a href="ms-organizer.php" target="_blank">Организаторы</a></li>
 
             <br>
-            <li><a href="details-ecodela.php" target="_blank">детальная - Экодела (в процессе)</a></li>
-            <li><a href="details-petitions.php" target="_blank">детальная - Петиции (в процессе)</a></li>
-            <li><a href="details-fundraising.php" target="_blank">детальная - Сбор средств (в процессе)</a></li>
-            <li><a href="details-projects.php" target="_blank">детальная - Проекты (в процессе)</a></li>
             <li><a href="details-volunteer.php" target="_blank">детальная - Эковолонтеры (в процессе)</a></li>
             <li><a href="details-volunteer-exp.php" target="_blank">детальная - Эковолонтеры опыт (в процессе)</a></li>
             <li><a href="details-volunteer-feedback.php" target="_blank">детальная - Эковолонтеры отзывы (в процессе)</a></li>
+            <li><a href="details-ecodela.php" target="_blank">детальная - Экодела (в процессе)</a></li>
+            <li><a href="details-projects.php" target="_blank">детальная - Проекты (в процессе)</a></li>
+            <li><a href="details-organizer.php" target="_blank">детальная - Организаторы</a></li><!-- #57 -->
+            <li><a href="details-organizer-reviews.php" target="_blank">детальная - Организаторы отзывы</a></li><!-- #58 -->
+            <li><a href="details-organizer-photo.php" target="_blank">детальная - Организаторы фото</a></li><!-- #59 -->
+            <li><a href="details-organizer-video.php" target="_blank">детальная - Организаторы видео</a></li><!-- #60 -->
+            <li><a href="details-petitions.php" target="_blank">детальная - Петиции (в процессе)</a></li>
+            <li><a href="details-fundraising.php" target="_blank">детальная - Сбор средств (в процессе)</a></li>
 
             <br>
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
@@ -147,10 +151,7 @@
             <br>
             <br>
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Страницы в процессе</li>
-            <li><a href="javascript:;" target="_blank">Организаторы - детальная</a></li>
-            <li><a href="javascript:;" target="_blank">Организаторы - детальная отзывы</a></li>
-            <li><a href="javascript:;" target="_blank">Организаторы - детальная фото</a></li>
-            <li><a href="javascript:;" target="_blank">Организаторы - детальная видео</a></li>
+
             <li><a href="javascript:;" target="_blank">Аналитика</a></li>
             <li><a href="javascript:;" target="_blank">Новости</a></li>
             <li><a href="javascript:;" target="_blank">Новости - детальная</a></li>

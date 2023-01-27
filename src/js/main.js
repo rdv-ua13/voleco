@@ -21,6 +21,8 @@ application.prototype.init = function () {
     this.initCardFavorite();
     this.initTagbarSlider();
     this.initBasicSlider();
+    this.initMobileSlider();
+    this.initResponsiveCardSlider();
     this.initHandlerCurrentUser();
     this.initSelect2();
     /*this.initDropfiles();*/
@@ -500,6 +502,7 @@ application.prototype.initBasicSlider = function () {
         const partnersSlider = new Swiper(".basic-slider-partners .js-basic-slider", {
             slidesPerView: 4,
             slidesPerGroup: 4,
+            spaceBetween: 12,
             direction: "horizontal",
             navigation: {
                 nextEl: ".basic-slider-partners .swiper-button-next",
@@ -523,6 +526,100 @@ application.prototype.initBasicSlider = function () {
                 }
             }
         });
+    }
+};
+// Initialization mobile slider
+application.prototype.initMobileSlider = function () {
+    if ($(".mobile-only-slider").length) {
+        const mobilePartnersSliderSetting = {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 12,
+            direction: "horizontal",
+        };
+        let mobilePartnersSlider = null;
+
+        breakpointChecker();
+        $(window).on("resize", breakpointChecker);
+
+        function breakpointChecker() {
+            if (window.matchMedia("(min-width: 992px)").matches) {
+                if(mobilePartnersSlider !== null) mobilePartnersSlider.destroy(true, true);
+                mobilePartnersSlider = null;
+            }
+            else if (window.matchMedia("(max-width: 991.98px)").matches) {
+                mobilePartnersSlider = new Swiper(".mobile-only-slider.js-basic-slider", mobilePartnersSliderSetting);
+            }
+        }
+    }
+};
+// Initialization responsive card slider
+application.prototype.initResponsiveCardSlider = function () {
+    if ($(".card-list-responsive").length) {
+        // init slider on mobile
+        if ($(".card-list-responsive.card-list-responsive--desktop-only").length) {
+            const mobileCardSliderSetting = {
+                slidesPerView: "auto",
+                spaceBetween: 12,
+                slidesPerGroup: 1,
+                direction: "horizontal",
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                        spaceBetween: 24,
+                    }
+                }
+            };
+            let mobileCardSlider = null;
+
+            breakpointChecker();
+            $(window).on("resize", breakpointChecker);
+
+            function breakpointChecker() {
+                if (window.matchMedia("(min-width: 992px)").matches) {
+                    if(mobileCardSlider !== null) mobileCardSlider.destroy(true, true);
+                    mobileCardSlider = null;
+                }
+                else if (window.matchMedia("(max-width: 991.98px)").matches) {
+                    mobileCardSlider = new Swiper(".card-list-responsive--desktop-only .js-basic-slider", mobileCardSliderSetting);
+                }
+            }
+        }
+        // init slider on desktop
+        else if ($(".card-list-responsive.card-list-responsive--mobile-only").length) {
+            const desktopCardSliderSetting = {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 24,
+                direction: "horizontal",
+                navigation: {
+                    nextEl: ".card-list-responsive .swiper-button-next",
+                    prevEl: ".card-list-responsive .swiper-button-prev",
+                },
+                breakpoints: {
+                    1328: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4,
+                        spaceBetween: 24,
+                    }
+                }
+            };
+            let desktopCardSlider = null;
+
+            breakpointChecker();
+            $(window).on("resize", breakpointChecker);
+
+            function breakpointChecker() {
+                if (window.matchMedia("(min-width: 992px)").matches) {
+                    desktopCardSlider = new Swiper(".card-list-responsive--mobile-only .js-basic-slider", desktopCardSliderSetting);
+                }
+                else if (window.matchMedia("(max-width: 991.98px)").matches) {
+                    if(desktopCardSlider !== null) desktopCardSlider.destroy(true, true);
+                    desktopCardSlider = null;
+                }
+            }
+        }
     }
 };
 // Initialization handler for current user dropdown menu

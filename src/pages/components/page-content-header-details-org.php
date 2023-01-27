@@ -1,0 +1,71 @@
+<div class="page-content__header">
+	<div class="page-content__cover">
+		<div class="container page-content__cover-container">
+			<picture>
+				<source srcset="img/lk-org-profile-cover.webp" type="image/webp">
+				<img
+					loading="lazy"
+					src="img/lk-org-profile-cover.png"
+					class="image"
+					width="1350"
+					height="345"
+					alt=""
+				>
+			</picture>
+			<a href="javascript:;" class="btn-reset btn btn--fill btn--mini btn--gray page-content__cover-btn">
+				<svg class="icon btn__icon">
+					<use href="img/sprite.svg#photo-cover"></use>
+				</svg>
+				<span class="btn__text">Изменить фото обложки</span>
+			</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="page-content__intro">
+			<div class="page-content__intro-logo">
+				<div class="page-content__intro-logo-wrapper">
+					<picture>
+						<source srcset="img/lk-org-logo.webp" type="image/webp">
+						<img
+							loading="lazy"
+							src="img/lk-org-logo.png"
+							class="image"
+							width="185"
+							height="185"
+							alt=""
+						>
+					</picture>
+				</div>
+			</div>
+			<div class="page-content__intro-header">
+				<div class="page-content__intro-top">
+                    <span class="nameplate-id">
+                        <span class="nameplate-id__content">
+                            <svg class="icon nameplate-id__content-icon">
+                                <use href="img/sprite.svg#scanner"></use>
+                            </svg>
+                            <span class="nameplate-id__content-text">ID: 17901</span>
+                        </span>
+                    </span>
+					<span class="success-check success-check--nameplate">
+                        <span class="success-check__content">
+                            <svg class="icon success-check__content-icon">
+                                <use href="img/sprite.svg#success-check"></use>
+                            </svg>
+                            <span class="success-check__content-text">Верифицированный организатор</span>
+                        </span>
+                    </span>
+				</div>
+				<div class="page-content__intro-title h3">Всероссийское общественное движение «Волонтеры Экологи»</div>
+			</div>
+			<div class="page-content__intro-actions page-content__intro-actions-details">
+				<button class="btn-reset btn btn--midi btn--fill">
+					<span class="btn__text">Готов помогать</span></span>
+				</button>
+				<button class="btn-reset btn btn--midi btn--fill btn--gray">
+					<span class="btn__text">Написать</span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
