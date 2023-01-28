@@ -59,7 +59,7 @@
             <img src="img/logo.svg" width="185" height="52" alt="Логотип Волонтёры экологи">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">60 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">62 + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">63 + ui (всего страниц в макете)</span>
         </span>
@@ -68,9 +68,9 @@
 
     <div>
         <ul>
-            <?/*<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>*/?>
-            <li><a href="index.php" target="_blank">Главная (в процессе)</a></li><!-- #55 -->
-            <li><a href="organizer.php" target="_blank">Организаторам (в процессе)</a></li><!-- #56 -->
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
+            <li><a href="index.php" target="_blank">Главная (в процессе)</a></li><!-- остался слайдер главного экрана -->
+            <li><a href="organizer.php" target="_blank">Организаторам</a></li><!-- #56 -->
 
             <br>
 			<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
@@ -79,7 +79,7 @@
             <li><a href="password-recovery.php" target="_blank">Восстановление пароля (содержит 3 макетных страницы)</a></li>
 
             <br>
-            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
+            <!--<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>-->
             <li><a href="ms-volunteer.php" target="_blank">Эковолонтеры</a></li>
             <li><a href="ms-ecodela.php" target="_blank">Экодела</a></li>
             <li><a href="ms-projects.php" target="_blank">Проекты</a></li>
@@ -87,7 +87,10 @@
             <li><a href="ms-petitions.php" target="_blank">Петиции</a></li>
             <li><a href="ms-fundraising.php" target="_blank">Сбор средств</a></li>
 
+            <li><a href="ms-news.php" target="_blank">Новости</a></li><!-- #61 -->
+
             <br>
+            <!--<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>-->
             <li><a href="details-volunteer.php" target="_blank">детальная - Эковолонтеры (в процессе)</a></li>
             <li><a href="details-volunteer-exp.php" target="_blank">детальная - Эковолонтеры опыт (в процессе)</a></li>
             <li><a href="details-volunteer-feedback.php" target="_blank">детальная - Эковолонтеры отзывы (в процессе)</a></li>
@@ -99,6 +102,7 @@
             <li><a href="details-organizer-video.php" target="_blank">детальная - Организаторы видео</a></li><!-- #60 -->
             <li><a href="details-petitions.php" target="_blank">детальная - Петиции (в процессе)</a></li>
             <li><a href="details-fundraising.php" target="_blank">детальная - Сбор средств (в процессе)</a></li>
+            <li><a href="details-news.php" target="_blank">детальная - Новости</a></li><!-- #62 -->
 
             <br>
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
@@ -152,9 +156,7 @@
             <br>
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Страницы в процессе</li>
 
-            <li><a href="javascript:;" target="_blank">Аналитика</a></li>
-            <li><a href="javascript:;" target="_blank">Новости</a></li>
-            <li><a href="javascript:;" target="_blank">Новости - детальная</a></li>
+            <li><a href="ms-analytics.php" target="_blank">Аналитика</a></li><!-- #63 -->
         </ul>
     </div>
     </body>
