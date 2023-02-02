@@ -13,13 +13,13 @@
                         <div class="page-content-tabs-wrapper">
                             <div class="page-content-tabs swiper js-page-content-tabs">
                                 <div class="page-content-tabs__nav swiper-wrapper">
-									<? $arMenu = array (
-										"details-organizer.php" => "Об организаторе",
-										"details-organizer-reviews.php" => "Отзывы",
-										"details-organizer-photo.php" => "Фотографии",
-										"details-organizer-video.php" => "Видео",
-									);
-									foreach ($arMenu as $arItem => $value) : ?>
+                                    <? $arMenu = array (
+                                        "details-organizer.php" => "Об организаторе",
+                                        "details-organizer-reviews.php" => "Отзывы",
+                                        "details-organizer-photo.php" => "Фотографии",
+                                        "details-organizer-video.php" => "Видео",
+                                    );
+                                    foreach ($arMenu as $arItem => $value) : ?>
                                         <div class="swiper-slide page-content-tabs__nav-item notice">
                                             <a
                                                     href="<?= $arItem ?>"
@@ -29,14 +29,14 @@
                                                 <span class="page-content-tabs__link-num">18</span>
                                             </a>
                                         </div>
-									<? endforeach; ?>
+                                    <? endforeach; ?>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="page-content__preview">
                         <div class="page-content__video">
-							<?/*picture - загулшка под видео
+                            <?/*picture - загулшка под видео
                             <video src=""></video>*/?>
                             <picture>
                                 <source srcset="img/profile-video.webp" type="image/webp">
@@ -840,294 +840,296 @@
                                 </div>
                             </div>
 
-                            <div class="block-mb-md">
-                                <div class="block-header">
-                                    <div class="block-header__title">
-                                        <div class="block-header__title-text h2">Проекты</div>
-                                        <div class="block-header__title-num h2">18</div>
+                            <div class="">
+                                <div class="block-mb-md">
+                                    <div class="block-header">
+                                        <div class="block-header__title">
+                                            <div class="block-header__title-text h2">Проекты</div>
+                                            <div class="block-header__title-num h2">18</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-list-responsive card-list-responsive--desktop-only">
-                                <div class="slider basic-slider js-basic-slider">
-                                    <div class="swiper-wrapper card-list">
-                                        <div class="swiper-slide">
-                                            <a href="javascript:;" class="card card--projects">
-                                                <span class="card__view">
-                                                    <picture>
-                                                        <source srcset="img/card-photo-projects.webp" type="image/webp">
-                                                        <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
-                                                    </picture>
-                                                </span>
-                                                <span class="card__descr">
-                                                    <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
-                                                    <span class="card__organizer">
-                                                        <span class="card__organizer-logo">
-                                                            <picture>
-                                                                <source srcset="img/card-projects-org.webp" type="image/webp">
-                                                                <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
-                                                            </picture>
-                                                            <span class="card__organizer-logo-check">
-                                                                <span class="success-check success-check--mini">
-                                                                    <svg class="icon">
-                                                                        <use href="img/sprite.svg#success-check"></use>
-                                                                    </svg>
+                                <div class="card-list-responsive card-list-responsive--desktop-only">
+                                    <div class="slider basic-slider js-basic-slider">
+                                        <div class="swiper-wrapper card-list">
+                                            <div class="swiper-slide">
+                                                <a href="javascript:;" class="card card--projects">
+                                                    <span class="card__view">
+                                                        <picture>
+                                                            <source srcset="img/card-photo-projects.webp" type="image/webp">
+                                                            <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
+                                                        </picture>
+                                                    </span>
+                                                    <span class="card__descr">
+                                                        <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
+                                                        <span class="card__organizer">
+                                                            <span class="card__organizer-logo">
+                                                                <picture>
+                                                                    <source srcset="img/card-projects-org.webp" type="image/webp">
+                                                                    <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
+                                                                </picture>
+                                                                <span class="card__organizer-logo-check">
+                                                                    <span class="success-check success-check--mini">
+                                                                        <svg class="icon">
+                                                                            <use href="img/sprite.svg#success-check"></use>
+                                                                        </svg>
+                                                                    </span>
                                                                 </span>
                                                             </span>
-                                                        </span>
-                                                        <span class="card__organizer-descr">
-                                                            <span class="card__organizer-title">Ассоциация волонтерских центров</span>
-                                                            <span class="card__organizer-activity">12 мероприятий</span>
-                                                        </span>
-                                                        <span class="card__rate">
-                                                            <svg class="icon">
-                                                                <use href="img/sprite.svg#star"></use>
-                                                            </svg>
-                                                            <span class="card__rate-value">4.8</span>
-                                                        </span>
-                                                    </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:;" class="card card--projects">
-                                                <span class="card__view">
-                                                    <picture>
-                                                        <source srcset="img/card-photo-projects.webp" type="image/webp">
-                                                        <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
-                                                    </picture>
-                                                </span>
-                                                <span class="card__descr">
-                                                    <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
-                                                    <span class="card__organizer">
-                                                        <span class="card__organizer-logo">
-                                                            <picture>
-                                                                <source srcset="img/card-projects-org.webp" type="image/webp">
-                                                                <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
-                                                            </picture>
-                                                            <span class="card__organizer-logo-check">
-                                                                <span class="success-check success-check--mini">
-                                                                    <svg class="icon">
-                                                                        <use href="img/sprite.svg#success-check"></use>
-                                                                    </svg>
-                                                                </span>
+                                                            <span class="card__organizer-descr">
+                                                                <span class="card__organizer-title">Ассоциация волонтерских центров</span>
+                                                                <span class="card__organizer-activity">12 мероприятий</span>
+                                                            </span>
+                                                            <span class="card__rate">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <span class="card__rate-value">4.8</span>
                                                             </span>
                                                         </span>
-                                                        <span class="card__organizer-descr">
-                                                            <span class="card__organizer-title">Ассоциация волонтерских центров</span>
-                                                            <span class="card__organizer-activity">12 мероприятий</span>
-                                                        </span>
-                                                        <span class="card__rate">
-                                                            <svg class="icon">
-                                                                <use href="img/sprite.svg#star"></use>
-                                                            </svg>
-                                                            <span class="card__rate-value">4.8</span>
-                                                        </span>
                                                     </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:;" class="card card--projects">
-                                                <span class="card__view">
-                                                    <picture>
-                                                        <source srcset="img/card-photo-projects.webp" type="image/webp">
-                                                        <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
-                                                    </picture>
-                                                </span>
-                                                <span class="card__descr">
-                                                    <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
-                                                    <span class="card__organizer">
-                                                        <span class="card__organizer-logo">
-                                                            <picture>
-                                                                <source srcset="img/card-projects-org.webp" type="image/webp">
-                                                                <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
-                                                            </picture>
-                                                            <span class="card__organizer-logo-check">
-                                                                <span class="success-check success-check--mini">
-                                                                    <svg class="icon">
-                                                                        <use href="img/sprite.svg#success-check"></use>
-                                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:;" class="card card--projects">
+                                                    <span class="card__view">
+                                                        <picture>
+                                                            <source srcset="img/card-photo-projects.webp" type="image/webp">
+                                                            <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
+                                                        </picture>
+                                                    </span>
+                                                    <span class="card__descr">
+                                                        <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
+                                                        <span class="card__organizer">
+                                                            <span class="card__organizer-logo">
+                                                                <picture>
+                                                                    <source srcset="img/card-projects-org.webp" type="image/webp">
+                                                                    <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
+                                                                </picture>
+                                                                <span class="card__organizer-logo-check">
+                                                                    <span class="success-check success-check--mini">
+                                                                        <svg class="icon">
+                                                                            <use href="img/sprite.svg#success-check"></use>
+                                                                        </svg>
+                                                                    </span>
                                                                 </span>
                                                             </span>
-                                                        </span>
-                                                        <span class="card__organizer-descr">
-                                                            <span class="card__organizer-title">Ассоциация волонтерских центров</span>
-                                                            <span class="card__organizer-activity">12 мероприятий</span>
-                                                        </span>
-                                                        <span class="card__rate">
-                                                            <svg class="icon">
-                                                                <use href="img/sprite.svg#star"></use>
-                                                            </svg>
-                                                            <span class="card__rate-value">4.8</span>
-                                                        </span>
-                                                    </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:;" class="card card--projects">
-                                                <span class="card__view">
-                                                    <picture>
-                                                        <source srcset="img/card-photo-projects.webp" type="image/webp">
-                                                        <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
-                                                    </picture>
-                                                </span>
-                                                <span class="card__descr">
-                                                    <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
-                                                    <span class="card__organizer">
-                                                        <span class="card__organizer-logo">
-                                                            <picture>
-                                                                <source srcset="img/card-projects-org.webp" type="image/webp">
-                                                                <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
-                                                            </picture>
-                                                            <span class="card__organizer-logo-check">
-                                                                <span class="success-check success-check--mini">
-                                                                    <svg class="icon">
-                                                                        <use href="img/sprite.svg#success-check"></use>
-                                                                    </svg>
-                                                                </span>
+                                                            <span class="card__organizer-descr">
+                                                                <span class="card__organizer-title">Ассоциация волонтерских центров</span>
+                                                                <span class="card__organizer-activity">12 мероприятий</span>
+                                                            </span>
+                                                            <span class="card__rate">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <span class="card__rate-value">4.8</span>
                                                             </span>
                                                         </span>
-                                                        <span class="card__organizer-descr">
-                                                            <span class="card__organizer-title">Ассоциация волонтерских центров</span>
-                                                            <span class="card__organizer-activity">12 мероприятий</span>
-                                                        </span>
-                                                        <span class="card__rate">
-                                                            <svg class="icon">
-                                                                <use href="img/sprite.svg#star"></use>
-                                                            </svg>
-                                                            <span class="card__rate-value">4.8</span>
-                                                        </span>
                                                     </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:;" class="card card--projects">
-                                                <span class="card__view">
-                                                    <picture>
-                                                        <source srcset="img/card-photo-projects.webp" type="image/webp">
-                                                        <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
-                                                    </picture>
-                                                </span>
-                                                <span class="card__descr">
-                                                    <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
-                                                    <span class="card__organizer">
-                                                        <span class="card__organizer-logo">
-                                                            <picture>
-                                                                <source srcset="img/card-projects-org.webp" type="image/webp">
-                                                                <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
-                                                            </picture>
-                                                            <span class="card__organizer-logo-check">
-                                                                <span class="success-check success-check--mini">
-                                                                    <svg class="icon">
-                                                                        <use href="img/sprite.svg#success-check"></use>
-                                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:;" class="card card--projects">
+                                                    <span class="card__view">
+                                                        <picture>
+                                                            <source srcset="img/card-photo-projects.webp" type="image/webp">
+                                                            <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
+                                                        </picture>
+                                                    </span>
+                                                    <span class="card__descr">
+                                                        <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
+                                                        <span class="card__organizer">
+                                                            <span class="card__organizer-logo">
+                                                                <picture>
+                                                                    <source srcset="img/card-projects-org.webp" type="image/webp">
+                                                                    <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
+                                                                </picture>
+                                                                <span class="card__organizer-logo-check">
+                                                                    <span class="success-check success-check--mini">
+                                                                        <svg class="icon">
+                                                                            <use href="img/sprite.svg#success-check"></use>
+                                                                        </svg>
+                                                                    </span>
                                                                 </span>
                                                             </span>
-                                                        </span>
-                                                        <span class="card__organizer-descr">
-                                                            <span class="card__organizer-title">Ассоциация волонтерских центров</span>
-                                                            <span class="card__organizer-activity">12 мероприятий</span>
-                                                        </span>
-                                                        <span class="card__rate">
-                                                            <svg class="icon">
-                                                                <use href="img/sprite.svg#star"></use>
-                                                            </svg>
-                                                            <span class="card__rate-value">4.8</span>
-                                                        </span>
-                                                    </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:;" class="card card--projects">
-                                                <span class="card__view">
-                                                    <picture>
-                                                        <source srcset="img/card-photo-projects.webp" type="image/webp">
-                                                        <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
-                                                    </picture>
-                                                </span>
-                                                <span class="card__descr">
-                                                    <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
-                                                    <span class="card__organizer">
-                                                        <span class="card__organizer-logo">
-                                                            <picture>
-                                                                <source srcset="img/card-projects-org.webp" type="image/webp">
-                                                                <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
-                                                            </picture>
-                                                            <span class="card__organizer-logo-check">
-                                                                <span class="success-check success-check--mini">
-                                                                    <svg class="icon">
-                                                                        <use href="img/sprite.svg#success-check"></use>
-                                                                    </svg>
-                                                                </span>
+                                                            <span class="card__organizer-descr">
+                                                                <span class="card__organizer-title">Ассоциация волонтерских центров</span>
+                                                                <span class="card__organizer-activity">12 мероприятий</span>
+                                                            </span>
+                                                            <span class="card__rate">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <span class="card__rate-value">4.8</span>
                                                             </span>
                                                         </span>
-                                                        <span class="card__organizer-descr">
-                                                            <span class="card__organizer-title">Ассоциация волонтерских центров</span>
-                                                            <span class="card__organizer-activity">12 мероприятий</span>
-                                                        </span>
-                                                        <span class="card__rate">
-                                                            <svg class="icon">
-                                                                <use href="img/sprite.svg#star"></use>
-                                                            </svg>
-                                                            <span class="card__rate-value">4.8</span>
-                                                        </span>
                                                     </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:;" class="card card--projects">
-                                                <span class="card__view">
-                                                    <picture>
-                                                        <source srcset="img/card-photo-projects.webp" type="image/webp">
-                                                        <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
-                                                    </picture>
-                                                </span>
-                                                <span class="card__descr">
-                                                    <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
-                                                    <span class="card__organizer">
-                                                        <span class="card__organizer-logo">
-                                                            <picture>
-                                                                <source srcset="img/card-projects-org.webp" type="image/webp">
-                                                                <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
-                                                            </picture>
-                                                            <span class="card__organizer-logo-check">
-                                                                <span class="success-check success-check--mini">
-                                                                    <svg class="icon">
-                                                                        <use href="img/sprite.svg#success-check"></use>
-                                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:;" class="card card--projects">
+                                                    <span class="card__view">
+                                                        <picture>
+                                                            <source srcset="img/card-photo-projects.webp" type="image/webp">
+                                                            <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
+                                                        </picture>
+                                                    </span>
+                                                    <span class="card__descr">
+                                                        <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
+                                                        <span class="card__organizer">
+                                                            <span class="card__organizer-logo">
+                                                                <picture>
+                                                                    <source srcset="img/card-projects-org.webp" type="image/webp">
+                                                                    <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
+                                                                </picture>
+                                                                <span class="card__organizer-logo-check">
+                                                                    <span class="success-check success-check--mini">
+                                                                        <svg class="icon">
+                                                                            <use href="img/sprite.svg#success-check"></use>
+                                                                        </svg>
+                                                                    </span>
                                                                 </span>
                                                             </span>
-                                                        </span>
-                                                        <span class="card__organizer-descr">
-                                                            <span class="card__organizer-title">Ассоциация волонтерских центров</span>
-                                                            <span class="card__organizer-activity">12 мероприятий</span>
-                                                        </span>
-                                                        <span class="card__rate">
-                                                            <svg class="icon">
-                                                                <use href="img/sprite.svg#star"></use>
-                                                            </svg>
-                                                            <span class="card__rate-value">4.8</span>
+                                                            <span class="card__organizer-descr">
+                                                                <span class="card__organizer-title">Ассоциация волонтерских центров</span>
+                                                                <span class="card__organizer-activity">12 мероприятий</span>
+                                                            </span>
+                                                            <span class="card__rate">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <span class="card__rate-value">4.8</span>
+                                                            </span>
                                                         </span>
                                                     </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:;" class="card card--more">
-                                                <span class="card__descr">
-                                                    <span class="card__header h3">Смотреть<br> все проекты</span>
-                                                </span>
-                                                <span class="card__link-pointer">
-                                                    <svg class="icon">
-                                                        <use href="img/sprite.svg#card-more-arrow-toright"></use>
-                                                    </svg>
-                                                </span>
-                                            </a>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:;" class="card card--projects">
+                                                    <span class="card__view">
+                                                        <picture>
+                                                            <source srcset="img/card-photo-projects.webp" type="image/webp">
+                                                            <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
+                                                        </picture>
+                                                    </span>
+                                                    <span class="card__descr">
+                                                        <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
+                                                        <span class="card__organizer">
+                                                            <span class="card__organizer-logo">
+                                                                <picture>
+                                                                    <source srcset="img/card-projects-org.webp" type="image/webp">
+                                                                    <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
+                                                                </picture>
+                                                                <span class="card__organizer-logo-check">
+                                                                    <span class="success-check success-check--mini">
+                                                                        <svg class="icon">
+                                                                            <use href="img/sprite.svg#success-check"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                            <span class="card__organizer-descr">
+                                                                <span class="card__organizer-title">Ассоциация волонтерских центров</span>
+                                                                <span class="card__organizer-activity">12 мероприятий</span>
+                                                            </span>
+                                                            <span class="card__rate">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <span class="card__rate-value">4.8</span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:;" class="card card--projects">
+                                                    <span class="card__view">
+                                                        <picture>
+                                                            <source srcset="img/card-photo-projects.webp" type="image/webp">
+                                                            <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
+                                                        </picture>
+                                                    </span>
+                                                    <span class="card__descr">
+                                                        <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
+                                                        <span class="card__organizer">
+                                                            <span class="card__organizer-logo">
+                                                                <picture>
+                                                                    <source srcset="img/card-projects-org.webp" type="image/webp">
+                                                                    <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
+                                                                </picture>
+                                                                <span class="card__organizer-logo-check">
+                                                                    <span class="success-check success-check--mini">
+                                                                        <svg class="icon">
+                                                                            <use href="img/sprite.svg#success-check"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                            <span class="card__organizer-descr">
+                                                                <span class="card__organizer-title">Ассоциация волонтерских центров</span>
+                                                                <span class="card__organizer-activity">12 мероприятий</span>
+                                                            </span>
+                                                            <span class="card__rate">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <span class="card__rate-value">4.8</span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:;" class="card card--projects">
+                                                    <span class="card__view">
+                                                        <picture>
+                                                            <source srcset="img/card-photo-projects.webp" type="image/webp">
+                                                            <img loading="lazy" src="img/card-photo-projects.png" class="image" width="270" height="180" alt="Фото карточки">
+                                                        </picture>
+                                                    </span>
+                                                    <span class="card__descr">
+                                                        <span class="card__title">Организация раздельного сбора ТБО в корпусах и общежитиях университета ИТМО</span>
+                                                        <span class="card__organizer">
+                                                            <span class="card__organizer-logo">
+                                                                <picture>
+                                                                    <source srcset="img/card-projects-org.webp" type="image/webp">
+                                                                    <img loading="lazy" src="img/card-projects-org.png" class="image" width="42" height="42" alt="Логотип организатора">
+                                                                </picture>
+                                                                <span class="card__organizer-logo-check">
+                                                                    <span class="success-check success-check--mini">
+                                                                        <svg class="icon">
+                                                                            <use href="img/sprite.svg#success-check"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                            <span class="card__organizer-descr">
+                                                                <span class="card__organizer-title">Ассоциация волонтерских центров</span>
+                                                                <span class="card__organizer-activity">12 мероприятий</span>
+                                                            </span>
+                                                            <span class="card__rate">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <span class="card__rate-value">4.8</span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:;" class="card card--more">
+                                                    <span class="card__descr">
+                                                        <span class="card__header h3">Смотреть<br> все проекты</span>
+                                                    </span>
+                                                    <span class="card__link-pointer">
+                                                        <svg class="icon">
+                                                            <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

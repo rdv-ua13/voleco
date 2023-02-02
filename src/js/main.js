@@ -8,6 +8,7 @@ function application() {
     //this.myMap;
 }
 application.prototype.init = function () {
+    this.initHeaderScroll();
     this.initBurger();
     this.initTabs();
     this.initNotice();
@@ -15,6 +16,7 @@ application.prototype.init = function () {
     this.initValidationNumCode();
     this.initNavTabs();
     this.initPageContentTabs();
+    this.initInnerPageTabs();
     this.initTooltips();
     this.initProgressBar();
     this.initFormProcessing();
@@ -24,6 +26,8 @@ application.prototype.init = function () {
     this.initMobileSlider();
     this.initResponsiveCardSlider();
     this.initHandlerCurrentUser();
+    /*this.initHandlerCurrentUser();*/
+    this.initPasswordSwitcher();
     this.initSelect2();
     /*this.initDropfiles();*/
     this.initTagSelected();
@@ -33,14 +37,56 @@ application.prototype.init = function () {
     /*this.initReadmoreResponsive(); todo - Доделать*/
     this.initAccordion();
     this.initCheckall();
+    this.setSettingsBarHeight();
+};
+
+// Initialization header scroll
+application.prototype.initHeaderScroll = function () {
+    $(window).scroll(function () {
+        setHeaderScroll();
+    });
+    setHeaderScroll();
+
+    function setHeaderScroll() {
+        if ($(window).scrollTop() > 25) {
+            $('.header').addClass("scrolled");
+        } else {
+            $('.header').removeClass("scrolled");
+        }
+    }
+};
+
+// Initialization disable scroll
+application.prototype.disableScroll = function () {
+    const body = document.body;
+    const fixBlocks = document?.querySelectorAll('.fixed-block');
+    const pagePosition = window.scrollY;
+    const paddingOffset = `${(window.innerWidth - body.offsetWidth)}px`;
+
+    /*console.log(pagePosition);*/
+
+    document.documentElement.style.scrollBehavior = 'none';
+    fixBlocks.forEach(el => { el.style.paddingRight = paddingOffset; });
+    body.style.paddingRight = paddingOffset;
+    body.classList.add('dis-scroll');
+    body.classList.add('overlay');
+};
+
+// Initialization enable scroll
+application.prototype.enableScroll = function () {
+    const body = document.body;
+    const fixBlocks = document?.querySelectorAll('.fixed-block');
+    fixBlocks.forEach(el => { el.style.paddingRight = '0px'; });
+    body.style.paddingRight = '0px';
+    body.classList.remove('dis-scroll');
+    body.classList.remove('overlay');
 };
 
 // Initialization burger-menu
 application.prototype.initBurger = function () {
     const burger = document?.querySelector('[data-burger]');
     const menu = document?.querySelector('[data-menu]');
-    const menuItems = document?.querySelectorAll('[data-menu-item]');
-    const overlay = document?.querySelector('[data-menu-overlay]');
+    const menuClose = document?.querySelector('[data-menu-close]');
 
     burger?.addEventListener('click', (e) => {
         burger?.classList.toggle('burger--active');
@@ -49,65 +95,33 @@ application.prototype.initBurger = function () {
         if (menu?.classList.contains('burger-menu--active')) {
             burger?.setAttribute('aria-expanded', 'true');
             burger?.setAttribute('aria-label', 'Закрыть меню');
-            disableScroll();
+            this.disableScroll();
         } else {
             burger?.setAttribute('aria-expanded', 'false');
             burger?.setAttribute('aria-label', 'Открыть меню');
-            enableScroll();
+            this.enableScroll();
         }
     });
 
-    overlay?.addEventListener('click', () => {
+    menuClose?.addEventListener('click', () => {
+        setMenuClose();
+    });
+
+    function setMenuClose() {
         burger?.setAttribute('aria-expanded', 'false');
         burger?.setAttribute('aria-label', 'Открыть меню');
         burger.classList.remove('burger--active');
         menu.classList.remove('burger-menu--active');
-        enableScroll();
-    });
-
-    menuItems?.forEach(el => {
-        el.addEventListener('click', () => {
-            burger?.setAttribute('aria-expanded', 'false');
-            burger?.setAttribute('aria-label', 'Открыть меню');
-            burger.classList.remove('burger--active');
-            menu.classList.remove('burger-menu--active');
-            enableScroll();
-        });
-    });
-
-    function disableScroll() {
-        const body = document.body;
-        const fixBlocks = document?.querySelectorAll('.fixed-block');
-        const pagePosition = window.scrollY;
-        const paddingOffset = `${(window.innerWidth - body.offsetWidth)}px`;
-
-        document.documentElement.style.scrollBehavior = 'none';
-        fixBlocks.forEach(el => { el.style.paddingRight = paddingOffset; });
-        body.style.paddingRight = paddingOffset;
-        body.classList.add('dis-scroll');
-        body.classList.add('overlay');
-        body.dataset.position = pagePosition;
-        body.style.top = `-${pagePosition}px`;
+        return application.prototype.enableScroll();
     }
 
-    function enableScroll() {
-        const body = document.body;
-        const fixBlocks = document?.querySelectorAll('.fixed-block');
-        const pagePosition = parseInt(body.dataset.position, 10);
-        fixBlocks.forEach(el => { el.style.paddingRight = '0px'; });
-        body.style.paddingRight = '0px';
-
-        body.style.top = 'auto';
-        body.classList.remove('dis-scroll');
-        body.classList.remove('overlay');
-        window.scroll({
-            top: pagePosition,
-            left: 0
-        });
-        body.removeAttribute('data-position');
-        document.documentElement.style.scrollBehavior = 'smooth';
-    }
+    $(document).on("click", function (e) {
+        if ($('.overlay').is(e.target)) {
+            setMenuClose();
+        }
+    });
 };
+
 // Initialization tabs
 application.prototype.initTabs = function () {
     if ($(".tabs").length) {
@@ -122,12 +136,14 @@ application.prototype.initTabs = function () {
         });
     }
 };
+
 // Initialization tabs
 application.prototype.initNotice = function () {
     $(document).on("click", ".notice", function () {
         $(this).find(".notice-elem").removeClass("active");
     });
 };
+
 // Initialization validation num code
 application.prototype.initValidationNumCode = function () {
     if($(".authreg--recovery").length) {
@@ -203,6 +219,7 @@ application.prototype.initValidationNumCode = function () {
         in1.addEventListener('input', splitNumber);
     }
 };
+
 // Initialization navigation pages tabs
 application.prototype.initNavTabs = function () {
     if ($(".js-main-section-tabs").length) {
@@ -212,6 +229,7 @@ application.prototype.initNavTabs = function () {
         });
     }
 };
+
 // Initialization page-content tabs
 application.prototype.initPageContentTabs = function () {
     if ($(".js-page-content-tabs").length) {
@@ -221,6 +239,43 @@ application.prototype.initPageContentTabs = function () {
         });
     }
 };
+
+// Initialization inner-page-tabs
+application.prototype.initInnerPageTabs = function () {
+    if ($(".inner-page-tabs").length) {
+        initTabBehavior();
+        initTabsSlider();
+
+        function initTabBehavior() {
+            const tabBlock = $(".inner-page-tabs");
+            let currentSelected = 0;
+            let currentTabBlockId = null;
+            $(".inner-page-tabs__nav-item").on("click", function () {
+                currentTabBlockId = $(this).closest(tabBlock).data("tab");
+
+                $(".inner-page-tabs__nav-item").not(this).find(".inner-page-tabs__link").removeClass("selected");
+                $(this).find(".inner-page-tabs__link").removeClass("notice").addClass("selected");
+
+                currentSelected = $(this).find(".inner-page-tabs__link").data("target");
+                $(".inner-page-tabs-content[data-tab-content='" + currentTabBlockId + "']").find(".inner-page-tabs-content__panel").removeClass("active");
+                $(".inner-page-tabs-content[data-tab-content='" + currentTabBlockId + "']").find(".inner-page-tabs-content__panel[data-id='" + currentSelected + "']").addClass("active");
+            });
+        }
+
+        function initTabsSlider() {
+            const swiperInnerPageTabs = new Swiper(".inner-page-tabs.swiper", {
+                slidesPerView: "auto",
+                spaceBetween: 16,
+                breakpoints: {
+                    992: {
+                        spaceBetween: 32,
+                    }
+                },
+            });
+        }
+    }
+};
+
 // Initialization tooltips
 application.prototype.initTooltips = function () {
     if ($(".tooltip").length) {
@@ -232,6 +287,7 @@ application.prototype.initTooltips = function () {
         });
     }
 };
+
 // Initialization cards progress bar
 application.prototype.initProgressBar = function () {
     if ($(".js-progress").length) {
@@ -258,57 +314,143 @@ application.prototype.initProgressBar = function () {
 // Initialization registration stepper
 application.prototype.initRegStepper = function () {
     if($(".bs-stepper").length) {
-        let stepper = new Stepper($('.bs-stepper')[0]);
-
-        $(".js-stepper-trigger").on("click", function () {
-            let nextStep = $(this).data("index-next");
-
-            switch(nextStep) {
-                case 2:
-                    stepper.to(2);
-                    break;
-                case 3:
-                    stepper.to(3);
-                    break;
-                default:
-                    stepper.to(1);
-            }
-        });
+        window.steppers = {
+            registration: new Stepper($('.bs-stepper')[0])
+        };
     }
+    // if($(".bs-stepper").length) {
+    //     let stepper = new Stepper($('.bs-stepper')[0]);
+    //
+    //     $(".js-stepper-trigger").on("click", function () {
+    //         let nextStep = $(this).data("index-next");
+    //
+    //         switch(nextStep) {
+    //             case 2:
+    //                 stepper.to(2);
+    //                 break;
+    //             case 3:
+    //                 stepper.to(3);
+    //                 break;
+    //             default:
+    //                 stepper.to(1);
+    //         }
+    //     });
+    // }
 };
+
 // Initialization form processing
 application.prototype.initFormProcessing = function () {
-    if ($(".form").length) {
-        function getFormData($form){
-            let unindexed_array = $form.serializeArray();
-            let indexed_array = {};
-
-            $.map(unindexed_array, function(n, i){
-                indexed_array[n["name"]] = n["value"];
-            });
-
-            return indexed_array;
-        }
-
-        $(document).on("submit", ".form", function () {
-            let currentForm = $(this);
-            getFormData(currentForm);
-
-            $.ajax({
-                type: "POST",
-                url: "forms.php",
-                dataType: "json",
-                data: getFormData(currentForm),
-                success: function (currentForm) {
-                    console.log("success");
-                },
-                error: function () {
-                    console.log("error");
-                }
-            });
+    function getFormData($form) {
+        let unindexed_array = $form.serializeArray();
+        let indexed_array = {};
+        $.map(unindexed_array, function (n, i) {
+            indexed_array[n["name"]] = n["value"];
         });
+        return indexed_array;
     }
+
+    // $(document).on("submit", ".form", function (e) {
+    //   e.preventDefault();
+    //   let currentForm = $(this);
+    //   let formData = getFormData(currentForm);
+    //
+    //   // $.ajax({
+    //   //   type: "POST",
+    //   //   url: "forms.php",
+    //   //   dataType: "json",
+    //   //   data: getFormData(currentForm),
+    //   //   success: function (currentForm) {
+    //   //     console.log("success");
+    //   //   },
+    //   //   error: function () {
+    //   //     console.log("error");
+    //   //   }
+    //   // });
+    //   BX.ajax.runAction('dev:core.registration.checkPrimaryData', {
+    //     data: {
+    //       'post': formData,
+    //     }
+    //   }).then(
+    //       response => {
+    //         if (response.data.result === 'success') {
+    //           console.log('SUCCESS! Go to the next step');
+    //         } else {
+    //           console.log(response.data.errors);
+    //         }
+    //       },
+    //       error => {
+    //         //сюда будут приходить все ответы, у которых status !== 'success'
+    //         console.log(error);
+    //       }
+    //   );
+    //   return false;
+    // });
+
+    $(document).on('submit', '.js-register-step-1', function (e) {
+        e.preventDefault();
+        let $currentForm = $(this);
+        let formData = getFormData($currentForm);
+        let $submitBtn = $currentForm.find('[type="submit"]');
+        BX.ajax.runAction('dev:core.registration.checkPrimaryData', {
+            data: {
+                'post': formData,
+            }
+        }).then(
+            response => {
+                if (response.data.result === 'success') {
+                    let nextStep = parseInt($submitBtn.data('index-next'));
+                    window.steppers.registration.to(nextStep);
+                    console.log('SUCCESS! Go to the next step');
+                } else {
+                    console.log(response.data.errors);
+                }
+            },
+            error => {
+                //сюда будут приходить все ответы, у которых status !== 'success'
+                console.log(error);
+            }
+        );
+        return false;
+    });
+
+    $(document).on('submit', '.js-register-final', function (e) {
+        e.preventDefault();
+        let $currentForm = $(this);
+        let userType = $currentForm.data('user-type');
+
+
+        let formData = getFormData($currentForm);
+        let $submitBtn = $currentForm.find('[type="submit"]');
+
+        let $step1form = $('.js-register-step-1[data-user-type="' + userType + '"]');
+        let step1formData = getFormData($step1form);
+
+        let merged = {...step1formData, ...formData};
+
+        BX.ajax.runAction('dev:core.registration.checkAllAndRegister', {
+            data: {
+                'post': merged,
+            }
+        }).then(
+            response => {
+                console.log(response.data);
+                if (response.data.result === 'success') {
+                    if (response.data.redirect) {
+                        window.location.href = response.data.redirect;
+                    }
+                } else {
+                    // errors
+                }
+            },
+            error => {
+                //сюда будут приходить все ответы, у которых status !== 'success'
+                console.log(error);
+            }
+        );
+        return false;
+    });
 };
+
 // Initialization cards button "favorite"
 application.prototype.initCardFavorite = function () {
     $(document).on("click", ".card", function (e) {
@@ -322,6 +464,7 @@ application.prototype.initCardFavorite = function () {
         }
     });
 };
+
 // Initialization tag-bar slider
 application.prototype.initTagbarSlider = function () {
     if ($(".js-tag-bar-slider").length) {
@@ -339,6 +482,7 @@ application.prototype.initTagbarSlider = function () {
         });
     }
 };
+
 // Initialization basic slider
 application.prototype.initBasicSlider = function () {
     if ($(".basic-slider-ecodelo").length) {
@@ -528,6 +672,7 @@ application.prototype.initBasicSlider = function () {
         });
     }
 };
+
 // Initialization mobile slider
 application.prototype.initMobileSlider = function () {
     if ($(".mobile-only-slider").length) {
@@ -553,6 +698,7 @@ application.prototype.initMobileSlider = function () {
         }
     }
 };
+
 // Initialization responsive card slider
 application.prototype.initResponsiveCardSlider = function () {
     if ($(".card-list-responsive").length) {
@@ -622,31 +768,69 @@ application.prototype.initResponsiveCardSlider = function () {
         }
     }
 };
+
 // Initialization handler for current user dropdown menu
-// todo: finish this
 application.prototype.initHandlerCurrentUser = function () {
     if ($(".js-current-user-menu").length) {
-        $(".js-current-user-menu").on("click", function () {
-            if($(this).hasClass("open")) {
-                $(this).removeClass("open");
-            } else {
-                $(this).addClass("open");
+       $(document).on("click", function (e) {
+            if (!$(".js-current-user-menu").hasClass("open") && $(".current-user__dropdown").is(e.target)) {
+                $(".js-current-user-menu").addClass("open");
             }
-        });
-
-        $(document).on("click", function (e) {
-            if (!$(".js-current-user-menu").is(e.target) && !$(".current-user__dropdown-menu").is(e.target)) {
+            else if ($(".js-current-user-menu").hasClass("open") && $(".current-user__dropdown").is(e.target)) {
+                $(".js-current-user-menu").removeClass("open");
+            }
+            else if ($(".current-user__dropdown-menu ul").has(e.target).length) {
+                $(".js-current-user-menu").removeClass("open");
+            }
+            else if (!$(".js-current-user-menu").is(e.target) && $(".js-current-user-menu").has(e.target).length === 0) {
                 $(".js-current-user-menu").removeClass("open");
             }
         });
     }
 };
+
+/*// Initialization handler for header-actions-menu dropdown on mobile
+application.prototype.initHandlerHeaderActionsMenu = function () {
+    if ($(".js-current-user-menu").length) {
+        $(document).on("click", function (e) {
+            if (!$(".js-current-user-menu").hasClass("open") && $(".current-user__dropdown").is(e.target)) {
+                $(".js-current-user-menu").addClass("open");
+            }
+            else if ($(".js-current-user-menu").hasClass("open") && $(".current-user__dropdown").is(e.target)) {
+                $(".js-current-user-menu").removeClass("open");
+            }
+            else if ($(".current-user__dropdown-menu ul").has(e.target).length) {
+                $(".js-current-user-menu").removeClass("open");
+            }
+            else if (!$(".js-current-user-menu").is(e.target) && $(".js-current-user-menu").has(e.target).length === 0) {
+                $(".js-current-user-menu").removeClass("open");
+            }
+        });
+    }
+};*/
+
+// Initialization password-switcher
+application.prototype.initPasswordSwitcher = function () {
+    if ($('input[type=password]').length) {
+        $(document).on('click', 'input[data-password-switcher]', function(){
+            if ($(this).is(':checked')) {
+                $(this).closest('.form__field').find('input[data-password-target]').attr('type', 'text');
+            } else {
+                $(this).closest('.form__field').find('input[data-password-target]').attr('type', 'password');
+            }
+        });
+    }
+};
+
 // Initialization select2 plagin
 application.prototype.initSelect2 = function () {
     if ($(".js-select2").length) {
-        $(".js-select2").select2();
+        $(".js-select2").select2({
+            allowClear: true,
+        });
     }
 };
+
 // Initialization drop files
 application.prototype.initDropfiles = function () {
     const fileinput = document.getElementById("dropfile-input");
@@ -717,6 +901,7 @@ application.prototype.initDropfiles = function () {
     dropzone.addEventListener("dragleave", dragleaveHandler, false);
     dropzone.addEventListener("drop", dropHandler, false)
 };
+
 // Initialization tag selected
 application.prototype.initTagSelected = function () {
     if ($("label.tag").length) {
@@ -730,6 +915,7 @@ application.prototype.initTagSelected = function () {
         });
     }
 };
+
 // Mobile number mask
 application.prototype.initMaskedInput = function () {
     $(".isPhone").mask("+7-999-999-99-99", { autoclear: false });
@@ -744,6 +930,7 @@ application.prototype.initAddList = function () {
         });
     }
 };
+
 // Initialization readmore plugin
 application.prototype.initReadmore = function () {
     if ($(".js-spoiler").length) {
@@ -765,6 +952,7 @@ application.prototype.initReadmore = function () {
         });
     }
 };
+
 // Initialization readmore plugin responsive
 application.prototype.initReadmoreResponsive = function () {
     initReadmoreDesktopOnly();
@@ -783,6 +971,7 @@ application.prototype.initReadmoreResponsive = function () {
         }
     }
 };
+
 // Initialization accordion
 application.prototype.initAccordion = function () {
     if ($(".accordion").length) {
@@ -908,7 +1097,6 @@ application.prototype.initCheckall = function () {
             });
         }
 
-
         function initOnclickCheckallFor() {
             $(".checkall-for").on("click", function (e) {
                 const checkallFor = $(this);
@@ -975,5 +1163,14 @@ application.prototype.initCheckall = function () {
                 }
             });
         }
+    }
+};
+
+// Set height to '.page-content-settings-bar'
+application.prototype.setSettingsBarHeight = function () {
+    if ($('.page-content-settings-bar').length) {
+        const body = $('.has-settings-bar');
+        let barsHeight = $('.page-content-settings-bar').outerHeight();
+        body.css('padding-bottom', barsHeight);
     }
 };

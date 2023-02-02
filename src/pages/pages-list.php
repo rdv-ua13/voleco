@@ -50,6 +50,11 @@
                 margin-right: 40px;
                 padding: 15px 40px;
             }
+
+            .ready {
+                color: forestgreen;
+                font-weight: 600;
+            }
         </style>
     </head>
 
@@ -73,40 +78,40 @@
             <li><a href="organizer.php" target="_blank">Организаторам</a></li><!-- #56 -->
 
             <br>
-			<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
+			<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов [Готов]</li>
             <li><a href="registration.php" target="_blank">Регистрация (содержит 4 макетных страницы)</a></li>
             <li><a href="auth.php" target="_blank">Авторизация</a></li>
             <li><a href="password-recovery.php" target="_blank">Восстановление пароля (содержит 3 макетных страницы)</a></li>
 
             <br>
-            <!--<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>-->
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="ms-volunteer.php" target="_blank">Эковолонтеры</a></li>
             <li><a href="ms-ecodela.php" target="_blank">Экодела</a></li>
             <li><a href="ms-projects.php" target="_blank">Проекты</a></li>
             <li><a href="ms-organizer.php" target="_blank">Организаторы</a></li>
             <li><a href="ms-petitions.php" target="_blank">Петиции</a></li>
             <li><a href="ms-fundraising.php" target="_blank">Сбор средств</a></li>
-
+            <li><a href="ms-analytics.php" target="_blank">Аналитика (в процессе )</a></li><!-- #63 -->
             <li><a href="ms-news.php" target="_blank">Новости</a></li><!-- #61 -->
 
             <br>
-            <!--<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>-->
-            <li><a href="details-volunteer.php" target="_blank">детальная - Эковолонтеры (в процессе)</a></li>
-            <li><a href="details-volunteer-exp.php" target="_blank">детальная - Эковолонтеры опыт (в процессе)</a></li>
-            <li><a href="details-volunteer-feedback.php" target="_blank">детальная - Эковолонтеры отзывы (в процессе)</a></li>
-            <li><a href="details-ecodela.php" target="_blank">детальная - Экодела (в процессе)</a></li>
-            <li><a href="details-projects.php" target="_blank">детальная - Проекты (в процессе)</a></li>
-            <li><a href="details-organizer.php" target="_blank">детальная - Организаторы</a></li><!-- #57 -->
-            <li><a href="details-organizer-reviews.php" target="_blank">детальная - Организаторы отзывы</a></li><!-- #58 -->
-            <li><a href="details-organizer-photo.php" target="_blank">детальная - Организаторы фото</a></li><!-- #59 -->
-            <li><a href="details-organizer-video.php" target="_blank">детальная - Организаторы видео</a></li><!-- #60 -->
-            <li><a href="details-petitions.php" target="_blank">детальная - Петиции (в процессе)</a></li>
-            <li><a href="details-fundraising.php" target="_blank">детальная - Сбор средств (в процессе)</a></li>
-            <li><a href="details-news.php" target="_blank">детальная - Новости</a></li><!-- #62 -->
+            <li style="color: darkred; font-size: 18px; font-weight: 700;"><!--Блок готов--> Пересобрать после Стаса</li>
+            <li><a href="details-volunteer.php" target="_blank">детальная - Эковолонтеры (в процессе !)</a></li>
+            <li><a href="details-volunteer-exp.php" target="_blank">детальная - Эковолонтеры опыт (в процессе !)</a></li>
+            <li><a href="details-volunteer-feedback.php" target="_blank">детальная - Эковолонтеры отзывы (в процессе !)</a></li>
+            <li><a href="details-ecodela.php" target="_blank">детальная - Экодела (в процессе !)</a></li>
+            <li><a href="details-projects.php" target="_blank">детальная - Проекты (в процессе !)</a></li>
+            <li><a href="details-organizer.php" target="_blank" class="ready">детальная - Организаторы</a></li>
+            <li><a href="details-organizer-reviews.php" target="_blank" class="ready">детальная - Организаторы отзывы</a></li>
+            <li><a href="details-organizer-photo.php" target="_blank" class="ready">детальная - Организаторы фото</a></li>
+            <li><a href="details-organizer-video.php" target="_blank" class="ready">детальная - Организаторы видео</a></li>
+            <li><a href="details-petitions.php" target="_blank" class="ready">детальная - Петиции</a></li>
+            <li><a href="details-fundraising.php" target="_blank">детальная - Сбор средств (в процессе !)</a></li>
+            <li><a href="details-news.php" target="_blank" class="ready">детальная - Новости</a></li><!-- #62 переделал ".details-section__header" -->
 
             <br>
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
-            <li><a href="lk-org-profile.php" target="_blank">ЛК Орг - профиль</a></li>
+            <li><a href="lk-org-profile.php" target="_blank">ЛК Орг - профиль</a></li><!-- !!! sidebar - доделать btn edit -->
             <li><a href="lk-org-request.php" target="_blank">ЛК Орг - заявки</a></li>
             <li><a href="lk-org-tracking.php" target="_blank">ЛК Орг - Учет времени волонтера</a></li>
             <li><a href="lk-org-events.php" target="_blank">ЛК Орг - мероприятия</a></li>
@@ -151,12 +156,6 @@
 
             <br>
             <li><a href="ui.php" target="_blank">ui</a></li>
-
-            <br>
-            <br>
-            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Страницы в процессе</li>
-
-            <li><a href="ms-analytics.php" target="_blank">Аналитика</a></li><!-- #63 -->
         </ul>
     </div>
     </body>

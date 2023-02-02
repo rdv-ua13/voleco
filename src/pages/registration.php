@@ -63,12 +63,20 @@
                                                 type="password"
                                                 name="password"
                                                 placeholder=""
+                                                data-password-target
                                                 required
                                         >
-                                        <div class="form__btn form__btn--disabled">
-                                            <svg class="icon">
-                                                <use href="img/sprite.svg#input-password"></use>
-                                            </svg>
+                                        <div class="form__btn">
+                                            <label class="flex-all-center">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#input-password"></use>
+                                                </svg>
+                                                <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        data-password-switcher
+                                                >
+                                            </label>
                                         </div>
                                     </div>
                                     <div class="form__field">
@@ -81,12 +89,20 @@
                                                 type="password"
                                                 name="repeatPassword"
                                                 placeholder=""
+                                                data-password-target
                                                 required
                                         >
-                                        <div class="form__btn form__btn--disabled">
-                                            <svg class="icon">
-                                                <use href="img/sprite.svg#input-password"></use>
-                                            </svg>
+                                        <div class="form__btn">
+                                            <label class="flex-all-center">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#input-password"></use>
+                                                </svg>
+                                                <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        data-password-switcher
+                                                >
+                                            </label>
                                         </div>
                                     </div>
                                     <div class="form__field  form__field-agree">
@@ -147,12 +163,20 @@
                                                 type="password"
                                                 name="password"
                                                 placeholder=""
+                                                data-password-target
                                                 required
                                         >
-                                        <div class="form__btn form__btn--disabled">
-                                            <svg class="icon">
-                                                <use href="img/sprite.svg#input-password"></use>
-                                            </svg>
+                                        <div class="form__btn">
+                                            <label class="flex-all-center">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#input-password"></use>
+                                                </svg>
+                                                <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        data-password-switcher
+                                                >
+                                            </label>
                                         </div>
                                     </div>
                                     <div class="form__field">
@@ -165,12 +189,20 @@
                                                 type="password"
                                                 name="repeatPassword"
                                                 placeholder=""
+                                                data-password-target
                                                 required
                                         >
-                                        <div class="form__btn form__btn--disabled">
-                                            <svg class="icon">
-                                                <use href="img/sprite.svg#input-password"></use>
-                                            </svg>
+                                        <div class="form__btn">
+                                            <label class="flex-all-center">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#input-password"></use>
+                                                </svg>
+                                                <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        data-password-switcher
+                                                >
+                                            </label>
                                         </div>
                                     </div>
                                     <div class="form__field  form__field-agree">

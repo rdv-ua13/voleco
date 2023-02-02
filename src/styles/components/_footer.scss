@@ -144,6 +144,7 @@
 		}
 		&__bottom-list {
 			gap: 32px;
+			justify-content: space-between;
 
 			& li {
 				&:last-child {

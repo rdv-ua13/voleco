@@ -1,4 +1,4 @@
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/markup/" . "components/header.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
     <div class="block-mb">
         <div class="container">
@@ -39,12 +39,12 @@
 
                     <div class="details-section__header_middle">
                         <div class="header__middle_img">
-                            <img src="/markup/img/img_stas/header__middle_img.png" alt="photo/volonteer">
+                            <img src="img/header__middle_img.png" alt="photo/volonteer">
                         </div>
                     </div>
                     <div class="details-section__header_bottom">
                         <div class="header__bottom_logo">
-                            <img src="/markup/img/img_stas/header__bottom_logo.png" alt="photo/logo">
+                            <img src="img/header__bottom_logo.png" alt="photo/logo">
                         </div>
 
                         <div class="header__bottom_btn">
@@ -53,7 +53,7 @@
                                     <span class="nameplate-id">
                                 <span class="nameplate-id__content">
                                     <svg class="icon nameplate-id__content-icon">
-                                        <use href="/markup/img/sprite.svg#scanner"></use>
+                                        <use href="img/sprite.svg#scanner"></use>
                                     </svg>
                                     <span class="nameplate-id__content-text">ID: 17901</span>
                                 </span>
@@ -63,7 +63,7 @@
                                         <span class="success-check success-check--nameplate">
                         <span class="success-check__content">
                             <svg class="icon success-check__content-icon">
-                                <use href="/markup/img/sprite.svg#success-check"></use>
+                                <use href="img/sprite.svg#success-check"></use>
                             </svg>
                             <span class="success-check__content-text">Верифицирован</span>
                         </span>
@@ -127,9 +127,9 @@
                             <a href="javascript:;" class="card card--pa-default">
                                 <span class="card__view">
                                     <picture>
-                                        <source srcset="/markup/img/img_stas/projects__list-card_3.png"
+                                        <source srcset="img/projects__list-card_3.png"
                                                 type="image/webp">
-                                        <img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+                                        <img loading="lazy" src="img/projects__list-card_3.png"
                                              class="image" width="260"
                                              height="190" alt="Фото карточки">
                                     </picture>
@@ -143,7 +143,7 @@
                                             <span class="tag__content">
                                                 <svg class="icon tag__content-icon"
                                                      style="fill: var(--accent-purple2-color);">
-                                                    <use href="/markup/img/sprite.svg#tag-sport"></use>
+                                                    <use href="img/sprite.svg#tag-sport"></use>
                                                 </svg>
                                                 <span class="tag__content-text"
                                                       style="color: var(--accent-purple2-color);">спорт</span>
@@ -155,13 +155,13 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#map-pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -169,7 +169,7 @@
                                     </span>
                                 <button class="btn-reset btn btn--fill btn--gray">
                         <svg class="icon btn__icon">
-                            <use href="/markup/img/sprite.svg#comment"></use>
+                            <use href="img/sprite.svg#comment"></use>
                         </svg>
                         <span class="btn__text">Посмотреть отзыв</span>
                     </button>
@@ -185,9 +185,9 @@
                             <a href="javascript:;" class="card card--pa-default">
                                 <span class="card__view">
                                     <picture>
-                                        <source srcset="/markup/img/img_stas/projects__list-card_3.png"
+                                        <source srcset="img/projects__list-card_3.png"
                                                 type="image/webp">
-                                        <img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+                                        <img loading="lazy" src="img/projects__list-card_3.png"
                                              class="image" width="260"
                                              height="190" alt="Фото карточки">
                                     </picture>
@@ -201,7 +201,7 @@
                                             <span class="tag__content">
                                                 <svg class="icon tag__content-icon"
                                                      style="fill: var(--accent-purple2-color);">
-                                                    <use href="/markup/img/sprite.svg#tag-sport"></use>
+                                                    <use href="img/sprite.svg#tag-sport"></use>
                                                 </svg>
                                                 <span class="tag__content-text"
                                                       style="color: var(--accent-purple2-color);">спорт</span>
@@ -213,13 +213,13 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#map-pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -236,9 +236,9 @@
                             <a href="javascript:;" class="card card--pa-default">
                                 <span class="card__view">
                                     <picture>
-                                        <source srcset="/markup/img/img_stas/projects__list-card_3.png"
+                                        <source srcset="img/projects__list-card_3.png"
                                                 type="image/webp">
-                                        <img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+                                        <img loading="lazy" src="img/projects__list-card_3.png"
                                              class="image" width="260"
                                              height="190" alt="Фото карточки">
                                     </picture>
@@ -252,7 +252,7 @@
                                             <span class="tag__content">
                                                 <svg class="icon tag__content-icon"
                                                      style="fill: var(--accent-purple2-color);">
-                                                    <use href="/markup/img/sprite.svg#tag-sport"></use>
+                                                    <use href="img/sprite.svg#tag-sport"></use>
                                                 </svg>
                                                 <span class="tag__content-text"
                                                       style="color: var(--accent-purple2-color);">спорт</span>
@@ -264,13 +264,13 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#map-pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -287,9 +287,9 @@
                             <a href="javascript:;" class="card card--pa-default">
                                 <span class="card__view">
                                     <picture>
-                                        <source srcset="/markup/img/img_stas/projects__list-card_3.png"
+                                        <source srcset="img/projects__list-card_3.png"
                                                 type="image/webp">
-                                        <img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+                                        <img loading="lazy" src="img/projects__list-card_3.png"
                                              class="image" width="260"
                                              height="190" alt="Фото карточки">
                                     </picture>
@@ -303,7 +303,7 @@
                                             <span class="tag__content">
                                                 <svg class="icon tag__content-icon"
                                                      style="fill: var(--accent-purple2-color);">
-                                                    <use href="/markup/img/sprite.svg#tag-sport"></use>
+                                                    <use href="img/sprite.svg#tag-sport"></use>
                                                 </svg>
                                                 <span class="tag__content-text"
                                                       style="color: var(--accent-purple2-color);">спорт</span>
@@ -315,13 +315,13 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#map-pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -338,9 +338,9 @@
                             <a href="javascript:;" class="card card--pa-default">
                                 <span class="card__view">
                                     <picture>
-                                        <source srcset="/markup/img/img_stas/projects__list-card_3.png"
+                                        <source srcset="img/projects__list-card_3.png"
                                                 type="image/webp">
-                                        <img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+                                        <img loading="lazy" src="img/projects__list-card_3.png"
                                              class="image" width="260"
                                              height="190" alt="Фото карточки">
                                     </picture>
@@ -354,7 +354,7 @@
                                             <span class="tag__content">
                                                 <svg class="icon tag__content-icon"
                                                      style="fill: var(--accent-purple2-color);">
-                                                    <use href="/markup/img/sprite.svg#tag-sport"></use>
+                                                    <use href="img/sprite.svg#tag-sport"></use>
                                                 </svg>
                                                 <span class="tag__content-text"
                                                       style="color: var(--accent-purple2-color);">спорт</span>
@@ -366,13 +366,13 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#map-pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -389,9 +389,9 @@
                             <a href="javascript:;" class="card card--pa-default">
                                 <span class="card__view">
                                     <picture>
-                                        <source srcset="/markup/img/img_stas/projects__list-card_3.png"
+                                        <source srcset="img/projects__list-card_3.png"
                                                 type="image/webp">
-                                        <img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+                                        <img loading="lazy" src="img/projects__list-card_3.png"
                                              class="image" width="260"
                                              height="190" alt="Фото карточки">
                                     </picture>
@@ -405,7 +405,7 @@
                                             <span class="tag__content">
                                                 <svg class="icon tag__content-icon"
                                                      style="fill: var(--accent-purple2-color);">
-                                                    <use href="/markup/img/sprite.svg#tag-sport"></use>
+                                                    <use href="img/sprite.svg#tag-sport"></use>
                                                 </svg>
                                                 <span class="tag__content-text"
                                                       style="color: var(--accent-purple2-color);">спорт</span>
@@ -417,13 +417,13 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#map-pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -440,9 +440,9 @@
                             <a href="javascript:;" class="card card--pa-default">
                                 <span class="card__view">
                                     <picture>
-                                        <source srcset="/markup/img/img_stas/projects__list-card_3.png"
+                                        <source srcset="img/projects__list-card_3.png"
                                                 type="image/webp">
-                                        <img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+                                        <img loading="lazy" src="img/projects__list-card_3.png"
                                              class="image" width="260"
                                              height="190" alt="Фото карточки">
                                     </picture>
@@ -456,7 +456,7 @@
                                             <span class="tag__content">
                                                 <svg class="icon tag__content-icon"
                                                      style="fill: var(--accent-purple2-color);">
-                                                    <use href="/markup/img/sprite.svg#tag-sport"></use>
+                                                    <use href="img/sprite.svg#tag-sport"></use>
                                                 </svg>
                                                 <span class="tag__content-text"
                                                       style="color: var(--accent-purple2-color);">спорт</span>
@@ -468,13 +468,13 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#map-pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -491,9 +491,9 @@
                             <a href="javascript:;" class="card card--pa-default">
                                 <span class="card__view">
                                     <picture>
-                                        <source srcset="/markup/img/img_stas/projects__list-card_3.png"
+                                        <source srcset="img/projects__list-card_3.png"
                                                 type="image/webp">
-                                        <img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+                                        <img loading="lazy" src="img/projects__list-card_3.png"
                                              class="image" width="260"
                                              height="190" alt="Фото карточки">
                                     </picture>
@@ -507,7 +507,7 @@
                                             <span class="tag__content">
                                                 <svg class="icon tag__content-icon"
                                                      style="fill: var(--accent-purple2-color);">
-                                                    <use href="/markup/img/sprite.svg#tag-sport"></use>
+                                                    <use href="img/sprite.svg#tag-sport"></use>
                                                 </svg>
                                                 <span class="tag__content-text"
                                                       style="color: var(--accent-purple2-color);">спорт</span>
@@ -519,13 +519,13 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#map-pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -542,9 +542,9 @@
                             <a href="javascript:;" class="card card--pa-default">
                                 <span class="card__view">
                                     <picture>
-                                        <source srcset="/markup/img/img_stas/projects__list-card_3.png"
+                                        <source srcset="img/projects__list-card_3.png"
                                                 type="image/webp">
-                                        <img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+                                        <img loading="lazy" src="img/projects__list-card_3.png"
                                              class="image" width="260"
                                              height="190" alt="Фото карточки">
                                     </picture>
@@ -558,7 +558,7 @@
                                             <span class="tag__content">
                                                 <svg class="icon tag__content-icon"
                                                      style="fill: var(--accent-purple2-color);">
-                                                    <use href="/markup/img/sprite.svg#tag-sport"></use>
+                                                    <use href="img/sprite.svg#tag-sport"></use>
                                                 </svg>
                                                 <span class="tag__content-text"
                                                       style="color: var(--accent-purple2-color);">спорт</span>
@@ -570,13 +570,13 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#map-pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -593,4 +593,4 @@
     </div>
 
 
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/markup/" . "components/footer.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/footer.php"); ?>

@@ -1,4 +1,4 @@
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/markup/components/header.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
 
     <div class="block-mb">
@@ -39,7 +39,7 @@
 								background-color: var(--success8-color);"></span>
 								<span class="tag__content">
 									<svg class="icon tag__content-icon" style="fill: var(--success4-color);">
-										<use href="/markup/img/sprite.svg#tag-nature"></use>
+										<use href="img/sprite.svg#tag-nature"></use>
 									</svg>
 									<span class="tag__content-text" style="color: var(--success4-color);">Природа</span>
 								</span>
@@ -51,7 +51,7 @@
 								<span class="tag__content">
 									<svg class="icon tag__content-icon"
                                          style="fill: var(--accent-ceruleanblue1-color);">
-										<use href="/markup/img/sprite.svg#tag-building"></use>
+										<use href="img/sprite.svg#tag-building"></use>
 									</svg>
 									<span class="tag__content-text" style="color: var(--accent-ceruleanblue1-color);">Урбанизация</span>
 								</span>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="sidebar-img">
-                            <img src="/markup/img/img_stas/sidebar-img.png" alt="image/png">
+                            <img src="img/sidebar-img.png" alt="image/png">
 
                         </div>
                         <div class="sidebar-help">
@@ -117,7 +117,7 @@
 									background-color: var(--success8-color);"></span>
 									<span class="tag__content">
 										<svg class="icon tag__content-icon" style="fill: var(--success4-color);">
-											<use href="/markup/img/sprite.svg#tag-nature"></use>
+											<use href="img/sprite.svg#tag-nature"></use>
 										</svg>
 										<span class="tag__content-text"
                                               style="color: var(--success4-color);">Природа</span>
@@ -130,7 +130,7 @@
 									<span class="tag__content">
 										<svg class="icon tag__content-icon"
                                              style="fill: var(--accent-ceruleanblue1-color);">
-											<use href="/markup/img/sprite.svg#tag-building"></use>
+											<use href="img/sprite.svg#tag-building"></use>
 										</svg>
 										<span class="tag__content-text"
                                               style="color: var(--accent-ceruleanblue1-color);">Урбанизация</span>
@@ -199,22 +199,22 @@
                         <div class="content-contacts">
                             <div class="contacts__review">
                                 <div class="contacts__review_img">
-                                    <img class="review_img" src="/markup/img/img_stas/contacts__review_img.png"
+                                    <img class="review_img" src="img/contacts__review_img.png"
                                          alt="logo/img">
                                 </div>
                                 <div class="contacts__review_rating">
                                     <h3 class="contacts__review_title">Ассоциация волонтерских центров</h3>
                                     <div class="contacts__review_score">
                                         <div class="review__score_count">
-                                            <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                            <img src="img/review__score_starcolor.png" alt="">
                                             <span>4.8</span>
                                         </div>
                                         <div class="review__score_star">
-                                            <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                            <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                            <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                            <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                            <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                            <img src="img/review__score_starcolor.png" alt="">
+                                            <img src="img/review__score_starcolor.png" alt="">
+                                            <img src="img/review__score_starcolor.png" alt="">
+                                            <img src="img/review__score_starcolor.png" alt="">
+                                            <img src="img/review__score_starnocolor.png" alt="">
                                         </div>
                                         <div class="review__score_feedback">1 789 отзывов</div>
                                     </div>
@@ -228,7 +228,7 @@
                                     <div class="contacts__manager_title">Руководитель</div>
                                     <div class="contacts__manager_info">
                                         <div class="manager__info_photo">
-                                            <img class="info_photo" src="/markup/img/img_stas/manager__info_photo.png"
+                                            <img class="info_photo" src="img/manager__info_photo.png"
                                                  alt="photo manager">
                                         </div>
                                         <div class="manager__info_name">Михайлова Светлана Васильевна</div>
@@ -236,9 +236,9 @@
 
                                     <div class="contacts__manager_number">
                                         <div class="manager__number_social">
-                                            <img src="/markup/img/img_stas/number_social_vk.png" alt="">
-                                            <img src="/markup/img/img_stas/number_social_ig.png" alt="">
-                                            <img src="/markup/img/img_stas/number_social_tg.png" alt="">
+                                            <img src="img/number_social_vk.png" alt="">
+                                            <img src="img/number_social_ig.png" alt="">
+                                            <img src="img/number_social_tg.png" alt="">
                                         </div>
                                         <div class="manager__number_phone">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -319,16 +319,16 @@
                             <div class="content-partners">
                                 <div class="content-discription__title">Партнеры</div>
                                 <div class="content-partners__img">
-                                    <img src="/markup/img/img_stas/content-partners__img_1.png" alt="">
-                                    <img src="/markup/img/img_stas/content-partners__img_2.png" alt="">
-                                    <img src="/markup/img/img_stas/content-partners__img_3.png" alt="">
-                                    <img src="/markup/img/img_stas/content-partners__img_4.png" alt="">
-                                    <img src="/markup/img/img_stas/content-partners__img_5.png" alt="">
-                                    <img src="/markup/img/img_stas/content-partners__img_1.png" alt="">
-                                    <img src="/markup/img/img_stas/content-partners__img_2.png" alt="">
-                                    <img src="/markup/img/img_stas/content-partners__img_3.png" alt="">
-                                    <img src="/markup/img/img_stas/content-partners__img_4.png" alt="">
-                                    <img src="/markup/img/img_stas/content-partners__img_5.png" alt="">
+                                    <img src="img/content-partners__img_1.png" alt="">
+                                    <img src="img/content-partners__img_2.png" alt="">
+                                    <img src="img/content-partners__img_3.png" alt="">
+                                    <img src="img/content-partners__img_4.png" alt="">
+                                    <img src="img/content-partners__img_5.png" alt="">
+                                    <img src="img/content-partners__img_1.png" alt="">
+                                    <img src="img/content-partners__img_2.png" alt="">
+                                    <img src="img/content-partners__img_3.png" alt="">
+                                    <img src="img/content-partners__img_4.png" alt="">
+                                    <img src="img/content-partners__img_5.png" alt="">
                                 </div>
                                 <a href="/" class="content-partners__btn-link">
                                     <div class="content-partners__btn">Стать партнером</div>
@@ -354,7 +354,7 @@
 									<span class="card__view">
 										<picture>
 
-											<img loading="lazy" src="/markup/img/img_stas/projects__list-card_1.png"
+											<img loading="lazy" src="img/projects__list-card_1.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
 										</picture>
 									</span>
@@ -367,7 +367,7 @@
 												<span class="tag__content">
 													<svg class="icon tag__content-icon"
                                                          style="fill: var(--success4-color);">
-														<use href="/markup/img/sprite.svg#tag-nature"></use>
+														<use href="img/sprite.svg#tag-nature"></use>
 													</svg>
 													<span class="tag__content-text"
                                                           style="color: var(--success4-color);">Природа</span>
@@ -379,13 +379,13 @@
 											<span class="card__action-data">
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#map-pin"></use>
+														<use href="img/sprite.svg#map-pin"></use>
 													</svg>
 													<span class="card__action-item-text">г. Москва</span>
 												</span>
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#calendar"></use>
+														<use href="img/sprite.svg#calendar"></use>
 													</svg>
 													<span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
 												</span>
@@ -402,7 +402,7 @@
 									<span class="card__view">
 										<picture>
 
-											<img loading="lazy" src="/markup/img/img_stas/projects__list-card_2.png"
+											<img loading="lazy" src="img/projects__list-card_2.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
 										</picture>
 									</span>
@@ -415,7 +415,7 @@
 												<span class="tag__content">
 													<svg class="icon tag__content-icon"
                                                          style="fill: var(--success4-color);">
-														<use href="/markup/img/sprite.svg#tag-nature"></use>
+														<use href="img/sprite.svg#tag-nature"></use>
 													</svg>
 													<span class="tag__content-text"
                                                           style="color: var(--success4-color);">Природа</span>
@@ -427,13 +427,13 @@
 											<span class="card__action-data">
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#map-pin"></use>
+														<use href="img/sprite.svg#map-pin"></use>
 													</svg>
 													<span class="card__action-item-text">г. Москва</span>
 												</span>
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#calendar"></use>
+														<use href="img/sprite.svg#calendar"></use>
 													</svg>
 													<span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
 												</span>
@@ -450,7 +450,7 @@
 									<span class="card__view">
 										<picture>
 
-											<img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+											<img loading="lazy" src="img/projects__list-card_3.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
 										</picture>
 									</span>
@@ -463,7 +463,7 @@
 												<span class="tag__content">
 													<svg class="icon tag__content-icon"
                                                          style="fill: var(--success4-color);">
-														<use href="/markup/img/sprite.svg#tag-nature"></use>
+														<use href="img/sprite.svg#tag-nature"></use>
 													</svg>
 													<span class="tag__content-text"
                                                           style="color: var(--success4-color);">Природа</span>
@@ -475,13 +475,13 @@
 											<span class="card__action-data">
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#map-pin"></use>
+														<use href="img/sprite.svg#map-pin"></use>
 													</svg>
 													<span class="card__action-item-text">г. Москва</span>
 												</span>
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#calendar"></use>
+														<use href="img/sprite.svg#calendar"></use>
 													</svg>
 													<span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
 												</span>
@@ -498,7 +498,7 @@
 									<span class="card__view">
 										<picture>
 
-											<img loading="lazy" src="/markup/img/img_stas/projects__list-card_4.png"
+											<img loading="lazy" src="img/projects__list-card_4.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
 										</picture>
 									</span>
@@ -511,7 +511,7 @@
 												<span class="tag__content">
 													<svg class="icon tag__content-icon"
                                                          style="fill: var(--success4-color);">
-														<use href="/markup/img/sprite.svg#tag-nature"></use>
+														<use href="img/sprite.svg#tag-nature"></use>
 													</svg>
 													<span class="tag__content-text"
                                                           style="color: var(--success4-color);">Природа</span>
@@ -523,13 +523,13 @@
 											<span class="card__action-data">
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#map-pin"></use>
+														<use href="img/sprite.svg#map-pin"></use>
 													</svg>
 													<span class="card__action-item-text">г. Москва</span>
 												</span>
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#calendar"></use>
+														<use href="img/sprite.svg#calendar"></use>
 													</svg>
 													<span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
 												</span>
@@ -546,7 +546,7 @@
 									<span class="card__view">
 										<picture>
 
-											<img loading="lazy" src="/markup/img/img_stas/projects__list-card_5.png"
+											<img loading="lazy" src="img/projects__list-card_5.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
 										</picture>
 									</span>
@@ -559,7 +559,7 @@
 												<span class="tag__content">
 													<svg class="icon tag__content-icon"
                                                          style="fill: var(--success4-color);">
-														<use href="/markup/img/sprite.svg#tag-nature"></use>
+														<use href="img/sprite.svg#tag-nature"></use>
 													</svg>
 													<span class="tag__content-text"
                                                           style="color: var(--success4-color);">Природа</span>
@@ -571,13 +571,13 @@
 											<span class="card__action-data">
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#map-pin"></use>
+														<use href="img/sprite.svg#map-pin"></use>
 													</svg>
 													<span class="card__action-item-text">г. Москва</span>
 												</span>
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#calendar"></use>
+														<use href="img/sprite.svg#calendar"></use>
 													</svg>
 													<span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
 												</span>
@@ -594,7 +594,7 @@
 									<span class="card__view">
 										<picture>
 
-											<img loading="lazy" src="/markup/img/img_stas/projects__list-card_6.png"
+											<img loading="lazy" src="img/projects__list-card_6.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
 										</picture>
 									</span>
@@ -607,7 +607,7 @@
 												<span class="tag__content">
 													<svg class="icon tag__content-icon"
                                                          style="fill: var(--success4-color);">
-														<use href="/markup/img/sprite.svg#tag-nature"></use>
+														<use href="img/sprite.svg#tag-nature"></use>
 													</svg>
 													<span class="tag__content-text"
                                                           style="color: var(--success4-color);">Природа</span>
@@ -619,13 +619,13 @@
 											<span class="card__action-data">
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#map-pin"></use>
+														<use href="img/sprite.svg#map-pin"></use>
 													</svg>
 													<span class="card__action-item-text">г. Москва</span>
 												</span>
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#calendar"></use>
+														<use href="img/sprite.svg#calendar"></use>
 													</svg>
 													<span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
 												</span>
@@ -642,7 +642,7 @@
 									<span class="card__view">
 										<picture>
 
-											<img loading="lazy" src="/markup/img/img_stas/projects__list-card_1.png"
+											<img loading="lazy" src="img/projects__list-card_1.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
 										</picture>
 									</span>
@@ -655,7 +655,7 @@
 												<span class="tag__content">
 													<svg class="icon tag__content-icon"
                                                          style="fill: var(--success4-color);">
-														<use href="/markup/img/sprite.svg#tag-nature"></use>
+														<use href="img/sprite.svg#tag-nature"></use>
 													</svg>
 													<span class="tag__content-text"
                                                           style="color: var(--success4-color);">Природа</span>
@@ -667,13 +667,13 @@
 											<span class="card__action-data">
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#map-pin"></use>
+														<use href="img/sprite.svg#map-pin"></use>
 													</svg>
 													<span class="card__action-item-text">г. Москва</span>
 												</span>
 												<span class="card__action-item">
 													<svg class="icon">
-														<use href="/markup/img/sprite.svg#calendar"></use>
+														<use href="img/sprite.svg#calendar"></use>
 													</svg>
 													<span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
 												</span>
@@ -710,4 +710,4 @@
             </div>
         </div>
     </div>
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/markup/components/footer.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/footer.php"); ?>

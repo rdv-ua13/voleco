@@ -1,4 +1,4 @@
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/markup/" . "components/header.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
 
 <div class="block-mb">
@@ -38,7 +38,7 @@
                                     background-color: var(--warning8-color);"></span>
                             <span class="tag__content">
                                 <svg class="icon tag__content-icon" style="fill: var(--warning3-color);">
-                                    <use href="/markup/img/sprite.svg#tag-pets"></use>
+                                    <use href="img/sprite.svg#tag-pets"></use>
                                 </svg>
                                 <span class="tag__content-text" style="color: var(--warning3-color);">Животные</span>
                             </span>
@@ -80,7 +80,7 @@
 
                     </div>
                     <div class="sidebar-img">
-                        <img src="/markup/img/img_stas/sidebar-img_2.png" alt="image/png">
+                        <img src="img/sidebar-img_2.png" alt="image/png">
 
                     </div>
 
@@ -141,13 +141,13 @@
                                         <div class="contacts__review_img">
                                             <div class="contacts__review_img-size">
                                                 <img class="review_img"
-                                                     src="/markup/img/img_stas/contacts__review_img.png"
+                                                     src="img/contacts__review_img.png"
                                                      alt="logo/img">
                                             </div>
                                             <h3 class="contacts__review_title">Ассоциация волонтерских центров</h3>
                                             <div class="contacts__review_score">
                                                 <div class="review__score_count">
-                                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                                    <img src="img/review__score_starcolor.png" alt="">
                                                     <span>5</span>
                                                 </div>
 
@@ -164,7 +164,7 @@
                             <div class="content-contacts__manager">
                                 <div class="content-contacts__manager-all">
                                     <div class="manager__info_photo">
-                                        <img class="info_photo" src="/markup/img/img_stas/manager__info_photo.png"
+                                        <img class="info_photo" src="img/manager__info_photo.png"
                                              alt="photo manager">
                                     </div>
 
@@ -277,7 +277,7 @@
                                     <span class="card__view">
                                         <picture>
 
-                                            <img loading="lazy" src="/markup/img/img_stas/projects__list-card_1.png"
+                                            <img loading="lazy" src="img/projects__list-card_1.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
                                         </picture>
                                     </span>
@@ -325,7 +325,7 @@
                                     <span class="card__view">
                                         <picture>
 
-                                            <img loading="lazy" src="/markup/img/img_stas/projects__list-card_2.png"
+                                            <img loading="lazy" src="img/projects__list-card_2.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
                                         </picture>
                                     </span>
@@ -373,7 +373,7 @@
                                     <span class="card__view">
                                         <picture>
 
-                                            <img loading="lazy" src="/markup/img/img_stas/projects__list-card_3.png"
+                                            <img loading="lazy" src="img/projects__list-card_3.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
                                         </picture>
                                     </span>
@@ -420,7 +420,7 @@
                                     <span class="card__view">
                                         <picture>
 
-                                            <img loading="lazy" src="/markup/img/img_stas/projects__list-card_4.png"
+                                            <img loading="lazy" src="img/projects__list-card_4.png"
                                                  class="image" width="270" height="180" alt="Фото карточки">
                                         </picture>
                                     </span>
@@ -476,4 +476,4 @@
 </div>
 
 
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/markup/" . "components/footer.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/footer.php"); ?>

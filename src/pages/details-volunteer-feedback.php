@@ -1,4 +1,4 @@
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/markup/" . "components/header.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
     <div class="block-mb">
         <div class="container">
@@ -39,12 +39,12 @@
 
                     <div class="details-section__header_middle">
                         <div class="header__middle_img">
-                            <img src="/markup/img/img_stas/header__middle_img.png" alt="photo/volonteer">
+                            <img src="img/header__middle_img.png" alt="photo/volonteer">
                         </div>
                     </div>
                     <div class="details-section__header_bottom">
                         <div class="header__bottom_logo">
-                            <img src="/markup/img/img_stas/header__bottom_logo.png" alt="photo/logo">
+                            <img src="img/header__bottom_logo.png" alt="photo/logo">
                         </div>
 
                         <div class="header__bottom_btn">
@@ -53,7 +53,7 @@
                                     <span class="nameplate-id">
                                 <span class="nameplate-id__content">
                                     <svg class="icon nameplate-id__content-icon">
-                                        <use href="/markup/img/sprite.svg#scanner"></use>
+                                        <use href="img/sprite.svg#scanner"></use>
                                     </svg>
                                     <span class="nameplate-id__content-text">ID: 17901</span>
                                 </span>
@@ -63,7 +63,7 @@
                                         <span class="success-check success-check--nameplate">
                         <span class="success-check__content">
                             <svg class="icon success-check__content-icon">
-                                <use href="/markup/img/sprite.svg#success-check"></use>
+                                <use href="img/sprite.svg#success-check"></use>
                             </svg>
                             <span class="success-check__content-text">Верифицирован</span>
                         </span>
@@ -129,11 +129,11 @@
                             <div class="body__main_card-note">
                                 <div class="body__main_card-note-text">Оценка:</div>
                                 <div class="review__score_star">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starnocolor.png" alt="">
                                 </div>
                             </div>
                             <div class="body__main_card-text">Региональный центр развития добровольчества "БлагоДарю"
@@ -144,7 +144,7 @@
                             <div class="body__main_card-date">
                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -153,13 +153,13 @@
                         <div class="contacts__review">
                             <div class="contacts__review_img">
                                 <div class="contacts__review_img-size">
-                                    <img class="review_img" src="/markup/img/img_stas/contacts__review_img.png"
+                                    <img class="review_img" src="img/contacts__review_img.png"
                                          alt="logo/img">
                                 </div>
                                 <h3 class="contacts__review_title">Ассоциация волонтерских центров</h3>
                                 <div class="contacts__review_score">
                                     <div class="review__score_count">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
                                         <span>4.8</span>
                                     </div>
                                 </div>
@@ -173,11 +173,11 @@
                             <div class="body__main_card-note">
                                 <div class="body__main_card-note-text">Оценка:</div>
                                 <div class="review__score_star">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starnocolor.png" alt="">
                                 </div>
                             </div>
                             <div class="body__main_card-text">Региональный центр развития добровольчества "БлагоДарю"
@@ -188,7 +188,7 @@
                             <div class="body__main_card-date">
                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -197,13 +197,13 @@
                         <div class="contacts__review">
                             <div class="contacts__review_img">
                                 <div class="contacts__review_img-size">
-                                    <img class="review_img" src="/markup/img/img_stas/contacts__review_img.png"
+                                    <img class="review_img" src="img/contacts__review_img.png"
                                          alt="logo/img">
                                 </div>
                                 <h3 class="contacts__review_title">Ассоциация волонтерских центров</h3>
                                 <div class="contacts__review_score">
                                     <div class="review__score_count">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
                                         <span>4.8</span>
                                     </div>
                                 </div>
@@ -217,11 +217,11 @@
                             <div class="body__main_card-note">
                                 <div class="body__main_card-note-text">Оценка:</div>
                                 <div class="review__score_star">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starnocolor.png" alt="">
                                 </div>
                             </div>
                             <div class="body__main_card-text">Региональный центр развития добровольчества "БлагоДарю"
@@ -232,7 +232,7 @@
                             <div class="body__main_card-date">
                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -241,13 +241,13 @@
                         <div class="contacts__review">
                             <div class="contacts__review_img">
                                 <div class="contacts__review_img-size">
-                                    <img class="review_img" src="/markup/img/img_stas/contacts__review_img.png"
+                                    <img class="review_img" src="img/contacts__review_img.png"
                                          alt="logo/img">
                                 </div>
                                 <h3 class="contacts__review_title">Ассоциация волонтерских центров</h3>
                                 <div class="contacts__review_score">
                                     <div class="review__score_count">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
                                         <span>4.8</span>
                                     </div>
                                 </div>
@@ -261,11 +261,11 @@
                             <div class="body__main_card-note">
                                 <div class="body__main_card-note-text">Оценка:</div>
                                 <div class="review__score_star">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starnocolor.png" alt="">
                                 </div>
                             </div>
                             <div class="body__main_card-text">Региональный центр развития добровольчества "БлагоДарю"
@@ -276,7 +276,7 @@
                             <div class="body__main_card-date">
                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -285,13 +285,13 @@
                         <div class="contacts__review">
                             <div class="contacts__review_img">
                                 <div class="contacts__review_img-size">
-                                    <img class="review_img" src="/markup/img/img_stas/contacts__review_img.png"
+                                    <img class="review_img" src="img/contacts__review_img.png"
                                          alt="logo/img">
                                 </div>
                                 <h3 class="contacts__review_title">Ассоциация волонтерских центров</h3>
                                 <div class="contacts__review_score">
                                     <div class="review__score_count">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
                                         <span>4.8</span>
                                     </div>
                                 </div>
@@ -305,11 +305,11 @@
                             <div class="body__main_card-note">
                                 <div class="body__main_card-note-text">Оценка:</div>
                                 <div class="review__score_star">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starnocolor.png" alt="">
                                 </div>
                             </div>
                             <div class="body__main_card-text">Региональный центр развития добровольчества "БлагоДарю"
@@ -320,7 +320,7 @@
                             <div class="body__main_card-date">
                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -329,13 +329,13 @@
                         <div class="contacts__review">
                             <div class="contacts__review_img">
                                 <div class="contacts__review_img-size">
-                                    <img class="review_img" src="/markup/img/img_stas/contacts__review_img.png"
+                                    <img class="review_img" src="img/contacts__review_img.png"
                                          alt="logo/img">
                                 </div>
                                 <h3 class="contacts__review_title">Ассоциация волонтерских центров</h3>
                                 <div class="contacts__review_score">
                                     <div class="review__score_count">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
                                         <span>4.8</span>
                                     </div>
                                 </div>
@@ -349,11 +349,11 @@
                             <div class="body__main_card-note">
                                 <div class="body__main_card-note-text">Оценка:</div>
                                 <div class="review__score_star">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starnocolor.png" alt="">
                                 </div>
                             </div>
                             <div class="body__main_card-text">Региональный центр развития добровольчества "БлагоДарю"
@@ -364,7 +364,7 @@
                             <div class="body__main_card-date">
                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -373,13 +373,13 @@
                         <div class="contacts__review">
                             <div class="contacts__review_img">
                                 <div class="contacts__review_img-size">
-                                    <img class="review_img" src="/markup/img/img_stas/contacts__review_img.png"
+                                    <img class="review_img" src="img/contacts__review_img.png"
                                          alt="logo/img">
                                 </div>
                                 <h3 class="contacts__review_title">Ассоциация волонтерских центров</h3>
                                 <div class="contacts__review_score">
                                     <div class="review__score_count">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
                                         <span>4.8</span>
                                     </div>
                                 </div>
@@ -393,11 +393,11 @@
                             <div class="body__main_card-note">
                                 <div class="body__main_card-note-text">Оценка:</div>
                                 <div class="review__score_star">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starnocolor.png" alt="">
                                 </div>
                             </div>
                             <div class="body__main_card-text">Региональный центр развития добровольчества "БлагоДарю"
@@ -408,7 +408,7 @@
                             <div class="body__main_card-date">
                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -417,13 +417,13 @@
                         <div class="contacts__review">
                             <div class="contacts__review_img">
                                 <div class="contacts__review_img-size">
-                                    <img class="review_img" src="/markup/img/img_stas/contacts__review_img.png"
+                                    <img class="review_img" src="img/contacts__review_img.png"
                                          alt="logo/img">
                                 </div>
                                 <h3 class="contacts__review_title">Ассоциация волонтерских центров</h3>
                                 <div class="contacts__review_score">
                                     <div class="review__score_count">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
                                         <span>4.8</span>
                                     </div>
                                 </div>
@@ -437,11 +437,11 @@
                             <div class="body__main_card-note">
                                 <div class="body__main_card-note-text">Оценка:</div>
                                 <div class="review__score_star">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starnocolor.png" alt="">
                                 </div>
                             </div>
                             <div class="body__main_card-text">Региональный центр развития добровольчества "БлагоДарю"
@@ -452,7 +452,7 @@
                             <div class="body__main_card-date">
                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="/markup/img/sprite.svg#calendar"></use>
+                                                    <use href="img/sprite.svg#calendar"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
                                             </span>
@@ -461,13 +461,13 @@
                         <div class="contacts__review">
                             <div class="contacts__review_img">
                                 <div class="contacts__review_img-size">
-                                    <img class="review_img" src="/markup/img/img_stas/contacts__review_img.png"
+                                    <img class="review_img" src="img/contacts__review_img.png"
                                          alt="logo/img">
                                 </div>
                                 <h3 class="contacts__review_title">Ассоциация волонтерских центров</h3>
                                 <div class="contacts__review_score">
                                     <div class="review__score_count">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
                                         <span>4.8</span>
                                     </div>
                                 </div>
@@ -477,7 +477,7 @@
 
                     <div class="page_pagination">
                         <div class="page_pagination_img">
-                            <a href="/"><img src="/markup/img/img_stas/page_pagination_img.png" alt=""></a>
+                            <a href="/"><img src="img/page_pagination_img.png" alt=""></a>
                         </div>
                         <div class="page_pagination_number">
                             <div class="page_pagination_num">1</div>
@@ -489,7 +489,7 @@
                             <div class="page_pagination_num">112</div>
                         </div>
                         <div class="page_pagination_img">
-                            <a href="/"><img src="/markup/img/img_stas/page_pagination_img-right.png" alt=""></a>
+                            <a href="/"><img src="img/page_pagination_img-right.png" alt=""></a>
                         </div>
                     </div>
 
@@ -502,4 +502,4 @@
     </div>
 
 
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/markup/" . "components/footer.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/footer.php"); ?>

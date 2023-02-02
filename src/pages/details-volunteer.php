@@ -1,4 +1,4 @@
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/markup/" . "components/header.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
     <div class="block-mb">
         <div class="container">
@@ -39,12 +39,12 @@
 
                     <div class="details-section__header_middle">
                         <div class="header__middle_img">
-                            <img src="/markup/img/img_stas/header__middle_img.png" alt="photo/volonteer">
+                            <img src="img/header__middle_img.png" alt="photo/volonteer">
                         </div>
                     </div>
                     <div class="details-section__header_bottom">
                         <div class="header__bottom_logo">
-                            <img src="/markup/img/img_stas/header__bottom_logo.png" alt="photo/logo">
+                            <img src="img/header__bottom_logo.png" alt="photo/logo">
 
 
                         </div>
@@ -55,7 +55,7 @@
                                     <span class="nameplate-id">
                                 <span class="nameplate-id__content">
                                     <svg class="icon nameplate-id__content-icon">
-                                        <use href="/markup/img/sprite.svg#scanner"></use>
+                                        <use href="img/sprite.svg#scanner"></use>
                                     </svg>
                                     <span class="nameplate-id__content-text">ID: 17901</span>
                                 </span>
@@ -65,7 +65,7 @@
                                         <span class="success-check success-check--nameplate">
                         <span class="success-check__content">
                             <svg class="icon success-check__content-icon">
-                                <use href="/markup/img/sprite.svg#success-check"></use>
+                                <use href="img/sprite.svg#success-check"></use>
                             </svg>
                             <span class="success-check__content-text">Верифицирован</span>
                         </span>
@@ -193,9 +193,9 @@
 
                                 </div>
                                 <div class="body__main_info_social">
-                                    <img src="/markup/img/img_stas/number_social_vk.png" alt="">
-                                    <img src="/markup/img/img_stas/number_social_ig.png" alt="">
-                                    <img src="/markup/img/img_stas/number_social_tg.png" alt="">
+                                    <img src="img/number_social_vk.png" alt="">
+                                    <img src="img/number_social_ig.png" alt="">
+                                    <img src="img/number_social_tg.png" alt="">
                                 </div>
                             </div>
 
@@ -204,15 +204,15 @@
                                 <div class="body__main_info_title">Рейтинг и отзывы</div>
                                 <div class="contacts__review_score">
                                     <div class="review__score_count">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
                                         <span>4.8</span>
                                     </div>
                                     <div class="review__score_star">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                        <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                        <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starcolor.png" alt="">
+                                        <img src="img/review__score_starnocolor.png" alt="">
                                     </div>
                                     <div class="review__score_feedback">1 789 отзывов</div>
                                 </div>
@@ -279,7 +279,7 @@
                                     background-color: var(--success8-color);"></span>
                             <span class="tag__content">
                                 <svg class="icon tag__content-icon" style="fill: var(--success4-color);">
-                                    <use href="/markup/img/sprite.svg#tag-nature"></use>
+                                    <use href="img/sprite.svg#tag-nature"></use>
                                 </svg>
                                 <span class="tag__content-text" style="color: var(--success4-color);">Природа</span>
                             </span>
@@ -291,7 +291,7 @@
                                     background-color: var(--accent-purple8-color);"></span>
                             <span class="tag__content">
                                 <svg class="icon tag__content-icon" style="fill: var(--accent-purple2-color);">
-                                    <use href="/markup/img/sprite.svg#tag-sport"></use>
+                                    <use href="img/sprite.svg#tag-sport"></use>
                                 </svg>
                                 <span class="tag__content-text" style="color: var(--accent-purple2-color);">спорт</span>
                             </span>
@@ -303,7 +303,7 @@
                                     background-color: var(--accent-ceruleanblue8-color);"></span>
                             <span class="tag__content">
                                 <svg class="icon tag__content-icon" style="fill: var(--accent-ceruleanblue1-color);">
-                                    <use href="/markup/img/sprite.svg#tag-building"></use>
+                                    <use href="img/sprite.svg#tag-building"></use>
                                 </svg>
                                 <span class="tag__content-text" style="color: var(--accent-ceruleanblue1-color);">Урбанизация</span>
                             </span>
@@ -386,9 +386,9 @@
 
                             </div>
                             <div class="body__main_info_social">
-                                <img src="/markup/img/img_stas/number_social_vk.png" alt="">
-                                <img src="/markup/img/img_stas/number_social_ig.png" alt="">
-                                <img src="/markup/img/img_stas/number_social_tg.png" alt="">
+                                <img src="img/number_social_vk.png" alt="">
+                                <img src="img/number_social_ig.png" alt="">
+                                <img src="img/number_social_tg.png" alt="">
                             </div>
                         </div>
 
@@ -397,15 +397,15 @@
                             <div class="body__main_info_title">Рейтинг и отзывы</div>
                             <div class="contacts__review_score">
                                 <div class="review__score_count">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
                                     <span>4.8</span>
                                 </div>
                                 <div class="review__score_star">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starcolor.png" alt="">
-                                    <img src="/markup/img/img_stas/review__score_starnocolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starcolor.png" alt="">
+                                    <img src="img/review__score_starnocolor.png" alt="">
                                 </div>
                                 <div class="review__score_feedback">1 789 отзывов</div>
                             </div>
@@ -440,4 +440,4 @@
         </div>
     </div>
 
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/markup/" . "components/footer.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/footer.php"); ?>
