@@ -60,10 +60,7 @@ application.prototype.initHeaderScroll = function () {
 application.prototype.disableScroll = function () {
     const body = document.body;
     const fixBlocks = document?.querySelectorAll('.fixed-block');
-    const pagePosition = window.scrollY;
     const paddingOffset = `${(window.innerWidth - body.offsetWidth)}px`;
-
-    /*console.log(pagePosition);*/
 
     document.documentElement.style.scrollBehavior = 'none';
     fixBlocks.forEach(el => { el.style.paddingRight = paddingOffset; });

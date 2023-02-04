@@ -133,7 +133,7 @@
                     </div>
 				<? endif; ?>
 				<? // todo: отобразить состояние авториззованного пользователя - раскомментировать ".header-actions--current-user" ?>
-                <div class="header-actions<?/* header-actions--current-user*/?>">
+                <div class="header-actions header-actions--current-user<?/* header-actions--current-user*/?>">
                     <div class="header-actions__item header-actions-mobile">
                         <button class="btn-reset btn btn--noframe header-actions-mobile__dropdown js-header-actions-mobile-dropdown">
                             <svg class="icon btn__icon">

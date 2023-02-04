@@ -129,7 +129,6 @@
                                             </picture>
                                         </div>
                                         <div class="page-content__descr-position-name">Михайлова Светлана Васильевна</div>
-                                        <div class="page-content__descr-position-title">Руководитель</div>
                                     </div>
                                 </div>
                             </div>

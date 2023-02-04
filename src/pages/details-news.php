@@ -1,9 +1,9 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
 <div class="block-mb">
-    <div class="page-content">
-        <div class="page-content__header">
-            <div class="container">
+    <div class="container">
+        <div class="page-content">
+            <div class="page-content__header">
                 <div class="block-mb-md">
                     <div class="details-top-bar">
                         <div class="details-top-bar__back-to">
@@ -66,9 +66,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="page-content__body">
-            <div class="container">
+            <div class="page-content__body">
                 <div class="media">
                     <div class="block-mb-lg">
                         <div class="media-news-cover">

@@ -1,13 +1,13 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
 <div class="block-mb">
-    <div class="page-content">
-        <div class="block-mb-md">
-            <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/page-content-header-details-org.php"); ?>
-        </div>
+    <div class="container">
+        <div class="page-content">
+            <div class="block-mb-md">
+                <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/page-content-header-details-org.php"); ?>
+            </div>
 
-        <div class="page-content__body">
-            <div class="container">
+            <div class="page-content__body">
                 <div class="page-content__container page-content__container--profile">
                     <div class="block-mb-md page-content-tabs-container page-content__tabs-container">
                         <div class="page-content-tabs-wrapper">
@@ -91,7 +91,6 @@
                                                 </picture>
                                             </div>
                                             <div class="page-content__descr-position-name">Михайлова Светлана Васильевна</div>
-                                            <div class="page-content__descr-position-title">Руководитель</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1142,11 +1141,6 @@
                         <div class="page-content__sidebar-item">
                             <div class="page-content-descr-heading">
                                 <div class="h4">Контакты</div>
-                                <button class="btn-reset btn btn--noframe">
-                                    <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#edit2"></use>
-                                    </svg>
-                                </button>
                             </div>
                             <div class="page-content__sidebar-contacts">
                                 <span class="page-content__sidebar-contacts-item">
@@ -1200,11 +1194,6 @@
                         <div class="page-content__sidebar-item">
                             <div class="page-content-descr-heading">
                                 <div class="h4">Рейтинг и отзывы</div>
-                                <button class="btn-reset btn btn--noframe">
-                                    <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#edit2"></use>
-                                    </svg>
-                                </button>
                             </div>
                             <div class="page-content__sidebar-rate">
                                 <div class="page-content__intro-bottom">
@@ -1239,11 +1228,6 @@
                         <div class="page-content__sidebar-item">
                             <div class="page-content-descr-heading">
                                 <div class="h4">Аналитика организатора</div>
-                                <button class="btn-reset btn btn--noframe">
-                                    <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#edit2"></use>
-                                    </svg>
-                                </button>
                             </div>
                             <div class="page-content__sidebar-stats">
                                 <div class="page-content__sidebar-stats-item">

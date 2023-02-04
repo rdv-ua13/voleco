@@ -1,41 +1,41 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
 <div class="block-mb">
-    <div class="page-content">
-        <div class="block-mb-md">
-            <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/page-content-header-details-org.php"); ?>
-        </div>
-
-        <div class="page-content__body">
+    <div class="container">
+        <div class="page-content">
             <div class="block-mb-md">
-                <div class="container page-content-tabs-container">
-                    <div class="page-content-tabs-wrapper">
-                        <div class="page-content-tabs swiper js-page-content-tabs">
-                            <div class="page-content-tabs__nav swiper-wrapper">
-                                <? $arMenu = array (
-                                    "details-organizer.php" => "Об организаторе",
-                                    "details-organizer-reviews.php" => "Отзывы",
-                                    "details-organizer-photo.php" => "Фотографии",
-                                    "details-organizer-video.php" => "Видео",
-                                );
-                                foreach ($arMenu as $arItem => $value) : ?>
-                                    <div class="swiper-slide page-content-tabs__nav-item notice">
-                                        <a
-                                                href="<?= $arItem ?>"
-                                                class="page-content-tabs__link<? if(strpos($_SERVER["REQUEST_URI"], $arItem)) : ?> selected<? endif; ?>"
-                                        >
-                                            <span class="page-content-tabs__link-content"><?= $value ?></span>
-                                            <span class="page-content-tabs__link-num">18</span>
-                                        </a>
-                                    </div>
-                                <? endforeach; ?>
+                <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/page-content-header-details-org.php"); ?>
+            </div>
+
+            <div class="page-content__body">
+                <div class="block-mb-md">
+                    <div class="page-content-tabs-container">
+                        <div class="page-content-tabs-wrapper">
+                            <div class="page-content-tabs swiper js-page-content-tabs">
+                                <div class="page-content-tabs__nav swiper-wrapper">
+                                    <? $arMenu = array (
+                                        "details-organizer.php" => "Об организаторе",
+                                        "details-organizer-reviews.php" => "Отзывы",
+                                        "details-organizer-photo.php" => "Фотографии",
+                                        "details-organizer-video.php" => "Видео",
+                                    );
+                                    foreach ($arMenu as $arItem => $value) : ?>
+                                        <div class="swiper-slide page-content-tabs__nav-item notice">
+                                            <a
+                                                    href="<?= $arItem ?>"
+                                                    class="page-content-tabs__link<? if(strpos($_SERVER["REQUEST_URI"], $arItem)) : ?> selected<? endif; ?>"
+                                            >
+                                                <span class="page-content-tabs__link-content"><?= $value ?></span>
+                                                <span class="page-content-tabs__link-num">18</span>
+                                            </a>
+                                        </div>
+                                    <? endforeach; ?>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container">
                 <div class="page-content__container">
                     <div class="page-content__main page-content__main--full">
                         <div class="block-mb-lg">

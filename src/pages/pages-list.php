@@ -95,18 +95,18 @@
             <li><a href="ms-news.php" target="_blank">Новости</a></li><!-- #61 -->
 
             <br>
-            <li style="color: darkred; font-size: 18px; font-weight: 700;"><!--Блок готов--> Пересобрать после Стаса</li>
-            <li><a href="details-volunteer.php" target="_blank">детальная - Эковолонтеры (в процессе !)</a></li>
-            <li><a href="details-volunteer-exp.php" target="_blank">детальная - Эковолонтеры опыт (в процессе !)</a></li>
-            <li><a href="details-volunteer-feedback.php" target="_blank">детальная - Эковолонтеры отзывы (в процессе !)</a></li>
-            <li><a href="details-ecodela.php" target="_blank">детальная - Экодела (в процессе !)</a></li>
-            <li><a href="details-projects.php" target="_blank">детальная - Проекты (в процессе !)</a></li>
+            <li style="color: darkorange; font-size: 18px; font-weight: 700;">Блок готов (будут правки ".card" и сбор блока ".tasks")</li>  <!-- будут правки ".card" -->
+            <li><a href="details-volunteer.php" target="_blank" class="ready">детальная - Эковолонтеры</a></li>
+            <li><a href="details-volunteer-exp.php" target="_blank" class="ready">детальная - Эковолонтеры опыт</a></li> <!-- исправить ".card" -->
+            <li><a href="details-volunteer-feedback.php" target="_blank" class="ready">детальная - Эковолонтеры отзывы</a></li>
+            <li><a href="details-ecodela.php" target="_blank">детальная - Экодела</a></li> <!-- доделать блок "tasks" -->
+            <li><a href="details-projects.php" target="_blank" class="ready">детальная - Проекты</a></li> <!-- исправить ".card" -->
             <li><a href="details-organizer.php" target="_blank" class="ready">детальная - Организаторы</a></li>
             <li><a href="details-organizer-reviews.php" target="_blank" class="ready">детальная - Организаторы отзывы</a></li>
             <li><a href="details-organizer-photo.php" target="_blank" class="ready">детальная - Организаторы фото</a></li>
             <li><a href="details-organizer-video.php" target="_blank" class="ready">детальная - Организаторы видео</a></li>
             <li><a href="details-petitions.php" target="_blank" class="ready">детальная - Петиции</a></li>
-            <li><a href="details-fundraising.php" target="_blank">детальная - Сбор средств (в процессе !)</a></li>
+            <li><a href="details-fundraising.php" target="_blank" class="ready">детальная - Сбор средств</a></li>
             <li><a href="details-news.php" target="_blank" class="ready">детальная - Новости</a></li><!-- #62 переделал ".details-section__header" -->
 
             <br>
