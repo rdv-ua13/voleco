@@ -379,58 +379,140 @@
 
                         <div class="card-list-responsive card-list-responsive--desktop-only">
 <!--//todo-->
-                            <div class="inner-page-tabs-wrapper tasks">
-                                <div class="inner-page-tabs swiper" data-tab="9192">
-                                    <div class="inner-page-tabs__nav swiper-wrapper">
-                                        <div class="inner-page-tabs__nav-item swiper-slide notice">
-                                            <a
-                                                    href="javascript:;"
-                                                    class="btn-reset inner-page-tabs__link selected"
-                                                    type="button"
-                                                    data-target="0"
-                                            >
-                                                <span class="inner-page-tabs__link-content">$value</span>
-                                                <span class="inner-page-tabs__link-num">18</span>
-                                            </a>
-                                        </div>
-                                        <div class="inner-page-tabs__nav-item swiper-slide notice">
-                                            <a
-                                                    href="javascript:;"
-                                                    class="btn-reset inner-page-tabs__link"
-                                                    type="button"
-                                                    data-target="1"
-                                            >
-                                                <span class="inner-page-tabs__link-content">$value2</span>
-                                                <span class="inner-page-tabs__link-num">28</span>
-                                            </a>
-                                        </div>
-                                        <div class="inner-page-tabs__nav-item swiper-slide notice">
-                                            <a
-                                                    href="javascript:;"
-                                                    class="btn-reset inner-page-tabs__link"
-                                                    type="button"
-                                                    data-target="2"
-                                            >
-                                                <span class="inner-page-tabs__link-content">$value3</span>
-                                                <span class="inner-page-tabs__link-num">38</span>
-                                            </a>
+                            <div class="tasks">
+                                <div class="inner-page-tabs-wrapper">
+                                    <div class="inner-page-tabs swiper" data-tab="9192">
+                                        <div class="inner-page-tabs__nav swiper-wrapper">
+                                            <div class="inner-page-tabs__nav-item swiper-slide notice">
+                                                <button
+                                                        class="btn-reset inner-page-tabs__link selected"
+                                                        type="button"
+                                                        data-target="0"
+                                                >
+                                                    <span class="inner-page-tabs__link-content">Помощь в доставке продуктов и лекарств</span>
+                                                    <span class="inner-page-tabs__link-descr status-active">Набрано 105 из 500</span>
+                                                </button>
+                                            </div>
+                                            <div class="inner-page-tabs__nav-item swiper-slide notice">
+                                                <button
+                                                        class="btn-reset inner-page-tabs__link"
+                                                        type="button"
+                                                        data-target="1"
+                                                >
+                                                    <span class="inner-page-tabs__link-content">Помощь в медицинских организациях </span>
+                                                    <span class="inner-page-tabs__link-descr status-active">Набрано 105 из 500</span>
+                                                </button>
+                                            </div>
+                                            <div class="inner-page-tabs__nav-item swiper-slide notice">
+                                                <button
+                                                        class="btn-reset inner-page-tabs__link"
+                                                        type="button"
+                                                        data-target="2"
+                                                >
+                                                    <span class="inner-page-tabs__link-content">Оказание психологической помощи</span>
+                                                    <span class="inner-page-tabs__link-descr status-active">Набрано 105 из 500</span>
+                                                </button>
+                                            </div>
+                                            <div class="inner-page-tabs__nav-item swiper-slide notice">
+                                                <button
+                                                        class="btn-reset inner-page-tabs__link"
+                                                        type="button"
+                                                        data-target="3"
+                                                >
+                                                    <span class="inner-page-tabs__link-content">Автоволонтерство</span>
+                                                    <span class="inner-page-tabs__link-descr status-deactivated">Набор завершен</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <?/* ".inner-page-tabs-content" должен располагаться за пределами ".inner-page-tabs-wrapper" */?>
+                                <div class="inner-page-tabs-content tasks-content" data-tab-content="9192">
+                                    <div class="inner-page-tabs-content__panel active" data-id="0">
+                                        <div class="tasks-content__item">
+                                            <div class="block-header">
+                                                <div class="block-header__title">
+                                                    <div class="block-header__title-text h4">Помощь в медицинских организациях (Для волонтеров с медицинским образованием и студентов-медиков)</div>
+                                                    <div class="block-header-control__action">
+                                                        <button class="btn-reset btn btn--fill">
+                                                            <span class="btn__text">Подать заявку</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tasks-content__item">
+                                            <div class="page-content-descr-heading">
+                                                <div class="">Задачи</div>
+                                            </div>
+                                            <div class="page-content__descr-content">
+                                                <div class="page-content__spoiler js-spoiler" data-collapsed-height="88">
+                                                    <div class="page-content__spoiler-text">
+                                                        <p>Открыт набор в волонтеры на Special Olympics World Games Berlin 2023 в рамках Программы мобильности. Кандидаты, успешно прошедшие отбор по Программе, будут обеспечены проживанием и проездом к месту проведения события и обратно.</p>
+                                                        <p>Всемирная Специальная Олимпиада — самое масштабное событие в мире инклюзивного спорта — проводится каждые четыре года с конца 60-х годов прошлого века. 7 000 атлетов, представляющих 180 различных наций, выступят в 25 спортивных дисциплинах. В Играх принимают участие спортсмены с нарушением интеллектуального развития или множественными отклонениями. Всемирная Специальная Олимпиада для людей с нарушением интеллектуального развития пройдет в 2023 году в Берлине.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tasks-content__item">
+                                            <div class="page-content-descr-heading">
+                                                <div class="">Занятость</div>
+                                            </div>
+                                            <div class="page-content__descr-content">
+                                                <div class="page-content__spoiler">
+                                                    <div class="page-content__spoiler-text">
+                                                        <p>29 сентября 2020 — 25 февраля 2022, 08:00 - 20:00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tasks-content__item">
+                                            <div class="page-content-descr-heading">
+                                                <div class="">Предлагаемые условия</div>
+                                            </div>
+                                            <div class="page-content__descr-content">
+                                                <div class="page-content__spoiler">
+                                                    <div class="page-content__spoiler-text">
+                                                        <p>
+                                                            <span class="card__user-descr-item">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#clock"></use>
+                                                                </svg>
+                                                                <span class="card__action-item-text">Верифицированные часы</span>
+                                                            </span>
+                                                        </p>
+                                                        <p>
+                                                            <span class="card__user-descr-item">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#house"></use>
+                                                                </svg>
+                                                                <span class="card__action-item-text">Доставка</span>
+                                                            </span>
+                                                        </p>
+                                                        <p>
+                                                            <span class="card__user-descr-item">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#smile"></use>
+                                                                </svg>
+                                                                <span class="card__action-item-text">Благодарственное письмо</span>
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner-page-tabs-content__panel" data-id="1">
+                                        Tabs 2 content
+                                    </div>
+                                    <div class="inner-page-tabs-content__panel" data-id="2">
+                                        Tabs 3 content
+                                    </div>
+                                    <div class="inner-page-tabs-content__panel" data-id="3">
+                                        Tabs 4 content
+                                    </div>
+                                </div>
                             </div>
-							<?/* ".inner-page-tabs-content" должен располагаться за пределами ".inner-page-tabs-wrapper" */?>
-                            <div class="inner-page-tabs-content" data-tab-content="9192">
-                                <div class="inner-page-tabs-content__panel active" data-id="0">
-                                    Tabs 1 content
-                                </div>
-                                <div class="inner-page-tabs-content__panel" data-id="1">
-                                    Tabs 2 content
-                                </div>
-                                <div class="inner-page-tabs-content__panel" data-id="2">
-                                    Tabs 3 content
-                                </div>
-                            </div>
-
                         </div>
                     </div>
 

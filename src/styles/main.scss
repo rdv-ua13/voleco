@@ -4204,6 +4204,225 @@
 	}
 }
 
+.tasks {
+	& .inner-page-tabs-wrapper {
+		&::before {
+			content: none;
+		}
+	}
+	& .inner-page-tabs {
+		padding: 0;
+
+		&::before {
+			content: none;
+		}
+		&__link {
+			overflow: hidden;
+			background-color: var(--text10-color);
+			color: var(--text1-color);
+
+			&::before {
+				content: none;
+			}
+			&.selected {
+				background-color: var(--text3-color);
+				color: var(--white-color);
+
+				&:hover {
+					background-color: var(--text3-color);
+					color: var(--white-color);
+				}
+				&::before,
+				&:hover::before {
+					height: unset;
+					background-color: unset;
+				}
+				& .inner-page-tabs__link-content {
+					color: var(--white-color);
+				}
+				& .inner-page-tabs__link-descr {
+					color: var(--text7-color);
+				}
+			}
+			&:hover {
+				background-color: var(--text7-color);
+
+				&::before {
+					height: unset;
+					background-color: unset;
+				}
+			}
+			&-content {
+				color: var(--text1-color);
+			}
+			&-descr {
+				position: relative;
+				display: block;
+				white-space: normal;
+				text-align: left;
+				color: var(--text5-color);
+
+				&::before {
+					content: "";
+					position: absolute;
+					top: 5px;
+					left: 0;
+					min-width: 8px;
+					width: 8px;
+					min-height: 8px;
+					height: 8px;
+					border-radius: 50%;
+				}
+				&.status-active::before {
+					background-color: var(--green-color);
+				}
+				&.status-deactivated::before {
+					background-color: var(--error5-color);
+				}
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.tasks {
+		display: flex;
+
+		& .inner-page-tabs-wrapper {
+			max-height: 600px;
+		}
+		& .inner-page-tabs {
+			max-height: 600px;
+			height: 100%;
+			border: 1px solid var(--text8-color);
+			border-radius: 16px 0 0 16px;
+
+			&__nav-item {
+				&:first-child {
+					margin-left: 0;
+				}
+				&:not(:last-child) {
+					margin-right: 0;
+
+					& .inner-page-tabs__link {
+						border-bottom: 1px solid var(--text8-color);
+					}
+				}
+			}
+			&__link {
+				display: flex;
+				flex-direction: column;
+				gap: 6px;
+				min-height: 0;
+				height: auto;
+				padding: 24px;
+				line-height: 18px;
+
+				&-descr {
+					padding-left: 16px;
+					font-size: 13px;
+				}
+			}
+		}
+		& .inner-page-tabs-content {
+			max-height: 600px;
+			overflow: hidden;
+
+			&__panel {
+				height: 100%;
+				padding: 32px;
+				border: 1px solid var(--text8-color);
+				border-radius: 0 16px 16px 0;
+				overflow: hidden auto;
+			}
+		}
+		&-content {
+			&__item {
+				&:not(:last-child) {
+					margin-bottom: 32px;
+				}
+			}
+			& .card__action-item-text {
+				font-size: 15px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.tasks {
+		& .inner-page-tabs-wrapper {
+			min-width: 410px;
+			width: 410px;
+		}
+	}
+}
+@media (min-width: 1328px) {
+	.tasks {
+		& .inner-page-tabs-content {
+			min-width: calc(1280px - 410px);
+			width: calc(1280px - 410px);
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.tasks {
+		& .inner-page-tabs {
+			padding-right: 8px;
+
+			&__link {
+				&-descr {
+					display: flex;
+					align-items: center;
+					gap: 8px;
+
+					&-descr-value {
+						position: relative;
+						padding-left: 16px;
+					}
+					&-descr-status {
+						content: "";
+						position: absolute;
+						top: 4px;
+						left: 0;
+						min-width: 8px;
+						width: 8px;
+						min-height: 8px;
+						height: 8px;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+		& .inner-page-tabs-content {
+			&__panel {
+				&.active {
+					display: none;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px) and (max-width: 1327.98px) {
+	.tasks {
+		& .inner-page-tabs-content {
+			min-width: calc((100vw - 48px) - 410px);
+			width: calc((100vw - 48px) - 410px);
+		}
+	}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.tasks {
+		& .inner-page-tabs-wrapper {
+			min-width: 280px;
+			width: 280px;
+		}
+		& .inner-page-tabs-content {
+			min-width: calc((100vw - 48px) - 280px);
+			width: calc((100vw - 48px) - 280px);
+		}
+	}
+}
+
 
 
 /* Стили Стаса !!!! */

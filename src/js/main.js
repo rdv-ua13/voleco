@@ -260,15 +260,30 @@ application.prototype.initInnerPageTabs = function () {
         }
 
         function initTabsSlider() {
-            const swiperInnerPageTabs = new Swiper(".inner-page-tabs.swiper", {
-                slidesPerView: "auto",
-                spaceBetween: 16,
-                breakpoints: {
-                    992: {
-                        spaceBetween: 32,
-                    }
-                },
-            });
+            if($(".inner-page-tabs.swiper").closest(".tasks")) {
+                const swiperTasksInnerPageTabs = new Swiper(".tasks .inner-page-tabs.swiper", {
+                    slidesPerView: "auto",
+                    spaceBetween: 12,
+                    direction: "horizontal",
+                    breakpoints: {
+                        992: {
+                            spaceBetween: 0,
+                            direction: "vertical",
+                            mousewheel: true,
+                        }
+                    },
+                });
+            } else {
+                const swiperInnerPageTabs = new Swiper(".inner-page-tabs.swiper", {
+                    slidesPerView: "auto",
+                    spaceBetween: 16,
+                    breakpoints: {
+                        992: {
+                            spaceBetween: 32,
+                        }
+                    },
+                });
+            }
         }
     }
 };
