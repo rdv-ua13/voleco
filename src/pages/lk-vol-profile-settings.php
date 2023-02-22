@@ -185,11 +185,11 @@
                                     <div class="page-content__section-item-title">
                                         <span>День рождения <span class="required-star">*</span></span>
                                     </div>
-                                    <div class="form__field">
+                                    <div class="form__field form__field--flatpickr">
                                         <input
                                                 id=""
-                                                class="input-reset form__input"
-                                                type="date"
+                                                class="input-reset form__input flatpickr"
+                                                type="text"
                                                 name=""
                                                 placeholder=""
                                         >

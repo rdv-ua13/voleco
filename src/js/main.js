@@ -10,6 +10,8 @@ function application() {
 application.prototype.init = function () {
     this.initHeaderScroll();
     this.initBurger();
+    this.initHeaderActionsMobile();
+    this.initOverlay();
     this.initTabs();
     this.initNotice();
     this.initRegStepper();
@@ -21,18 +23,19 @@ application.prototype.init = function () {
     this.initProgressBar();
     this.initFormProcessing();
     this.initCardFavorite();
+    this.initMainscreenSlider();
     this.initTagbarSlider();
     this.initBasicSlider();
     this.initMobileSlider();
     this.initResponsiveCardSlider();
     this.initHandlerCurrentUser();
-    /*this.initHandlerCurrentUser();*/
     this.initPasswordSwitcher();
     this.initSelect2();
-    /*this.initDropfiles();*/
     this.initTagSelected();
     this.initMaskedInput();
     this.initAddList();
+    this.initDropfiles();
+    this.initDatepicker();
     this.initReadmore();
     /*this.initReadmoreResponsive(); todo - Доделать*/
     this.initAccordion();
@@ -66,7 +69,7 @@ application.prototype.disableScroll = function () {
     fixBlocks.forEach(el => { el.style.paddingRight = paddingOffset; });
     body.style.paddingRight = paddingOffset;
     body.classList.add('dis-scroll');
-    body.classList.add('overlay');
+    /*body.classList.add('overlay');*/
 };
 
 // Initialization enable scroll
@@ -76,7 +79,7 @@ application.prototype.enableScroll = function () {
     fixBlocks.forEach(el => { el.style.paddingRight = '0px'; });
     body.style.paddingRight = '0px';
     body.classList.remove('dis-scroll');
-    body.classList.remove('overlay');
+    /*body.classList.remove('overlay');*/
 };
 
 // Initialization burger-menu
@@ -102,6 +105,7 @@ application.prototype.initBurger = function () {
 
     menuClose?.addEventListener('click', () => {
         setMenuClose();
+        $(".overlay").remove();
     });
 
     function setMenuClose() {
@@ -109,7 +113,6 @@ application.prototype.initBurger = function () {
         burger?.setAttribute('aria-label', 'Открыть меню');
         burger.classList.remove('burger--active');
         menu.classList.remove('burger-menu--active');
-        return application.prototype.enableScroll();
     }
 
     $(document).on("click", function (e) {
@@ -117,6 +120,77 @@ application.prototype.initBurger = function () {
             setMenuClose();
         }
     });
+};
+
+// Initialization overlay element
+application.prototype.initOverlay = function () {
+    if($("[data-overlay]").length) {
+        const body = $("body");
+        const triggerEl = $("[data-overlay]");
+
+        $(triggerEl).on("click", function () {
+            body.addClass("overflow-hidden");
+            $("<div class='overlay'></div>").insertAfter($(this));
+        });
+
+        $(document).on("click", function (e) {
+            if ($(".overlay").is(e.target)) {
+                body.removeClass("overflow-hidden");
+                $(".overlay").remove();
+                return application.prototype.enableScroll();
+            }
+        });
+    }
+};
+
+// Initialization actions user mobile
+application.prototype.initHeaderActionsMobile = function () {
+    if ($(".js-header-actions-mobile-dropdown").length) {
+        const mobileTrigger = $(".js-header-actions-mobile-dropdown");
+        const actions = $(".header-actions");
+        const actionsNoAuth = $(".header-actions-no-auth");
+        const actionsCurrentUser = $(".header-actions-current-user");
+
+        $(document).on("click", function (e) {
+            if ($(".overlay").is(e.target)) {
+                actionsCurrentUser.removeClass("active");
+                actionsNoAuth.removeClass("active");
+            }
+        });
+
+        responsiveHeaderActions();
+        $(window).on("resize", responsiveHeaderActions);
+
+        function responsiveHeaderActions() {
+            if (window.matchMedia("(max-width: 991.98px)").matches) {
+                $(mobileTrigger).on("click", function () {
+                    if(actions.hasClass("header-actions--current-user")) {
+                        actionsNoAuth.removeClass("active");
+                        if(actionsCurrentUser.hasClass("active")) {
+                            actionsCurrentUser.removeClass("active");
+                            return application.prototype.enableScroll();
+                        } else {
+                            actionsCurrentUser.addClass("active");
+                            return application.prototype.disableScroll();
+                        }
+                    } else {
+                        actionsCurrentUser.removeClass("active");
+                        if(actionsNoAuth.hasClass("active")) {
+                            actionsNoAuth.removeClass("active");
+                            return application.prototype.enableScroll();
+                        } else {
+                            actionsNoAuth.addClass("active");
+                            return application.prototype.disableScroll();
+                        }
+                    }
+                });
+            } else {
+                actionsCurrentUser.removeClass("active");
+                actionsNoAuth.removeClass("active");
+                return application.prototype.enableScroll();
+            }
+        }
+    }
 };
 
 // Initialization tabs
@@ -134,7 +208,7 @@ application.prototype.initTabs = function () {
     }
 };
 
-// Initialization tabs
+// Initialization notice
 application.prototype.initNotice = function () {
     $(document).on("click", ".notice", function () {
         $(this).find(".notice-elem").removeClass("active");
@@ -261,7 +335,7 @@ application.prototype.initInnerPageTabs = function () {
 
         function initTabsSlider() {
             if($(".inner-page-tabs.swiper").closest(".tasks")) {
-                const swiperTasksInnerPageTabs = new Swiper(".tasks .inner-page-tabs.swiper", {
+                const swiperTasksInnerPageTabsSettings = {
                     slidesPerView: "auto",
                     spaceBetween: 12,
                     direction: "horizontal",
@@ -272,7 +346,21 @@ application.prototype.initInnerPageTabs = function () {
                             mousewheel: true,
                         }
                     },
-                });
+                };
+                let swiperTasksInnerPageTabs = null;
+
+                reinitSlider();
+                $(window).on("resize", reinitSlider);
+
+                function reinitSlider() {
+                    if (window.matchMedia("(max-width: 991.98px)").matches) {
+                        swiperTasksInnerPageTabs = null;
+                        swiperTasksInnerPageTabs = new Swiper(".tasks .inner-page-tabs.swiper", swiperTasksInnerPageTabsSettings);
+                    } else {
+                        swiperTasksInnerPageTabs = null;
+                    }
+                }
+
             } else {
                 const swiperInnerPageTabs = new Swiper(".inner-page-tabs.swiper", {
                     slidesPerView: "auto",
@@ -291,11 +379,9 @@ application.prototype.initInnerPageTabs = function () {
 // Initialization tooltips
 application.prototype.initTooltips = function () {
     if ($(".tooltip").length) {
-        const button = $(".tooltip__btn");
-        const tooltip = $(".tooltip__txt");
-
-        const popperInstance = new Popper.createPopper(button, tooltip, {
-            placement: 'top'
+        tippy(".tooltip", {
+            allowHTML: true,
+            trigger: "mouseenter click",
         });
     }
 };
@@ -475,6 +561,68 @@ application.prototype.initCardFavorite = function () {
             // todo: ajax проверить success or wrong, добавить класс selected
         }
     });
+};
+
+// Initialization mainscreen slider
+application.prototype.initMainscreenSlider = function () {
+    if ($(".js-mainscreen-slider").length) {
+        const mainscreenSliderSettings = {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            direction: "horizontal",
+            effect: "fade",
+            pagination: {
+                el: ".js-mainscreen-slider .swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    direction: "vertical",
+                },
+            }
+        };
+        let mainscreenSlider = new Swiper(".js-mainscreen-slider", mainscreenSliderSettings);
+
+        /*
+        if ($(".js-mainscreen-slider").length) {
+        const mainscreenSliderDesktopSettings = {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            direction: "horizontal",
+            effect: "fade",
+            pagination: {
+                el: ".js-mainscreen-slider .swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    direction: "vertical",
+                }
+            }
+        };
+        const mainscreenSliderMobileSettings = {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            direction: "horizontal",
+            effect: "slide",
+        };
+        let mainscreenSlider = null;
+
+        reinitSlider();
+        $(window).on("resize", reinitSlider);
+
+        function reinitSlider() {
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                mainscreenSlider = null;
+                mainscreenSlider = new Swiper(".js-mainscreen-slider", mainscreenSliderDesktopSettings);
+            } else if (window.matchMedia("(max-width: 767.98px)").matches) {
+                mainscreenSlider = null;
+                mainscreenSlider = new Swiper(".js-mainscreen-slider", mainscreenSliderMobileSettings);
+            }
+        }
+    }
+        */
+    }
 };
 
 // Initialization tag-bar slider
@@ -784,42 +932,24 @@ application.prototype.initResponsiveCardSlider = function () {
 // Initialization handler for current user dropdown menu
 application.prototype.initHandlerCurrentUser = function () {
     if ($(".js-current-user-menu").length) {
-       $(document).on("click", function (e) {
-            if (!$(".js-current-user-menu").hasClass("open") && $(".current-user__dropdown").is(e.target)) {
-                $(".js-current-user-menu").addClass("open");
-            }
-            else if ($(".js-current-user-menu").hasClass("open") && $(".current-user__dropdown").is(e.target)) {
-                $(".js-current-user-menu").removeClass("open");
-            }
-            else if ($(".current-user__dropdown-menu ul").has(e.target).length) {
-                $(".js-current-user-menu").removeClass("open");
-            }
-            else if (!$(".js-current-user-menu").is(e.target) && $(".js-current-user-menu").has(e.target).length === 0) {
-                $(".js-current-user-menu").removeClass("open");
+        $(document).on("click", function (e) {
+            if (window.matchMedia("(min-width: 992px)").matches) {
+                if (!$(".js-current-user-menu").hasClass("open") && $(".current-user__dropdown").is(e.target)) {
+                    $(".js-current-user-menu").addClass("open");
+                }
+                else if ($(".js-current-user-menu").hasClass("open") && $(".current-user__dropdown").is(e.target)) {
+                    $(".js-current-user-menu").removeClass("open");
+                }
+                else if ($(".current-user__dropdown-menu ul").has(e.target).length) {
+                    $(".js-current-user-menu").removeClass("open");
+                }
+                else if (!$(".js-current-user-menu").is(e.target) && $(".js-current-user-menu").has(e.target).length === 0) {
+                    $(".js-current-user-menu").removeClass("open");
+                }
             }
         });
     }
 };
-
-/*// Initialization handler for header-actions-menu dropdown on mobile
-application.prototype.initHandlerHeaderActionsMenu = function () {
-    if ($(".js-current-user-menu").length) {
-        $(document).on("click", function (e) {
-            if (!$(".js-current-user-menu").hasClass("open") && $(".current-user__dropdown").is(e.target)) {
-                $(".js-current-user-menu").addClass("open");
-            }
-            else if ($(".js-current-user-menu").hasClass("open") && $(".current-user__dropdown").is(e.target)) {
-                $(".js-current-user-menu").removeClass("open");
-            }
-            else if ($(".current-user__dropdown-menu ul").has(e.target).length) {
-                $(".js-current-user-menu").removeClass("open");
-            }
-            else if (!$(".js-current-user-menu").is(e.target) && $(".js-current-user-menu").has(e.target).length === 0) {
-                $(".js-current-user-menu").removeClass("open");
-            }
-        });
-    }
-};*/
 
 // Initialization password-switcher
 application.prototype.initPasswordSwitcher = function () {
@@ -843,77 +973,6 @@ application.prototype.initSelect2 = function () {
     }
 };
 
-// Initialization drop files
-application.prototype.initDropfiles = function () {
-    const fileinput = document.getElementById("dropfile-input");
-    const dropzone = document.getElementById("dropfile-area");
-    const cleargallery = document.getElementById("dropfile-gallery-clear");
-    const gallery = document.getElementById("dropfile-gallery-list");
-
-    function stopPropagationAndPreventDefault(e) {
-        e.stopPropagation();
-        e.preventDefault();
-    }
-
-    function handleFileAndAppend(file) {
-        if (!file.type.startsWith("image/")) {
-            console.log("not an image");
-            return;
-        }
-
-        const imgElement = document.createElement("img");
-        imgElement.file = file;
-        console.log(imgElement);
-        if (gallery.firstChild) {
-            gallery.prepend(imgElement, gallery.firstChild);
-        } else {
-            gallery.appendChild(imgElement);
-        }
-
-        dropzone.classList.remove("dragging");
-
-        const fileReader = new FileReader();
-        fileReader.onload = ((img) => (e) => {img.src = e.target.result;})(imgElement);
-        fileReader.readAsDataURL(file);
-        console.log(fileReader);
-    }
-
-    function clearGalleryHandler(e) {
-        stopPropagationAndPreventDefault(e);
-        while (gallery.firstChild) {
-            gallery.removeChild(gallery.firstChild);
-        }
-    }
-
-    function dropHandler(e) {
-        stopPropagationAndPreventDefault(e);
-        const file = e.dataTransfer.files[0];
-        handleFileAndAppend(file);
-    }
-
-    function fileInputHandler(e) {
-        const file = this.files[0];
-        handleFileAndAppend(file);
-    }
-
-    function dragoverHandler(e) {
-        stopPropagationAndPreventDefault(e);
-        dropzone.classList.add("dragging");
-    }
-
-    function dragleaveHandler(e) {
-        stopPropagationAndPreventDefault(e);
-        dropzone.classList.remove("dragging");
-    }
-
-    cleargallery.addEventListener("click", clearGalleryHandler, false);
-    fileinput.addEventListener("change", fileInputHandler, false);
-    dropzone.addEventListener("dragenter", stopPropagationAndPreventDefault, false);
-    dropzone.addEventListener("dragover", dragoverHandler, false);
-    dropzone.addEventListener("dragleave", dragleaveHandler, false);
-    dropzone.addEventListener("drop", dropHandler, false)
-};
-
 // Initialization tag selected
 application.prototype.initTagSelected = function () {
     if ($("label.tag").length) {
@@ -932,6 +991,7 @@ application.prototype.initTagSelected = function () {
 application.prototype.initMaskedInput = function () {
     $(".isPhone").mask("+7-999-999-99-99", { autoclear: false });
 };
+
 // Initialization add list
 application.prototype.initAddList = function () {
     if ($(".js-add-list").length) {
@@ -942,6 +1002,285 @@ application.prototype.initAddList = function () {
         });
     }
 };
+
+// Initialization drop files
+application.prototype.initDropfiles = function () {
+    File.prototype.convertToBase64 = function (callback) {
+        let reader = new FileReader();
+
+        reader.onloadend = function (e) {
+            callback(e.target.result, e.target.error);
+        };
+        reader.readAsDataURL(this);
+    };
+
+    File.prototype.convertToSvgHtml = function (callback) {
+        let reader = new FileReader();
+
+        reader.onloadend = function(e) {
+            callback(e.target.result, e.target.error);
+        }
+        reader.readAsText(this);
+    };
+
+    const getDataImage = (file, callback) => {
+        let filename = file.name,
+            idxDot = filename.lastIndexOf(".") + 1,
+            extFile = filename.substr(idxDot, filename.length).toLowerCase();
+
+        if (extFile === "jpg" || extFile === "jpeg" || extFile === "png") {
+            file.convertToBase64((base64) => {
+                callback(base64, false);
+            })
+        }
+        else if(extFile === "svg") {
+            file.convertToSvgHtml((svgHtml) => {
+                callback(svgHtml, true);
+            })
+        }
+        else {
+            alert('Неверный формат файла (Поддерживаемые форматы: jpg, jpeg, png, svg)');
+        }
+    }
+
+    const getDataDocs = (file, callback) => {
+        let filename = file.name,
+            idxDot = filename.lastIndexOf(".") + 1,
+            extFile = filename.substr(idxDot, filename.length).toLowerCase();
+
+        if (extFile === "jpg" || extFile === "jpeg" || extFile === "png") {
+            file.convertToBase64((base64) => {
+                callback(base64, false);
+            })
+        }
+        else {
+            alert('Неверный формат файла (Поддерживаемые форматы: jpg, jpeg, png, svg)');
+        }
+    }
+
+    $('body').on('dragenter', '.js-drop-file', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+    });
+
+    $('body').on('dragover', '.js-drop-file', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+    });
+
+    $('body').on('drop', '.js-drop-file', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+
+        let type = $(this).closest('.dropfile').attr('data-type');
+
+        if (type === 'image') {
+            for (let i in e.originalEvent.dataTransfer.files) {
+                if (e.originalEvent.dataTransfer.files.hasOwnProperty(i)) {
+                    let file = e.originalEvent.dataTransfer.files[i];
+                    getDataImage(file, (data, isSvg) => {
+                        appendImage($(this), data, isSvg);
+                    });
+                }
+            }
+        }
+        else if (type === 'document') {
+            appendDocument($(this), e.originalEvent.dataTransfer.files);
+        }
+    })
+
+    $('.js-drop-file').on('change', '.js-change-file', function () {
+        let type = $(this).closest('.dropfile').attr('data-type');
+
+        if (type === 'image') {
+            for (let i in $(this)[0].files) {
+                if ($(this)[0].files.hasOwnProperty(i)) {
+                    let file = $(this)[0].files[i];
+                    if (type === 'image') {
+                        getDataImage(file, (data, isSvg) => {
+                            appendImage($(this), data, isSvg);
+                        });
+                    }
+                    else if (type === 'document') {
+                        getDataDocs(file, (data) => {
+                            appendImage($(this), data, isSvg);
+                        });
+                    }
+                }
+            }
+        }
+        else if (type === 'document') {
+            appendDocument($(this), $(this)[0].files);
+        }
+    });
+
+    function appendImage($input, data, isSvg) {
+        let image = '',
+            $parent = $input.closest('.dropfile');
+
+        if(isSvg) {
+            image = data;
+        }
+        else {
+            image = `<img src="` + data + `">`;
+        }
+
+        let html = `
+                    <div class="dropfile-image__item">
+                        ` + image + `
+                        <div class="dropfile-image__remove js-remove-image">
+                            <svg class="icon btn__icon">
+                                <use href="/local/templates/main/img/sprite.svg#trash"></use>
+                            </svg>
+                        </div>
+                        <input class="js-image" type="hidden" name="` + $parent.attr('data-input-name') + `" value='` + data + `'>
+                    </div>
+                    `;
+
+        if($parent.hasClass('js-upload-cover')) {
+            $parent
+                .find('.dropfile-image')
+                .html(html);
+        }
+        else if($parent.hasClass('js-upload-avatar')) {
+            $parent
+                .find('.dropfile-area')
+                .addClass('dropfile-image')
+                .html(html);
+        }
+        else if($parent.hasClass('js-upload-photos')) {
+            $parent
+                .find('.dropfile-gallery')
+                .show()
+                .append(html);
+        }
+    }
+
+    function appendDocument($input, files) {
+        let $parent = $input.closest('.dropfile'),
+            $inputFile = $('<input/>')
+                .attr('type', "file")
+                .attr('multiple', true)
+                .attr('name', $parent.attr('data-input-name'))
+                .hide();
+
+        $inputFile.get(0).files = files;
+
+        for (let i in files) {
+            if (files.hasOwnProperty(i)) {
+                let filename = files[i].name,
+                    idxDot = filename.lastIndexOf(".") + 1,
+                    extFile = filename.substr(idxDot, filename.length).toLowerCase();
+
+                if (extFile === "doc" || extFile === "docx" || extFile === "xls" ||
+                    extFile === "xlsx" || extFile === "ppt" || extFile === "pptx" ||
+                    extFile === "txt" || extFile === "pdf"
+                ) {
+                } else {
+                    alert('Неверный формат файла (Поддерживаемые форматы: doc, docx, xls, xlsx, ppt, pptx, txt, pdf)');
+
+                    return false;
+                }
+            }
+        }
+
+        let html = ``;
+        for (let i in files) {
+            if (files.hasOwnProperty(i)) {
+                let filename = files[i].name;
+
+                let $parent = $input.closest('.dropfile'),
+                    $inputFile = $('<input/>')
+                        .attr('type', "file")
+                        .attr('multiple', true)
+                        .attr('name', $parent.attr('data-input-name'))
+                        .hide();
+
+                const dataTransfer = new DataTransfer();
+                dataTransfer.items.add(files[i]);
+                $inputFile.get(0).files = dataTransfer.files;
+
+                if ($inputFile.get(0).webkitEntries.length) {
+                    $inputFile.get(0).dataset.file = `${dataTransfer.files[0].name}`;
+                }
+
+                console.log($inputFile.get(0).files)
+
+                $html = $('<div/>')
+                    .addClass('dropfile-documents__item')
+                    .html(`<svg class="icon">
+                                <use href="/local/templates/main/img/sprite.svg#file"></use>
+                            </svg>
+                            <div class="dropfile-documents__name">` + filename + `</div>
+                            <div class="dropfile-documents__remove js-remove-document">
+                                <svg class="icon">
+                                    <use href="/local/templates/main/img/sprite.svg#cross"></use>
+                                </svg>
+                            </div>`)
+                    .append($inputFile)
+
+                $parent.find('.dropfile-documents').append($html);
+            }
+        }
+
+        //$parent.find('.dropfile-documents').append(html);
+    }
+
+
+    $('body').on('click', '.dropfile-image', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    $('body').on('click', '.js-remove-image', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        let $parent = $(this).closest('.dropfile');
+
+        if($parent.hasClass('js-upload-photos')) {
+            $(this).closest('.dropfile-image__item').remove();
+        }
+        else {
+            let html = ``;
+
+            if($parent.hasClass('js-upload-avatar')) {
+                $parent.find('')
+                html += `<div class="dropfile-descr">
+                        <div class="dropfile-descr__view">
+                            <svg class="icon">
+                                <use href="/local/templates/main/img/sprite.svg#add-image"></use>
+                            </svg>
+                        </div>
+                    </div>`
+            }
+
+            $(this).closest('.dropfile-image').html(html);
+
+            if($parent.hasClass('js-upload-avatar')) {
+                $parent.find('.dropfile-area').removeClass('dropfile-image');
+            }
+        }
+    });
+
+    $('body').on('click', '.js-remove-document', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        console.log('oks')
+        $(this).closest('.dropfile-documents__item').remove();
+    });
+};
+
+// Init datepicker
+application.prototype.initDatepicker = function () {
+    const dateElem = $(".flatpickr");
+
+    flatpickr(dateElem, {
+        "dateFormat": "d.m.Y",
+        "locale": "ru",
+    });
+}
 
 // Initialization readmore plugin
 application.prototype.initReadmore = function () {
@@ -965,6 +1304,7 @@ application.prototype.initReadmore = function () {
     }
 };
 
+// todo
 // Initialization readmore plugin responsive
 application.prototype.initReadmoreResponsive = function () {
     initReadmoreDesktopOnly();

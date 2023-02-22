@@ -113,6 +113,7 @@ const libsJsBuild = () => {
         [
             "node_modules/jquery/dist/jquery.js",
             "node_modules/@popperjs/core/dist/umd/popper.js",
+            "node_modules/tippy.js/dist/tippy-bundle.umd.js",
             "node_modules/swiper/swiper-bundle.js",
             "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
             "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
@@ -123,6 +124,8 @@ const libsJsBuild = () => {
             "node_modules/select2/dist/js/select2.js",
             "node_modules/readmore-js/readmore.js",
             "node_modules/sweetalert/dist/sweetalert.min.js",
+            "node_modules/flatpickr/dist/flatpickr.min.js",
+            "node_modules/flatpickr/dist/l10n/ru.js",
         ]
     )
         .pipe(concat("libs.min.js"))

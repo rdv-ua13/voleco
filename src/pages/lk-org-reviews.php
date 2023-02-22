@@ -57,7 +57,7 @@
                                                 <use href="img/sprite.svg#star"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star-gray"></use>
+                                                <use href="img/sprite.svg#star"></use>
                                             </svg>
                                         </span>
                                     </span>
@@ -109,7 +109,7 @@
                                                 <use href="img/sprite.svg#star"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star-gray"></use>
+                                                <use href="img/sprite.svg#star"></use>
                                             </svg>
                                         </span>
                                     </span>

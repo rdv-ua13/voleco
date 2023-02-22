@@ -571,7 +571,7 @@
     <div class="container-ui">
         <div class="col-ui">
             <div class="row-ui ">
-                <div class="flex-v-center" style="gap: 10px;">
+                <div class="flex-v-center" style="gap: 10px; flex-wrap: wrap;">
                     <!--start ui content-->
                     <div class="custom-checkbox">
                         <input class="custom-checkbox__input" type="checkbox">
@@ -663,7 +663,7 @@
         <div class="col-ui">
             <h4 class="text-center">Tags block (default)</h4>
             <div class="row-ui">
-                <div class="flex-v-center" style="max-width: 500px;">
+                <div class="flex-v-center" style="max-width: 355px;">
                     <!--ui content-->
                     <span class="tag-bar">
                         <span class="tag" style="cursor: not-allowed;">
@@ -782,9 +782,10 @@
                     <!--end ui content-->
                 </div>
             </div>
+            <br>
             <h4 class="text-center">Tags block (slider)</h4>
             <div class="row-ui">
-                <div class="flex-v-center" style="max-width: 500px; overflow: hidden;">
+                <div class="flex-v-center" style="max-width: 355px; overflow: hidden;">
                     <!--ui content-->
                     <div class="tag-bar tag-bar--slider swiper js-tag-bar-slider">
                         <div class="swiper-wrapper">
@@ -991,6 +992,176 @@
                 &#8212; span class="tag tag--mini"
             </div>
             Для тегов доделать вариации для mobile/desktop
+            <br>
+            <h4 class="text-center">Tags-radio</h4>
+            <div class="row-ui">
+                <div class="flex-v-center" style="max-width: 355px;">
+                    <!--ui content-->
+                    <span class="tag-bar">
+                        <label class="tag" style="cursor: not-allowed;">
+                            <input
+                                    class="visually-hidden"
+                                    type="checkbox"
+                                    name="PROP[TAGS][]"
+                                    value=""
+                            >
+                            <span
+                                    class="tag__content-bg"
+                                    style="
+                                    border-color: var(--text8-color);
+                                    background-color: var(--text8-color);"
+                            ></span>
+                            <span class="tag__content">
+                                <svg class="icon tag__content-icon" style="fill: var(--text5-color);">
+                                    <use href="img/sprite.svg#tag-all"></use>
+                                </svg>
+                                <span class="tag__content-text" style="color: var(--text5-color);">disabled</span>
+                            </span>
+                        </label>
+                        <label class="tag">
+                            <input
+                                    class="visually-hidden"
+                                    type="checkbox"
+                                    name="PROP[TAGS][all]"
+                                    value=""
+                            >
+                            <span
+                                    class="tag__content-bg"
+                                    style="
+                                    border-color: var(--text6-color);
+                                    background-color: var(--text8-color);"
+                            ></span>
+                            <span class="tag__content">
+                                <svg class="icon tag__content-icon" style="fill: var(--text6-color);">
+                                    <use href="img/sprite.svg#tag-all"></use>
+                                </svg>
+                                <span class="tag__content-text" style="color: var(--text6-color);">все</span>
+                            </span>
+                        </label>
+                        <label class="tag">
+                            <input
+                                    class="visually-hidden"
+                                    type="checkbox"
+                                    name="PROP[TAGS][urban]"
+                                    value=""
+                            >
+                            <span
+                                    class="tag__content-bg"
+                                    style="
+                                    border-color: var(--accent-ceruleanblue1-color);
+                                    background-color: var(--accent-ceruleanblue8-color);"
+                            ></span>
+                            <span class="tag__content">
+                                <svg class="icon tag__content-icon" style="fill: var(--accent-ceruleanblue1-color);">
+                                    <use href="img/sprite.svg#tag-building"></use>
+                                </svg>
+                                <span class="tag__content-text" style="color: var(--accent-ceruleanblue1-color);">Урбанизация</span>
+                            </span>
+                        </label>
+                        <label class="tag">
+                            <input
+                                    class="visually-hidden"
+                                    type="checkbox"
+                                    name="PROP[TAGS][sport]"
+                                    value=""
+                            >
+                            <span
+                                    class="tag__content-bg"
+                                    style="
+                                    border-color: var(--accent-purple4-color);
+                                    background-color: var(--accent-purple8-color);"
+                            ></span>
+                            <span class="tag__content">
+                                <svg class="icon tag__content-icon" style="fill: var(--accent-purple2-color);">
+                                    <use href="img/sprite.svg#tag-sport"></use>
+                                </svg>
+                                <span class="tag__content-text" style="color: var(--accent-purple2-color);">спорт</span>
+                            </span>
+                        </label>
+                        <label class="tag">
+                            <input
+                                    class="visually-hidden"
+                                    type="checkbox"
+                                    name="PROP[TAGS][alarm]"
+                                    value=""
+                            >
+                            <span
+                                    class="tag__content-bg"
+                                    style="
+                                    border-color: var(--error4-color);
+                                    background-color: var(--error9-color);"
+                            ></span>
+                            <span class="tag__content">
+                                <svg class="icon tag__content-icon" style="fill: var(--error4-color);">
+                                    <use href="img/sprite.svg#tag-alarm"></use>
+                                </svg>
+                                <span class="tag__content-text" style="color: var(--error4-color);">ЧС</span>
+                            </span>
+                        </label>
+                        <label class="tag">
+                            <input
+                                    class="visually-hidden"
+                                    type="checkbox"
+                                    name="PROP[TAGS][animal]"
+                                    value=""
+                            >
+                            <span
+                                    class="tag__content-bg"
+                                    style="
+                                    border-color: var(--warning5-color);
+                                    background-color: var(--warning8-color);"
+                            ></span>
+                            <span class="tag__content">
+                                <svg class="icon tag__content-icon" style="fill: var(--warning3-color);">
+                                    <use href="img/sprite.svg#tag-pets"></use>
+                                </svg>
+                                <span class="tag__content-text" style="color: var(--warning3-color);">Животные</span>
+                            </span>
+                        </label>
+                        <label class="tag">
+                            <input
+                                    class="visually-hidden"
+                                    type="checkbox"
+                                    name="PROP[TAGS][science]"
+                                    value=""
+                            >
+                            <span
+                                    class="tag__content-bg"
+                                    style="
+                                    border-color: var(--info5-color);
+                                    background-color: var(--info8-color);"
+                            ></span>
+                            <span class="tag__content">
+                                <svg class="icon tag__content-icon" style="fill: var(--info3-color);">
+                                    <use href="img/sprite.svg#tag-science"></use>
+                                </svg>
+                                <span class="tag__content-text" style="color: var(--info3-color);">Наука</span>
+                            </span>
+                        </label>
+                        <label class="tag">
+                            <input
+                                    class="visually-hidden"
+                                    type="checkbox"
+                                    name="PROP[TAGS][nature]"
+                                    value=""
+                            >
+                            <span
+                                    class="tag__content-bg"
+                                    style="
+                                    border-color: var(--success6-color);
+                                    background-color: var(--success8-color);"
+                            ></span>
+                            <span class="tag__content">
+                                <svg class="icon tag__content-icon" style="fill: var(--success4-color);">
+                                    <use href="img/sprite.svg#tag-nature"></use>
+                                </svg>
+                                <span class="tag__content-text" style="color: var(--success4-color);">Природа</span>
+                            </span>
+                        </label>
+                    </span>
+                    <!--end ui content-->
+                </div>
+            </div>
         </div>
     </div>
     <hr style="width: 100%;">
@@ -1544,7 +1715,7 @@
     <h3 class="text-center">Modal</h3>
     <div class="container-ui">
         <div class="col-ui">
-            <a href="https://fancyapps.com/">Using plugin fancybox</a>
+            <a href="https://fancyapps.com/" target="_blank">Using plugin fancybox</a>
             <div class="row-ui ">
                 <div class="flex-v-center" style="width: 100%;">
                     <!--start ui content-->
@@ -1627,16 +1798,146 @@
                                                     <use href="img/sprite.svg#star"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star-gray"></use>
+                                                    <use href="img/sprite.svg#star"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star-gray"></use>
+                                                    <use href="img/sprite.svg#star"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star-gray"></use>
+                                                    <use href="img/sprite.svg#star"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star-gray"></use>
+                                                    <use href="img/sprite.svg#star"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-fields__item">
+                                    <div class="page-content__section-item-title">
+                                        <span>Оставить отзыв</span>
+                                    </div>
+                                    <div class="form__field">
+                                        <textarea
+                                                id=""
+                                                class="input-reset form__input form__input--textarea"
+                                                name=""
+                                                placeholder="Расскажите об опыте работы с волонтером"
+                                        ></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-fields__item">
+                                    <div class="form__field form__field-btn">
+                                        <button class="btn-reset btn btn--fill">
+                                            <span class="btn__text">Сохранить</span>
+                                        </button>
+                                        <button class="btn-reset btn btn--fill btn--gray flex-1">
+                                            <span class="btn__text">Сохранить и создать новую задачу</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--end ui content-->
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row-ui ">
+                <div class="flex-v-center" style="width: 100%;">
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn--fill fancy-modal" type="button" data-fancybox="dialog" data-src="#modal-test111">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#edit"></use>
+                        </svg>
+                        <span class="btn__text">Вызов модалки fancy</span>
+                    </button>
+
+                    <div id="modal-test111" class="modal modal-request" style="display:none;">
+                        <div class="modal__content">
+                            <div class="modal__title">Учет времени волонтера</div>
+                            <div class="modal-fields">
+                                <div class="modal-fields__item modal-request__employee">
+                                    <div class="modal-request__employee-view">
+                                        <picture>
+                                            <source srcset="img/card-photo-volunteer.webp" type="image/webp">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/card-photo-volunteer.png"
+                                                    class="image"
+                                                    width="42"
+                                                    height="42"
+                                                    alt="Фото карточки"
+                                            >
+                                        </picture>
+                                    </div>
+                                    <div class="modal-request__employee-descr">
+                                        <div class="modal-request__employee-descr-status">Волонтер</div>
+                                        <div class="modal-request__employee-descr-name">Трофимов Тимофей Арсеньевич</div>
+                                    </div>
+                                </div>
+                                <div class="modal-fields__item">
+                                    <div class="page-content__section-item-title">
+                                        <span>
+                                            <span class="custom-checkbox">
+                                                <input id="checkboxui-3" class="custom-checkbox__input" type="checkbox">
+                                                <label for="checkboxui-3" class="custom-checkbox__label-for"></label>
+                                            </span>
+                                            <span class="text5-color">Удаленная работа</span>
+                                        </span>
+                                        <span class="tooltip">
+                                            <span class="btn-reset tooltip__btn" aria-describedby="id44">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="tooltip__txt" role="tooltip" id="id44">
+                                                <span class="visually-hidden">Тултип: </span>
+                                                Текст
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="modal-fields__item">
+                                    <div class="page-content__section-item">
+                                        <div class="page-content__section-item-title">
+                                            <span>Указать время вручную</span>
+                                        </div>
+                                        <div class="form__field">
+                                            <input
+                                                    id=""
+                                                    class="input-reset form__input"
+                                                    type="text"
+                                                    name=""
+                                                    placeholder=""
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-fields__item">
+                                    <div class="page-content__section-item-title">
+                                        <span>Оценка волонтера</span>
+                                    </div>
+                                    <div class="form__field">
+                                        <div class="page-content__intro-rate">
+                                            <div class="page-content__intro-rate-stars">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#star"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#star"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#star"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#star"></use>
+                                                </svg>
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#star"></use>
                                                 </svg>
                                             </div>
                                         </div>
@@ -1748,6 +2049,276 @@
                 <div class="flex-v-center" style="width: 100%;">
                     <!--start ui content-->
 					<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/pagination.php"); ?>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Tooltip</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="width: 100%;">
+                    tooltip -&nbsp;
+                    <!--start ui content-->
+                    <span class="tooltip"
+                          data-tippy-content="<div class='tooltip-content'>
+                                                    <p>Принимает <a href='javascript:;'>HTML</a></p>
+                                                    <p>Можно изменить trigger на 'click' в initTooltips() ->
+                                                        <a href='javascript:;' style='color: red;'>trigger: 'click'</a>
+                                                    </p>
+                                                </div>"
+                    >
+                        <svg class="icon">
+                            <use href="img/sprite.svg#tooltip"></use>
+                        </svg>
+                    </span>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Обёртка для input flatpickr</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="width: 100%; max-width: 500px;">
+                    <!--start ui content-->
+                    <div class="form__field form__field--flatpickr">
+                        <input
+                                id=""
+                                class="input-reset form__input flatpickr"
+                                type="text"
+                                name=""
+                                placeholder=""
+                        >
+                    </div>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Banner</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="min-width: 100%;">
+                    <!--start ui content-->
+                    <div class="banner banner--dark-bg" style="background-color: var(--accent-ceruleanblue1-color);">
+                        <div class="banner__decor">
+                            <picture>
+                                <source
+                                        srcset="img/banner-mobile.webp"
+                                        media="(max-width: 767.98px)"
+                                        type="image/webp"
+                                >
+                                <source
+                                        srcset="img/banner.webp"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                >
+                                <img
+                                        loading="lazy"
+                                        src="img/banner.png"
+                                        srcset="img/banner-mobile.png 343w,
+                                            img/banner.png 1280w"
+                                        sizes="(max-width: 767.98px) 343px,
+                                            1280px"
+                                        class="image"
+                                        width=""
+                                        height=""
+                                        alt=""
+                                >
+                            </picture>
+                        </div>
+                        <div class="banner__content">
+                            <div class="banner__title">XI Международный форум «Арктика: настоящее и будущее»</div>
+                            <button class="btn-reset btn btn--white">
+                                <span class="btn__text">Присоединиться к проекту</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Star rating (input)</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="min-width: 100%;">
+                    <!--start ui content-->
+                    <span class="star-rating star-rating--max">
+                        <form class="star-rating__container" action="" method="post">
+                            <input
+                                    id="starrateTestOne"
+                                    class="visually-hidden"
+                                    type="radio"
+                                    name="starrate"
+                                    value="5"
+                            >
+                            <label for="starrateTestOne">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#star"></use>
+                                </svg>
+                            </label>
+
+                            <input
+                                    id="starrateTestTwo"
+                                    class="visually-hidden"
+                                    type="radio"
+                                    name="starrate"
+                                    value="4"
+                            >
+                            <label for="starrateTestTwo">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#star"></use>
+                                </svg>
+                            </label>
+
+                            <input
+                                    id="starrateTestThree"
+                                    class="visually-hidden"
+                                    type="radio"
+                                    name="starrate"
+                                    value="3"
+                            >
+                            <label for="starrateTestThree">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#star"></use>
+                                </svg>
+                            </label>
+
+                            <input
+                                    id="starrateTestFour"
+                                    class="visually-hidden"
+                                    type="radio"
+                                    name="starrate"
+                                    value="2"
+                            >
+                            <label for="starrateTestFour">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#star"></use>
+                                </svg>
+                            </label>
+
+                            <input
+                                    id="starrateTestFive"
+                                    class="visually-hidden"
+                                    type="radio"
+                                    name="starrate"
+                                    value="1"
+                            >
+                            <label for="starrateTestFive">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#star"></use>
+                                </svg>
+                            </label>
+                        </form>
+                    </span>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Requests status</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="min-width: 100%;">
+                    <!--start ui content-->
+                    <div class="card-list card-list-column">
+                        <a href="javascript:;" class="card card--pa-default">
+                            <span class="card__view">
+                                <picture>
+                                    <source srcset="img/card-photo-events.webp" type="image/webp">
+                                    <img loading="lazy" src="img/card-photo-events.png" class="image" width="260" height="190" alt="Фото карточки">
+                                </picture>
+                            </span>
+                            <span class="card__descr">
+                                <span class="card__title-block">
+                                    <span class="card__title-block-name">test1</span>
+                                    <span class="card__title-block-subtitle">test1</span>
+                                </span>
+                                <span class="card__action">
+                                    <span class="card__action-data">
+                                        <span class="card__action-item">
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#calendar"></use>
+                                            </svg>
+                                            <span class="card__action-item-text">1–2 декабря 2021, 07:00 - 12:00</span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="card__contact-btn card__contact-btn--vol">
+                                    <button class="btn-reset btn btn--noframe">
+                                        <span class="tag tag--mini status-created">
+                                            <span class="tag__content-bg"></span>
+                                            <span class="tag__content">
+                                                <span class="tag__content-text">заявка создана</span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </span>
+                                <span class="card__contact-btn card__contact-btn--vol">
+                                    <button class="btn-reset btn btn--noframe">
+                                        <span class="tag tag--mini status-approved">
+                                            <span class="tag__content-bg"></span>
+                                            <span class="tag__content">
+                                                <span class="tag__content-text">заявка подтверждена</span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </span>
+                                <span class="card__contact-btn card__contact-btn--vol">
+                                    <button class="btn-reset btn btn--noframe">
+                                        <span class="tag tag--mini status-done">
+                                            <span class="tag__content-bg"></span>
+                                            <span class="tag__content">
+                                                <span class="tag__content-text">заявка исполнена</span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </span>
+                                <span class="card__contact-btn card__contact-btn--vol">
+                                    <button class="btn-reset btn btn--noframe">
+                                        <span class="tag tag--mini status-declined">
+                                            <span class="tag__content-bg"></span>
+                                            <span class="tag__content">
+                                                <span class="tag__content-text">заявка отклонена</span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
                     <!--end ui content-->
                 </div>
             </div>

@@ -13,44 +13,24 @@
                 <div class="block-mb-md">
                     <div class="banner banner--dark-bg" style="background-color: var(--accent-ceruleanblue1-color);">
                         <div class="banner__decor">
-                            <picture class="banner__decor-img-main" style="top: 10px; right: 75px; bottom: 0;">
-                                <source srcset="img/banner-decor1.webp" type="image/webp">
-                                <img
-                                    loading="lazy"
-                                    src="img/banner-decor1.png"
-                                    class="image"
-                                    width=""
-                                    height=""
-                                    alt=""
+                            <picture>
+                                <source
+                                        srcset="img/banner-mobile.webp"
+                                        media="(max-width: 767.98px)"
+                                        type="image/webp"
                                 >
-                            </picture>
-                            <picture style="right: 450px; bottom: 0;">
-                                <source srcset="img/banner-decor2.webp" type="image/webp">
-                                <img
-                                    loading="lazy"
-                                    src="img/banner-decor2.png"
-                                    class="image"
-                                    width=""
-                                    height=""
-                                    alt=""
+                                <source
+                                        srcset="img/banner.webp"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
                                 >
-                            </picture>
-                            <picture style="top: 0; bottom: 0; left: 0;">
-                                <source srcset="img/banner-decor3.webp" type="image/webp">
                                 <img
                                     loading="lazy"
-                                    src="img/banner-decor3.png"
-                                    class="image"
-                                    width=""
-                                    height=""
-                                    alt=""
-                                >
-                            </picture>
-                            <picture style="top: 0; right: 0; bottom: 0;">
-                                <source srcset="img/banner-decor4.webp" type="image/webp">
-                                <img
-                                    loading="lazy"
-                                    src="img/banner-decor4.png"
+                                    src="img/banner.png"
+                                    srcset="img/banner-mobile.png 343w,
+                                            img/banner.png 1280w"
+                                    sizes="(max-width: 767.98px) 343px,
+                                            1280px"
                                     class="image"
                                     width=""
                                     height=""

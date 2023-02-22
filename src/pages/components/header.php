@@ -43,11 +43,11 @@
 <body>
 <? endif; ?>
     <? if(strpos($_SERVER["REQUEST_URI"], "organizer.php")) : ?>
-    <header class="header header--org">
+    <header class="header header--org fixed-block">
     <? elseif(strpos($_SERVER["REQUEST_URI"], "registration.php") || strpos($_SERVER["REQUEST_URI"], "auth.php") || strpos($_SERVER["REQUEST_URI"], "password-recovery.php")) : ?>
-    <header class="header  header--authreg">
+    <header class="header header--authreg fixed-block">
     <? else : ?>
-    <header class="header">
+    <header class="header fixed-block">
     <? endif; ?>
         <div class="container header__container">
             <div class="header-logo">
@@ -88,6 +88,7 @@
                                 aria-label="Открыть меню"
                                 aria-expanded="false"
                                 data-burger
+                                data-overlay
                         >
                             <svg class="icon burger__icon">
                                 <use href="img/sprite.svg#burger"></use>
@@ -102,6 +103,7 @@
                                 aria-label="Открыть меню"
                                 aria-expanded="false"
                                 data-burger
+                                data-overlay
                         >
                             <svg class="icon burger__icon">
                                 <use href="img/sprite.svg#burger"></use>
@@ -133,9 +135,9 @@
                     </div>
 				<? endif; ?>
 				<? // todo: отобразить состояние авториззованного пользователя - раскомментировать ".header-actions--current-user" ?>
-                <div class="header-actions header-actions--current-user<?/* header-actions--current-user*/?>">
+                <div class="header-actions<?/* header-actions--current-user*/?>">
                     <div class="header-actions__item header-actions-mobile">
-                        <button class="btn-reset btn btn--noframe header-actions-mobile__dropdown js-header-actions-mobile-dropdown">
+                        <button class="btn-reset btn btn--noframe header-actions-mobile__dropdown js-header-actions-mobile-dropdown" data-overlay>
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#user"></use>
                             </svg>
@@ -265,6 +267,23 @@
 
     <div class="burger-menu" data-menu>
         <div class="burger-menu__close" data-menu-close></div>
+        <div class="header-search">
+            <form id="" class="form" method="" action="javascript:;">
+                <div class="form__field">
+                    <input
+                            class="input-reset form__input"
+                            type="search"
+                            name="Поиск"
+                            placeholder="Что вы хотите найти?"
+                    >
+                    <button class="btn-reset form__btn">
+                        <svg class="icon">
+                            <use href="img/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
         <ul class="list-reset burger-menu__list">
             <li>
                 <a href="javascript:;" class="link">Экодела</a>

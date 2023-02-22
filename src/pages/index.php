@@ -1,20 +1,238 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
 <div class="block-mb">
-    <div class="container">
-        <? /* todo: временная заглушка. Блок будет дорабатываться
-        h1 */ ?>
-        <picture style="width: 100%; height: calc(100vw * 0.4375);">
-            <source srcset="img/1stscreen.webp" type="image/webp">
-            <img
-                loading="lazy"
-                src="img/1stscreen.png"
-                class="image"
-                width=""
-                height=""
-                alt=""
-            >
-        </picture>
+    <div class="mainscreen-slider-container">
+        <div class="swiper mainscreen-slider js-mainscreen-slider">
+            <div class="mainscreen-slider__header">
+                <h1 class="block-mb-md h1 text-center">
+                    <span class="green-color">Поможем</span> природе <span class="green-color">вместе.</span><br>
+                    Присоединяйся к Волонтерам экологам.
+                </h1>
+                <div class="mainscreen-slider__action">
+                    <button class="btn-reset btn btn--fill">
+                        <span class="btn__text">Стать эковолонтером</span>
+                    </button>
+                    <button class="btn-reset btn">
+                        <span class="btn__text">Стать организатором</span>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="mainscreen-slider__pointer">
+                        <img
+                                loading="lazy"
+                                src="img/main-screen-img.png"
+                                class="image"
+                                width=""
+                                height=""
+                                alt="Изображение главного слайдера"
+                        >
+                        <div class="mainscreen-slider__video">
+                            <a
+                                    href=""
+                                    class="btn-reset btn"
+                                    data-fancybox="mainslider"
+                                    data-src="demo.mp4"
+                            >
+                                <svg class="icon btn__icon">
+                                    <use href="img/sprite.svg#play"></use>
+                                </svg>
+                                <span class="btn__text">Видео о платформе</span>
+                            </a>
+                        </div>
+
+                        <div class="mainscreen-slider__pointer-hero">
+                            <div class="mainscreen-slider__pointer-hero-item">
+                                <span class="mainscreen-slider__pointer-hero-descr">Электронная система учета<br> волонтерского опыта и достижений</span>
+                                <span class="mainscreen-slider__pointer-hero-view">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#star"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="mainscreen-slider__pointer-hero-item">
+                                <span class="mainscreen-slider__pointer-hero-descr">Краудфаундинг для<br> экопроектов и организаций</span>
+                                <span class="mainscreen-slider__pointer-hero-view">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#money2"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="mainscreen-slider__pointer-hero-item">
+                                <span class="mainscreen-slider__pointer-hero-view">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#user"></use>
+                                    </svg>
+                                </span>
+                                <span class="mainscreen-slider__pointer-hero-descr">Личные кабинеты организаций<br> и супервайзеров</span>
+                            </div>
+                        </div>
+
+                        <div class="mainscreen-slider__pointer-decor-left">
+                            <div class="mainscreen-slider__pointer-decor-item blur">
+                                <img
+                                    loading="lazy"
+                                    src="img/card-photo-volunteer.png"
+                                    class="mainscreen-slider__pointer-decor-img"
+                                    width="40"
+                                    height="40"
+                                    alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item">
+                                <img
+                                    loading="lazy"
+                                    src="img/lk-vol-logo.png"
+                                    class="mainscreen-slider__pointer-decor-img"
+                                    width="50"
+                                    height="50"
+                                    alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item">
+                                <img
+                                    loading="lazy"
+                                    src="img/card-photo-volunteer.png"
+                                    class="mainscreen-slider__pointer-decor-img"
+                                    width="40"
+                                    height="40"
+                                    alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item blur">
+                                <img
+                                    loading="lazy"
+                                    src="img/lk-vol-logo.png"
+                                    class="mainscreen-slider__pointer-decor-img"
+                                    width="60"
+                                    height="60"
+                                    alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item">
+                                <img
+                                        loading="lazy"
+                                        src="img/card-photo-volunteer.png"
+                                        class="mainscreen-slider__pointer-decor-img"
+                                        width="40"
+                                        height="40"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item blur">
+                                <img
+                                        loading="lazy"
+                                        src="img/lk-vol-logo.png"
+                                        class="mainscreen-slider__pointer-decor-img"
+                                        width="40"
+                                        height="40"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item">
+                                <img
+                                        loading="lazy"
+                                        src="img/card-photo-volunteer.png"
+                                        class="mainscreen-slider__pointer-decor-img"
+                                        width="70"
+                                        height="70"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                        </div>
+                        <div class="mainscreen-slider__pointer-decor-right">
+                            <div class="mainscreen-slider__pointer-decor-item">
+                                <img
+                                        loading="lazy"
+                                        src="img/card-photo-volunteer.png"
+                                        class="mainscreen-slider__pointer-decor-img"
+                                        width="50"
+                                        height="50"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item">
+                                <img
+                                        loading="lazy"
+                                        src="img/lk-vol-logo.png"
+                                        class="mainscreen-slider__pointer-decor-img"
+                                        width="60"
+                                        height="60"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item blur">
+                                <img
+                                        loading="lazy"
+                                        src="img/card-photo-volunteer.png"
+                                        class="mainscreen-slider__pointer-decor-img"
+                                        width="60"
+                                        height="60"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item">
+                                <img
+                                        loading="lazy"
+                                        src="img/lk-vol-logo.png"
+                                        class="mainscreen-slider__pointer-decor-img"
+                                        width="50"
+                                        height="50"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item blur">
+                                <img
+                                        loading="lazy"
+                                        src="img/card-photo-volunteer.png"
+                                        class="mainscreen-slider__pointer-decor-img"
+                                        width="30"
+                                        height="30"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="mainscreen-slider__pointer-decor-item">
+                                <img
+                                        loading="lazy"
+                                        src="img/lk-vol-logo.png"
+                                        class="mainscreen-slider__pointer-decor-img"
+                                        width="40"
+                                        height="40"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mainscreen-slider__pointer">
+                        <img
+                                loading="lazy"
+                                src="img/main-screen-img2.png"
+                                class="image"
+                                width=""
+                                height=""
+                                alt="Изображение главного слайдера"
+                        >
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mainscreen-slider__pointer">
+                        <img
+                                loading="lazy"
+                                src="img/main-screen-img3.png"
+                                class="image"
+                                width=""
+                                height=""
+                                alt="Изображение главного слайдера"
+                        >
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 </div>
 
