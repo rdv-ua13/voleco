@@ -76,3 +76,6 @@ bower_components
 /xhprof/logs
 
 .htaccess
+
+/build
+package-lock.json
