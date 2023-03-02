@@ -74,7 +74,7 @@
                                     <span class="card__contact-btn">
                                         <button class="btn-reset btn btn--fill btn--mini">
                                             <svg class="icon btn__icon">
-                                                <use href="img/sprite.svg#edit"></use>
+                                                <use href="img/sprite.svg#pencil"></use>
                                             </svg>
                                             <span class="btn__text">Редактировать</span>
                                         </button>

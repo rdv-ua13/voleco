@@ -47,7 +47,7 @@
                                 <span class="mainscreen-slider__pointer-hero-descr">Электронная система учета<br> волонтерского опыта и достижений</span>
                                 <span class="mainscreen-slider__pointer-hero-view">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </span>
                             </div>
@@ -420,7 +420,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -470,7 +470,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -520,7 +520,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -570,7 +570,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -620,7 +620,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -670,7 +670,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -720,7 +720,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -748,7 +748,7 @@
                                 </span>
                                 <span class="card__link-pointer">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                        <use href="img/sprite.svg#right"></use>
                                     </svg>
                                 </span>
                             </a>
@@ -1302,7 +1302,7 @@
                                 </span>
                                 <span class="card__link-pointer">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                        <use href="img/sprite.svg#right"></use>
                                     </svg>
                                 </span>
                             </a>
@@ -1856,7 +1856,7 @@
                                 </span>
                                 <span class="card__link-pointer">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                        <use href="img/sprite.svg#right"></use>
                                     </svg>
                                 </span>
                             </a>
@@ -1891,7 +1891,7 @@
                                 <li class="our-edge__list-item">
                                     <div class="our-edge__list-view">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#edge-search-check"></use>
+                                            <use href="img/sprite.svg#search-checkmark"></use>
                                         </svg>
                                     </div>
                                     <div class="our-edge__list-descr">Выбор экологических активностей по всей стране с удобным поиском мероприятий</div>
@@ -1899,7 +1899,7 @@
                                 <li class="our-edge__list-item">
                                     <div class="our-edge__list-view">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#edge-learning"></use>
+                                            <use href="img/sprite.svg#learning"></use>
                                         </svg>
                                     </div>
                                     <div class="our-edge__list-descr">Обучение, стажировки, актуальные вакансии, конкурсы и грантовые проекты</div>
@@ -1907,7 +1907,7 @@
                                 <li class="our-edge__list-item">
                                     <div class="our-edge__list-view">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#edge-team"></use>
+                                            <use href="img/sprite.svg#team"></use>
                                         </svg>
                                     </div>
                                     <div class="our-edge__list-descr">Команда единомышленников</div>
@@ -1915,7 +1915,7 @@
                                 <li class="our-edge__list-item">
                                     <div class="our-edge__list-view">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#edge-rewards"></use>
+                                            <use href="img/sprite.svg#rewards"></use>
                                         </svg>
                                     </div>
                                     <div class="our-edge__list-descr">Получение отзывов и рост рейтинга</div>
@@ -1932,7 +1932,7 @@
                         <li class="our-edge__list-item">
                             <div class="our-edge__list-view">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#edge-search-check"></use>
+                                    <use href="img/sprite.svg#search-checkmark"></use>
                                 </svg>
                             </div>
                             <div class="our-edge__list-descr">Выбор экологических активностей по всей стране с удобным поиском мероприятий</div>
@@ -1940,7 +1940,7 @@
                         <li class="our-edge__list-item">
                             <div class="our-edge__list-view">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#edge-learning"></use>
+                                    <use href="img/sprite.svg#learning"></use>
                                 </svg>
                             </div>
                             <div class="our-edge__list-descr">Обучение, стажировки, актуальные вакансии, конкурсы и грантовые проекты</div>
@@ -1948,7 +1948,7 @@
                         <li class="our-edge__list-item">
                             <div class="our-edge__list-view">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#edge-team"></use>
+                                    <use href="img/sprite.svg#team"></use>
                                 </svg>
                             </div>
                             <div class="our-edge__list-descr">Команда единомышленников</div>
@@ -1956,7 +1956,7 @@
                         <li class="our-edge__list-item">
                             <div class="our-edge__list-view">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#edge-rewards"></use>
+                                    <use href="img/sprite.svg#rewards"></use>
                                 </svg>
                             </div>
                             <div class="our-edge__list-descr">Получение отзывов и рост рейтинга</div>
@@ -1986,7 +1986,7 @@
                                 <li class="our-edge__list-item">
                                     <div class="our-edge__list-view">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#edge-content-new"></use>
+                                            <use href="img/sprite.svg#content-new"></use>
                                         </svg>
                                     </div>
                                     <div class="our-edge__list-descr">Создание мероприятий, петиций и проектов для сбора средств</div>
@@ -1994,7 +1994,7 @@
                                 <li class="our-edge__list-item">
                                     <div class="our-edge__list-view">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#edge-communication"></use>
+                                            <use href="img/sprite.svg#communication"></use>
                                         </svg>
                                     </div>
                                     <div class="our-edge__list-descr">Подбор и общение с волонтёрами</div>
@@ -2002,7 +2002,7 @@
                                 <li class="our-edge__list-item">
                                     <div class="our-edge__list-view">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#edge-business"></use>
+                                            <use href="img/sprite.svg#business"></use>
                                         </svg>
                                     </div>
                                     <div class="our-edge__list-descr">Аналитика и ведение учёта в личном кабинете</div>
@@ -2010,7 +2010,7 @@
                                 <li class="our-edge__list-item">
                                     <div class="our-edge__list-view">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#edge-medias-likes"></use>
+                                            <use href="img/sprite.svg#medias-likes"></use>
                                         </svg>
                                     </div>
                                     <div class="our-edge__list-descr">События и проекты освещаются в новостях и медиа</div>
@@ -2027,7 +2027,7 @@
                         <li class="our-edge__list-item">
                             <div class="our-edge__list-view">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#edge-content-new"></use>
+                                    <use href="img/sprite.svg#content-new"></use>
                                 </svg>
                             </div>
                             <div class="our-edge__list-descr">Создание мероприятий, петиций и проектов для сбора средств</div>
@@ -2035,7 +2035,7 @@
                         <li class="our-edge__list-item">
                             <div class="our-edge__list-view">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#edge-communication"></use>
+                                    <use href="img/sprite.svg#communication"></use>
                                 </svg>
                             </div>
                             <div class="our-edge__list-descr">Подбор и общение с волонтёрами</div>
@@ -2043,7 +2043,7 @@
                         <li class="our-edge__list-item">
                             <div class="our-edge__list-view">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#edge-business"></use>
+                                    <use href="img/sprite.svg#business"></use>
                                 </svg>
                             </div>
                             <div class="our-edge__list-descr">Аналитика и ведение учёта в личном кабинете</div>
@@ -2051,7 +2051,7 @@
                         <li class="our-edge__list-item">
                             <div class="our-edge__list-view">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#edge-medias-likes"></use>
+                                    <use href="img/sprite.svg#medias-likes"></use>
                                 </svg>
                             </div>
                             <div class="our-edge__list-descr">События и проекты освещаются в новостях и медиа</div>
@@ -2129,7 +2129,7 @@
                                     <a href="javascript:;" class="btn-reset btn btn--noframe">
                                         <span class="btn__text">все новости </span>
                                         <svg class="icon btn__icon rotate-180">
-                                            <use href="img/sprite.svg#arrow-left"></use>
+                                            <use href="img/sprite.svg#left"></use>
                                         </svg>
                                     </a>
                                 </div>
@@ -2462,7 +2462,7 @@
                                 </span>
                                     <span class="card__link-pointer">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                        <use href="img/sprite.svg#right"></use>
                                     </svg>
                                 </span>
                                 </a>
@@ -2634,7 +2634,7 @@
                                     <a href="javascript:;" class="btn-reset btn btn--noframe">
                                         <span class="btn__text">вся статистика</span>
                                         <svg class="icon btn__icon rotate-180">
-                                            <use href="img/sprite.svg#arrow-left"></use>
+                                            <use href="img/sprite.svg#left"></use>
                                         </svg>
                                     </a>
                                 </div>
@@ -2925,7 +2925,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -2975,7 +2975,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -3025,7 +3025,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -3053,7 +3053,7 @@
                                 </span>
                                 <span class="card__link-pointer">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                        <use href="img/sprite.svg#right"></use>
                                     </svg>
                                 </span>
                             </a>

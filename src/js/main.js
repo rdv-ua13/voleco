@@ -41,6 +41,7 @@ application.prototype.init = function () {
     this.initAccordion();
     this.initCheckall();
     this.setSettingsBarHeight();
+    this.setStaticStarRating();
 };
 
 // Initialization header scroll
@@ -1274,13 +1275,16 @@ application.prototype.initDropfiles = function () {
 
 // Init datepicker
 application.prototype.initDatepicker = function () {
-    const dateElem = $(".flatpickr");
+    if ($(".flatpickr").length) {
+        const dateElem = $(".flatpickr");
 
-    flatpickr(dateElem, {
-        "dateFormat": "d.m.Y",
-        "locale": "ru",
-    });
-}
+        let newFlatpickr = flatpickr(dateElem, {
+            dateFormat: "d.m.Y",
+            disableMobile: "true",
+            locale: "ru"
+        });
+    }
+};
 
 // Initialization readmore plugin
 application.prototype.initReadmore = function () {
@@ -1524,5 +1528,38 @@ application.prototype.setSettingsBarHeight = function () {
         const body = $('.has-settings-bar');
         let barsHeight = $('.page-content-settings-bar').outerHeight();
         body.css('padding-bottom', barsHeight);
+    }
+};
+
+// Set behavior static star-rating
+application.prototype.setStaticStarRating = function () {
+    if ($('.js-star-rating').length) {
+        $('.js-star-rating').each(function (i) {
+            const rating = $(this).find('.star-rating');
+            const value = parseInt($(this).find('.star-rating-value').text());
+
+            switch (value) {
+                case 0:
+                    rating.addClass('star-rating-0');
+                    break;
+                case 1:
+                    rating.addClass('star-rating-1');
+                    break;
+                case 2:
+                    rating.addClass('star-rating-2');
+                    break;
+                case 3:
+                    rating.addClass('star-rating-3');
+                    break;
+                case 4:
+                    rating.addClass('star-rating-4');
+                    break;
+                case 5:
+                    rating.addClass('star-rating-5');
+                    break;
+                default:
+                    rating.addClass('star-rating-0');
+            }
+        });
     }
 };

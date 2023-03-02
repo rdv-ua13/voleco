@@ -9,7 +9,7 @@
                         <div class="details-top-bar__back-to">
                             <a href="javascript:;" class="btn-reset btn btn--noframe">
                                 <svg class="icon btn__icon">
-                                    <use href="img/sprite.svg#arrow-left"></use>
+                                    <use href="img/sprite.svg#left"></use>
                                 </svg>
                                 <span class="btn__text">Вернуться</span>
                             </a>

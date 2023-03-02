@@ -9,7 +9,7 @@
                         <div class="page-content__heading-back">
                             <button class="btn-reset btn btn--noframe">
                                 <svg class="icon btn__icon">
-                                    <use href="img/sprite.svg#standart-arrow-left"></use>
+                                    <use href="img/sprite.svg#left"></use>
                                 </svg>
                             </button>
                         </div>
@@ -60,7 +60,7 @@
                                         <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -100,7 +100,7 @@
                                         <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id2">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id2">
@@ -309,7 +309,7 @@
                                         <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id4">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id4">

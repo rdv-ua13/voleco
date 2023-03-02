@@ -9,7 +9,7 @@
                         <div class="details-top-bar__back-to">
                             <a href="javascript:;" class="btn-reset btn btn--noframe">
                                 <svg class="icon btn__icon">
-                                    <use href="img/sprite.svg#arrow-left"></use>
+                                    <use href="img/sprite.svg#left"></use>
                                 </svg>
                                 <span class="btn__text">Все экодела</span>
                             </a>
@@ -21,7 +21,7 @@
                             </div>
                             <a href="javascript:;" class="btn-reset btn btn--noframe">
                                 <svg class="icon btn__icon">
-                                    <use href="img/sprite.svg#favorite"></use>
+                                    <use href="img/sprite.svg#bookmark"></use>
                                 </svg>
                             </a>
                             <a href="javascript:;" class="btn-reset btn btn--noframe">
@@ -176,7 +176,7 @@
                                             <span class="card__action-data">
                                                 <span class="card__action-item">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#map-pin"></use>
+                                                        <use href="img/sprite.svg#pin"></use>
                                                     </svg>
                                                     <span class="card__action-item-text">
                                                         г. Москва, ул. Тверская, 114, корп. 1, оф. 2016
@@ -211,7 +211,7 @@
                                                 </span>
                                                 <span class="card__rate">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                     <span class="card__rate-value">4.8</span>
                                                 </span>
@@ -260,7 +260,7 @@
                                                     </span>
                                                     <span class="card__user-descr-item">
                                                         <svg class="icon">
-                                                            <use href="img/sprite.svg#email"></use>
+                                                            <use href="img/sprite.svg#mail"></use>
                                                         </svg>
                                                         <span class="card__action-item-text">mih.svetlana@mail.ru</span>
                                                     </span>
@@ -967,7 +967,7 @@
                                         </span>
                                             <span class="card__link-pointer">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                                <use href="img/sprite.svg#right"></use>
                                             </svg>
                                         </span>
                                         </a>

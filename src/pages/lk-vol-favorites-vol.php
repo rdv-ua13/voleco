@@ -58,21 +58,21 @@
                                     <span class="card__favorite">
                                         <button class="btn-reset btn--noframe card__favorite-btn js-card-favorite" type="button">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#favorite"></use>
+                                                <use href="img/sprite.svg#bookmark"></use>
                                             </svg>
                                         </button>
                                     </span>
                                     <span class="card__user-descr">
                                         <span class="card__user-descr-item">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#map-pin"></use>
+                                                <use href="img/sprite.svg#pin"></use>
                                             </svg>
                                             <span class="card__action-item-text">г. Москва</span>
                                         </span>
                                     </span>
                                     <span class="card__rate">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#star"></use>
+                                            <use href="img/sprite.svg#favorite"></use>
                                         </svg>
                                         <span class="card__rate-value">4.8</span>
                                     </span>
@@ -112,21 +112,21 @@
                                     <span class="card__favorite">
                                         <button class="btn-reset btn--noframe card__favorite-btn js-card-favorite" type="button">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#favorite"></use>
+                                                <use href="img/sprite.svg#bookmark"></use>
                                             </svg>
                                         </button>
                                     </span>
                                     <span class="card__user-descr">
                                         <span class="card__user-descr-item">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#map-pin"></use>
+                                                <use href="img/sprite.svg#pin"></use>
                                             </svg>
                                             <span class="card__action-item-text">г. Москва</span>
                                         </span>
                                     </span>
                                     <span class="card__rate">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#star"></use>
+                                            <use href="img/sprite.svg#favorite"></use>
                                         </svg>
                                         <span class="card__rate-value">4.8</span>
                                     </span>

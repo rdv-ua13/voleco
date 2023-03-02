@@ -74,11 +74,11 @@
     <div>
         <ul>
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
-            <li><a href="index.php" target="_blank">Главная (в процессе)</a></li><!-- остался слайдер главного экрана -->
-            <li><a href="organizer.php" target="_blank">Организаторам</a></li><!-- #56 -->
+            <li><a href="index.php" target="_blank">Главная</a></li>
+            <li><a href="organizer.php" target="_blank">Организаторам</a></li>
 
             <br>
-			<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов [Готов]</li>
+			<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="registration.php" target="_blank">Регистрация (содержит 4 макетных страницы)</a></li>
             <li><a href="auth.php" target="_blank">Авторизация</a></li>
             <li><a href="password-recovery.php" target="_blank">Восстановление пароля (содержит 3 макетных страницы)</a></li>
@@ -92,14 +92,14 @@
             <li><a href="ms-petitions.php" target="_blank">Петиции</a></li>
             <li><a href="ms-fundraising.php" target="_blank">Сбор средств</a></li>
             <li><a href="ms-analytics.php" target="_blank">Аналитика (в процессе )</a></li><!-- #63 -->
-            <li><a href="ms-news.php" target="_blank">Новости</a></li><!-- #61 -->
+            <li><a href="ms-news.php" target="_blank">Новости</a></li>
 
             <br>
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>  <!-- будут правки ".card" -->
             <li><a href="details-volunteer.php" target="_blank" class="ready">детальная - Эковолонтеры</a></li>
             <li><a href="details-volunteer-exp.php" target="_blank" class="ready">детальная - Эковолонтеры опыт</a></li> <!-- исправить ".card" -->
             <li><a href="details-volunteer-feedback.php" target="_blank" class="ready">детальная - Эковолонтеры отзывы</a></li>
-            <li><a href="details-ecodela.php" target="_blank" class="ready">детальная - Экодела</a></li> <!-- доделать блок "tasks" -->
+            <li><a href="details-ecodela.php" target="_blank" class="ready">детальная - Экодела</a></li>
             <li><a href="details-projects.php" target="_blank" class="ready">детальная - Проекты</a></li> <!-- исправить ".card" -->
             <li><a href="details-organizer.php" target="_blank" class="ready">детальная - Организаторы</a></li>
             <li><a href="details-organizer-reviews.php" target="_blank" class="ready">детальная - Организаторы отзывы</a></li>

@@ -75,7 +75,7 @@
 									<div class="h4">Личная информация</div>
 									<button class="btn-reset btn btn--noframe">
 										<svg class="icon btn__icon">
-											<use href="img/sprite.svg#edit2"></use>
+											<use href="img/sprite.svg#pencil2"></use>
 										</svg>
 									</button>
 								</div>
@@ -95,7 +95,7 @@
 									<div class="h4">Направления</div>
 									<button class="btn-reset btn btn--noframe">
 										<svg class="icon btn__icon">
-											<use href="img/sprite.svg#edit2"></use>
+											<use href="img/sprite.svg#pencil2"></use>
 										</svg>
 									</button>
 								</div>
@@ -224,7 +224,7 @@
 									<div class="h4">Языки</div>
 									<button class="btn-reset btn btn--noframe">
 										<svg class="icon btn__icon">
-											<use href="img/sprite.svg#edit2"></use>
+											<use href="img/sprite.svg#pencil2"></use>
 										</svg>
 									</button>
 								</div>
@@ -246,7 +246,7 @@
 								<div class="h4">Контакты</div>
 								<button class="btn-reset btn btn--noframe">
 									<svg class="icon btn__icon">
-										<use href="img/sprite.svg#edit2"></use>
+										<use href="img/sprite.svg#pencil2"></use>
 									</svg>
 								</button>
 							</div>
@@ -259,7 +259,7 @@
                                 </span>
 								<span class="page-content__sidebar-contacts-item">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#email"></use>
+                                        <use href="img/sprite.svg#mail"></use>
                                     </svg>
                                     <span class="page-content__sidebar-contacts-text">mih.konstantin@gmail.com</span>
                                 </span>

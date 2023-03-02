@@ -502,7 +502,7 @@
                                                             <span class="card__action-data">
                                                                 <span class="card__action-item">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#map-pin"></use>
+                                                                        <use href="img/sprite.svg#pin"></use>
                                                                     </svg>
                                                                     <span class="card__action-item-text">г. Москва</span>
                                                                 </span>
@@ -552,7 +552,7 @@
                                                             <span class="card__action-data">
                                                                 <span class="card__action-item">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#map-pin"></use>
+                                                                        <use href="img/sprite.svg#pin"></use>
                                                                     </svg>
                                                                     <span class="card__action-item-text">г. Москва</span>
                                                                 </span>
@@ -602,7 +602,7 @@
                                                             <span class="card__action-data">
                                                                 <span class="card__action-item">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#map-pin"></use>
+                                                                        <use href="img/sprite.svg#pin"></use>
                                                                     </svg>
                                                                     <span class="card__action-item-text">г. Москва</span>
                                                                 </span>
@@ -652,7 +652,7 @@
                                                             <span class="card__action-data">
                                                                 <span class="card__action-item">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#map-pin"></use>
+                                                                        <use href="img/sprite.svg#pin"></use>
                                                                     </svg>
                                                                     <span class="card__action-item-text">г. Москва</span>
                                                                 </span>
@@ -702,7 +702,7 @@
                                                             <span class="card__action-data">
                                                                 <span class="card__action-item">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#map-pin"></use>
+                                                                        <use href="img/sprite.svg#pin"></use>
                                                                     </svg>
                                                                     <span class="card__action-item-text">г. Москва</span>
                                                                 </span>
@@ -752,7 +752,7 @@
                                                             <span class="card__action-data">
                                                                 <span class="card__action-item">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#map-pin"></use>
+                                                                        <use href="img/sprite.svg#pin"></use>
                                                                     </svg>
                                                                     <span class="card__action-item-text">г. Москва</span>
                                                                 </span>
@@ -802,7 +802,7 @@
                                                             <span class="card__action-data">
                                                                 <span class="card__action-item">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#map-pin"></use>
+                                                                        <use href="img/sprite.svg#pin"></use>
                                                                     </svg>
                                                                     <span class="card__action-item-text">г. Москва</span>
                                                                 </span>
@@ -829,7 +829,7 @@
                                                     </span>
                                                     <span class="card__link-pointer">
                                                         <svg class="icon">
-                                                            <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                                            <use href="img/sprite.svg#right"></use>
                                                         </svg>
                                                     </span>
                                                 </a>
@@ -881,7 +881,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -919,7 +919,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -957,7 +957,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -995,7 +995,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -1033,7 +1033,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -1071,7 +1071,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -1109,7 +1109,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -1124,7 +1124,7 @@
                                                     </span>
                                                     <span class="card__link-pointer">
                                                         <svg class="icon">
-                                                            <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                                            <use href="img/sprite.svg#right"></use>
                                                         </svg>
                                                     </span>
                                                 </a>
@@ -1145,7 +1145,7 @@
                             <div class="page-content__sidebar-contacts">
                                 <span class="page-content__sidebar-contacts-item">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#map-pin"></use>
+                                        <use href="img/sprite.svg#pin"></use>
                                     </svg>
                                     <span class="page-content__sidebar-contacts-text">Москва, пер. Тетеринский, 18, стр. 2</span>
                                 </span>
@@ -1157,13 +1157,13 @@
                                 </span>
                                 <span class="page-content__sidebar-contacts-item">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#email"></use>
+                                        <use href="img/sprite.svg#mail"></use>
                                     </svg>
                                     <span class="page-content__sidebar-contacts-text">mih.konstantin@gmail.com</span>
                                 </span>
                                 <span class="page-content__sidebar-contacts-item">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#link"></use>
+                                        <use href="img/sprite.svg#external"></use>
                                     </svg>
                                     <span class="page-content__sidebar-contacts-text">http://avcrf.ru</span>
                                 </span>
@@ -1201,19 +1201,19 @@
                                         <div class="page-content__intro-rate-value">4.8</div>
                                         <div class="page-content__intro-rate-stars">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                         </div>
                                     </div>

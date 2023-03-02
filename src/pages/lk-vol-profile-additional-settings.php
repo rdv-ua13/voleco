@@ -9,7 +9,7 @@
 						<div class="page-content__heading-back">
 							<button class="btn-reset btn btn--noframe">
 								<svg class="icon btn__icon">
-									<use href="img/sprite.svg#standart-arrow-left"></use>
+									<use href="img/sprite.svg#left"></use>
 								</svg>
 							</button>
 						</div>

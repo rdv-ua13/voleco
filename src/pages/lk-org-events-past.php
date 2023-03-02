@@ -60,7 +60,7 @@
                                         <span class="card__action-data">
                                             <span class="card__action-item">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                    <use href="img/sprite.svg#pin"></use>
                                                 </svg>
                                                 <span class="card__action-item-text">г. Москва</span>
                                             </span>
@@ -75,7 +75,7 @@
                                     <span class="card__contact-btn">
                                         <button class="btn-reset btn btn--fill btn--mini">
                                             <svg class="icon btn__icon">
-                                                <use href="img/sprite.svg#edit"></use>
+                                                <use href="img/sprite.svg#pencil"></use>
                                             </svg>
                                             <span class="btn__text">Редактировать</span>
                                         </button>

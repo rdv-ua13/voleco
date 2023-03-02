@@ -9,7 +9,7 @@
                         <div class="details-top-bar__back-to">
                             <a href="javascript:;" class="btn-reset btn btn--noframe">
                                 <svg class="icon btn__icon">
-                                    <use href="img/sprite.svg#arrow-left"></use>
+                                    <use href="img/sprite.svg#left"></use>
                                 </svg>
                                 <span class="btn__text">Вернуться</span>
                             </a>
@@ -17,7 +17,7 @@
                         <div class="details-top-bar__action">
                             <a href="javascript:;" class="btn-reset btn btn--noframe">
                                 <svg class="icon btn__icon">
-                                    <use href="img/sprite.svg#favorite"></use>
+                                    <use href="img/sprite.svg#bookmark"></use>
                                 </svg>
                             </a>
                             <a href="javascript:;" class="btn-reset btn btn--noframe">
@@ -218,7 +218,7 @@
                                         </span>
                                         <span class="card__rate">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <span class="card__rate-value">4.8</span>
                                         </span>
@@ -248,7 +248,7 @@
                                                     </span>
                                                     <span class="card__user-descr-item">
                                                         <svg class="icon">
-                                                            <use href="img/sprite.svg#email"></use>
+                                                            <use href="img/sprite.svg#mail"></use>
                                                         </svg>
                                                         <span class="card__action-item-text">mih.svetlana@mail.ru</span>
                                                     </span>
@@ -706,7 +706,7 @@
                                         </span>
                                             <span class="card__link-pointer">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                                <use href="img/sprite.svg#right"></use>
                                             </svg>
                                         </span>
                                         </a>

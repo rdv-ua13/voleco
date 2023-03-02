@@ -144,7 +144,7 @@
                             <div class="form__btn">
                                 <label class="flex-all-center">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#input-password"></use>
+                                        <use href="img/sprite.svg#eye-on"></use>
                                     </svg>
                                     <input
                                             type="checkbox"
@@ -168,7 +168,7 @@
                             <div class="form__btn">
                                 <label class="flex-all-center">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#input-password"></use>
+                                        <use href="img/sprite.svg#eye-on"></use>
                                     </svg>
                                     <input
                                             type="checkbox"

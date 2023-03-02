@@ -72,7 +72,7 @@
                                     <div class="h4">Описание</div>
                                     <button class="btn-reset btn btn--noframe">
                                         <svg class="icon btn__icon">
-                                            <use href="img/sprite.svg#edit2"></use>
+                                            <use href="img/sprite.svg#pencil2"></use>
                                         </svg>
                                     </button>
                                 </div>
@@ -118,7 +118,7 @@
                                     <div class="h4">Направления деятельности</div>
                                     <button class="btn-reset btn btn--noframe">
                                         <svg class="icon btn__icon">
-                                            <use href="img/sprite.svg#edit2"></use>
+                                            <use href="img/sprite.svg#pencil2"></use>
                                         </svg>
                                     </button>
                                 </div>
@@ -247,7 +247,7 @@
                                     <div class="h4">Результаты</div>
                                     <button class="btn-reset btn btn--noframe">
                                         <svg class="icon btn__icon">
-                                            <use href="img/sprite.svg#edit2"></use>
+                                            <use href="img/sprite.svg#pencil2"></use>
                                         </svg>
                                     </button>
                                 </div>
@@ -263,7 +263,7 @@
                                     <div class="h4">Документы</div>
                                     <button class="btn-reset btn btn--noframe">
                                         <svg class="icon btn__icon">
-                                            <use href="img/sprite.svg#edit2"></use>
+                                            <use href="img/sprite.svg#pencil2"></use>
                                         </svg>
                                     </button>
                                 </div>
@@ -289,14 +289,14 @@
                                 <div class="h4">Контакты</div>
                                 <button class="btn-reset btn btn--noframe">
                                     <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#edit2"></use>
+                                        <use href="img/sprite.svg#pencil2"></use>
                                     </svg>
                                 </button>
                             </div>
                             <div class="page-content__sidebar-contacts">
                                 <span class="page-content__sidebar-contacts-item">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#map-pin"></use>
+                                        <use href="img/sprite.svg#pin"></use>
                                     </svg>
                                     <span class="page-content__sidebar-contacts-text">Москва, пер. Тетеринский, 18, стр. 2</span>
                                 </span>
@@ -308,13 +308,13 @@
                                 </span>
                                 <span class="page-content__sidebar-contacts-item">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#email"></use>
+                                        <use href="img/sprite.svg#mail"></use>
                                     </svg>
                                     <span class="page-content__sidebar-contacts-text">mih.konstantin@gmail.com</span>
                                 </span>
                                 <span class="page-content__sidebar-contacts-item">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#link"></use>
+                                        <use href="img/sprite.svg#external"></use>
                                     </svg>
                                     <span class="page-content__sidebar-contacts-text">http://avcrf.ru</span>
                                 </span>
@@ -347,7 +347,7 @@
                                 <div class="h4">Рейтинг и отзывы</div>
                                 <button class="btn-reset btn btn--noframe">
                                     <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#edit2"></use>
+                                        <use href="img/sprite.svg#pencil2"></use>
                                     </svg>
                                 </button>
                             </div>
@@ -386,7 +386,7 @@
                                 <div class="h4">Аналитика организатора</div>
                                 <button class="btn-reset btn btn--noframe">
                                     <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#edit2"></use>
+                                        <use href="img/sprite.svg#pencil2"></use>
                                     </svg>
                                 </button>
                             </div>

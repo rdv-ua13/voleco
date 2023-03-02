@@ -32,7 +32,7 @@
                                                     aria-label="Наша страничка во Вконтакте"
                                             >
                                                 <svg class="icon social__icon">
-                                                    <use href="img/sprite.svg#soc-logo-dark-vk"></use>
+                                                    <use href="img/sprite.svg#soc-logo-vk"></use>
                                                 </svg>
                                             </a>
                                         </li>
@@ -44,7 +44,7 @@
                                                     aria-label="Наша страничка в Одноклассниках"
                                             >
                                                 <svg class="icon social__icon">
-                                                    <use href="img/sprite.svg#soc-logo-dark-ok"></use>
+                                                    <use href="img/sprite.svg#soc-logo-ok"></use>
                                                 </svg>
                                             </a>
                                         </li>
@@ -56,7 +56,7 @@
                                                     aria-label="Наша страничка в Фэйсбук"
                                             >
                                                 <svg class="icon social__icon">
-                                                    <use href="img/sprite.svg#soc-logo-dark-fb"></use>
+                                                    <use href="img/sprite.svg#soc-logo-fb"></use>
                                                 </svg>
                                             </a>
                                         </li>
@@ -66,7 +66,7 @@
                                     <div class="footer__head-title">Почта для связи с командой</div>
                                     <a href="javascript:;" class="link link--green footer__head-contacts-link">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#email"></use>
+                                            <use href="img/sprite.svg#mail"></use>
                                         </svg>
                                         <span>info@voleco.ru</span>
                                     </a>

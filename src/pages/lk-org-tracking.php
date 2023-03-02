@@ -53,7 +53,7 @@
 												</div>
 												<div class="request-accordion__btn-icon-dropdown js-accordion-btn-icon">
 													<svg class="icon">
-														<use href="img/sprite.svg#arrow-dropdown"></use>
+														<use href="img/sprite.svg#arrow-down"></use>
 													</svg>
 												</div>
 											</div>
@@ -85,7 +85,7 @@
                                                             <span class="tooltip">
                                                                 <span class="btn-reset tooltip__btn" aria-describedby="id35">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#tooltip"></use>
+                                                                        <use href="img/sprite.svg#help"></use>
                                                                     </svg>
                                                                 </span>
                                                                 <span class="tooltip__txt" role="tooltip" id="id35">
@@ -118,7 +118,7 @@
                                                         <div class="request-card__table-item request-card__table-item-review">
                                                             <button class="btn-reset btn btn--fill btn--mini btn--gray">
                                                                 <svg class="icon btn__icon">
-                                                                    <use href="img/sprite.svg#comment"></use>
+                                                                    <use href="img/sprite.svg#chat"></use>
                                                                 </svg>
                                                                 <span class="btn__text">Оставить отзыв</span>
                                                             </button>
@@ -175,7 +175,7 @@
                                                                                                                         <span class="tooltip">
                                                                                     <span class="btn-reset tooltip__btn" aria-describedby="id44">
                                                                                         <svg class="icon">
-                                                                                            <use href="img/sprite.svg#tooltip"></use>
+                                                                                            <use href="img/sprite.svg#help"></use>
                                                                                         </svg>
                                                                                     </span>
                                                                                     <span class="tooltip__txt" role="tooltip" id="id44">
@@ -278,7 +278,7 @@
                                                         <div class="request-card__table-item request-card__table-item-review">
                                                             <button class="btn-reset btn btn--fill btn--mini btn--gray">
                                                                 <svg class="icon btn__icon">
-                                                                    <use href="img/sprite.svg#comment"></use>
+                                                                    <use href="img/sprite.svg#chat"></use>
                                                                 </svg>
                                                                 <span class="btn__text">Оставить отзыв</span>
                                                             </button>
@@ -310,7 +310,7 @@
                                                 </div>
                                                 <div class="request-accordion__btn-icon-dropdown js-accordion-btn-icon">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#arrow-dropdown"></use>
+                                                        <use href="img/sprite.svg#arrow-down"></use>
                                                     </svg>
                                                 </div>
                                             </div>
@@ -342,7 +342,7 @@
                                                             <span class="tooltip">
                                                                 <span class="btn-reset tooltip__btn" aria-describedby="id35">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#tooltip"></use>
+                                                                        <use href="img/sprite.svg#help"></use>
                                                                     </svg>
                                                                 </span>
                                                                 <span class="tooltip__txt" role="tooltip" id="id35">
@@ -375,7 +375,7 @@
                                                         <div class="request-card__table-item request-card__table-item-review">
                                                             <button class="btn-reset btn btn--fill btn--mini btn--gray">
                                                                 <svg class="icon btn__icon">
-                                                                    <use href="img/sprite.svg#comment"></use>
+                                                                    <use href="img/sprite.svg#chat"></use>
                                                                 </svg>
                                                                 <span class="btn__text">Оставить отзыв</span>
                                                             </button>
@@ -432,7 +432,7 @@
                                                                                 <span class="tooltip">
                                                                                     <span class="btn-reset tooltip__btn" aria-describedby="id44">
                                                                                         <svg class="icon">
-                                                                                            <use href="img/sprite.svg#tooltip"></use>
+                                                                                            <use href="img/sprite.svg#help"></use>
                                                                                         </svg>
                                                                                     </span>
                                                                                     <span class="tooltip__txt" role="tooltip" id="id44">
@@ -535,7 +535,7 @@
                                                         <div class="request-card__table-item request-card__table-item-review">
                                                             <button class="btn-reset btn btn--fill btn--mini btn--gray">
                                                                 <svg class="icon btn__icon">
-                                                                    <use href="img/sprite.svg#comment"></use>
+                                                                    <use href="img/sprite.svg#chat"></use>
                                                                 </svg>
                                                                 <span class="btn__text">Оставить отзыв</span>
                                                             </button>

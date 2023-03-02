@@ -14,7 +14,7 @@
 			</picture>
 			<a href="javascript:;" class="btn-reset btn btn--fill btn--mini btn--gray page-content__cover-btn">
 				<svg class="icon btn__icon">
-					<use href="img/sprite.svg#photo-cover"></use>
+					<use href="img/sprite.svg#camera"></use>
 				</svg>
 				<span class="btn__text">Изменить фото обложки</span>
 			</a>
@@ -42,7 +42,7 @@
                             <span class="nameplate-id">
                                 <span class="nameplate-id__content">
                                     <svg class="icon nameplate-id__content-icon">
-                                        <use href="img/sprite.svg#scanner"></use>
+                                        <use href="img/sprite.svg#barcode"></use>
                                     </svg>
                                     <span class="nameplate-id__content-text">ID: 17901</span>
                                 </span>
@@ -59,7 +59,7 @@
 					<div class="page-content__intro-top-upload">
 						<button class="btn-reset btn btn--noframe">
 							<svg class="icon">
-								<use href="img/sprite.svg#file-upload"></use>
+								<use href="img/sprite.svg#share2"></use>
 							</svg>
 						</button>
 					</div>
@@ -67,24 +67,38 @@
 				<div class="page-content__intro-title h3">Всероссийское общественное движение «Волонтеры Экологи»</div>
 				<div class="page-content__intro-bottom">
 					<div class="page-content__intro-rate">
-						<div class="page-content__intro-rate-value">4.8</div>
-						<div class="page-content__intro-rate-stars">
-							<svg class="icon">
-								<use href="img/sprite.svg#star"></use>
-							</svg>
-							<svg class="icon">
-								<use href="img/sprite.svg#star"></use>
-							</svg>
-							<svg class="icon">
-								<use href="img/sprite.svg#star"></use>
-							</svg>
-							<svg class="icon">
-								<use href="img/sprite.svg#star"></use>
-							</svg>
-							<svg class="icon">
-								<use href="img/sprite.svg#star"></use>
-							</svg>
-						</div>
+						<span class="star-rating-wrapper star-rating-wrapper--mobile-frame js-star-rating">
+                            <span class="star-rating-value">4.2</span>
+                            <span class="star-rating">
+                                <span class="star-rating__container">
+                                    <label>
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#favorite"></use>
+                                        </svg>
+                                    </label>
+                                    <label>
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#favorite"></use>
+                                        </svg>
+                                    </label>
+                                    <label>
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#favorite"></use>
+                                        </svg>
+                                    </label>
+                                    <label>
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#favorite"></use>
+                                        </svg>
+                                    </label>
+                                    <label>
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#favorite"></use>
+                                        </svg>
+                                    </label>
+                                </span>
+                            </span>
+                        </span>
 					</div>
 					<div class="page-content__intro-reviews">
 						<a href="javascript:;" class="btn-reset btn btn--noframe btn--link btn--tdu-dashed">
@@ -96,7 +110,7 @@
 			<div class="page-content__intro-actions">
 				<button class="btn-reset btn btn--mini">
 					<svg class="icon btn__icon">
-						<use href="img/sprite.svg#edit"></use>
+						<use href="img/sprite.svg#pencil"></use>
 					</svg>
 					<span class="btn__text">Настройки <span class="desktop-only">профиля</span></span>
 				</button>

@@ -44,7 +44,7 @@
                                     <span class="card__action-data">
                                         <span class="card__action-item">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#map-pin"></use>
+                                                <use href="img/sprite.svg#pin"></use>
                                             </svg>
                                             <span class="card__action-item-text">г. Москва</span>
                                         </span>
@@ -92,7 +92,7 @@
                                     <span class="card__action-data">
                                         <span class="card__action-item">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#map-pin"></use>
+                                                <use href="img/sprite.svg#pin"></use>
                                             </svg>
                                             <span class="card__action-item-text">г. Москва</span>
                                         </span>
@@ -140,7 +140,7 @@
                                     <span class="card__action-data">
                                         <span class="card__action-item">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#map-pin"></use>
+                                                <use href="img/sprite.svg#pin"></use>
                                             </svg>
                                             <span class="card__action-item-text">г. Москва</span>
                                         </span>
@@ -188,7 +188,7 @@
                                     <span class="card__action-data">
                                         <span class="card__action-item">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#map-pin"></use>
+                                                <use href="img/sprite.svg#pin"></use>
                                             </svg>
                                             <span class="card__action-item-text">г. Москва</span>
                                         </span>

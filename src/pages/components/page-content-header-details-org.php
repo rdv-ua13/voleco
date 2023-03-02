@@ -36,7 +36,7 @@
                     <span class="nameplate-id">
                         <span class="nameplate-id__content">
                             <svg class="icon nameplate-id__content-icon">
-                                <use href="img/sprite.svg#scanner"></use>
+                                <use href="img/sprite.svg#barcode"></use>
                             </svg>
                             <span class="nameplate-id__content-text">ID: 17901</span>
                         </span>

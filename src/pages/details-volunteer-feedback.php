@@ -46,19 +46,19 @@
                                         <span class="card__rate-title">Оценка:</span>
                                         <span class="card__rate card__rate--noframe">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                         </span>
                                     </span>
@@ -100,7 +100,7 @@
                                         </span>
                                         <span class="card__rate">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <span class="card__rate-value">4.8</span>
                                         </span>
@@ -114,19 +114,19 @@
                                         <span class="card__rate-title">Оценка:</span>
                                         <span class="card__rate card__rate--noframe">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                         </span>
                                     </span>
@@ -163,7 +163,7 @@
                                         </span>
                                         <span class="card__rate">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#star"></use>
+                                                <use href="img/sprite.svg#favorite"></use>
                                             </svg>
                                             <span class="card__rate-value">4.8</span>
                                         </span>

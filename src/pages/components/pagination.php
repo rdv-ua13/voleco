@@ -3,7 +3,7 @@
         <li class="pagination__item">
             <a class="pagination__link pagination__link-control" href="javascript:;" aria-label="Previous">
                 <svg class="icon">
-                    <use href="img/sprite.svg#arrow-left"></use>
+                    <use href="img/sprite.svg#left"></use>
                 </svg>
             </a>
         </li>
@@ -31,7 +31,7 @@
         <li class="pagination__item">
             <a class="pagination__link pagination__link-control" href="javascript:;" aria-label="Next">
                 <svg class="icon rotate-180">
-                    <use href="img/sprite.svg#arrow-left"></use>
+                    <use href="img/sprite.svg#left"></use>
                 </svg>
             </a>
         </li>

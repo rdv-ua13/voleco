@@ -36,7 +36,7 @@
                                 <span class="card__favorite">
                                     <button class="btn-reset btn--noframe card__favorite-btn js-card-favorite" type="button">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#favorite"></use>
+                                            <use href="img/sprite.svg#bookmark"></use>
                                         </svg>
                                     </button>
                                 </span>
@@ -85,7 +85,7 @@
                                 <span class="card__favorite">
                                     <button class="btn-reset btn--noframe card__favorite-btn js-card-favorite" type="button">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#favorite"></use>
+                                            <use href="img/sprite.svg#bookmark"></use>
                                         </svg>
                                     </button>
                                 </span>

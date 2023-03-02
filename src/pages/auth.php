@@ -24,7 +24,7 @@
                 >
                 <div class="form__btn form__btn--disabled">
                     <svg class="icon">
-                        <use href="img/sprite.svg#input-email"></use>
+                        <use href="img/sprite.svg#mail-a"></use>
                     </svg>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 <div class="form__btn">
                     <label class="flex-all-center">
                         <svg class="icon">
-                            <use href="img/sprite.svg#input-password"></use>
+                            <use href="img/sprite.svg#eye-on"></use>
                         </svg>
                         <input
                                 type="checkbox"

@@ -49,7 +49,7 @@
                                         >
                                         <div class="form__btn form__btn--disabled">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#input-email"></use>
+                                                <use href="img/sprite.svg#mail-a"></use>
                                             </svg>
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@
                                         <div class="form__btn">
                                             <label class="flex-all-center">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#input-password"></use>
+                                                    <use href="img/sprite.svg#eye-on"></use>
                                                 </svg>
                                                 <input
                                                         type="checkbox"
@@ -95,7 +95,7 @@
                                         <div class="form__btn">
                                             <label class="flex-all-center">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#input-password"></use>
+                                                    <use href="img/sprite.svg#eye-on"></use>
                                                 </svg>
                                                 <input
                                                         type="checkbox"
@@ -149,7 +149,7 @@
                                         >
                                         <div class="form__btn form__btn--disabled">
                                             <svg class="icon">
-                                                <use href="img/sprite.svg#input-email"></use>
+                                                <use href="img/sprite.svg#mail-a"></use>
                                             </svg>
                                         </div>
                                     </div>
@@ -169,7 +169,7 @@
                                         <div class="form__btn">
                                             <label class="flex-all-center">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#input-password"></use>
+                                                    <use href="img/sprite.svg#eye-on"></use>
                                                 </svg>
                                                 <input
                                                         type="checkbox"
@@ -195,7 +195,7 @@
                                         <div class="form__btn">
                                             <label class="flex-all-center">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#input-password"></use>
+                                                    <use href="img/sprite.svg#eye-on"></use>
                                                 </svg>
                                                 <input
                                                         type="checkbox"
@@ -403,7 +403,7 @@
                                 <span class="tooltip">
                                     <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#tooltip"></use>
+                                            <use href="img/sprite.svg#help"></use>
                                         </svg>
                                     </span>
                                     <span class="tooltip__txt" role="tooltip" id="id1">

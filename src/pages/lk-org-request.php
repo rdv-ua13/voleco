@@ -71,7 +71,7 @@
                                                     <div class="request-card__header-action-menu">
                                                         <button class="btn-reset btn btn--fill btn--mini btn--gray">
                                                             <svg class="icon btn__icon">
-                                                                <use href="img/sprite.svg#settings"></use>
+                                                                <use href="img/sprite.svg#settings-slider"></use>
                                                             </svg>
                                                             <span class="btn__text">Колонки</span>
                                                         </button>
@@ -91,7 +91,7 @@
                                                 </div>
                                                 <div class="request-accordion__btn-icon-dropdown js-accordion-btn-icon">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#arrow-dropdown"></use>
+                                                        <use href="img/sprite.svg#arrow-down"></use>
                                                     </svg>
                                                 </div>
                                             </div>
@@ -144,19 +144,19 @@
                                                             <div class="page-content__intro-rate">
                                                                 <div class="page-content__intro-rate-stars">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                 </div>
                                                             </div>
@@ -204,19 +204,19 @@
                                                             <div class="page-content__intro-rate">
                                                                 <div class="page-content__intro-rate-stars">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                 </div>
                                                             </div>
@@ -261,19 +261,19 @@
                                                             <div class="page-content__intro-rate">
                                                                 <div class="page-content__intro-rate-stars">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                 </div>
                                                             </div>
@@ -336,7 +336,7 @@
                                                     <div class="request-card__header-action-menu">
                                                         <button class="btn-reset btn btn--fill btn--mini btn--gray">
                                                             <svg class="icon btn__icon">
-                                                                <use href="img/sprite.svg#settings"></use>
+                                                                <use href="img/sprite.svg#settings-slider"></use>
                                                             </svg>
                                                             <span class="btn__text">Колонки</span>
                                                         </button>
@@ -356,7 +356,7 @@
                                                 </div>
                                                 <div class="request-accordion__btn-icon-dropdown js-accordion-btn-icon">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#arrow-dropdown"></use>
+                                                        <use href="img/sprite.svg#arrow-down"></use>
                                                     </svg>
                                                 </div>
                                             </div>
@@ -409,19 +409,19 @@
                                                             <div class="page-content__intro-rate">
                                                                 <div class="page-content__intro-rate-stars">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                 </div>
                                                             </div>
@@ -469,19 +469,19 @@
                                                             <div class="page-content__intro-rate">
                                                                 <div class="page-content__intro-rate-stars">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                 </div>
                                                             </div>
@@ -526,19 +526,19 @@
                                                             <div class="page-content__intro-rate">
                                                                 <div class="page-content__intro-rate-stars">
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                     <svg class="icon">
-                                                                        <use href="img/sprite.svg#star"></use>
+                                                                        <use href="img/sprite.svg#favorite"></use>
                                                                     </svg>
                                                                 </div>
                                                             </div>

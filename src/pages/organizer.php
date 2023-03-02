@@ -120,7 +120,7 @@
                             <div class="our-edge-org__view">
                                 <div class="our-edge-org__view-bg">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#edge-content-new"></use>
+                                        <use href="img/sprite.svg#content-new"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@
                             <div class="our-edge-org__view">
                                 <div class="our-edge-org__view-bg">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#edge-business"></use>
+                                        <use href="img/sprite.svg#business"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
                             <div class="our-edge-org__view">
                                 <div class="our-edge-org__view-bg">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#edge-communication"></use>
+                                        <use href="img/sprite.svg#communication"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@
                             <div class="our-edge-org__view">
                                 <div class="our-edge-org__view-bg">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#edge-medias-likes"></use>
+                                        <use href="img/sprite.svg#medias-likes"></use>
                                     </svg>
                                 </div>
                             </div>

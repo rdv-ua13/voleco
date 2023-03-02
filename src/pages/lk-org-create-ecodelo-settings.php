@@ -9,7 +9,7 @@
                         <div class="page-content__heading-back">
                             <button class="btn-reset btn btn--noframe">
                                 <svg class="icon btn__icon">
-                                    <use href="img/sprite.svg#standart-arrow-left"></use>
+                                    <use href="img/sprite.svg#left"></use>
                                 </svg>
                             </button>
                         </div>
@@ -48,7 +48,7 @@
 										<span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -208,7 +208,7 @@
 										<span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -234,7 +234,7 @@
 										<span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -262,7 +262,7 @@
 										<span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -302,7 +302,7 @@
                                         <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -326,7 +326,7 @@
 										<span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -422,7 +422,7 @@
                                         <span class="tooltip">
                                                 <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#tooltip"></use>
+                                                        <use href="img/sprite.svg#help"></use>
                                                     </svg>
                                                 </span>
                                                 <span class="tooltip__txt" role="tooltip" id="id1">
@@ -573,7 +573,7 @@
                                         <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -594,7 +594,7 @@
                                         </div>
                                         <button class="btn-reset btn btn--fill btn--gray">
                                             <svg class="icon btn__icon">
-                                                <use href="img/sprite.svg#map-pin"></use>
+                                                <use href="img/sprite.svg#pin"></use>
                                             </svg>
                                             <span class="btn__text">Указать на карте</span>
                                         </button>
@@ -606,7 +606,7 @@
                                         <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -632,7 +632,7 @@
                                             <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -659,7 +659,7 @@
                                             <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -686,7 +686,7 @@
                                             <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -726,7 +726,7 @@
                                         <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -756,7 +756,7 @@
                                         <span class="tooltip">
                                             <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#tooltip"></use>
+                                                    <use href="img/sprite.svg#help"></use>
                                                 </svg>
                                             </span>
                                             <span class="tooltip__txt" role="tooltip" id="id1">
@@ -796,7 +796,7 @@
                                         <span class="tooltip">
                                                 <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#tooltip"></use>
+                                                        <use href="img/sprite.svg#help"></use>
                                                     </svg>
                                                 </span>
                                                 <span class="tooltip__txt" role="tooltip" id="id1">
@@ -844,7 +844,7 @@
                                         <span class="tooltip">
                                                 <span class="btn-reset tooltip__btn" aria-describedby="id1">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#tooltip"></use>
+                                                        <use href="img/sprite.svg#help"></use>
                                                     </svg>
                                                 </span>
                                                 <span class="tooltip__txt" role="tooltip" id="id1">

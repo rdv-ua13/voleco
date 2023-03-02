@@ -60,19 +60,19 @@
                                                 <span class="card__rate-title">Оценка:</span>
                                                 <span class="card__rate card__rate--noframe">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                 </span>
                                             </span>
@@ -125,19 +125,19 @@
                                                 <span class="card__rate-title">Оценка:</span>
                                                 <span class="card__rate card__rate--noframe">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#star"></use>
+                                                        <use href="img/sprite.svg#favorite"></use>
                                                     </svg>
                                                 </span>
                                             </span>
@@ -225,7 +225,7 @@
                                                         <span class="card__action-data">
                                                             <span class="card__action-item">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                                    <use href="img/sprite.svg#pin"></use>
                                                                 </svg>
                                                                 <span class="card__action-item-text">г. Москва</span>
                                                             </span>
@@ -275,7 +275,7 @@
                                                         <span class="card__action-data">
                                                             <span class="card__action-item">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                                    <use href="img/sprite.svg#pin"></use>
                                                                 </svg>
                                                                 <span class="card__action-item-text">г. Москва</span>
                                                             </span>
@@ -325,7 +325,7 @@
                                                         <span class="card__action-data">
                                                             <span class="card__action-item">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                                    <use href="img/sprite.svg#pin"></use>
                                                                 </svg>
                                                                 <span class="card__action-item-text">г. Москва</span>
                                                             </span>
@@ -375,7 +375,7 @@
                                                         <span class="card__action-data">
                                                             <span class="card__action-item">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                                    <use href="img/sprite.svg#pin"></use>
                                                                 </svg>
                                                                 <span class="card__action-item-text">г. Москва</span>
                                                             </span>
@@ -425,7 +425,7 @@
                                                         <span class="card__action-data">
                                                             <span class="card__action-item">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                                    <use href="img/sprite.svg#pin"></use>
                                                                 </svg>
                                                                 <span class="card__action-item-text">г. Москва</span>
                                                             </span>
@@ -475,7 +475,7 @@
                                                         <span class="card__action-data">
                                                             <span class="card__action-item">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                                    <use href="img/sprite.svg#pin"></use>
                                                                 </svg>
                                                                 <span class="card__action-item-text">г. Москва</span>
                                                             </span>
@@ -525,7 +525,7 @@
                                                         <span class="card__action-data">
                                                             <span class="card__action-item">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#map-pin"></use>
+                                                                    <use href="img/sprite.svg#pin"></use>
                                                                 </svg>
                                                                 <span class="card__action-item-text">г. Москва</span>
                                                             </span>
@@ -552,7 +552,7 @@
                                                 </span>
                                                     <span class="card__link-pointer">
                                                     <svg class="icon">
-                                                        <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                                        <use href="img/sprite.svg#right"></use>
                                                     </svg>
                                                 </span>
                                                 </a>
@@ -604,7 +604,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -642,7 +642,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -680,7 +680,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -718,7 +718,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -756,7 +756,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -794,7 +794,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -832,7 +832,7 @@
                                                             </span>
                                                             <span class="card__rate">
                                                                 <svg class="icon">
-                                                                    <use href="img/sprite.svg#star"></use>
+                                                                    <use href="img/sprite.svg#favorite"></use>
                                                                 </svg>
                                                                 <span class="card__rate-value">4.8</span>
                                                             </span>
@@ -847,7 +847,7 @@
                                                     </span>
                                                     <span class="card__link-pointer">
                                                         <svg class="icon">
-                                                            <use href="img/sprite.svg#card-more-arrow-toright"></use>
+                                                            <use href="img/sprite.svg#right"></use>
                                                         </svg>
                                                     </span>
                                                 </a>
