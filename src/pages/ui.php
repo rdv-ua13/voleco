@@ -73,6 +73,9 @@
             min-height: 24px;
             height: 24px;
         }
+        .iconset .tooltip:hover .icon {
+            fill: #059858;
+        }
     </style>
 
     <script defer src="js/main.js"></script>
@@ -330,7 +333,7 @@
                     <div class="iconset">
                         <!--start ui content-->
                         <span class="tooltip"
-                              data-tippy-content="#add-image (!stroke/fill)"
+                              data-tippy-content="#add-image"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#add-image"></use>
@@ -344,39 +347,59 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#arrow-left (!stroke)"
+                              data-tippy-content="#arrow-left"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#arrow-left"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #arrow-dropdown _ to _ #arrow-down  (!stroke)"
+                              data-tippy-content="#arrow-right"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#arrow-up "
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#arrow-up"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#arrow-down "
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#arrow-down"></use>
                             </svg>
                         </span>
-                        <!-- в .card-more добавить стили размера 32px -->
                         <span class="tooltip"
-                              data-tippy-content="!from _ #standart-arrow-left _ to _ #left (!stroke)"
+                              data-tippy-content="#left"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#left"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#bell (!stroke/fill)"
+                              data-tippy-content="#bell"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#bell"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#burger (!stroke/fill)"
+                              data-tippy-content="#burger"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#burger"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#desc2"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#desc2"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
@@ -387,35 +410,42 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#calendar-check (!stroke/fill)"
+                              data-tippy-content="#calendar-check"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#calendar-check"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#calendar-next (!stroke/fill)"
+                              data-tippy-content="#calendar-cross"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#calendar-cross"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#calendar-next"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#calendar-next"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#calendar-plus (!stroke/fill)"
+                              data-tippy-content="#calendar-plus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#calendar-plus"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#calendar-minus (!stroke/fill)"
+                              data-tippy-content="#calendar-minus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#calendar-minus"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #card-more-arrow-toright _ to _ #right (!stroke)"
+                              data-tippy-content="#right"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#right"></use>
@@ -429,21 +459,21 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #comment _ to _ #chat"
+                              data-tippy-content="#chat"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#chat"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#copy (!stroke/fill)"
+                              data-tippy-content="#copy"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#copy"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#cross (!stroke)"
+                              data-tippy-content="#cross"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#cross"></use>
@@ -457,112 +487,112 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#download (!stroke/fill)"
+                              data-tippy-content="#download"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#download"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #edge-business _ to _ #business"
+                              data-tippy-content="#business"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#business"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #edge-communication _ to _ #communication"
+                              data-tippy-content="#communication"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#communication"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #edge-content-new _ to _ #content-new"
+                              data-tippy-content="#content-new"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#content-new"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #edge-learning _ to _ #learning (!stroke/fill)"
+                              data-tippy-content="#learning"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#learning"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #edge-medias-likes _ to _ #medias-likes"
+                              data-tippy-content="#medias-likes"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#medias-likes"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #edge-rewards _ to _ #rewards (!stroke/fill)"
+                              data-tippy-content="#rewards"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#rewards"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #edge-search-check _ to _ #search-checkmark (!stroke)"
+                              data-tippy-content="#search-checkmark"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#search-checkmark"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #edge-team _ to _ #team (!stroke)"
+                              data-tippy-content="#team"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#team"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #edit _ to _ #pencil (!stroke/fill)"
+                              data-tippy-content="#pencil"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#pencil"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #edit2 _ to _ #pencil2 (!stroke/fill)"
+                              data-tippy-content="#pencil2"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#pencil2"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #email #messages _ to _ #mail"
+                              data-tippy-content="#mail"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#mail"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#mail-plus (!stroke/fill)"
+                              data-tippy-content="#mail-plus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#mail-plus"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #input-password _ to _ #eye-on"
+                              data-tippy-content="#eye-on"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#eye-on"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#eye-off (!stroke/fill)"
+                              data-tippy-content="#eye-off"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#eye-off"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #favorite _ to _ #bookmark (!stroke/fill)"
+                              data-tippy-content="#bookmark"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#bookmark"></use>
@@ -576,28 +606,28 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#file-plus (!stroke/fill)"
+                              data-tippy-content="#file-plus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#file-plus"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#share (!stroke/fill)"
+                              data-tippy-content="#share"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#share"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #file-upload _ to _ #share2 (!stroke/fill)"
+                              data-tippy-content="#share2"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#share2"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#filter (!stroke/fill)"
+                              data-tippy-content="#filter"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#filter"></use>
@@ -618,21 +648,21 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #input-email _ to _ #mail-a (!stroke)"
+                              data-tippy-content="#mail-a"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#mail-a"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #link _ to _ #external (!stroke/fill)"
+                              data-tippy-content="#external"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#external"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#location (!stroke/fill)"
+                              data-tippy-content="#location"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#location"></use>
@@ -646,7 +676,7 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #map-pin _ to _ #pin"
+                              data-tippy-content="#pin"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#pin"></use>
@@ -688,56 +718,56 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#phone (!stroke/fill)"
+                              data-tippy-content="#phone"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#phone"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#phone-plus (!stroke/fill)"
+                              data-tippy-content="#phone-plus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#phone-plus"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #photo-cover _ to _ #camera"
+                              data-tippy-content="#camera"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#camera"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#plus (!stroke)"
+                              data-tippy-content="#plus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#plus"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#minus (!stroke)"
+                              data-tippy-content="#minus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#minus"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#refresh (!stroke)"
+                              data-tippy-content="#refresh"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#refresh"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #scanner _ to _ #barcode"
+                              data-tippy-content="#barcode"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#barcode"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#search (!stroke)"
+                              data-tippy-content="#search"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#search"></use>
@@ -751,7 +781,7 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #settings _ to _ #settings-slider (!stroke/fill)"
+                              data-tippy-content="#settings-slider"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#settings-slider"></use>
@@ -772,21 +802,14 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #star _ to _ #favorite"
+                              data-tippy-content="#favorite"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#favorite"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#success-check"
-                        >
-                            <svg class="icon">
-                                <use href="img/sprite.svg#success-check"></use>
-                            </svg>
-                        </span>
-                        <span class="tooltip"
-                              data-tippy-content="!from _ #tooltip _ to _ #help"
+                              data-tippy-content="#help"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#help"></use>
@@ -807,7 +830,7 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#user-plus (!stroke/fill)"
+                              data-tippy-content="#user-plus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#user-plus"></use>
@@ -863,14 +886,14 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#card-plus (!stroke/fill)"
+                              data-tippy-content="#card-plus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#card-plus"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#card-minus (!stroke/fill)"
+                              data-tippy-content="#card-minus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#card-minus"></use>
@@ -884,7 +907,7 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#check (!stroke)"
+                              data-tippy-content="#check"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#check"></use>
@@ -898,42 +921,42 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#door-cross (!stroke/fill)"
+                              data-tippy-content="#door-cross"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#door-cross"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#door-enter (!stroke/fill)"
+                              data-tippy-content="#door-enter"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#door-enter"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#double-check (!stroke)"
+                              data-tippy-content="#double-check"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#double-check"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#drop-lines (!stroke)"
+                              data-tippy-content="#drop-lines"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#drop-lines"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#exit (!stroke/fill)"
+                              data-tippy-content="#exit"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#exit"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#flag (!stroke/fill)"
+                              data-tippy-content="#flag"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#flag"></use>
@@ -947,7 +970,7 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#forward (!stroke/fill)"
+                              data-tippy-content="#forward"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#forward"></use>
@@ -961,14 +984,14 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#image (!stroke/fill)"
+                              data-tippy-content="#image"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#image"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#import (!stroke/fill)"
+                              data-tippy-content="#import"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#import"></use>
@@ -989,7 +1012,7 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#link (!stroke)"
+                              data-tippy-content="#link"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#link"></use>
@@ -1003,14 +1026,14 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#lock (!stroke/fill)"
+                              data-tippy-content="#lock"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#lock"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#unlock (!stroke/fill)"
+                              data-tippy-content="#unlock"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#unlock"></use>
@@ -1031,7 +1054,7 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#no-photo (!stroke/fill)"
+                              data-tippy-content="#no-photo"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#no-photo"></use>
@@ -1045,14 +1068,14 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#order-plus (!stroke/fill)"
+                              data-tippy-content="#order-plus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#order-plus"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#percent (!stroke/fill)"
+                              data-tippy-content="#percent"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#percent"></use>
@@ -1073,21 +1096,21 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#reply (!stroke/fill)"
+                              data-tippy-content="#reply"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#reply"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#rows2 (!stroke/fill)"
+                              data-tippy-content="#rows2"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#rows2"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#rows3 (!stroke/fill)"
+                              data-tippy-content="#rows3"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#rows3"></use>
@@ -1101,28 +1124,28 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#sort-asc (!stroke)"
+                              data-tippy-content="#sort-asc"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#sort-asc"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#sort-desc (!stroke)"
+                              data-tippy-content="#sort-desc"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#sort-desc"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#switch (!stroke)"
+                              data-tippy-content="#switch"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#switch"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#table (!stroke)"
+                              data-tippy-content="#table"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#table"></use>
@@ -1150,58 +1173,114 @@
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#wallet-check (!stroke/fill)"
+                              data-tippy-content="#wallet-check"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#wallet-check"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#wallet-cross (!stroke/fill)"
+                              data-tippy-content="#wallet-cross"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#wallet-cross"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#wallet-plus (!stroke/fill)"
+                              data-tippy-content="#wallet-plus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#wallet-plus"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="#wallet-minus (!stroke/fill)"
+                              data-tippy-content="#wallet-minus"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#wallet-minus"></use>
                             </svg>
                         </span>
+                        <span class="tooltip"
+                              data-tippy-content="#interface"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#interface"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#globe-leaf"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#globe-leaf"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#ecology"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#ecology"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#sport"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#sport"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#buildings"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#buildings"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#alarm"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#alarm"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#pets"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#pets"></use>
+                            </svg>
+                        </span>
+                        <span class="tooltip"
+                              data-tippy-content="#science"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#science"></use>
+                            </svg>
+                        </span>
 
 
                         <span class="tooltip"
-                              data-tippy-content="!from _ #soc-logo-dark-fb _ to _ #soc-logo-fb"
+                              data-tippy-content="#soc-logo-fb"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#soc-logo-fb"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #soc-logo-dark-instagram _ to _ #soc-logo-instagram"
+                              data-tippy-content="#soc-logo-instagram"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#soc-logo-instagram"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #soc-logo-dark-ok _ to _ #soc-logo-ok"
+                              data-tippy-content="#soc-logo-ok"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#soc-logo-ok"></use>
                             </svg>
                         </span>
                         <span class="tooltip"
-                              data-tippy-content="!from _ #soc-logo-dark-vk _ to _ #soc-logo-vk"
+                              data-tippy-content="#soc-logo-vk"
                         >
                             <svg class="icon">
                                 <use href="img/sprite.svg#soc-logo-vk"></use>
@@ -1209,6 +1288,13 @@
                         </span>
 
 
+                        <span class="tooltip"
+                              data-tippy-content="#success-check"
+                        >
+                            <svg class="icon">
+                                <use href="img/sprite.svg#success-check"></use>
+                            </svg>
+                        </span>
                         <span class="tooltip"
                               data-tippy-content="#coins"
                         >
@@ -2602,7 +2688,7 @@
                                     </span>
 									<span class="card__rate">
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#star"></use>
+                                            <use href="img/sprite.svg#favorite"></use>
                                         </svg>
                                         <span class="card__rate-value">4.8</span>
                                     </span>
@@ -2659,7 +2745,7 @@
                                 </span>
                                 <span class="card__rate">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                     <span class="card__rate-value">4.8</span>
                                 </span>
@@ -2715,7 +2801,7 @@
                                 </span>
                                 <span class="card__rate">
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                     <span class="card__rate-value">4.8</span>
                                 </span>
@@ -2885,19 +2971,19 @@
                                         <div class="page-content__intro-rate">
                                             <div class="page-content__intro-rate-stars">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star"></use>
+                                                    <use href="img/sprite.svg#favorite"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star"></use>
+                                                    <use href="img/sprite.svg#favorite"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star"></use>
+                                                    <use href="img/sprite.svg#favorite"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star"></use>
+                                                    <use href="img/sprite.svg#favorite"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star"></use>
+                                                    <use href="img/sprite.svg#favorite"></use>
                                                 </svg>
                                             </div>
                                         </div>
@@ -3015,19 +3101,19 @@
                                         <div class="page-content__intro-rate">
                                             <div class="page-content__intro-rate-stars">
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star"></use>
+                                                    <use href="img/sprite.svg#favorite"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star"></use>
+                                                    <use href="img/sprite.svg#favorite"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star"></use>
+                                                    <use href="img/sprite.svg#favorite"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star"></use>
+                                                    <use href="img/sprite.svg#favorite"></use>
                                                 </svg>
                                                 <svg class="icon">
-                                                    <use href="img/sprite.svg#star"></use>
+                                                    <use href="img/sprite.svg#favorite"></use>
                                                 </svg>
                                             </div>
                                         </div>
@@ -3270,7 +3356,7 @@
                             >
                             <label for="starrateTestOne">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#star"></use>
+                                    <use href="img/sprite.svg#favorite"></use>
                                 </svg>
                             </label>
 
@@ -3283,7 +3369,7 @@
                             >
                             <label for="starrateTestTwo">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#star"></use>
+                                    <use href="img/sprite.svg#favorite"></use>
                                 </svg>
                             </label>
 
@@ -3296,7 +3382,7 @@
                             >
                             <label for="starrateTestThree">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#star"></use>
+                                    <use href="img/sprite.svg#favorite"></use>
                                 </svg>
                             </label>
 
@@ -3309,7 +3395,7 @@
                             >
                             <label for="starrateTestFour">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#star"></use>
+                                    <use href="img/sprite.svg#favorite"></use>
                                 </svg>
                             </label>
 
@@ -3322,7 +3408,7 @@
                             >
                             <label for="starrateTestFive">
                                 <svg class="icon">
-                                    <use href="img/sprite.svg#star"></use>
+                                    <use href="img/sprite.svg#favorite"></use>
                                 </svg>
                             </label>
                         </form>
@@ -3348,27 +3434,27 @@
                             <span class="star-rating__container">
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                             </span>
@@ -3395,27 +3481,27 @@
                             <span class="star-rating__container">
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                             </span>
@@ -3442,7 +3528,7 @@
                             <span class="star-rating__container">
                                 <label>
                                     <svg class="icon">
-                                        <use href="img/sprite.svg#star"></use>
+                                        <use href="img/sprite.svg#favorite"></use>
                                     </svg>
                                 </label>
                             </span>

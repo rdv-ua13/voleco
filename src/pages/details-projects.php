@@ -245,19 +245,19 @@
                                                                     <span class="page-content__intro-rate-value">4.8</span>
                                                                     <span class="page-content__intro-rate-stars">
                                                                         <svg class="icon">
-                                                                            <use href="img/sprite.svg#star"></use>
+                                                                            <use href="img/sprite.svg#favorite"></use>
                                                                         </svg>
                                                                         <svg class="icon">
-                                                                            <use href="img/sprite.svg#star"></use>
+                                                                            <use href="img/sprite.svg#favorite"></use>
                                                                         </svg>
                                                                         <svg class="icon">
-                                                                            <use href="img/sprite.svg#star"></use>
+                                                                            <use href="img/sprite.svg#favorite"></use>
                                                                         </svg>
                                                                         <svg class="icon">
-                                                                            <use href="img/sprite.svg#star"></use>
+                                                                            <use href="img/sprite.svg#favorite"></use>
                                                                         </svg>
                                                                         <svg class="icon">
-                                                                            <use href="img/sprite.svg#star"></use>
+                                                                            <use href="img/sprite.svg#favorite"></use>
                                                                         </svg>
                                                                     </span>
                                                                 </span>

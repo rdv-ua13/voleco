@@ -316,19 +316,19 @@
 										<div class="page-content__intro-rate-value">4.8</div>
 										<div class="page-content__intro-rate-stars">
 											<svg class="icon">
-												<use href="img/sprite.svg#star"></use>
+												<use href="img/sprite.svg#favorite"></use>
 											</svg>
 											<svg class="icon">
-												<use href="img/sprite.svg#star"></use>
+												<use href="img/sprite.svg#favorite"></use>
 											</svg>
 											<svg class="icon">
-												<use href="img/sprite.svg#star"></use>
+												<use href="img/sprite.svg#favorite"></use>
 											</svg>
 											<svg class="icon">
-												<use href="img/sprite.svg#star"></use>
+												<use href="img/sprite.svg#favorite"></use>
 											</svg>
 											<svg class="icon">
-												<use href="img/sprite.svg#star"></use>
+												<use href="img/sprite.svg#favorite"></use>
 											</svg>
 										</div>
 									</div>

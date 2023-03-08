@@ -73,27 +73,27 @@
                                 <span class="star-rating__container">
                                     <label>
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#star"></use>
+                                            <use href="img/sprite.svg#favorite"></use>
                                         </svg>
                                     </label>
                                     <label>
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#star"></use>
+                                            <use href="img/sprite.svg#favorite"></use>
                                         </svg>
                                     </label>
                                     <label>
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#star"></use>
+                                            <use href="img/sprite.svg#favorite"></use>
                                         </svg>
                                     </label>
                                     <label>
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#star"></use>
+                                            <use href="img/sprite.svg#favorite"></use>
                                         </svg>
                                     </label>
                                     <label>
                                         <svg class="icon">
-                                            <use href="img/sprite.svg#star"></use>
+                                            <use href="img/sprite.svg#favorite"></use>
                                         </svg>
                                     </label>
                                 </span>

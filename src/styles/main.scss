@@ -4540,6 +4540,12 @@
 	}
 }
 
+.out {
+	margin-right: -16px;
+	margin-left: -16px;
+	max-width: calc(100vw + 32px);
+	min-width: calc(100vw + 32px);
+}
 .inner-page-tabs-wrapper {
 	position: relative;
 	width: 100%;
@@ -4646,9 +4652,9 @@
 @media (min-width: 992px) {
 	.inner-page-tabs {
 		&__nav-item {
-			&:first-child {
+			/*&:first-child {
 				margin-left: 32px;
-			}
+			}*/
 			&:not(:last-child) {
 				margin-right: 32px;
 			}
