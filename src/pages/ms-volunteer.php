@@ -53,11 +53,17 @@
                                         <span class="card__action-item-text">г. Москва</span>
                                     </span>
                                 </span>
-                                <span class="card__rate">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#favorite"></use>
-                                    </svg>
-                                    <span class="card__rate-value">4.8</span>
+                                <span class="star-rating-wrapper star-rating-wrapper--frame">
+                                    <span class="star-rating-value">3.5</span> <!-- visually-hidden -->
+                                    <span class="star-rating">
+                                        <span class="star-rating__container">
+                                            <label>
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#favorite"></use>
+                                                </svg>
+                                            </label>
+                                        </span>
+                                    </span>
                                 </span>
                                 <span class="card__reviews">
                                     <span class="card__reviews-value">Был волонтером 251 раз</span>
@@ -107,11 +113,17 @@
                                         <span class="card__action-item-text">г. Москва</span>
                                     </span>
                                 </span>
-                                <span class="card__rate">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#favorite"></use>
-                                    </svg>
-                                    <span class="card__rate-value">4.8</span>
+                                <span class="star-rating-wrapper star-rating-wrapper--frame">
+                                    <span class="star-rating-value">3.5</span>
+                                    <span class="star-rating">
+                                        <span class="star-rating__container">
+                                            <label>
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#favorite"></use>
+                                                </svg>
+                                            </label>
+                                        </span>
+                                    </span>
                                 </span>
                                 <span class="card__reviews">
                                     <span class="card__reviews-value">Был волонтером 251 раз</span>
@@ -161,11 +173,17 @@
                                         <span class="card__action-item-text">г. Москва</span>
                                     </span>
                                 </span>
-                                <span class="card__rate">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#favorite"></use>
-                                    </svg>
-                                    <span class="card__rate-value">4.8</span>
+                                <span class="star-rating-wrapper star-rating-wrapper--frame">
+                                    <span class="star-rating-value">3.5</span>
+                                    <span class="star-rating">
+                                        <span class="star-rating__container">
+                                            <label>
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#favorite"></use>
+                                                </svg>
+                                            </label>
+                                        </span>
+                                    </span>
                                 </span>
                                 <span class="card__reviews">
                                     <span class="card__reviews-value">Был волонтером 251 раз</span>
@@ -215,11 +233,17 @@
                                         <span class="card__action-item-text">г. Москва</span>
                                     </span>
                                 </span>
-                                <span class="card__rate">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#favorite"></use>
-                                    </svg>
-                                    <span class="card__rate-value">4.8</span>
+                                <span class="star-rating-wrapper star-rating-wrapper--frame">
+                                    <span class="star-rating-value">3.5</span>
+                                    <span class="star-rating">
+                                        <span class="star-rating__container">
+                                            <label>
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#favorite"></use>
+                                                </svg>
+                                            </label>
+                                        </span>
+                                    </span>
                                 </span>
                                 <span class="card__reviews">
                                     <span class="card__reviews-value">Был волонтером 251 раз</span>
@@ -269,11 +293,17 @@
                                         <span class="card__action-item-text">г. Москва</span>
                                     </span>
                                 </span>
-                                <span class="card__rate">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#favorite"></use>
-                                    </svg>
-                                    <span class="card__rate-value">4.8</span>
+                                <span class="star-rating-wrapper star-rating-wrapper--frame">
+                                    <span class="star-rating-value">3.5</span>
+                                    <span class="star-rating">
+                                        <span class="star-rating__container">
+                                            <label>
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#favorite"></use>
+                                                </svg>
+                                            </label>
+                                        </span>
+                                    </span>
                                 </span>
                                 <span class="card__reviews">
                                     <span class="card__reviews-value">Был волонтером 251 раз</span>
